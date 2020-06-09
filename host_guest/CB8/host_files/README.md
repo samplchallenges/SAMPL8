@@ -4,5 +4,6 @@ The CB8 host files provided here are duplicated from [those used in SAMPL6](http
 
 ## Manifest
 - `CB8.sdf`: Original source CB8 file from PDB
-- `CB8.mol2`: mol2 format CB8 file generated from source file
+- `CB8.mol2`: mol2 format CB8 file generated from source file. AM1BCC charges were assigned using `Assign_Charge.ipynb`.
 - `CB8.pdb`: PDB format CB8 file generated from source file
+- `Assign_Charge.ipynb`: Jupyter notebook used to assign AM1BCC charges (via Openeye) to `CB8.mol2` host file.  
