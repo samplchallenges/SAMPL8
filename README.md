@@ -9,6 +9,7 @@ Because these files are available publicly, we have no record of who downloads t
 Please note that some aspects of the SAMPL7 series of challenges are still ongoing, but as we are launching a new host-guest challenge that marks the beginning of the SAMPL8 series of challenges, so we have opened up this repository.
 
 ## What's here
+- Preliminary host-guest challenge files for the CB8 challenge.
 
 ## What's coming
 
@@ -21,7 +22,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 ### Releases
 
 ### Changes not in a release
-- June 9, 2020: Add first info on CB8 "drugs of abuse" challenge from Isaacs.
+- June 9, 2020: Add first info on [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
 
 ## Challenge construction
 

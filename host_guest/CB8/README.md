@@ -2,6 +2,8 @@
 
 The CB8 "drugs of abuse" challenge focuses on binding of CB8 to nine guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication. Experimental details are forthcoming shortly.
 
+Our deadline for this challenge will be posted in the top-level [README.md](https://github.com/samplchallenges/SAMPL8/blob/master/README.md#the-cb8-challenge)
+
 ## A quick view of the host and guests
 
 ![](images/CB8_overview.png)
