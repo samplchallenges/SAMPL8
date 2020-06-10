@@ -6,6 +6,8 @@ G8 and G9, cycloheptanamine and cyclooctanamine, are included because binding wa
 
 Our deadline for this challenge will be posted in the top-level [README.md](https://github.com/samplchallenges/SAMPL8/blob/master/README.md#the-cb8-challenge)
 
+If you want any announcements of updates/changes/fixes here, [sign up for our e-mail list](https://mailchi.mp/e36018629725/sampl8-sign-ups).
+
 ## A quick view of the host and guests
 
 ![](images/CB8_overview.png)
