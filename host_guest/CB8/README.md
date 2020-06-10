@@ -2,6 +2,8 @@
 
 The CB8 "drugs of abuse" challenge focuses on binding of CB8 to nine guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication. Experimental details are forthcoming shortly.
 
+G8 and G9, cycloheptanamine and cyclooctanamine, are included because binding was measured by competition with these guests.
+
 Our deadline for this challenge will be posted in the top-level [README.md](https://github.com/samplchallenges/SAMPL8/blob/master/README.md#the-cb8-challenge)
 
 ## A quick view of the host and guests
@@ -11,6 +13,11 @@ Our deadline for this challenge will be posted in the top-level [README.md](http
 ## More on the host
 
 This host-guest series is based on the host cucurbit[8]uril (CB8), which was used in SAMPL3 and SAMPL6 (as previously summarized in the [SAMPL3 overview](http://dx.doi.org/10.1007/s10822-012-9554-1) and the [SAMPL6 overview](http://dx.doi.org/10.1007/s10822-018-0170-6)). CB8 is the eight-membered relative of cucurbit[7]uril, which was used in several other prior SAMPL challenges. Background information on CB8 may be found in a number of publications aside from the SAMPL overview papers, including DOI 10.1021/jp2110067, 10.1002/chem.201403405, and 10.1021/ja055013x.
+
+## Experimental conditions
+
+The buffer was 20 mM sodium phosphate buffer at pH 7.4. Guest concentrations were in the 0.5 mM to 1.5 mM range and CB8 concentrations are 0.025 mM to 0.1 mM. All binding stoichiometries have been validated by repeat ITC experiments and by NMR spectroscopy binding studies.
+
 
 ## Disclaimer
 
