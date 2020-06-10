@@ -16,6 +16,8 @@ This host-guest series is based on the host cucurbit[8]uril (CB8), which was use
 
 Note that we have typically selected, or attempted to select, reasonable protonation states and conformers of the hosts and guests, but these may be controversial, uncertain, or change upon binding, so participants are encouraged to exercise care in selecting which states are modeled. Typically selection of protonation states, tautomers and conformers is one major place where participant protocols differ and lead to different downstream results.
 
+One particular point of attention here may be the geometry of certain trivalent nitrogen centers; if these are protonated they can function (computationally) as a chiral center though experimentally they will interconvert quickly. Unless all guest geometries are sampled the selected geometry might impact binding estimates for some methods.
+
 ## What's here:
 - `host_files`: Files relating to the CB8 host; provides structure files for the host.
 - `images`: Images used in this repo
