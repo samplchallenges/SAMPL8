@@ -2,7 +2,7 @@
 
 The CB8 "drugs of abuse" challenge focuses on binding of CB8 to nine guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication. Experimental details are forthcoming shortly.
 
-G8 and G9, cycloheptanamine and cyclooctanamine, are included because binding was measured by competition with these guests.
+G8 and G9, cycloheptanamine and cyclooctanamine, are included in the graphic/writeup because binding was measured by competition with these guests; these are not part of the challenge as experimental values were previously reported.
 
 Our deadline for this challenge will be posted in the top-level [README.md](https://github.com/samplchallenges/SAMPL8/blob/master/README.md#the-cb8-challenge)
 
@@ -11,6 +11,8 @@ If you want any announcements of updates/changes/fixes here, [sign up for our e-
 ## A quick view of the host and guests
 
 ![](images/CB8_overview.png)
+
+G8 and G9 are not part of this challenge.
 
 Please be sure to read the Disclaimers section below to note points which may require particular attention.
 
