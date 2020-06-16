@@ -23,6 +23,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 
 ### Changes not in a release
 - June 9, 2020: Add first info on [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
+- June 16, 2020: Fix cocaine structure, which was incorrectly listed as the ethyl ether rather than the methyl ether. Affects all G7 files.
 
 ## Challenge construction
 
