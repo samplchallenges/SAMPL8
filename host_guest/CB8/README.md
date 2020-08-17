@@ -35,5 +35,7 @@ Additionally, **you may wish to pay attention to the geometry of certain trivale
 
 ## What's here:
 - `host_files`: Files relating to the CB8 host; provides structure files for the host.
+- `guest_files`: Files relating to the CB8 guests; provides structure files for the guests.
 - `images`: Images used in this repo
 - `source_files`: Raw source files as provided by the Isaacs group
+- `CB8_submission.txt`: An example submission file for submitting to our system (please replace text and values with your own!). Filenames must being with "CB8". See [host_guest_instructions.md](https://github.com/samplchallenges/SAMPL8/host_guest_instructions.md) for submission instructions.

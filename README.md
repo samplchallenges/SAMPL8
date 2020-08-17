@@ -10,6 +10,7 @@ Please note that some aspects of the SAMPL7 series of challenges are still ongoi
 
 ## What's here
 - Preliminary host-guest challenge files for the CB8 challenge.
+- [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
 
 ## What's coming
 
