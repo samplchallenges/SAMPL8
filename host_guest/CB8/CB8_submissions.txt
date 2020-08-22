@@ -48,12 +48,12 @@ University of California, Irvine
 #
 #
 # Please provide a brief (40 character limit) informal yet informative name of the method used.
-# If using an MD-based method we suggest using the format: Method/EnergyModel/WaterModel/Sampling/[Additional-details-here]
+# If using an MD-based method we suggest using the format: Method/EnergyModel/WaterModel/Sampling/[Additional-details-here] , though your name must respect the 40 character limit.
 # otherwise you may create your own following the sample text; please edit to your taste.
 # The "Name:" keyword is required, as shown here.
 # 40 character limit.
 Name:
-APR/GAFF-RESP/TIP3P/MD-US/NoBuffer_ranked
+APR/GAFF-RESP/TIP3P/MD-US/NoBuffer_R
 #
 # All major software packages used and their versions
 # Following is sample text; please edit to your taste.
