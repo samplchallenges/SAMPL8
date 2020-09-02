@@ -9,7 +9,7 @@ Because these files are available publicly, we have no record of who downloads t
 Please note that some aspects of the SAMPL7 series of challenges are still ongoing, but as we are launching a new host-guest challenge that marks the beginning of the SAMPL8 series of challenges, so we have opened up this repository.
 
 ## What's here
-- Hst-guest challenge files for the CB8 challenge.
+- Host-guest challenge files for the CB8 challenge.
 - [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
 
 ## What's coming
