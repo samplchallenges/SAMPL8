@@ -7,7 +7,7 @@ Due dates vary by challenge; refer to the main [README.md](https://github.com/sa
 Your predictions must be uploaded via our [SAMPL8 submission web-server](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs) before midnight US Pacific time on the due date. The experimental results will be available as soon as possible after SAMPL closes. Please refer to the below instructions for information on uploading.
 
 You must use the provided templates to upload your predictions. Templates are:
-- [CB8_submission.txt](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8/CB8_submission.txt) for the Isaacs CB8 challenge
+- [CB8_submission.txt](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt) for the Isaacs CB8 challenge
 
 File names must begin with "CB8" (as in the template files) and be followed by an underscore or dash.
 The remainder of the filename is up to you.
