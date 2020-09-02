@@ -4,13 +4,15 @@
 
 Due dates vary by challenge; refer to the main [README.md](https://github.com/samplchallenges/SAMPL8/blob/master/README.md) for exact dates.
 
-Your predictions must be uploaded via our submission web-server (will be added soon) before midnight US Pacific time on the due date. The experimental results will be available as soon as possible after SAMPL closes. Please refer to the below instructions for information on uploading.
+Your predictions must be uploaded via our [SAMPL8 submission web-server](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs) before midnight US Pacific time on the due date. The experimental results will be available as soon as possible after SAMPL closes. Please refer to the below instructions for information on uploading.
 
 You must use the provided templates to upload your predictions. Templates are:
 - [CB8_submission.txt](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt) for the Isaacs CB8 challenge
 
 File names must begin with "CB8" (as in the template files) and be followed by an underscore or dash.
 The remainder of the filename is up to you.
+
+Note that the submission server runs on AWS and has a URL involving "elasticbeanstalk.com". It is also listed as "not secure" at present, but don't be concerned about that aspect.
 
 ## Multiple submissions
 
@@ -27,7 +29,7 @@ Anonymous participation is not allowed.
 The CB8 host-guest system category is detailed in the main README.md.  
 
 ### Optional systems:
-CB8-G8 and CB8-G9 are not part of this challenge and will not be judged. 
+CB8-G8 and CB8-G9 are not part of this challenge and will not be judged.
 
 ### Optional systems:
 All submissions are required to have predicted binding **free energies**, predicted standard error,
