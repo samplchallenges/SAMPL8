@@ -9,7 +9,7 @@ Because these files are available publicly, we have no record of who downloads t
 Please note that some aspects of the SAMPL7 series of challenges are still ongoing, but as we are launching a new host-guest challenge that marks the beginning of the SAMPL8 series of challenges, so we have opened up this repository.
 
 ## What's here
-- Preliminary host-guest challenge files for the CB8 challenge.
+- Hst-guest challenge files for the CB8 challenge.
 - [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
 
 ## What's coming
@@ -25,7 +25,9 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 ### Changes not in a release
 - June 9, 2020: Add first info on [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
 - June 16, 2020: Fix cocaine structure, which was incorrectly listed as the ethyl ether rather than the methyl ether. Affects all G7 files.
-- August 21, 2020: Add CB8 submission template file and host-guest instructions (for now only for CB8, other host-guest system information will be updated as it becomes available). 
+- August 21, 2020: Add CB8 submission template file and host-guest instructions (for now only for CB8, other host-guest system information will be updated as it becomes available).
+- Sept. 2, 2020: Add submission instructions. The submissions system is now live at [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs).
+
 ## Challenge construction
 
 ### Overview
@@ -35,13 +37,13 @@ The SAMPL8 phase of challenges includes at least several new host-guest challeng
 
 ### The CB8 challenge
 
-The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication. 
+The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication.
 
-**Deadline**: The deadline for CB8 submissions will tentatively be September 15, 2020. The submission format -- which will be provided at a slighty later date -- will generally match that used for SAMPL7.
+**Deadline**: The deadline for CB8 submissions is September 15, 2020. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt).
 
 
 ## MANIFEST
-- `host_guest`: Details on host-guest challenges
+- `host_guest`: Details on host-guest challenges.
 
 ## SAMPL-related
 If you give a SAMPL-related talk or presentation or an analysis of its data, and are willing to share publicly, please consider posting on Zenodo and linking it to the [SAMPL Zenodo community].
