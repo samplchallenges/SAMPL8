@@ -21,12 +21,9 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 ## Changes and Data Set Versions
 
 ### Releases
+- **Release 0.1** (Sept. 14, 2020): Release version of the info that was here prior to the closing of the [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
 
 ### Changes not in a release
-- June 9, 2020: Add first info on [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
-- June 16, 2020: Fix cocaine structure, which was incorrectly listed as the ethyl ether rather than the methyl ether. Affects all G7 files.
-- August 21, 2020: Add CB8 submission template file and host-guest instructions (for now only for CB8, other host-guest system information will be updated as it becomes available).
-- Sept. 2, 2020: Add submission instructions. The submissions system is now live at [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-Isaacs).
 
 ## Challenge construction
 
