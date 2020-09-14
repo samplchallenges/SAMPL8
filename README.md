@@ -21,7 +21,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 ## Changes and Data Set Versions
 
 ### Releases
-- **Release 0.1** (Sept. 14, 2020): Release version of the info that was here prior to the closing of the [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
+- **Release 0.1** ([DOI 10.5281/zenodo.4029560](http://dx.doi.org/10.5281/zenodo.4029560), Sept. 14, 2020): Release version of the info that was here prior to the closing of the [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
 
 ### Changes not in a release
 
