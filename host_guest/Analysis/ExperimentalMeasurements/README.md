@@ -1,8 +1,5 @@
 ## Manifest
 
-- `experimental_measurements.pdf`: Summary table of the experimental data after conversion
-- `experimental_measurements.csv`: Summary table of the experimental data after conversion, in `.csv` format
-- `experimental_measurements.json`: Summary table of the experimental data after conversion,  in JSON format.
 - `CB8-DOA-SAMPL-Answer-Sheet-20200908.docx`: Data provided by the Isaacs group (docx).
 - `CB8-DOA-SAMPL-Answer-Sheet-20200908.pdf`: Data provided by the Isaacs group (pdf).
 - `generate_tables.py`: Script used to perform error propagation and create the experimental_measurements.X files based on the data provided by the Isaacs (and, later, Gilson and Gibb) groups. Adapted from [the SAMPL6 `generate_tables.py`](https://github.com/samplchallenges/SAMPL6/blob/master/host_guest/Analysis/ExperimentalMeasurements/generate_tables.py) by Andrea Rizzi, and [the SAMPL7 `generate_tables.py`](https://github.com/samplchallenges/SAMPL7/blob/master/host_guest/Analysis/ExperimentalMeasurements/generate_tables.py) by David Mobley.
