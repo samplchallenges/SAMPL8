@@ -25,7 +25,8 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 
 ### Changes not in a release
 
-- Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo. 
+- Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo.(9/25/20)
+- Add experimental measurements and link for CB8 experimental publication. (9/25/20) 
 
 ## Challenge construction
 
@@ -36,7 +37,7 @@ The SAMPL8 phase of challenges includes at least several new host-guest challeng
 
 ### The CB8 challenge
 
-The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group is preparing a paper for publication.
+The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group has prepared a paper for publication [available here](https://chemrxiv.org/articles/preprint/In_Vitro_and_In_Vivo_Sequestration_of_Phencyclidine_by_Me4Cucurbit_8_uril/12994004). Experimental results/data is available [in this repository](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/). 
 
 **Deadline**: The deadline for CB8 submissions is September 15, 2020. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt).
 
