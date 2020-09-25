@@ -25,6 +25,8 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 
 ### Changes not in a release
 
+- Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo. 
+
 ## Challenge construction
 
 ### Overview
