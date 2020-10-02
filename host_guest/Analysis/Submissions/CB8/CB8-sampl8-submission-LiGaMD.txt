@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Results for CB8
 #
 # This file will be automatically parsed.  It must contain the following seven elements:
@@ -213,4 +212,3 @@ Other Physical
 # The "Ranked:" keyword is required, and expects a Boolean value (True/False)
 Ranked:
 True
->>>>>>> master
