@@ -34,8 +34,8 @@ CB8-G4, -16.0, 0.2, 1.0,,,
 CB8-G5, -13.8, 0.2, 1.0,,,
 CB8-G6, -11.6, 0.2, 1.0,,,
 CB8-G7, -14.3, 0.2, 1.0,,,
-CB8-G8, -9.6, 0.2, 1.0,,,
-CB8-G9, -9.4, 0.2, 1.0,,,
+#CB8-G8, -9.6, 0.2, 1.0,,,
+#CB8-G9, -9.4, 0.2, 1.0,,,
 #
 #
 # Please list your name, using only UTF-8 characters as described above. The "Participant name:" entry is required.

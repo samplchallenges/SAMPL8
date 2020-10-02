@@ -1,0 +1,124 @@
+# Results for CB8
+#
+# This file will be automatically parsed.  It must contain the following seven elements:
+# predictions, participant name, participant organization, name of method, software listing, method, method category, and ranked.
+# These elements must be provided in the order shown.
+# The file name must begin with the word "CB8" and then be followed by an underscore or dash.
+#
+# FILE FORMAT: All comment lines in this file (which begin with #) will be ignored.
+# Please use only UTF-8 characters in the non-comment fields. If your information (e.g. your name, etc.)
+# contains a non-UTF-8 character, you may note it in comments near that entry.
+#
+#
+# PREDICTIONS
+# Please explicitly describe how you handle ions and pKa effects.
+#
+# The data in each prediction line should be structured as follows, with all (up to six) numbers in kcal/mol.
+# host-guest ID (note that the host varies!), Free energy, free energy SEM, free energy model uncertainty,
+# enthalpy, enthalpy SEM, enthalpy model uncertainty
+# The free energy, free energy SEM, and free energy model uncertainty are REQUIRED.
+# The corresponding quantities for binding enthalpy are optional.
+#
+# Note that the "model uncertainty" should be your estimate of ACCURACY of this particular approach
+# for the compound considered.
+#
+# For the CB8 challenge, G8 and G9 are not part of this challenge hence they will not be judged, as
+# literature values are available.
+#
+# The list of predictions must begin with the "Prediction:" keyword, as illustrated here.
+Predictions:
+CB8-G1, -9.35, 0.1, 1.0,,,
+CB8-G2, -7.36, 0.1, 1.0,,,
+CB8-G3, -15.21, 0.1, 1.0,,,
+CB8-G4, -15.26, 0.1, 1.0,,,
+CB8-G5, -11.93, 0.1, 1.0,,,
+CB8-G6, -8.73, 0.1, 1.0,,,
+CB8-G7, -16.79, 0.1, 1.0,,,
+
+#
+#
+# Please list your name, using only UTF-8 characters as described above. The "Participant name:" entry is required.
+Participant name:
+Dylan SERILLON
+#
+#
+# Please list your organization/affiliation, using only UTF-8 characters as described above.
+Participant organization:
+University of Barcelona
+#
+# Please provide a brief (40 character limit) informal yet informative name of the method used.
+# If using an MD-based method we suggest using the format: Method/EnergyModel/WaterModel/Sampling/[Additional-details-here] , though your name must respect the 40 character limit.
+# otherwise you may create your own following the sample text; please edit to your taste.
+# The "Name:" keyword is required, as shown here.
+# 40 character limit.
+Name:
+GAFF-RESP/TIP3P/MD-Classical/xtb-GFN2B
+#
+# All major software packages used and their versions
+# Following is sample text; please edit to your taste.
+# The "Software:" keyword is required.
+Software:
+xtb Version 6.1 
+Gromacs Versions 2018.1
+Open Babel 2.3.2
+AutoDock Vina 1.1.2
+MOE Version 2018
+chimera production version 1.13.1
+VMD for LINUXAMD64, version 1.9.3
+#
+# Methodology and computational details.
+# Level of detail should be at least that used in a publication.
+# Please include the values of key parameters, with units, and explain how any
+# statistical uncertainties were estimated.
+# Use as many lines of text as you need.
+# Please explicitly describe how you handle ions (e.g. counterions) and pKa effects
+# Following is sample text; please edit to your taste.
+# All text following the "Method:" keyword will be regarded as part of your free text methods description.
+Method:
+
+SUBMISSION #1 OUT OF #4 -- RANKED SUBMISSION --
+
+Complex Generation:
+Docking is used to generate a first guess of the HG structure. We chose ADV for our assessment for several reasons. It is faster and generally performs better than AutoDock itself, is freely available and competitive with commercial tools. Docking was performed using ADV 1.1.2. Input comprises the host system, guest and docking box, while output is a list of poses ranked by ΔGbind, the predicted binding energy in kcal/mol (‘score’ = −ΔGbind). 
+To obtain the maximum number of poses, we set num_modes to 20.
+In order to allow blind-docking poses, one big cubic box (edge length 20 Å) centered to the host cavity is used. For each HG systems, the top scored solution is extracted. Additionally, for the all the HG-complexes, the extraction is followed by a steepest decent and conjugated gradient minimization using Chimera to correct any ligand distorsion. In case several docking solution are very different, few solutions are extracted (For G6 - 3 differents solutions are extracted).
+For the spontaneous association simulations (SaMD), the host and the guest are placed in the same box, but not in direct contact, in order to observe their interaction preferences over time. Concerning the spontaneous associations we used in the previous SAMPL7 challenge, due to the internal mobility of the Host, and the fact that this CB8 host is circular, the spontaneus association were giving mainly surface interactions and we prefered for this Challenge to run Classical-MD.
+
+For G5 guest from SAMPL8, an inversion and the stereochemistry is done using MOE suite, and simulated apart. The free binding energy from the (R) was considered after analysis as the best form for the binding comparing the free binding energy. 
+
+Sampling with MD:
+All MD simulations were set up in different steps using our automated HG-Dynausor platform:
+1) Host and Guest Preparation. The antechamber and tleap programs from the AMBER 18 package are used to parameterize and solvate the system, respectively. 
+Charges are derived with the RESP method using our personal methods: HG-Dynausor that used a RESP database based on the molecular neighborhood of the atoms. Each system was solvated with ~3000 TI3P water in a cubic box whose dimensions were defined by a distance of 15 Å between the complex and the edges.
+2) Minimization. The system is minimised in two steps with AMBER using the steepest decent & Congugated algorithm: (i) first solvents molecules, with a 500kcal restrains on the Host-Guest complexes in order to discard bad contact (5000 MaxCyc with 2500 Steepest decent cycle), then (ii) a full minimization without any restrains (10.000 MaxCyc with 5000 Steepest decent cycle). 
+3) The system is slowly heated and pressurize then equilibrated for 180ps.
+4) 250 ns of simulations are done for each of the Host-systems, HostGuest-systems from SAMPL8 challenge and HostGuest-systems from SAMPL6 challenge (used for protocol validation).
+
+Free binding energy prediction using semi-empirical methods:
+We used the xtb program package (version 6.1)[21] to calculate both the energy and the enthalpic and entropic corrections. It uses the GFN2 parametrization on a extended semiempirical tight-binding model, which has shown be efficient for determining structures and noncovalent interaction energies for large molecular systems (in the order of 1000 atoms). Water solvent effects were included through a Generalized Born (GBSA) model. The convergence criteria thresholds were set as extreme.
+Optimization, followed by hessian calculation were performed. The resulting geometries were verified as true minima by checking that no imaginary vibrational frequencies remained. The temperature was set to 298.15 K for assessing the thermostatistical corrections
+Considering the complexity of the conformational energy landscape of the complex and host molecule, we used multiple geometries of the unbound host system as starting points for
+minimization, thus increasing the probability of finding the absolute minimum. To do so, we extract 100 structures from the classical molecular dynamics simulations (1 structure every 2.5ns) to and carry out a geometric optimization at semi-empirical level, followed up by calculation of the hessian to confirm that the final energy is a true minimum (i.e. all vibrational frequencies are positive).
+The apo-host (without guest) is simulated three times using different initial velocity, and  thoses hosts are simulated in the same way and the minimum energy (from the 300 calculated energy) is used for all the simulations as the reference.
+
+In order to have an idea about how our protocol could work on CB8 system, we validated it on the HostGuest-systems from SAMPL6 challenge. We could have highlighted a problem with both two guests systems with charges > 1 (NB : G04 & G11), were the free binding energy were overestimated by our methods. For all the others, the energy landscape were close to the experimental reference (~2kcal/mol). G01 were the exception (very low energy predicted), but as it was described as 1:2 (two hosts bound to the same guest) and 1:3 complexes, we decided to go forward.
+
+Finally, the association Gibbs free energy is calculated from the difference of the free energies from the complex, host and guest molecules, each on their respective conformational minimum.
+#
+#
+# METHOD CATEGORY SECTION
+#
+# State which method category your prediction method is better described as:
+# `Alchemical`, `Quantum`, `Other Physical` `Empirical`, `Mixed`, or `Other`.
+# Pick only one category label.
+# The `Category:` keyword is required.
+Category:
+Physical Base method
+#
+# All submissions must either be ranked or non-ranked.
+# Only one ranked submission per participant is allowed.
+# Multiple ranked submissions from the same participant will not be judged.
+# Non-ranked submissions are accepted so we can verify that they were made before the deadline.
+# The "Ranked:" keyword is required, and expects a Boolean value (True/False)
+Ranked:
+True
