@@ -1,0 +1,32 @@
+\documentclass[8pt]{article}
+\usepackage[a4paper,margin=0.2in,tmargin=0.5in,bmargin=0.5in,landscape]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{|ccccc|}
+\toprule
+     ID &    RMSE [kcal/mol] &     MAE [kcal/mol] &        ME [kcal/mol] \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+ CB8-G2 &  2.66 [2.32, 5.06] &  2.22 [1.83, 3.58] &   0.19 [-1.10, 1.57] \\
+ CB8-G5 &  3.42 [2.74, 5.94] &  2.76 [2.15, 4.25] &  -0.50 [-1.93, 1.11] \\
+ CB8-G1 &  4.27 [3.57, 6.72] &  3.71 [2.98, 5.14] &    3.49 [2.27, 4.86] \\
+ CB8-G7 &  4.95 [3.96, 7.29] &  4.06 [3.10, 5.66] &    2.07 [0.24, 3.98] \\
+ CB8-G6 &  4.94 [4.07, 7.62] &  4.31 [3.53, 5.82] &   0.89 [-0.91, 2.92] \\
+ CB8-G4 &  5.45 [4.37, 8.15] &  4.79 [3.76, 6.38] &    3.05 [1.30, 4.96] \\
+ CB8-G3 &  5.51 [4.53, 8.07] &  4.99 [3.97, 6.43] &    3.61 [1.92, 5.42] \\
+\end{longtable}
+\end{footnotesize}
+\end{center}
+
+\end{document}
