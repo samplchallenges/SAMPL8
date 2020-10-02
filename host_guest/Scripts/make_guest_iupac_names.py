@@ -1,14 +1,14 @@
 #!/bin/env python
 
-"""Quick Python script to process guest file names in the GDCC and Isaacs cases and generate IUPAC names for the compounds."""
+"""Quick Python script to process guest file names in the Isaacs CB8 case and generate IUPAC names for the compounds."""
 
 from openeye.oechem import *
 from openeye.oeiupac import *
 import os
 
 # Parameters for processing
-dirnames = [ '../GDCC_and_guests', '../Isaacs_clip' ]
-prefixes = [ 'GDCC', 'trimertrip' ]
+dirnames = [ '../CB8' ]
+prefixes = [ 'CB8' ]
 guestdir = 'guest_files'
 text_file_suffix = '_guest_smiles.txt'
 output_file_suffix = '_guest_names.txt'
