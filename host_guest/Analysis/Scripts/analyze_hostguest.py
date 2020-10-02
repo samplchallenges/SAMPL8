@@ -24,67 +24,54 @@ from pkganalysis.stats import (compute_bootstrap_statistics, rmse, mae,
 # TO DO NOTES
 # =============================================================================
 
-# Recall that I have done SOME work towards some of these in my submission checking script.
+# SOME work towards some of these in the submission checking script.
 # Specifically, that already correctly loads predictions.
 
-# UPDATES TO PRESENT:
-# - (DONE) Remove CHALLENGE ID stuff below
-# - (DONE) Propagate in other changes made for logP challenge like to not read submission names from files
-# - (DONE) Update to allow reference submissions, as previously done for SAMPL6 logP
-# - (MAYBE done) Deal with user map stuff, which is totally different now or we don't have a user map (see below in "think through")
-# - Update host-guest names/etc below (partially done)
-# - Deal with "TO DO" items in code.
-# - Remove stray DEBUG items in code
-# - Deal with non-numeric ("ND") experimental data
+# This script is adapted from SAMPL6/SAMPL7 work by Andrea Rizzi and David Mobley. 
 
-# EXTENSIONS
-# - (DONE) Update to allow single ranked submission per group (additional submissions go into separate category)
-#    - Optionally additional submissions can get analyzed/plotted separately, on plots with reference calculations.
-#      This gets handled at the analysis stage at the very end (next bullet point).
-# - (Maybe DONE) Handling of ranked vs non-ranked and reference submissions will be done at the end of the code via
-#     options to the HostGuestSubmissionCollection class (ignore_refcalcs, etc.)
+# UPDATES TO PRESENT
+# - (DONE) Update host-guest systems, names/etc (only CB8 for now)
+# - (DONE) Update user-map ( not directly on script)
+# - (DONE) Make experimental tables using generate_tables.py (only CB8 for now; not directly on script)
+# - (DONE) Update submission files and give unique method name(s) (not directly on script)
+#      - Particularly for participants who included multiple submissions. 
+# - (DONE) Update/exclude compounds with previously published values. (CB8 --> G8, G9)
+# - (DONE) Update to have "ranked only" and "all" (ranked and non-ranked) analysis output separate
+# - (DONE) Include new submission (late submission), update submission file, re-run analysis
 
-# FIRST TESTS:
-# - First test it out on the CBClip system, as this is "normal"
-# - Then add OA systems (two hosts)
-# - Finally bring on CD system which is "odd"
 
-# AFTER FIRST DRAFT
-# - Update to exclude compounds with previously published values from performance stats/plots (do supplemental plots with these?)
-# - Test to ensure that multiple ranked submissions would get caught
-# - Test to ensure non-ranked submissions get excluded etc.
-# - Update method class stuff
-# - Make sure code would still work correctly if we flagged something as a test submission.
-# - Check flagging as ignored submissions still works correctly
-
+# TO DO / WIP
+# - Update script to generate single plot of correlations of ranked methods for each dataset
+#      - Currently works as is, need to fix titles (or change method name), change number of plots, etc. 
+#
 
 # =============================================================================
 # CONSTANTS
 # =============================================================================
 
 # Paths to input data.
-HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH = '../Submissions/GDCC/'
-HOST_GUEST_TRIMERTRIP_SUBMISSIONS_DIR_PATH = '../Submissions/TrimerTrip/'
-HOST_GUEST_CD_SUBMISSIONS_DIR_PATH = '../Submissions/CD/'
-EXPERIMENTAL_DATA_FILE_PATH = '../ExperimentalMeasurements/experimental_measurements.csv'
+#HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH = '../Submissions/GDCC/'
+HOST_GUEST_CB8_SUBMISSIONS_DIR_PATH = '/home/amezcum1/SAMPL8/host_guest/Analysis/Submissions/CB8/'
+#HOST_GUEST_CD_SUBMISSIONS_DIR_PATH = '../Submissions/CD/'
+EXPERIMENTAL_DATA_FILE_PATH = '/home/amezcum1/SAMPL8/host_guest/Analysis/ExperimentalMeasurements/experimental_measurements.csv'
 
 # Host color scheme.
 HOST_PALETTE = {
-    'OA': '#FFBE0C',
-    'exoOA': '#FF0C0C', #First pass
-    'GDCC': '#FFBE0C',
-    'CLIP': 'C0',
-    'clip': 'C0',
-    'CD': 'C2',
-    'bCD': 'C2',
-    'MGLab_8': 'C2',
-    'MGLab_9': 'C2',
-    'MGLab_19': 'C2',
-    'MGLab_23': 'C2',
-    'MGLab_24': 'C2',
-    'MGLab_34': 'C2',
-    'MGLab_35': 'C2',
-    'MGLab_36': 'C2',
+   # 'OA': '#FFBE0C',
+   # 'exoOA': '#FF0C0C', #First pass
+   # 'GDCC': '#FFBE0C',
+    'CB8': 'C0',
+   # 'clip': 'C0',
+   # 'CD': 'C2',
+   # 'bCD': 'C2',
+   # 'MGLab_8': 'C2',
+   # 'MGLab_9': 'C2',
+   # 'MGLab_19': 'C2',
+   # 'MGLab_23': 'C2',
+   # 'MGLab_24': 'C2',
+   # 'MGLab_34': 'C2',
+   # 'MGLab_35': 'C2',
+   # 'MGLab_36': 'C2',
     'other1': '#1C0F13',  # Licorice
     'other2': '#93A3B1'  # Cadet grey
 }
@@ -111,10 +98,9 @@ class HostGuestSubmission(SamplSubmission):
 
     # The IDs of the submissions used for testing the validation. Should be strings of submission IDs
 
-    TEST_SUBMISSION_SIDS = {'15'}
+    TEST_SUBMISSION_SIDS = {}
     # The IDs of submissions for reference calculations. Should be strings of submission IDs
-    REF_SUBMISSION_SIDS = ['REF1', 'REF2', 'REF3', 'REF4']  
-    #REF_SUBMISSION_SIDS = []
+    REF_SUBMISSION_SIDS = ['31', '32', '33', '34']  
 
     # Section of the submission file.
     SECTIONS = {'Predictions', 'Participant name', 'Participant organization', 'Name', 'Software', 'Method', 'Category', 'Ranked'}
@@ -129,9 +115,10 @@ class HostGuestSubmission(SamplSubmission):
     }
 
     # Acceptable host names (in filenames) and the host IDs they correspond to
-    HOST_NAMES = { 'CLIP': ['CLIP'], 'CD':['bCD', 'MGLab_8', 'MGLab_9', 'MGLab_19', 'MGLab_23', 'MGLab_24', 'MGLab_34', 'MGLab_35', 'MGLab_36'],
-                'GDCC':['OA', 'exoOA'] }
+    #HOST_NAMES = { 'CLIP': ['CLIP'], 'CD':['bCD', 'MGLab_8', 'MGLab_9', 'MGLab_19', 'MGLab_23', 'MGLab_24', 'MGLab_34', 'MGLab_35', 'MGLab_36'],
+    #            'GDCC':['OA', 'exoOA'] }
 
+    HOST_NAMES = { 'CB8': ['CB8']}
 
     RENAME_METHODS = {}
 
@@ -168,14 +155,16 @@ class HostGuestSubmission(SamplSubmission):
         self.ranked = sections['Ranked'][0].strip() =='True'
 
         # Required system System IDs
-        clip_guests = ['g1', 'g2', 'g3', 'g5', 'g6', 'g7', 'g8', 'g9', 'g10', 'g11', 'g12', 'g15', 'g16', 'g17', 'g18', 'g19']
-        CD_guests = ['g1','g2']
-        GDCC_guests = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
-        CD_hosts = copy.copy(self.HOST_NAMES['CD'])
-        CD_hosts.remove('bCD')
-        self.REQUIRED_SYSTEM_IDs = {'CLIP':[f'clip-{guest}' for guest in clip_guests],
-                                'CD':[f'{host}-{guest}' for guest in CD_guests for host in CD_hosts],
-                                 'GDCC':[f'exoOA-{guest}' for guest in GDCC_guests] + ['OA-g7', 'OA-g8']}
+        CB8_guests = ['G1', 'G2', 'G3', 'G5', 'G6', 'G7']
+        #CD_guests = ['g1','g2']
+        #GDCC_guests = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
+        #CD_hosts = copy.copy(self.HOST_NAMES['CD'])
+        #CD_hosts.remove('bCD')
+
+        self.REQUIRED_SYSTEM_IDs = {'CB8':[f'CB8-{guest}' for guest in CB8_guests]}
+        #self.REQUIRED_SYSTEM_IDs = {'CB8':[f'CB8-{guest}' for guest in CB8_guests],
+        #                        'CD':[f'{host}-{guest}' for guest in CD_guests for host in CD_hosts],
+        #                         'GDCC':[f'exoOA-{guest}' for guest in GDCC_guests] + ['OA-g7', 'OA-g8']}
 
         # Check if this is a test submission.
         if self.sid in self.TEST_SUBMISSION_SIDS:
@@ -1030,15 +1019,17 @@ class SplitBootstrapSubmissionCollection(HostGuestSubmissionCollection):
 # =============================================================================
 
 if __name__ == '__main__':
-    # TODO: ../Submissions/CB8/tb3ck-974-CB8-WGatMSU-1.txt: has an extra - in CB8-G6 enthalpy
-    # TODO: ../Submissions/CB8/d7xde-974-CB8-NHLBI-2.txt was ignored as it is identical to 6jsye-974-CB8-NHLBI-2.txt (from two different people)
-
     # Read experimental data.
     with open(EXPERIMENTAL_DATA_FILE_PATH, 'r') as f:
         # experimental_data = pd.read_json(f, orient='index')
-        names = ('System ID', 'name', 'SMILES', '$Kd_1$', 'd$Kd_1$','$\Delta H_1$', 'd$\Delta H_1$', '$Kd_2$', 'd$Kd_2$','$\Delta H_2$', 'd$\Delta H_2$',
-                 'T$\Delta$S', 'dT$\Delta$S', 'n', '$Ka_1$', 'd$Ka_1$', '$Ka_2$', 'd$Ka_2$', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H',
-                 '$\Delta$G', 'd$\Delta$G')
+        #names = ('System ID', 'name', 'SMILES', '$Kd_1$', 'd$Kd_1$','$\Delta H_1$', 'd$\Delta H_1$', '$Kd_2$', 'd$Kd_2$','$\Delta H_2$', 'd$\Delta H_2$',
+        #         'T$\Delta$S', 'dT$\Delta$S', 'n', '$Ka_1$', 'd$Ka_1$', '$Ka_2$', 'd$Ka_2$', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H',
+        #         '$\Delta$G', 'd$\Delta$G')
+        names = ('System ID', 'name', 'SMILES', '$Ka_1$', 'd$Ka_1$','$\Delta H_1$', 'd$\Delta H_1$', 
+                'T$\Delta$S_1', 'dT$\Delta$S_1', '$Ka_2$', 'd$Ka_2$', '$\Delta H_2$', 'd$\Delta H_2$', 
+                'T$\Delta$S_2', 'dT$\Delta$S_2', 'n', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H', '$\Delta$G', 
+                'd$\Delta$G', 'T$\Delta$S', 'dT$\Delta$S')
+
         experimental_data = pd.read_csv(f, sep=';', names=names, index_col='System ID', skiprows=1)
         #Don't read experimental values which are non-numeric -- e.g. the experiments didn't work/weren't done
         experimental_data = experimental_data.dropna(subset=['$\Delta$G'])
@@ -1047,13 +1038,13 @@ if __name__ == '__main__':
     for col in experimental_data.columns[3:]:
         experimental_data[col] = pd.to_numeric(experimental_data[col], errors='coerce')
 
-    # Rename CB8-G12a to CB8-G12 since we'll print only this.
+    # Rename CB8-G12a to CB8-G12 since we'll print only this. PERTAINS TO SAMPL6
     #id_index = np.where(experimental_data.index.values == 'CB8-G12a')[0][0]
     #experimental_data.index.values[id_index] = 'CB8-G12'
 
     # Import user map.
     try:
-        with open('../SAMPL7-user-map-HG.csv', 'r') as f:
+        with open('/home/amezcum1/SAMPL8/host_guest/Analysis/SAMPL8-user-map-HG.csv', 'r') as f:
             user_map = pd.read_csv(f)
     except FileNotFoundError:
         user_map=None
@@ -1088,8 +1079,7 @@ if __name__ == '__main__':
         'R2': (0, 1),
         'm': (-5, 5),
         'kendall_tau': (-1, 1),
-        } # WHEN EXCLUDING CD METHOD: RMSE(0,15.0), ME(-10,15), m(-5,5), MAE(0,15)
-    # INCREASE STATS LIMITS TO INCLUDE CD METHOD: RMSE(0,30.0), MAE(0,30), ME(-10.30), m(-10,20)
+        } 
 
     # Statistics by molecule.
     stats_funcs_molecules = collections.OrderedDict([
@@ -1098,133 +1088,77 @@ if __name__ == '__main__':
         ('ME', me),
     ])
 
-    # TO DO: NEED TO UPDATE DOWN HERE TO DEAL WITH IGNORING OF REFERENCE CALCULATIONS/INCLUSION OF REFERENCE calculations
-    # See ignore_refcalcs
-    # I'm going to instantiate two sets of HostGuestSubmissionCollections -- one which ignores reference calculations
+    # Instantiate two sets of HostGuestSubmissionCollections -- one which ignores reference calculations
     # and one which doesn't.
 
+    # Load submissions data. For now only CB8
+    print("Loading CB8 submissions")
+    submissions_cb8 = load_submissions(HostGuestSubmission, HOST_GUEST_CB8_SUBMISSIONS_DIR_PATH, user_map)
+    #print("Loading GDCC submissions")
+    #submissions_oa_exooa = load_submissions(HostGuestSubmission, HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH, user_map)
+    #print("Loading CD submissions")
+    #submissions_cd = load_submissions(HostGuestSubmission, HOST_GUEST_CD_SUBMISSIONS_DIR_PATH, user_map)
 
-    # Load submissions data. We do OA and TEMOA together.
-    print("Loading TrimerTrip submissions")
-    submissions_trimertrip = load_submissions(HostGuestSubmission, HOST_GUEST_TRIMERTRIP_SUBMISSIONS_DIR_PATH, user_map)
-    print("Loading GDCC submissions")
-    submissions_oa_exooa = load_submissions(HostGuestSubmission, HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH, user_map)
-    print("Loading CD submissions")
-    submissions_cd = load_submissions(HostGuestSubmission, HOST_GUEST_CD_SUBMISSIONS_DIR_PATH, user_map)
-    print()
-
-    # Make split submissions for the two hosts within GDCC
-    submissions_oa = []
-    submissions_exooa = []
-    for submission in submissions_oa_exooa:
-        a, b = submission.split(['OA', 'exoOA'])
-        submissions_oa.append(a)
-        submissions_exooa.append(b)
+    ## Make split submissions for the two hosts within GDCC
+    #submissions_oa = []
+    #submissions_exooa = []
+    #for submission in submissions_oa_exooa:
+    #    a, b = submission.split(['OA', 'exoOA'])
+    #    submissions_oa.append(a)
+    #    submissions_exooa.append(b)
 
     # Make a set of all the submissions
-    submissions_all = submissions_trimertrip + submissions_oa_exooa + submissions_cd
+    #submissions_all = submissions_trimertrip + submissions_oa_exooa + submissions_cd
+    submissions_all = submissions_cb8
 
-    if not os.path.isdir('../Accuracy'): os.mkdir('../Accuracy')
-    if not os.path.isdir('../Accuracy/MoleculesStatistics'): os.mkdir('../Accuracy/MoleculesStatistics')
-    if not os.path.isdir('../Accuracy/PaperImages'): os.mkdir('../Accuracy/PaperImages')
+    # Make directories for output
+    if not os.path.isdir('../Ranked_Accuracy'): os.mkdir('../Ranked_Accuracy')
+    if not os.path.isdir('../Ranked_Accuracy/MoleculesStatistics'): os.mkdir('../Ranked_Accuracy/MoleculesStatistics')
+    if not os.path.isdir('../Ranked_Accuracy/PaperImages'): os.mkdir('../Ranked_Accuracy/PaperImages')
 
-    # if need reference directories, then need to make them here
+    if not os.path.isdir('../All_Accuracy'): os.mkdir('../All_Accuracy')
+    if not os.path.isdir('../All_Accuracy/PaperImages'): os.mkdir('../All_Accuracy/PaperImages')
 
     # Create submission collections
-    print("Creating submission collection for TrimerTrip")
-    collection_trimertrip = HostGuestSubmissionCollection(submissions_trimertrip, experimental_data,
-                                                  output_directory_path='../Accuracy/TrimerTrip')
-    print("Creating submission collection for GDCC collectively")
-    collection_oa_exooa = HostGuestSubmissionCollection(submissions_oa_exooa, experimental_data,
-                                                        output_directory_path='../Accuracy/GDCC')
+    print("Creating submission collection for CB8")
+    collection_cb8 = HostGuestSubmissionCollection(submissions_cb8, experimental_data,
+                                                  output_directory_path='../Ranked_Accuracy/CB8')
 
-    print("Creating submission collection for exoOA and OA")
-    collection_exooa = HostGuestSubmissionCollection(submissions_exooa, experimental_data,
-                                                        output_directory_path='../Accuracy/exoOA')
-    collection_oa = HostGuestSubmissionCollection(submissions_oa, experimental_data,
-                                                            output_directory_path='../Accuracy/OA')
+    print("Creating submission collection for all CB8, including non-ranked")
+    collection_cb8_nonranked = HostGuestSubmissionCollection(submissions_cb8, experimental_data,
+            output_directory_path='../All_Accuracy/CB8', 
+            ignore_refcalcs = False, ranked_only = False)
 
-    print("Creating submission collection for CD")
-    collection_cd = HostGuestSubmissionCollection(submissions_cd, experimental_data,
-                                                            output_directory_path='../Accuracy/CD')
+    # Eventually other SAMPL8 host-guest system collections will go here
 
-    #collection_cb_oa_temoa = HostGuestSubmissionCollection(submissions_cb_oa_temoa, experimental_data,
-    #                                                       output_directory_path='../Accuracy/CB8-OA-TEMOA')
+    
+    # Create ranked submission for combine set of hosts. Will be for ranked molecule statistics
     print("Creating submission collection for combined set of hosts")
     collection_all = HostGuestSubmissionCollection(submissions_all, experimental_data,
-                                                   output_directory_path='../Accuracy/MoleculesStatistics', allow_multiple = True)
+                                                   output_directory_path='../Ranked_Accuracy/MoleculesStatistics', allow_multiple = True)
 
-    # Create submission collections (include reference calculations and non-ranked
-    print("Creating submission collection for TrimerTrip, including non-ranked")
-    collection_trimertrip_nonranked = HostGuestSubmissionCollection(submissions_trimertrip, experimental_data, output_directory_path='../Reference/Accuracy/TrimerTrip', ignore_refcalcs = False, ranked_only = False)
-   
-    print("Creating submission collection for GDCC collectively, including non-ranked")
-    collection_oa_exooa_nonranked = HostGuestSubmissionCollection(submissions_oa_exooa, experimental_data, output_directory_path='../Reference/Accuracy/GDDC', ignore_refcalcs = False, ranked_only = False)
-    
-    print("Creating submission collection for exoOA and OA, including non-ranked")
-    collection_exooa_nonranked = HostGuestSubmissionCollection(submissions_exooa, experimental_data, output_directory_path='../Reference/Accuracy/exoOA', ignore_refcalcs = False, ranked_only = False)
-    collection_oa_nonranked = HostGuestSubmissionCollection(submissions_oa, experimental_data, output_directory_path='../Reference/Accuracy/OA', ignore_refcalcs = False, ranked_only = False)
-
-    print("Creating submission collection for CD, including non-ranked")
-    collection_cd_nonranked = HostGuestSubmissionCollection(submissions_cd, experimental_data, output_directory_path='../Reference/Accuracy/CD', ignore_refcalcs = False, ranked_only = False)
-
+    # Create ranked and non-ranked submission collection for combine set of hosts (all submissions). Will be for molecule statistics of all methods. 
     print("Creating submission collection for combined set of hosts, including non-ranked")
-    collection_all_nonranked = HostGuestSubmissionCollection(submissions_all, experimental_data, output_directory_path='../Reference/Accuracy/MoleculesStatistics', allow_multiple = True, ignore_refcalcs = False, ranked_only = False)
+    collection_all_nonranked = HostGuestSubmissionCollection(submissions_all, experimental_data, 
+            output_directory_path='../All_Accuracy/MoleculesStatistics', 
+            allow_multiple = True, ignore_refcalcs = False, ranked_only = False)
 
-    # Create a CB8 collection excluding the bonus challenges.
-    #def remove_bonus(submission_collection_data):
-    #    return submission_collection_data[(submission_collection_data.system_id != 'CB8-G11') &
-    #                                      (submission_collection_data.system_id != 'CB8-G12') &
-    #                                      (submission_collection_data.system_id != 'CB8-G13')]
-    #collection_cb_no_bonus = HostGuestSubmissionCollection(submissions_cb, experimental_data,
-    #                                                       output_directory_path='../Accuracy/CB8-NOBONUS')
-    #collection_cb_no_bonus.data = remove_bonus(collection_cb_no_bonus.data)
     # Systems to be excluded (optionals)
     def remove_optional(submission_collection_data):
-        return submission_collection_data[(submission_collection_data.system_id != 'OA-g1') &
-                (submission_collection_data.system_id != 'OA-g2') &
-                (submission_collection_data.system_id != 'OA-g3') &
-                (submission_collection_data.system_id != 'OA-g4') &
-                (submission_collection_data.system_id != 'OA-g5') &
-                (submission_collection_data.system_id != 'OA-g6') &
-                (submission_collection_data.system_id != 'bCD-g1') &
-                (submission_collection_data.system_id != 'bCD-g2')]
-    #make new collections and remove optionals    
-    print("Making new collection set & removing optional host-guest systems from OA collection")
-    collection_oa_no_optional = HostGuestSubmissionCollection(submissions_oa, experimental_data,
-                                                                    output_directory_path='../Accuracy/OA_no_optional')
-    collection_oa_no_optional.data = remove_optional(collection_oa_no_optional.data)
+        return submission_collection_data[(submission_collection_data.system_id != 'CB8-G8') &
+                (submission_collection_data.system_id != 'CB8-G9')]
 
-    print("Making new collection set & removing optional host-guest systems from collective OA & exoOA collection")
-    collection_oa_exooa_no_optional = HostGuestSubmissionCollection(submissions_oa_exooa, experimental_data,
-                                                                    output_directory_path='../Accuracy/GDCC_no_optional')
-    collection_oa_exooa_no_optional.data = remove_optional(collection_oa_exooa_no_optional.data)
-    
-    print("Making new collection set & removing optional host-guest systems from OA (including nonranked) collection")
-    collection_oa_nonranked_no_optional = HostGuestSubmissionCollection(submissions_oa, experimental_data, output_directory_path='../Reference/Accuracy/OA_no_optional', ignore_refcalcs = False, ranked_only = False)
-    collection_oa_nonranked_no_optional.data = remove_optional(collection_oa_nonranked_no_optional.data)
+    #make new collections and remove optionals. In case any particpants included G8 & G9    
+    #print("Making new collection set & removing optional host-guest systems from CB8 collection")
+    #collection_cb8_no_optional = HostGuestSubmissionCollection(submissions_cb8, experimental_data,
+    #                                                                output_directory_path='../Ranked_Accuracy/CB8_no_optional')
+    #collection_cb8_no_optional.data = remove_optional(collection_cb8_no_optional.data)
 
-    print("Making new collection set & removing optional host-guest systems from OA & exoOA (including non-ranked) collection")
-    collection_oa_exooa_nonranked_no_optional = HostGuestSubmissionCollection(submissions_oa_exooa, experimental_data, output_directory_path='../Reference/Accuracy/GDCC_no_optional', ignore_refcalcs = False, ranked_only = False)
-    collection_oa_exooa_nonranked_no_optional.data = remove_optional(collection_oa_exooa_nonranked_no_optional.data)
-
-    print("Making new collection set and removing optional host-guest systems from CD collection")
-    collection_cd_no_optional = HostGuestSubmissionCollection(submissions_cd, experimental_data,
-                                                                    output_directory_path='../Accuracy/CD_no_optional')
-    collection_cd_no_optional.data = remove_optional(collection_cd_no_optional.data)
-
-    print("Making new collection set and removing optional host-guest systems from CD (including non-ranked) collection")
-    collection_cd_nonranked_no_optional = HostGuestSubmissionCollection(submissions_cd, experimental_data, output_directory_path='../Reference/Accuracy/CD_no_optional', ignore_refcalcs = False, ranked_only = False)
-    collection_cd_nonranked_no_optional.data = remove_optional(collection_cd_nonranked_no_optional.data)
-
-    print("Making new collection set and removing optional host-guest systems from all (ranked and ranked/nonranked) collections")
-    collection_all_no_optional = HostGuestSubmissionCollection(submissions_all, experimental_data,
-                                                               output_directory_path='../Accuracy/MoleculesStatistics', allow_multiple = True)
-    collection_all_no_optional.data = remove_optional(collection_all_no_optional.data)
-
-    collection_all_nonranked_no_optional = HostGuestSubmissionCollection(submissions_all, experimental_data, output_directory_path='../Reference/Accuracy/MoleculesStatistics', allow_multiple = True, ignore_refcalcs = False, ranked_only = False)
-    collection_all_nonranked_no_optional.data = remove_optional(collection_all_nonranked_no_optional.data)
-
+    #print("Making new collection set & removing optional host-guest systems from CB8 (including nonranked) collection")
+    #collection_cb8_nonranked_no_optional = HostGuestSubmissionCollection(submissions_cb8, experimental_data, 
+    #        output_directory_path='../All_Accuracy/CB8_no_optional', 
+    #        ignore_refcalcs = False, ranked_only = False)
+    #collection_cb8_nonranked_no_optional.data = remove_optional(collection_cb8_nonranked_no_optional.data)
 
     # =============================================================================
     # CREATE AUTOMATIC ANALYSIS ON THE REPO.
@@ -1232,22 +1166,14 @@ if __name__ == '__main__':
 
     sns.set_style('whitegrid')
 
-    # NOTE: Do not include collection_all or collection_all_nonranked here.
+    # NOTE: Do not include collection_all or collection_all_nonranked here. 
     # Generate correlation plots and statistics
-    for collection in [collection_trimertrip, collection_oa_exooa, collection_oa, collection_exooa, collection_cd, collection_trimertrip_nonranked, collection_oa_exooa_nonranked, collection_exooa_nonranked, collection_oa_nonranked, collection_cd_nonranked, collection_oa_exooa_no_optional, collection_oa_no_optional, collection_cd_no_optional, collection_oa_exooa_nonranked_no_optional, collection_oa_nonranked_no_optional, collection_cd_nonranked_no_optional]:
-    #for collection in [collection_trimertrip, collection_oa_exooa, collection_oa, collection_exooa, collection_cd, collection_trimertrip_nonranked, collection_oa_exooa_nonranked, collection_exooa_nonranked, collection_oa_nonranked, collection_cd_nonranked]:
-    #DEBUG: Following line triggers problems
-    #for collection in [collection_trimertrip, collection_oa_exooa]:
-    #for collection in [collection_cb, collection_cb_no_bonus, collection_oa, collection_temoa,
-    #                   collection_oa_temoa, collection_cb_oa_temoa]:
+    for collection in [collection_cb8, collection_cb8_nonranked]:
         sns.set_context('notebook')
         collection.generate_correlation_plots()
 
         sns.set_context('talk')
         caption = ''
-        #if any('NB001' in receipt_id for receipt_id in collection.data.receipt_id.unique()):
-        #    caption += ('* NB001 was not submitted before the deadline because of a technical issue, '
-        #                'and it was received after the experimental results were published.')
         collection.generate_statistics_tables(stats_funcs, subdirectory_path='StatisticsTables',
                                               groupby='name', extra_fields=['sid'],
                                               sort_stat='RMSE', ordering_functions=ordering_functions,
@@ -1260,29 +1186,12 @@ if __name__ == '__main__':
                                                 latex_header_conversions=latex_header_conversions,
                                                 stats_limits=stats_limits)
 
-    # Generate molecule statistics and plots. 
+    # Generate molecule statistics and plots for all ranked submissions (right now only CB8) 
     # Don't modify original collection_all as we'll use it later.
-    collection = copy.deepcopy(collection_all_nonranked_no_optional)
-    # Include only the top 10 methods on the merged OA/TEMOA and CB8 datasets.
-    #included_methods = {
-    #    'ForceMatch',
-    #    'MovTyp-GE3N',
-    #    'MovTyp-GE3O',
-    #    'MovTyp-GT1N',
-    #    'MovTyp-KT1N',
-    #    'MovTyp-KT1L',
-    #    'RFEC-GAFF2',
-    #    'RFEC-QMMM',
-    #    'SOMD-C',
-    #    'SOMD-D',
-    #    'SOMD-D-nobuffer',
-    #    'Tinker-AMOEBA',
-    #    'US-CGenFF',
-    #    'US-GAFF-C'
-    #}
-    #collection.data = collection.data[collection.data.method.isin(included_methods)]
-    # Exclude bonus challenges. IN THIS CASE REMOVING "OPTIONAL" HOST-GUEST SYSTEMS bCD's and OA-g1-6
-    collection.data = collection.data[~collection.data.system_id.isin({'bCD-g1','bCD-g2','OA-g1', 'OA-g2', 'OA-g3', 'OA-g4', 'OA-g5', 'OA-g6'})]
+    collection = copy.deepcopy(collection_all)
+    
+    # Exclude "OPTIONAL" HOST-GUEST SYSTEMS
+    collection.data = collection.data[~collection.data.system_id.isin({'CB8-G8','CB8-G9'})]
     collection.generate_molecules_plot()
     collection.generate_statistics_tables(stats_funcs_molecules, 'StatisticsTables', groupby='system_id',
                                           sort_stat='MAE', ordering_functions=ordering_functions,
@@ -1290,6 +1199,19 @@ if __name__ == '__main__':
     collection.plot_bootstrap_distributions(stats_funcs_molecules, subdirectory_path='StatisticsPlots',
                                             groupby='system_id', ordering_functions=ordering_functions,
                                             latex_header_conversions=latex_header_conversions)
+
+    # Generate molecule statistics and plots for all submissions (ranked and non ranked)
+    collection_nr = copy.deepcopy(collection_all_nonranked)
+    # Exclude "OPTIONAL" HOST-GUEST SYSTEMS
+    collection_nr.data = collection_nr.data[~collection_nr.data.system_id.isin({'CB8-G8','CB8-G9'})]
+    collection_nr.generate_molecules_plot()
+    collection_nr.generate_statistics_tables(stats_funcs_molecules, 'StatisticsTables', groupby='system_id', 
+            sort_stat='MAE', ordering_functions=ordering_functions, 
+            latex_header_conversions=latex_header_conversions)
+    collection_nr.plot_bootstrap_distributions(stats_funcs_molecules, subdirectory_path='StatisticsPlots', 
+            groupby='system_id', ordering_functions=ordering_functions,
+            latex_header_conversions=latex_header_conversions)
+
 
 
     # =============================================================================
@@ -1304,15 +1226,8 @@ if __name__ == '__main__':
     #                                                    output_directory_path='../Accuracy/OA-TEMOA')
 
     # Create a set of all the methods.
-    all_methods = set(collection_oa_no_optional.data.method.unique())
-    all_methods.update(set(collection_oa_nonranked_no_optional.data.method.unique()))
-    all_methods.update(set(collection_trimertrip.data.method.unique()))
-    all_methods.update(set(collection_trimertrip_nonranked.data.method.unique()))
-    #all_methods.update(set(collection_oa_exooa.data.method.unique()))
-    all_methods.update(set(collection_exooa.data.method.unique()))
-    all_methods.update(set(collection_exooa_nonranked.data.method.unique()))
-    all_methods.update(set(collection_cd_no_optional.data.method.unique()))
-    all_methods.update(set(collection_cd_nonranked_no_optional.data.method.unique()))
+    all_methods = set(collection_cb8.data.method.unique())
+    #all_methods.update(set(collection_cb8_nonranked.data.method.unique()))
 
     # Submissions using experimental corrections.
     #is_corrected = lambda m: ('MovTyp' in m and m[-1] != 'N') or 'SOMD-D' in m or 'RFEC' in m or 'US-GAFF-C' == m
@@ -1347,10 +1262,10 @@ if __name__ == '__main__':
     ax.errorbar(y=list(range(len(data.index))), x=data['$\Delta$G [kcal/mol]'].values,
                 xerr=data['d$\Delta$G'].values, fmt='none', elinewidth=1, ecolor='black',
                 capsize=2, capthick=1, zorder=10)
-    ax.set_xlim((-14, 0))
+    ax.set_xlim((-15, 0))
     plt.tight_layout(pad=0.2)
     # plt.show()
-    plt.savefig('../Accuracy/PaperImages/Figure2_experimental_measurements.pdf')
+    plt.savefig('../Ranked_Accuracy/PaperImages/Figure2_experimental_measurements.pdf')
 
 
     # FIGURE 3: Figure correlation plots free energies.
@@ -1368,16 +1283,16 @@ if __name__ == '__main__':
         else:
             n_cols = n_methods
             n_rows = 1
-        plot_size = 7.25 / n_cols
+        plot_size = 15.25 / n_cols
         fig = plt.figure(figsize=(n_cols*plot_size, n_rows*plot_size))
-        grid = plt.GridSpec(nrows=n_rows, ncols=n_cols*2)
-        # All rows have 4 plots except for last one which has 5.
+        grid = plt.GridSpec(nrows=n_rows, ncols=n_cols*3)
+        # All rows have 5 plots.
         axes = []
         #TODO: This needs generalization
         for row_idx in range(n_rows-1):
-            #axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,9,2)])
-            axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,7,2)])
-        axes.extend([fig.add_subplot(grid[-1, c:c+2]) for c in range(0,5,2)])
+            axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,10,2)])
+            #axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,7,2)])
+        axes.extend([fig.add_subplot(grid[-1, c:c+2]) for c in range(1,10,2)])
 
         # Associate a color to each host.
         for method, ax in zip(plotted_methods, axes):
@@ -1396,20 +1311,22 @@ if __name__ == '__main__':
             ax.set_xlabel('')
             ax.set_ylabel('')
             # Make title and axes labels closer to axes.
-            ax.set_title(ax.get_title(), pad=1.5)
+            #ax.set_title(ax.get_title(), pad=1.5)
+            ax.set_title(ax.get_title(), pad=2.0)
             ax.tick_params(pad=3.0)
 
         # Use a single label for the figure.
         fig.text(0.015, 0.5, '$\Delta$G (calc) [kcal/mol]', va='center', rotation='vertical', size='large')
         fig.text(0.5, 0.015, '$\Delta$G (exp) [kcal/mol]', ha='center', size='large')
 
-        plt.tight_layout(pad=0.9, rect=[0.0, 0.025, 1.0, 1.0])
-        #plt.tight_layout(pad=0.2) THIS WORKED, BUT FIGURE3_CORRELATION_PLOTS WAS NOT ENTIRELY CORRECT
-        plt.savefig('../Accuracy/PaperImages/{}.pdf'.format(file_name))
+        #plt.tight_layout(pad=0.9, rect=[0.0, 0.025, 1.0, 1.0])
+        plt.tight_layout(pad=1.5)
+        plt.savefig('../Ranked_Accuracy/PaperImages/{}.pdf'.format(file_name))
 
     correlation_plots(
         #plotted_methods = sorted(set(all_methods) - set(exclusions) - {'NULL'}),
-        plotted_methods = sorted(set(all_methods) - set(exclusions)),
+        #plotted_methods = sorted(set(all_methods) - set(exclusions)),
+        plotted_methods = sorted(set(all_methods)),
         file_name='Figure3_correlation_plots'
     )
 
@@ -1418,55 +1335,6 @@ if __name__ == '__main__':
     #    plotted_methods = sorted(m for m in all_methods if 'MovTyp' in m),
     #    file_name='SIFigure_correlation_plots_movtyp'
     #)
-
-
-    # FIGURE 4: Violin plots of bootstrap distribution for two collections OA/TEMOA and CB8-NOBONUS.
-    # -----------------------------------------------------------------------------------------------
-    #sns.set_style('whitegrid')
-    #sns.set_context('paper', font_scale=0.7)
-
-    #collection = SplitBootstrapSubmissionCollection(collection_oa_temoa, collection_cb_no_bonus,
-    #                                                hue='dataset', collection1_hue='OA/TEMOA', collection2_hue='CB8',
-    #                                                output_directory_path='../Accuracy/PaperImages')
-    #palette = {'OA/TEMOA': HOST_PALETTE['OA'], 'CB8': HOST_PALETTE['CB8']}
-
-    #def plot_split_bootstrap_distribution(stats_funcs, stats_limits, exclusions, suffix=''):
-    #    """Shortcut to plot bootstrap distribution with SplitBootstrapSubmissionCollection."""
-    #    collection.plot_bootstrap_distributions(
-    #        stats_funcs, 'Figure4_bootstrap_distributions', groupby='method',
-    #        ordering_functions=ordering_functions, stats_limits=stats_limits,
-    #        latex_header_conversions=latex_header_conversions,
-    #        exclusions=exclusions, shaded=corrected_methods,
-    #        figure_width=7.25/4, output_file_suffix=suffix,
-    #        hue='dataset', split=True, palette=palette)
-
-    # These entries have a very large RMSE and ME so we plot them
-    # separately to keep a good resolution for the others.
-    #larger_error_entries = {'MMPBSA-GAFF', 'DFT(B3PW91)', 'DFT(B3PW91)-D3', 'NULL'}
-    #sf = {n: stats_funcs[n] for n in ['RMSE', 'ME']}
-    #plot_split_bootstrap_distribution(
-    #    stats_funcs=sf,
-    #    stats_limits={'RMSE': (0, 12.5), 'ME': (-10, 10)},
-    #    exclusions=exclusions.union(larger_error_entries)
-    #)
-    #plot_split_bootstrap_distribution(
-    #    stats_funcs=sf,
-    #    stats_limits={'RMSE': (0, 50), 'ME': (-30, 50)},
-    #    exclusions=all_methods-larger_error_entries,
-    #    suffix='largererror.svg'
-    #)
-
-    # Plot correlation statistics split bootstrap distributions.
-    #plot_split_bootstrap_distribution(
-    #    stats_funcs={n: stats_funcs[n] for n in ['R2', 'kendall_tau']},
-    #    stats_limits={'R2': (0, 1), 'kendall_tau': (-1, 1)},
-    #    exclusions=exclusions
-    #)
-
-    # TO DO:
-    # currently we break before figure 5. 
-    #import sys
-    #sys.exit('Stopping before trying to generate figure 5: that needs updating.')
 
 
     # FIGURE 5: Figure statistics by molecule.
@@ -1484,13 +1352,11 @@ if __name__ == '__main__':
 
     stats_names = ['RMSE', 'ME']
     fig, axes = plt.subplots(ncols=len(stats_names), figsize=(7.25/3.1*2, 5), sharey=True)
-    #statistics = pd.read_json('../Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
-    #include nonranked
-    statistics = pd.read_json('../Reference/Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
+    # only ranked methods
+    statistics = pd.read_json('../Ranked_Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
 
-    # Remove bonus challenges. MAYBE  HERE INCLUDE OPTIONALS (I.E. bCD) 
-    #statistics = statistics[~statistics.index.isin({'CB8-G11', 'CB8-G12', 'CB8-G13'})]
-    statistics = statistics[~statistics.index.isin({'bCD-g1','bCD-g2','OA-g1', 'OA-g2', 'OA-g3', 'OA-g4', 'OA-g5', 'OA-g6'})]
+    # Remove OPTIONALS (). Plots error by molecule only for ranked
+    statistics = statistics[~statistics.index.isin({'CB8-G8','CB8-G9'})]
     statistics.sort_values(by='RMSE', inplace=True)
     for ax, stats_name in zip(axes, stats_names):
         # Build palette.
@@ -1500,13 +1366,38 @@ if __name__ == '__main__':
         ax = sns.barplot(x=stats_name, y=statistics.index, data=statistics, xerr=rmse_errs,
                          palette=palette, ax=ax)
         if stats_name == 'ME':
-            ax.set_xlim((-3, 6))
+            ax.set_xlim((-3, 8))
         ax.set_xlabel('$\Delta$G ' + stats_name + ' [kcal/mol]')
 
     plt.tight_layout(pad=0.3)
     # plt.show()
-    #plt.savefig('../Accuracy/PaperImages/Figure5_molecule_statistics/error_by_molecule.pdf')
-    plt.savefig('../Accuracy/PaperImages/error_by_molecule.pdf')
+    plt.savefig('../Ranked_Accuracy/PaperImages/error_by_molecule.pdf')
+
+    # all methods including nonranked
+    statistics_nr = pd.read_json('../All_Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
+
+    # Remove Options (). Plots error by molecule for all submissions (includes non ranked)
+    statistics_nr = statistics_nr[~statistics_nr.index.isin({'CB8-G8','CB8-G9'})]
+    statistics_nr.sort_values(by='RMSE', inplace=True)
+    for ax, stats_name in zip(axes, stats_names):
+        # Build palette.
+        palette = [HOST_PALETTE[guest_name.split('-')[0]] for guest_name in statistics_nr.index.values]
+        # Convert errors for printing
+        rmse_errs = get_errs(stats_name, statistics_nr)
+        ax = sns.barplot(x=stats_name, y=statistics_nr.index, data=statistics_nr, xerr=rmse_errs,
+                palette=palette, ax=ax)
+        if stats_name == 'ME':
+            ax.set_xlim((-3, 8))
+        ax.set_xlabel('$\Delta$G ' + stats_name + ' [kcal/mol]')
+
+    plt.tight_layout(pad=0.3)
+    #plt.show()
+    plt.savefig('../All_Accuracy/PaperImages/error_by_molecule.pdf')
+
+    #Break before making next image. Test all of the above.
+    import sys
+    sys.exit('Stop before generating tightest binders plot')
+
 
     # Create table presenting which methods got the tightest binders.
     # ---------------------------------------------------------------
@@ -1519,14 +1410,10 @@ if __name__ == '__main__':
     # Create a Dataframe summarizing if a method got the tightest binders correctly for each guest set.
     data = collections.OrderedDict()  # Data in dict format.
     # Tightest binders and columns of the Pandas Dataframe.
-    #tighest_binders = ['OA-G2', 'TEMOA-G4', 'CB8-G8']
     tighest_binders =['CLIP-g19', 'MGLab35-g2', 'OA-g8', 'exoOA-g8']
     for method in plotted_methods:
         data[method] = []
 
-        #for collection, tighest_binder in zip([collection_oa, collection_temoa, collection_cb_no_bonus],
-        #                                      tighest_binders):
-        #for collection, tighest_binder in zip([collection_trimertrip, collection_cd, collection_oa, collection_exooa], tighest_binders ):
         for collection, tighest_binder in zip([collection_trimertrip, collection_cd_no_optional, collection_oa_no_optional, collection_exooa, collection_trimertrip_nonranked, collection_cd_nonranked_no_optional, collection_oa_nonranked_no_optional, collection_exooa_nonranked], tighest_binders):
             method_data = collection.data[collection.data.method == method]
 
@@ -1560,11 +1447,7 @@ if __name__ == '__main__':
     data = sorted(data.items(), key=lambda d: rank_method(d), reverse=True)
     data = collections.OrderedDict(data)
 
-    # Convert table to dataframe. TO DO: UPDATE THIS TO REFLECT TIGHTERS BINDERS ABOVE FOR SAMPL7
-    #columns = ['OA-G2', 'OA-G2-incorrect', 'OA-G2-notsubmitted',
-    #           'TEMOA-G4', 'TEMOA-G4-incorrect', 'TEMOA-G4-notsubmitted',
-    #           'CB8-G8', 'CB8-G8-incorrect', 'CB8-G8-notsubmitted']
-
+    # Convert table to dataframe. 
     columns = ['CLIP-g19', 'CLIP-g19-incorrect', 'CLIP-g19-notsubmitted',
             'MGLab35-g2', 'MGLab35-g2-incorrect', 'MGLab35-g2-notsubmitted', 
             'OA-g8', 'OA-g8-incorrect', 'OA-g8-notsubmitted',
@@ -1587,7 +1470,6 @@ if __name__ == '__main__':
     #ax = data.plot.barh(stacked=True, color=palette, figsize=(7.25/3.1,5))
     ax = data.plot.barh(stacked=True, color=palette, figsize=(10, 10)) # TRY NEW FIG SIZE HERE
     ax.xaxis.set_ticks([0.5, 1.5, 2.5, 3.5]) # ADD ANOTHER TICK 3.5
-    #ax.xaxis.set_ticklabels(['OA', 'TEMOA', 'CB8']) # TO DO: UPDATE THIS TO REFLECT TIGHTEST BINDERS ABOVE FOR SAMPL7
     ax.xaxis.set_ticklabels(['CLIP', 'CD', 'OA', 'exoOA'])
     ax.set_title('Methods predicting the tightest binders')
 
@@ -1608,289 +1490,7 @@ if __name__ == '__main__':
 
     plt.tight_layout(rect=[0, 0.0, 1, 1], pad=0.1)
     # plt.show()
-    #plt.savefig('../Accuracy/PaperImages/Figure5_molecule_statistics/tightest_binders.pdf')
     plt.savefig('../Accuracy/PaperImages/tightest_binders.pdf') #FOR NOW
-
-    # NEXT MAKE A "TIGHTEST BINDERS" PLOT FOR ALL SUBMISSIONS (INCLUDING NON-RANKED)
-
-    # TO DO: STOP HERE TO TEST ALL OF THE ABOVE
-    # break before figure 6
-    import sys
-    sys.exit('Stopping before tyring to generate figure 6; that needs updating')
-
-    # FIGURE 6: Distribution of RMSE and R2 in previous SAMPL challenges.
-    # --------------------------------------------------------------------
-
-
-    sns.set_style('whitegrid')
-    sns.set_context('paper', font_scale=1)
-
-    # SAMPL3 data for CB8.
-    sampl3_cb8_data = {
-        'RMSE': [1.4, 1.4, 5.1, 1.5, 1.4, 1.9, 45.2, 14.8, 3.1, 4.1, 7.5, 5.2, 3.0, 5.9],
-        'R2': [0.77, 0.77, 0.44, 0.46, 0.77, 0.79, 0.57, 0.14, 0.77, 0.8, 0.93, 0.92, 0.64, 0.94]
-    }
-
-    # SAMPL3 data for H1.
-    sampl3_h1_data = {
-        'RMSE': [1.6, 1.9, 6.4, 2.0, 1.5, 2.8, 31.9, 23.4, 3.1, 7.5,
-                 2.5, 2.6, 3.6, 4.0, 11.3],
-        'R2': [0.42, 0.44, 0.22, 0.22, 0.40, 0.40, 0.58, 0.80, 0.19, 0.24,
-               0.49, 0.01, 0.51, 0.34, 0.81]
-    }
-    sampl3_h1_mm_data = {  # Only the last five: BEDAM to FEP/OSRW
-        'RMSE': [2.5, 2.6, 3.6, 4.0, 11.3],
-        'R2': [0.49, 0.01, 0.51, 0.34, 0.81]
-    }
-
-    # SAMPL5 data for OA/TEMOA.
-    sampl5_oatemoa_data = {
-        'RMSE': [5.3, 3.5, 2.1, 1.6, 6.1, 3.1, 3.6, 3.0, 3.1, 2.7,
-                 2.7, 3.0, 3.0, 3.0, 2.2, 3.6, 3.6, 2.1, 10.0],
-        'R2': [0.8, 0.9, 0.0, 0.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-               0.0, 0.0, 0.0, 0.9, 0.9, 0.9, 0.1]
-    }
-    sampl5_oatemoa_mm_data = {  # All but MMPBSA-GAFF and MovTyp
-        'RMSE': [2.1, 1.6, 6.1, 3.1, 2.7, 2.7, 3.0,
-                 3.0, 3.0, 2.2, 3.6, 3.6, 2.1, 10.0],
-        'R2': [0.8, 0.9, 0.0, 0.7, 0.0, 0.0, 0.0,
-               0.0, 0.0, 0.0, 0.9, 0.9, 0.9, 0.1]
-    }
-
-    # SAMPL5 RMSE for CBClip.
-    sampl5_cbclip_data = {
-        'RMSE': [4.0, 4.7, 4.7, 3.4, 4.0, 4.8, 3.5, 4.2, 6.4, 6.3,
-                 5.7, 18.7],
-        'R2': [0.0, 0.1, 0.2, 0.0, 0.0, 0.4, 0.0, 0.0, 0.8, 0.8,
-               0.8, 0.5]
-    }
-    sampl5_cbclip_mm_data = {  # All but MovTyp
-        'RMSE': [4.0, 4.7, 4.7, 3.4, 4.0, 4.8, 6.4, 6.3,
-                 5.7, 18.7],
-        'R2': [0.0, 0.1, 0.2, 0.0, 0.0, 0.4, 0.8, 0.8,
-               0.8, 0.5]
-    }
-
-    # SAMPL6 statistics.
-    sampl6_cb8_data = pd.read_json('../Accuracy/CB8/StatisticsTables/statistics.json', orient='index')
-    sampl6_oatemoa_data = pd.read_json('../Accuracy/OA-TEMOA/StatisticsTables/statistics.json', orient='index')
-    # Add US-CGenFF which submitted only TEMOA predictions.
-    sampl6_temoa_data = pd.read_json('../Accuracy/TEMOA/StatisticsTables/statistics.json', orient='index')
-    sampl6_oatemoa_data = sampl6_oatemoa_data.append(sampl6_temoa_data[sampl6_temoa_data.index == 'Umbrella Sampling/TIP3P'])
-
-    for data in [sampl6_cb8_data, sampl6_oatemoa_data]:
-        # Add paper methods column.
-        data['method'] = [collection_oa_temoa._assign_paper_method_name(n) for n in data.index.values]
-        # Remove exclusions and NULL.
-        data.drop(data[data.method.isin(exclusions.union({'NULL'}))].index, inplace=True)
-
-    # Data excluding corrected methods.
-    sampl6_oatemoa_nocorr_data = sampl6_oatemoa_data[~sampl6_oatemoa_data.method.isin(corrected_methods)]
-    sampl6_cb8_nocorr_data = sampl6_cb8_data[~sampl6_cb8_data.method.isin(corrected_methods)]
-
-    # Data with only alchemical and PMF methods without correction.
-    alch_pmf_methods = {m for m in all_methods if not ('MovTyp' in m or 'DFT' in m or 'SQM' in m or 'MMPBSA' in m)}
-    sampl6_oatemoa_mm_data = sampl6_oatemoa_nocorr_data[sampl6_oatemoa_nocorr_data.method.isin(alch_pmf_methods)]
-    sampl6_cb8_mm_data = sampl6_cb8_nocorr_data[sampl6_cb8_nocorr_data.method.isin(alch_pmf_methods)]
-
-    # Set palettes for colors.
-    colormap_name = 'viridis'
-    dark_palette = sns.color_palette(colormap_name, n_colors=50, desat=0.4)
-    free_energy_palette = sns.color_palette(colormap_name, n_colors=50, desat=0.95)
-    no_exp_palette = sns.color_palette(colormap_name, n_colors=50, desat=0.6)
-    color_indices = [0, 32, 49]
-
-    dark_palette = [dark_palette[i] for i in color_indices]
-    free_energy_palette = [free_energy_palette[i] for i in color_indices]
-    no_exp_palette = [no_exp_palette[i] for i in color_indices]
-
-    # With viridis colormap, desaturated purple is too dark.
-    free_energy_palette[0] = sns.color_palette('dark', desat=0.8)[3]
-    no_exp_palette[0] = sns.color_palette('pastel', desat=0.8)[3]
-
-    markers = ['s', 'o', '^']
-
-    labels = [
-        ('SAMPL3 CB7/CB8', sampl3_cb8_data, no_exp_palette[0], markers[0]),
-        ('SAMPL3 H1', sampl3_h1_data, dark_palette[0], markers[0]),
-        ('SAMPL3 H1 (free energy)', sampl3_h1_mm_data, free_energy_palette[0], markers[1]),
-
-        ('SAMPL5 CBClip', sampl5_cbclip_data, dark_palette[1], markers[0]),
-        ('SAMPL5 CBClip (free energy)', sampl5_cbclip_mm_data, free_energy_palette[1], markers[1]),
-
-        ('SAMPL6 CB8', sampl6_cb8_data, dark_palette[2], markers[0]),
-        ('SAMPL6 CB8 (free energy)', sampl6_cb8_mm_data, free_energy_palette[2], markers[1]),
-        ('SAMPL6 CB8 (no exp)', sampl6_cb8_nocorr_data, no_exp_palette[2], markers[2]),
-
-        ('SAMPL5', sampl5_oatemoa_data, dark_palette[1], markers[0]),
-        ('SAMPL5 (free energy)', sampl5_oatemoa_mm_data, free_energy_palette[1], markers[1]),
-
-        ('SAMPL6', sampl6_oatemoa_data, dark_palette[2], markers[0]),
-        ('SAMPL6 (free energy)', sampl6_oatemoa_mm_data, free_energy_palette[2], markers[1]),
-        ('SAMPL6 (no exp)', sampl6_oatemoa_nocorr_data, no_exp_palette[2], markers[2]),
-    ]
-
-    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(4.6, 5.6))
-    for label, data, color, _ in labels:
-        row_idx = 1 if ('CB' in label or 'H1' in label) else 0
-        if 'free' in label:
-            ls = '--'
-        elif 'exp' in label:
-            ls = ':'
-        else:
-            ls = '-'
-        lw = 2 if 'exp' in label else None
-        # rmse_data = [x for x in data['RMSE'] if x < 15]  # Discard outliers.
-        rmse_data = data['RMSE']
-        for col_idx, d in enumerate([rmse_data, data['R2']]):
-            ax = axes[row_idx,col_idx]
-            sns.distplot(d, hist=False, color=color, label=label, ax=ax, kde_kws={'ls': ls, 'lw': lw})
-
-    # Plot mean after the axis limit was set.
-    for label, data, color, marker in labels:
-        row_idx = 1 if ('CB' in label or 'H1' in label) else 0
-        # rmse_data = [x for x in data['RMSE'] if x < 15]  # Discard outliers.
-        for col_idx, sn in enumerate(['RMSE', 'R2']):
-            # Compute median and 95-percentile bootstrap confidence intervals.
-            # median, ci, _ = compute_bootstrap_statistics(np.array(data[sn]), [np.median], n_bootstrap_samples=100000)[0]
-            # print('{} ({}): {:.2f} [{:.2f},{:.2f}]'.format(label, sn, median, *ci))
-            ax = axes[row_idx,col_idx]
-            y_lim = ax.get_ylim()
-            # Place median dot at 2% of y axis.
-            ax.plot(np.median(d), y_lim[1]*0.022, color=color, marker=marker, markersize=6, alpha=0.8)
-
-    # Axes limits.
-    for row in axes:
-        x_limit_rmse = 14
-        row[0].set_xlim((0, x_limit_rmse))
-        row[0].set_xticks(list(range(0, x_limit_rmse+1, 2)))
-        row[1].set_xlim((0, 1))
-        for ax in row:
-            ax.get_yaxis().set_ticks([])
-            ax.set_xlabel('')
-
-    # Axes labels
-    axes[0,0].xaxis.set_ticklabels([])
-    axes[0,1].xaxis.set_ticklabels([])
-    axes[0,0].set_ylabel('OA / TEMOA')
-    axes[1,0].set_ylabel('cucurbiturils')
-    axes[1,0].set_xlabel('RMSE [kcal/mol]')
-    axes[1,1].set_xlabel('R$^2$')
-
-    # Legend.
-    for i, ax in enumerate(axes.flatten()):
-        bbox_to_anchor = (0.09, 1.17) if i == 0 else (-0.13, 1.23)
-        if i % 2 == 0:
-            ax.legend(ncol=3, loc='upper left', bbox_to_anchor=bbox_to_anchor,
-                      handletextpad=0.5, fontsize='x-small')
-        else:
-            ax.legend_.remove()
-
-    plt.tight_layout(rect=[0, 0.0, 1, 1], pad=0.5, w_pad=-20.0)
-    # plt.show()
-    plt.savefig('../Accuracy/PaperImages/Figure6_previous_sampl/previous_sampl_distributions.pdf')
-
-    # Print dynamic range data in SAMPL3 and SAMPL5 challenge.
-    # --------------------------------------------------------
-
-    sampl3_h1_exp = [-5.84, -7.10, -6.80, -4.17, -6.06, -10.72, -7.85]
-    sampl3_cb8_exp = [-6.12, -7.43, -9.60, -8.99]
-    sampl4_cb7_exp = [-9.9, -9.6, -6.6, -8.4, -8.5, -7.9, -10.1, -11.8, -12.6, -7.9, -11.1, -13.3, -14.1, -11.6]
-    sampl4_oa_exp = [-3.73, -5.9, -6.28, -6.72, -5.3, -5.6, -7.6, -3.73, -6.61]
-    sampl5_oatemoa_exp = [-5.04, -4.25, -5.06, -9.37, -4.50, -5.33, -5.24, -5.04, -5.94, -2.38, -3.90, -4.52]
-    sampl5_cbclip_exp = [-5.83, -2.51, -4.02, -7.24, -8.53, -8.64, -5.17, -6.17, -7.39, -10.35]
-    sampl6_oatemoa_exp = experimental_data[['OA' in i for i in experimental_data.index]]['$\Delta$G'].values.tolist()
-    sampl6_cb8_exp = experimental_data[['CB8' in i for i in experimental_data.index]]['$\Delta$G'].values.tolist()
-
-    # Each list value is: sampl round, host, experimental data, color.
-    previous_sampl_experiments = [
-        ('SAMPL3', 'H1', sampl3_h1_exp),
-        ('SAMPL3', 'CB7/CB8', sampl3_cb8_exp),
-        ('SAMPL4', 'CB7', sampl4_cb7_exp),
-        ('SAMPL5', 'CBClip', sampl5_cbclip_exp),
-        ('SAMPL6', 'CB8', sampl6_cb8_exp),
-
-        ('SAMPL4', 'OA', sampl4_oa_exp),
-        ('SAMPL5', 'OA/TEMOA-5', sampl5_oatemoa_exp),
-        ('SAMPL6', 'OA/TEMOA-6', sampl6_oatemoa_exp)
-    ]
-
-    # Transform to dataframe.
-    data = []
-    for sampl_round, host_name, d in previous_sampl_experiments:
-        # Print range and 95-percentiles.
-        percentile = np.percentile(d, [25.0, 75.0])
-        print('{} {}: range [{:.2f}, {:.2f}] ({:.2f}), 50-percentile [{:.2f}, {:.2f}] ({:.2f})'.format(
-            sampl_round, host_name, min(d), max(d), min(d)-max(d),
-            percentile[0], percentile[1], percentile[0]-percentile[1]))
-        # # We don't plot the data for SAMPL4 since it doesn't enter the statistic distributions.
-        # if sampl_round == 'SAMPL4':
-        #     continue
-        # Update data to convert to dataframe.
-        for dg in d:
-            data.append({'round': sampl_round, 'host name': host_name, '$\Delta$G [kcal/mol]': dg})
-    previous_sampl_experiments = pd.DataFrame(data=data)
-
-    fix, ax = plt.subplots(figsize=(2.7, 2.6))
-
-    # Box plot.
-    sampl4_color = sns.color_palette('pastel', desat=0.8)[0]
-    sns.boxplot(x='$\Delta$G [kcal/mol]', y='host name', data=previous_sampl_experiments,
-                hue='round', hue_order=['SAMPL3', 'SAMPL4', 'SAMPL5', 'SAMPL6'], dodge=False,
-                palette=[no_exp_palette[0], sampl4_color, free_energy_palette[1], free_energy_palette[2]],
-                fliersize=0.0, whis='range', saturation=1.0, ax=ax)
-
-    # Swarm plot with semi-transparent data points.
-    sns.swarmplot(x='$\Delta$G [kcal/mol]', y='host name', data=previous_sampl_experiments,
-                  color='0.2', ax=ax, alpha=0.7)
-
-    # Remove title "round" from legend.
-    ax.legend(fontsize='x-small')
-    # Remove main label "host name".
-    ax.set_ylabel('')
-    # Set range of measurements axis.
-    ax.set_xlim((-15, -2))
-    ax.set_xticks(list(range(-14, -1, 2)))
-
-    ax.tick_params(pad=2.0)
-    plt.tight_layout(pad=0.1)
-    # plt.show()
-    plt.savefig('../Accuracy/PaperImages/Figure6_previous_sampl/dynamic_range.pdf')
-
-    # SUPPLEMENTARY FIGURE correlation plots enthalpies.
-    # ---------------------------------------------------
-    sns.set_context('paper', font_scale=1.0)
-
-    plotted_methods = ['DDM-GAFF', 'DFT(B3PW91)', 'DFT(B3PW91)-D3']
-    n_methods = len(plotted_methods)
-
-    fig, axes = plt.subplots(ncols=3, figsize=(7.25, 7.25/3))
-
-    # Associate a color to each host.
-    for ax_idx, (method, ax) in enumerate(zip(plotted_methods, axes)):
-        # Isolate statistics of the method.
-        data = collection_all.data[collection_all.data.method == method]
-        # Build palette.
-        palette = [HOST_PALETTE[host_name] for host_name in sorted(data.host_name.unique())]
-        # Add color for regression line over all data points.
-        palette += [HOST_PALETTE['other1']]
-        # Plot correlations.
-        plot_correlation(x='$\Delta$H (expt) [kcal/mol]', y='$\Delta$H (calc) [kcal/mol]',
-                         data=data, title=method, hue='host_name', color=palette,
-                         shaded_area_color=HOST_PALETTE['other2'], ax=ax)
-        # Remove legend and axes labels.
-        ax.legend_.remove()
-        ax.set_xlabel('')
-        ax.set_ylabel('')
-        # Add only a single label for x and y axis.
-        if ax_idx == 0:
-            ax.set_ylabel('$\Delta$H (calc) [kcal/mol]')
-        elif ax_idx == 1:
-            ax.set_xlabel('$\Delta$H (exp) [kcal/mol]')
-
-    plt.tight_layout()
-    plt.savefig('../Accuracy/PaperImages/SIFigure_correlation_plots_enthalpy.pdf')
-
 
     # # Generate the initial statistics table for the paper.
     # -------------------------------------------------------

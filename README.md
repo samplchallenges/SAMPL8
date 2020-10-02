@@ -26,7 +26,10 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 ### Changes not in a release
 
 - Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo.(9/25/20)
-- Add experimental measurements and link for CB8 experimental publication. (9/25/20) 
+- Add experimental measurements and link for CB8 experimental publication. (9/25/20)
+- Updates submission files (give unique method names and edit ext) (10/1/20)
+- Updates analysis script (10/1/20)
+- Add preliminary results (plots, tables, etc) for the host-guest challenge. Currently only includes CB8. (10/1/20)
 
 ## Challenge construction
 

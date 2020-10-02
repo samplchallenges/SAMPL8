@@ -1,0 +1,7 @@
+Methamphetamine;G1
+Fentanyl;G2
+Morphine;G3
+Hydromorphone;G4
+Ketamine;G5
+PhenylCyclohexylPiperidine(PCP);G6
+Cocaine;G7
