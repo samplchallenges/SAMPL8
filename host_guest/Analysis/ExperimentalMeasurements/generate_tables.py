@@ -40,68 +40,93 @@ CB8_GUESTS_NAMES_PATH = '/home/amezcum1/SAMPL8/host_guest/CB8/guest_files/CB8_gu
 
 # Experimental results as provided by the Gibb, Isaacs and Gilson groups.
 # The error is relative. None means that the error is <1%.
+# For CB8-G2, only considering the 1:1 binding data. 
 EXPERIMENTAL_DATA = OrderedDict([
 
     ('CB8-G1', OrderedDict([
-        ('Ka', 1.4*(10**5) / u.molar), ('dKa', 0.09*(10**5) / u.molar),
-        ('DH', -7.84 * u.kilocalories_per_mole), ('dDH', 0.100 * u.kilocalories_per_mole),
-        ('DG', -7.05 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
-        ('TDS', 0.788 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 1.4*(10**5) / u.molar), ('dKa_1', 0.09*(10**5) / u.molar),
+        ('DH_1', -7.84 * u.kilocalories_per_mole), ('dDH_1', 0.100 * u.kilocalories_per_mole),
+        #('DG_1', -7.05 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 0.788 * u.kilocalories_per_mole), ('dTDS_1', None),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 1.4*(10**5) / u.molar), ('dKa_2', 0.09*(10**5) / u.molar),
+        ('DH_2', -7.84 * u.kilocalories_per_mole), ('dDH_2', 0.100 * u.kilocalories_per_mole),
+        #('DG_1', -7.05 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', 0.788 * u.kilocalories_per_mole), ('dTDS_2', None),
+        ('n', 1.00)
     ])),
     ('CB8-G2', OrderedDict([
-        ('Ka', 1.9*(10**7) / u.molar), ('dKa', 0.09*(10**7) / u.molar),
-        ('DH', -10.8 * u.kilocalories_per_mole), ('dDH', 0.06 * u.kilocalories_per_mole),
-        #('DG_1', -9.94 * u.kilocalories_per_mole), ('dDG_1', None),
-        ('TDS', 0.872 * u.kilocalories_per_mole), ('TDS', None), 
-        ('Ka', 3.7*(10**5) / u.molar), ('dKa', 0.04*(10**5) / u.molar),
-        ('DH', -7.67 * u.kilocalories_per_mole), ('dDH', 0.04 * u.kilocalories_per_mole),
-        #('DG_2', -7.60 * u.kilocalories_per_mole), ('dDG_2', None),
-        ('TDS', 0.073 * u.kilocalories_per_mole), ('dTDS', None),
-        #('TDS_1', None), ('dTDS_1', None),
+        ('Ka_1', 1.9*(10**7) / u.molar), ('dKa_1', 0.09*(10**7) / u.molar),
+        ('DH_1', -10.8 * u.kilocalories_per_mole), ('dDH_1', 0.06 * u.kilocalories_per_mole),
+        #('DG_1', -9.94 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 0.872 * u.kilocalories_per_mole), ('TDS_1', None * u.kilocalories_per_mole), 
+        ('Ka_2', 1.9*(10**7) / u.molar), ('dKa_2', 0.09*(10**7) / u.molar),
+        ('DH_2', -10.8 * u.kilocalories_per_mole), ('dDH_2', 0.06 * u.kilocalories_per_mole),
+        #('DG_2', -7.60 * u.kilocalories_per_mole), ('dDG_2', None * u.kilocalories_per_mole),
+        ('TDS_2', 0.872 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        #('TDS', None), ('dTDS', None),
         #('TDS_2', None), ('dTDS_2', None)
-        ('n', 2)
+        ('n', 1.00)
     ])),
     ('CB8-G3', OrderedDict([
-        ('Ka', 1.7*(10**8) / u.molar), ('dKa', 0.11*(10**8) / u.molar),
-        ('DH', -13.6 * u.kilocalories_per_mole), ('dDH', 0.04 * u.kilocalories_per_mole),
-        ('DG', -11.6 * u.kilocalories_per_mole), ('dDG', None),
-        ('TDS', 1.93 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 1.7*(10**8) / u.molar), ('dKa_1', 0.11*(10**8) / u.molar),
+        ('DH_1', -13.6 * u.kilocalories_per_mole), ('dDH_1', 0.04 * u.kilocalories_per_mole),
+        #('DG_1', -11.6 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 1.93 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 1.7*(10**8) / u.molar), ('dKa_2', 0.11*(10**8) / u.molar),
+        ('DH_2', -13.6 * u.kilocalories_per_mole), ('dDH_2', 0.04 * u.kilocalories_per_mole),
+        #('DG_1', -11.6 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', 1.93 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('n', 1.00)
     ])),
     ('CB8-G4', OrderedDict([
-        ('Ka', 3.41*(10**8) / u.molar), ('dKa', 0.15*(10**8) / u.molar),
-        ('DH', -15.8 * u.kilocalories_per_mole), ('dDH', 0.1 * u.kilocalories_per_mole),
-        ('DG', -11.2 * u.kilocalories_per_mole), ('dDG', None),
-        ('TDS', 4.54 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 3.41*(10**8) / u.molar), ('dKa_1', 0.15*(10**8) / u.molar),
+        ('DH_1', -15.8 * u.kilocalories_per_mole), ('dDH_1', 0.1 * u.kilocalories_per_mole),
+        #('DG_1', -11.2 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 4.54 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 3.41*(10**8) / u.molar), ('dKa_2', 0.15*(10**8) / u.molar),
+        ('DH_2', -15.8 * u.kilocalories_per_mole), ('dDH_2', 0.1 * u.kilocalories_per_mole),
+        #('DG_1', -11.2 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', 4.54 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('n', 1.00)
     ])),
     ('CB8-G5', OrderedDict([
-        ('Ka', 1.09*(10**9) / u.molar), ('dKa', 0.07*(10**9) / u.molar),
-        ('DH', -17.3 * u.kilocalories_per_mole), ('dDH', 0.16 * u.kilocalories_per_mole),
-        ('DG', -12.3 * u.kilocalories_per_mole), ('dDG', None),
-        ('TDS', 5.01 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 1.09*(10**9) / u.molar), ('dKa_1', 0.07*(10**9) / u.molar),
+        ('DH_1', -17.3 * u.kilocalories_per_mole), ('dDH_1', 0.16 * u.kilocalories_per_mole),
+        #('DG_1', -12.3 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 5.01 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 1.09*(10**9) / u.molar), ('dKa_2', 0.07*(10**9) / u.molar),
+        ('DH_2', -17.3 * u.kilocalories_per_mole), ('dDH_2', 0.16 * u.kilocalories_per_mole),
+        #('DG_1', -12.3 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', 5.01 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('n', 1.00)
     ])),
     ('CB8-G6', OrderedDict([
-        ('Ka', 2.1*(10**10) / u.molar), ('dKa', 0.2*(10**10) / u.molar),
-        ('DH', -14.9 * u.kilocalories_per_mole), ('dDH', 0.04 * u.kilocalories_per_mole),
-        ('DG', -14.1 * u.kilocalories_per_mole), ('dDG', None ),
-        ('TDS', 0.797 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 2.1*(10**10) / u.molar), ('dKa_1', 0.2*(10**10) / u.molar),
+        ('DH_1', -14.9 * u.kilocalories_per_mole), ('dDH_1', 0.04 * u.kilocalories_per_mole),
+        #('DG_1', -14.1 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', 0.797 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 2.1*(10**10) / u.molar), ('dKa_2', 0.2*(10**10) / u.molar),
+        ('DH_2', -14.9 * u.kilocalories_per_mole), ('dDH_2', 0.04 * u.kilocalories_per_mole),
+        #('DG_1', -14.1 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', 0.797 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('n', 1.00)
     ])),
     ('CB8-G7', OrderedDict([
-        ('Ka', 8.1*(10**5) / u.molar), ('dKa', 0.56*(10**5) / u.molar),
-        ('DH', -6.57 * u.kilocalories_per_mole), ('dDH', 0.1 * u.kilocalories_per_mole),
-        ('DG', -7.79 * u.kilocalories_per_mole), ('dDG', None),
-        ('TDS', -1.22 * u.kilocalories_per_mole), ('dTDS', None),
+        ('Ka_1', 8.1*(10**5) / u.molar), ('dKa_1', 0.56*(10**5) / u.molar),
+        ('DH_1', -6.57 * u.kilocalories_per_mole), ('dDH_1', 0.1 * u.kilocalories_per_mole),
+        #('DG_1', -7.79 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_1', -1.22 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
         #('TDS', None), ('dTDS', None)
-        ('n', 1)
+        ('Ka_2', 8.1*(10**5) / u.molar), ('dKa_2', 0.56*(10**5) / u.molar),
+        ('DH_2', -6.57 * u.kilocalories_per_mole), ('dDH_2', 0.1 * u.kilocalories_per_mole),
+        #('DG_1', -7.79 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
+        ('TDS_2', -1.22 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('n', 1.00)
     ]))
 ])
 
