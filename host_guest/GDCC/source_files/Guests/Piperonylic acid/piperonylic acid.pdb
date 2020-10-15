@@ -1,0 +1,39 @@
+HEADER
+REMARK Spartan Student v8 exported M0001
+HETATM    1  H   UNK  0001      -2.116   0.000  -0.714
+HETATM    2  C   UNK  0001      -1.086   0.000  -0.380
+HETATM    3  C   UNK  0001       1.642   0.000   0.440
+HETATM    4  C   UNK  0001      -0.037   0.000  -1.322
+HETATM    5  C   UNK  0001      -0.730   0.000   0.943
+HETATM    6  C   UNK  0001       0.603   0.000   1.346
+HETATM    7  C   UNK  0001       1.298   0.000  -0.915
+HETATM    8  H   UNK  0001       2.078   0.000  -1.665
+HETATM    9  H   UNK  0001       2.674   0.000   0.769
+HETATM   10  O   UNK  0001      -1.540   0.000   2.044
+HETATM   11  O   UNK  0001       0.672   0.000   2.704
+HETATM   12  C   UNK  0001      -0.677   0.000   3.175
+HETATM   13  H   UNK  0001      -0.852   0.902   3.773
+HETATM   14  H   UNK  0001      -0.852  -0.902   3.773
+HETATM   15  C   UNK  0001      -0.419   0.000  -2.746
+HETATM   16  O   UNK  0001      -1.560   0.000  -3.159
+HETATM   17  O   UNK  0001       0.642   0.000  -3.586
+HETATM   18  H   UNK  0001       0.261   0.000  -4.482
+CONECT    1    2
+CONECT    2    1    5    4
+CONECT    3    6    7    9
+CONECT    4    7    2   15
+CONECT    5    2    6   10
+CONECT    6    5    3   11
+CONECT    7    3    4    8
+CONECT    8    7
+CONECT    9    3
+CONECT   10    5   12
+CONECT   11    6   12
+CONECT   12   13   14   11   10
+CONECT   13   12
+CONECT   14   12
+CONECT   15   16   17    4
+CONECT   16   15
+CONECT   17   15   18
+CONECT   18   17
+END

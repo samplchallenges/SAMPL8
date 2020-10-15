@@ -29,6 +29,9 @@ At a later date, we will announce details of other SAMPL8 host-guest challenges,
 
 We are also in the process of sorting out details of other SAMPL challenges in the physical properties area and potentially also on protein-ligand binding, but these are still awaiting dataset collection and/or construction so no details can be announced yet.
 
+Other known issues:
+- We are currently working through an issue with CB8 experimental data (values to be corrected/curated) that will affect our preliminary analysis.
+
 ## Changes and Data Set Versions
 
 ### Releases
@@ -41,6 +44,8 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Updates submission files (give unique method names and edit ext) (10/1/20)
 - Updates analysis script (10/1/20)
 - Add preliminary results (plots, tables, etc) for the host-guest challenge. Currently only includes CB8. (10/1/20)
+- Add source files and tentative deadline for GDCC challenge (2020-10-14)
+
 
 ## Challenge construction
 
@@ -53,8 +58,13 @@ The SAMPL8 phase of challenges includes at least several new host-guest challeng
 
 The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group has prepared a paper for publication [available here](https://chemrxiv.org/articles/preprint/In_Vitro_and_In_Vivo_Sequestration_of_Phencyclidine_by_Me4Cucurbit_8_uril/12994004). Experimental results/data is available [in this repository](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/).
 
-**Deadline**: The deadline for CB8 submissions is September 15, 2020. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt).
+**Deadline**: The deadline for CB8 submissions was September 15, 2020. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt).
 
+### The GDCC challenge
+
+The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
+
+**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. The submission format will be provided at a later date, but will largely match that for SAMPL7 and for CB8 submissions.
 
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
