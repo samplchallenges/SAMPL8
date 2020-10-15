@@ -16,7 +16,7 @@ Additional files/inputs will be provided in the near future.
 
 The two hosts shown below, tetramethyl octa acid (TEMOA) and tetraethyl octa acid (TEETOA) differ only in the functionalization around the cavity rim.
 
-![](source_files/guests.png)
+![](guests.png)
 
 The Gibb group will examine the binding of five guests: four negatively charged, and one likely neutral.
 As in SAMPL7, all binding constants will be determined in (10 mM) sodium phosphate buffer, here at pH 11.5.
