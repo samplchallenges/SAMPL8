@@ -1,0 +1,29 @@
+HEADER
+REMARK Spartan Student v8 exported 4-bromophenol
+HETATM    1  C   UNK  0001       2.463   0.014   0.000
+HETATM    2  C   UNK  0001      -0.314   0.001   0.000
+HETATM    3  C   UNK  0001       1.769  -1.196  -0.000
+HETATM    4  C   UNK  0001       1.759   1.219   0.000
+HETATM    5  C   UNK  0001       0.371   1.213   0.000
+HETATM    6  C   UNK  0001       0.378  -1.203  -0.000
+HETATM    7  H   UNK  0001       2.311  -2.139  -0.000
+HETATM    8  H   UNK  0001       2.312   2.152   0.000
+HETATM    9  H   UNK  0001      -0.175   2.150   0.000
+HETATM   10  O   UNK  0001       3.819   0.085   0.000
+HETATM   11  H   UNK  0001       4.187  -0.807  -0.000
+HETATM   12  H   UNK  0001      -0.159  -2.145  -0.000
+HETATM   13 Br   UNK  0001      -2.217  -0.005   0.000
+CONECT    1    4    3   10
+CONECT    2    5    6   13
+CONECT    3    6    1    7
+CONECT    4    1    5    8
+CONECT    5    4    2    9
+CONECT    6    2    3   12
+CONECT    7    3
+CONECT    8    4
+CONECT    9    5
+CONECT   10   11    1
+CONECT   11   10
+CONECT   12    6
+CONECT   13    2
+END

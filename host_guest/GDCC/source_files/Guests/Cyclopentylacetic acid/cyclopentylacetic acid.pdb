@@ -1,0 +1,45 @@
+HEADER
+REMARK Spartan Student v8 exported cyclopentylacetic acid
+HETATM    1  C   UNK  0001      -0.428   0.263   0.280
+HETATM    2  C   UNK  0001      -1.598   1.244   0.138
+HETATM    3  C   UNK  0001      -2.852   0.356   0.237
+HETATM    4  C   UNK  0001      -2.405  -1.055  -0.240
+HETATM    5  C   UNK  0001      -0.900  -0.937  -0.553
+HETATM    6  H   UNK  0001      -0.351  -0.053   1.329
+HETATM    7  H   UNK  0001      -1.547   1.722  -0.850
+HETATM    8  H   UNK  0001      -1.579   2.043   0.887
+HETATM    9  H   UNK  0001      -3.199   0.312   1.274
+HETATM   10  H   UNK  0001      -3.679   0.754  -0.357
+HETATM   11  H   UNK  0001      -2.972  -1.393  -1.113
+HETATM   12  H   UNK  0001      -2.572  -1.794   0.550
+HETATM   13  H   UNK  0001      -0.750  -0.711  -1.618
+HETATM   14  H   UNK  0001      -0.340  -1.848  -0.327
+HETATM   15  C   UNK  0001       0.911   0.848  -0.148
+HETATM   16  H   UNK  0001       1.118   1.785   0.386
+HETATM   17  H   UNK  0001       0.906   1.107  -1.214
+HETATM   18  C   UNK  0001       2.081  -0.071   0.109
+HETATM   19  O   UNK  0001       2.057  -1.104   0.735
+HETATM   20  O   UNK  0001       3.216   0.406  -0.443
+HETATM   21  H   UNK  0001       3.913  -0.230  -0.220
+CONECT    1    6    2    5   15
+CONECT    2    1    7    8    3
+CONECT    3    2    9   10    4
+CONECT    4    3   11   12    5
+CONECT    5    1    4   13   14
+CONECT    6    1
+CONECT    7    2
+CONECT    8    2
+CONECT    9    3
+CONECT   10    3
+CONECT   11    4
+CONECT   12    4
+CONECT   13    5
+CONECT   14    5
+CONECT   15    1   16   17   18
+CONECT   16   15
+CONECT   17   15
+CONECT   18   15   19   20
+CONECT   19   18
+CONECT   20   18   21
+CONECT   21   20
+END
