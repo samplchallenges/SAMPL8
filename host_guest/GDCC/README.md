@@ -16,11 +16,13 @@ Additional files/inputs will be provided in the near future.
 
 The two hosts shown below, tetramethyl octa acid (TEMOA) and tetraethyl octa acid (TEETOA) differ only in the functionalization around the cavity rim.
 
-![](guests.png)
+![](Hosts.png)
 
 The Gibb group will examine the binding of five guests: four negatively charged, and one likely neutral.
 As in SAMPL7, all binding constants will be determined in (10 mM) sodium phosphate buffer, here at pH 11.5.
-Each of these new binding determinations will be carried out in triplicate using ITC, and where necessary, verified by NMR (or measured by NMR, for very weak binders).
+Each of these new binding determinations will be carried out in triplicate using ITC, and where necessary, verified by NMR (or measured by NMR, for very weak binders). Here are the guests:
+
+![](guests.png)
 
 (Tentative:) For all compounds for which binding is being determined by ITC, binding enthalpy measurements will also be available. Thus, binding enthalpy values can optionally be submitted and will be judged as data is available (that is, for most compounds).
 
@@ -37,6 +39,7 @@ General disclaimer: The protonation state of the host may in some cases be not c
 # What's here
 
 - `source_files`: Source files provided by Bruce Gibb and Paolo Suating, giving structures of hosts and guests. All other files provided here will be derived from these as we will document here.
+- selected image files derived from the source files
 
 
 ## What's coming
