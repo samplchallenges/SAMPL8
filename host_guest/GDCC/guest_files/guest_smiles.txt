@@ -1,0 +1,5 @@
+c1ccc2cc(c(cc2c1)C(=O)O)O;G1
+c1cc(ccc1O)Br;G2
+C1CCC(C1)CC(=O)O;G3
+c1cc2c(cc1C(=O)O)OCO2;G4
+Cc1ccc(cc1)C(=O)O;G5
