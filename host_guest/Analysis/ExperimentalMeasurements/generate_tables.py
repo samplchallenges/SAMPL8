@@ -44,88 +44,52 @@ CB8_GUESTS_NAMES_PATH = '/home/amezcum1/SAMPL8/host_guest/CB8/guest_files/CB8_gu
 EXPERIMENTAL_DATA = OrderedDict([
 
     ('CB8-G1', OrderedDict([
-        ('Ka_1', 1.4*(10**5) / u.molar), ('dKa_1', 0.09*(10**5) / u.molar),
-        ('DH_1', -7.84 * u.kilocalories_per_mole), ('dDH_1', 0.100 * u.kilocalories_per_mole),
-        #('DG_1', -7.05 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 0.788 * u.kilocalories_per_mole), ('dTDS_1', None),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 1.4*(10**5) / u.molar), ('dKa_2', 0.09*(10**5) / u.molar),
-        ('DH_2', -7.84 * u.kilocalories_per_mole), ('dDH_2', 0.100 * u.kilocalories_per_mole),
-        #('DG_1', -7.05 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', 0.788 * u.kilocalories_per_mole), ('dTDS_2', None),
+        ('Ka', 1.47*(10**5) / u.molar), ('dKa', 0.09*(10**5) / u.molar),
+        ('DH', -7.84 * u.kilocalories_per_mole), ('dDH', 0.100 * u.kilocalories_per_mole),
+        #('DG', -7.05 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 0.788 * u.kilocalories_per_mole), ('dTDS', None),
         ('n', 1.00)
     ])),
     ('CB8-G2', OrderedDict([
-        ('Ka_1', 1.9*(10**7) / u.molar), ('dKa_1', 0.09*(10**7) / u.molar),
-        ('DH_1', -10.8 * u.kilocalories_per_mole), ('dDH_1', 0.06 * u.kilocalories_per_mole),
-        #('DG_1', -9.94 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 0.872 * u.kilocalories_per_mole), ('TDS_1', None * u.kilocalories_per_mole), 
-        ('Ka_2', 1.9*(10**7) / u.molar), ('dKa_2', 0.09*(10**7) / u.molar),
-        ('DH_2', -10.8 * u.kilocalories_per_mole), ('dDH_2', 0.06 * u.kilocalories_per_mole),
-        #('DG_2', -7.60 * u.kilocalories_per_mole), ('dDG_2', None * u.kilocalories_per_mole),
-        ('TDS_2', 0.872 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None),
-        #('TDS_2', None), ('dTDS_2', None)
+        ('Ka', 1.9*(10**7) / u.molar), ('dKa', 0.09*(10**7) / u.molar),
+        ('DH', -10.8 * u.kilocalories_per_mole), ('dDH', 0.06 * u.kilocalories_per_mole),
+        #('DG', -9.94 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 0.872 * u.kilocalories_per_mole), ('TDS', None * u.kilocalories_per_mole), 
         ('n', 1.00)
     ])),
     ('CB8-G3', OrderedDict([
-        ('Ka_1', 1.7*(10**8) / u.molar), ('dKa_1', 0.11*(10**8) / u.molar),
-        ('DH_1', -13.6 * u.kilocalories_per_mole), ('dDH_1', 0.04 * u.kilocalories_per_mole),
-        #('DG_1', -11.6 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 1.93 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 1.7*(10**8) / u.molar), ('dKa_2', 0.11*(10**8) / u.molar),
-        ('DH_2', -13.6 * u.kilocalories_per_mole), ('dDH_2', 0.04 * u.kilocalories_per_mole),
-        #('DG_1', -11.6 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', 1.93 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('Ka', 3.41*(10**8) / u.molar), ('dKa', 0.15*(10**8) / u.molar),
+        ('DH', -13.6 * u.kilocalories_per_mole), ('dDH', 0.04 * u.kilocalories_per_mole),
+        #('DG', -11.6 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 1.93 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
     ])),
     ('CB8-G4', OrderedDict([
-        ('Ka_1', 3.41*(10**8) / u.molar), ('dKa_1', 0.15*(10**8) / u.molar),
-        ('DH_1', -15.8 * u.kilocalories_per_mole), ('dDH_1', 0.1 * u.kilocalories_per_mole),
-        #('DG_1', -11.2 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 4.54 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 3.41*(10**8) / u.molar), ('dKa_2', 0.15*(10**8) / u.molar),
-        ('DH_2', -15.8 * u.kilocalories_per_mole), ('dDH_2', 0.1 * u.kilocalories_per_mole),
-        #('DG_1', -11.2 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', 4.54 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('Ka', 1.7*(10**8) / u.molar), ('dKa', 0.11*(10**8) / u.molar),
+        ('DH', -15.8 * u.kilocalories_per_mole), ('dDH', 0.1 * u.kilocalories_per_mole),
+        #('DG', -11.2 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 4.54 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
     ])),
     ('CB8-G5', OrderedDict([
-        ('Ka_1', 1.09*(10**9) / u.molar), ('dKa_1', 0.07*(10**9) / u.molar),
-        ('DH_1', -17.3 * u.kilocalories_per_mole), ('dDH_1', 0.16 * u.kilocalories_per_mole),
-        #('DG_1', -12.3 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 5.01 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 1.09*(10**9) / u.molar), ('dKa_2', 0.07*(10**9) / u.molar),
-        ('DH_2', -17.3 * u.kilocalories_per_mole), ('dDH_2', 0.16 * u.kilocalories_per_mole),
-        #('DG_1', -12.3 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', 5.01 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('Ka', 1.09*(10**9) / u.molar), ('dKa', 0.07*(10**9) / u.molar),
+        ('DH', -17.3 * u.kilocalories_per_mole), ('dDH', 0.16 * u.kilocalories_per_mole),
+        #('DG', -12.3 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 5.01 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
     ])),
     ('CB8-G6', OrderedDict([
-        ('Ka_1', 2.1*(10**10) / u.molar), ('dKa_1', 0.2*(10**10) / u.molar),
-        ('DH_1', -14.9 * u.kilocalories_per_mole), ('dDH_1', 0.04 * u.kilocalories_per_mole),
-        #('DG_1', -14.1 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', 0.797 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 2.1*(10**10) / u.molar), ('dKa_2', 0.2*(10**10) / u.molar),
-        ('DH_2', -14.9 * u.kilocalories_per_mole), ('dDH_2', 0.04 * u.kilocalories_per_mole),
-        #('DG_1', -14.1 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', 0.797 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('Ka', 2.1*(10**10) / u.molar), ('dKa', 0.2*(10**10) / u.molar),
+        ('DH', -14.9 * u.kilocalories_per_mole), ('dDH', 0.04 * u.kilocalories_per_mole),
+        #('DG', -14.1 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 0.797 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
     ])),
     ('CB8-G7', OrderedDict([
-        ('Ka_1', 8.1*(10**5) / u.molar), ('dKa_1', 0.56*(10**5) / u.molar),
-        ('DH_1', -6.57 * u.kilocalories_per_mole), ('dDH_1', 0.1 * u.kilocalories_per_mole),
-        #('DG_1', -7.79 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_1', -1.22 * u.kilocalories_per_mole), ('dTDS_1', None * u.kilocalories_per_mole),
-        #('TDS', None), ('dTDS', None)
-        ('Ka_2', 8.1*(10**5) / u.molar), ('dKa_2', 0.56*(10**5) / u.molar),
-        ('DH_2', -6.57 * u.kilocalories_per_mole), ('dDH_2', 0.1 * u.kilocalories_per_mole),
-        #('DG_1', -7.79 * u.kilocalories_per_mole), ('dDG_1', None * u.kilocalories_per_mole),
-        ('TDS_2', -1.22 * u.kilocalories_per_mole), ('dTDS_2', None * u.kilocalories_per_mole),
+        ('Ka', 6.45*(10**5) / u.molar), ('dKa', 0.43*(10**5) / u.molar),
+        ('DH', -8.26 * u.kilocalories_per_mole), ('dDH', 0.15 * u.kilocalories_per_mole),
+        #('DG', -7.93 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
+        ('TDS', 0.37 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
     ]))
 ])
@@ -432,95 +396,108 @@ if __name__ == '__main__':
         writer.writeheader()
         writer.writerows(csv_dicts)
 
-   # # Skip making a LaTex table for now
-   # # Create a LaTex table.
-   # os.makedirs('PDFTable', exist_ok=True)
-   # old_host = ''
-   # with open('PDFTable/experimental_measurements.tex', 'w', encoding='utf-8') as f:
-   #     f.write('\\documentclass{article}\n'
-   #             '\\usepackage[a4paper,margin=0.4in,tmargin=0.5in,landscape]{geometry}\n'
-   #             '\\usepackage{tabu}\n'
-   #             '\\pagenumbering{gobble}\n'
-   #             '\\begin{document}\n'
-   #             '\\begin{center}\n'
-   #             '\\footnotesize\n'
-   #             '\\begin{tabu}')
+   # Skip making a LaTex table for now
+   # Create a LaTex table.
+    os.makedirs('PDFTable', exist_ok=True)
+    old_host = ''
+    with open('PDFTable/experimental_measurements.tex', 'w', encoding='utf-8') as f:
+        f.write('\\documentclass{article}\n'
+                '\\usepackage[a4paper,margin=0.4in,tmargin=0.5in,landscape]{geometry}\n'
+                '\\usepackage{tabu}\n'
+                '\\pagenumbering{gobble}\n'
+                '\\begin{document}\n'
+                '\\begin{center}\n'
+                '\\footnotesize\n'
+                '\\begin{tabu}')
 
-   #     # Cell alignment.
-   #     field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
-   #     f.write('{| ' + ' | '.join(['c' for _ in range(len(field_names))]) + ' |}\n')
+       # Cell alignment.
+       #field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
+        field_names = ['ID', 'name', 'SMILES', '$K_a$ (M$^{-1}$)', 'd$K_a$ (M$^{-1}$)', '$\\Delta H$ (kcal/mol)', '$d\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol)', 'd$T\\Delta S$ (kcal/mol)', 'n', '$\\Delta G$ (kcal/mol', 'd$\\Delta G$ (kcal/mol)']
+        f.write('{| ' + ' | '.join(['c' for _ in range(len(field_names))]) + ' |}\n')
 
-   #     # Table header.
-   #     f.write('\\hline\n')
-   #     f.write('\\rowfont{\\bfseries} ' + ' & '.join(field_names) + ' \\\\\n')
-   #     f.write('\\hline\n')
+        # Table header.
+        f.write('\\hline\n')
+        f.write('\\rowfont{\\bfseries} ' + ' & '.join(field_names) + ' \\\\\n')
+        f.write('\\hline\n')
 
-   #     # Print lines.
-   #     for csv_dict in csv_dicts:
+        # Print lines.
+        for csv_dict in csv_dicts:
 
-   #         # Separate hosts with a double horizontal line.
-   #         host_name = csv_dict['ID'].split('-')[0]
-   #         if host_name != old_host:
-   #             f.write('\\hline\n')
-   #             old_host = host_name
+            # Separate hosts with a double horizontal line.
+            host_name = csv_dict['ID'].split('-')[0]
+            if host_name != old_host:
+                f.write('\\hline\n')
+                old_host = host_name
 
-   #         if csv_dict['ID']=='clip-g10' or 'OA-g5' in csv_dict['ID']:
-   #             # One name can't be dealt with; reformat
-   #             csv_dict['name'] = "Can't format in LaTeX"
-
-
+           #if csv_dict['ID']=='clip-g10' or 'OA-g5' in csv_dict['ID']:
+           #    # One name can't be dealt with; reformat
+           #    csv_dict['name'] = "Can't format in LaTeX"
 
 
-   #         row = '{ID} & {name}'
-   #         for k in ['Ka', 'DG', 'DH', 'TDS']:
-   #             row += ' & '
 
-   #             # Report Ka in scientific notation.
-   #             if k == 'Ka':
-   #                 if not isinstance(k, str):
-   #                     first_significant_digit = math.floor(math.log10(abs(csv_dict['d' + k])))
-   #                     csv_dict['d' + k] /= 10**first_significant_digit
-   #                     csv_dict[k] /= 10**first_significant_digit
-   #                     row += '('
-   #             row += '{' + k + '} +- {d' + k + '}'
-   #             if k == 'Ka':
-   #                 if not isinstance(k, str):
-   #                     row += ') $\\times$ 10'
-   #                     if first_significant_digit != 1:
-   #                         row += '$^{{{{{}}}}}$'.format(first_significant_digit)
 
-   #             # Check if we used the upperbound.
-   #             superscript = ''
-   #             # if k != 'DG' and csv_dict['ID'] in upper_bound_molecules[k]:
-   #             #     superscript += 'a'
-   #             if k == 'Ka':
-   #                 if csv_dict['n'] == 0.33:
-   #                     superscript += 'd'
-   #                 elif csv_dict['n'] == 0.5 or csv_dict['n'] == 2:
-   #                     superscript += 'c'
-   #             if superscript != '':
-   #                 row += ' $^{{(' + superscript + ')}}$'
+            row = '{ID} & {name}'
+            for k in ['Ka', 'DG', 'DH', 'TDS']:
+                row += ' & '
 
-   #         row += (' & {n: .2f} \\\\\n'
-   #                 '\\hline\n')
+                # Report Ka in scientific notation.
+                if k == 'Ka':
+                    if not isinstance(k, str):
+                        first_significant_digit = math.floor(math.log10(abs(csv_dict['d' + k])))
+                        csv_dict['d' + k] /= 10**first_significant_digit
+                        csv_dict[k] /= 10**first_significant_digit
+                        row += '('
+                row += '{' + k + '} +- {d' + k + '}'
+                if k == 'Ka':
+                    if not isinstance(k, str):
+                        row += ') $\\times$ 10'
+                        if first_significant_digit != 1:
+                            row += '$^{{{{{}}}}}$'.format(first_significant_digit)
 
-   #         row = row.format(**csv_dict)
+                # Add superscripts for different types of ITC experiments (CB8)
+                superscript = ''
+                if k == 'Ka':
+                    if csv_dict['ID'] == 'CB8-G1' or csv_dict['ID'] == 'CB8-G2' or csv_dict['ID'] == 'CB8-G7':
+                        superscript += 'c' 
+                    elif csv_dict['ID'] == 'CB8-G3' or csv_dict['ID'] == 'CB8-G4':
+                        superscript += 'd'
+                    elif csv_dict['ID'] == 'CB8-G5' or csv_dict['ID'] == 'CB8-G6':
+                        superscript += 'e'
+                if superscript != '':
+                    row += '$^{{(' + superscript + ')}}$'
 
-   #         # Escape underscores for latex formatting
-   #         row = row.replace('_','\_')
+               # Check if we used the upperbound.
+               #superscript = ''
+               ## if k != 'DG' and csv_dict['ID'] in upper_bound_molecules[k]:
+               ##     superscript += 'a'
+               #if k == 'Ka':
+               #    if csv_dict['n'] == 0.33:
+               #        superscript += 'd'
+               #    elif csv_dict['n'] == 0.5 or csv_dict['n'] == 2:
+               #        superscript += 'c'
+               #if superscript != '':
+               #    row += ' $^{{(' + superscript + ')}}$'
 
-   #         # Write
-   #         f.write(row)
+            row += (' & {n: .2f} \\\\\n'
+                    '\\hline\n')
 
-   #     f.write('\end{tabu}\end{center}\\vspace{5mm}\n'
-   #             'All quantities are reported as point estimate +- statistical error from the ITC data fitting procedure. '
-   #             'The upper bound ($1\%$) was used for errors reported to be $<1\%$. We also included a 3\% relative '
-   #             'uncertainty in the titrant concentration assuming the stoichiometry coefficient to be fitted to the ITC '
-   #             'data [1] for the Isaacs (TrimerTrip) and Gilson (cyclodextrin derivatives) datasets, where concentration'
-   #             'error had not been factored in to the original error estimates. For the OA/exoOA sets, provided uncertainties'
-   #             'already included concentration error.\\\\\n'
-   #             '($^a$) Statistical errors were propagated from the $K_a$ measurements. \\\\\n'
-   #             '($^b$) All experiments were performed at 298 K. \\\\\n'
-   #             '($^c$) Units of M$^{-2}$. \\\\\n'
-   #             '($^d$) Units of M$^{-3}$.\n'
-   #             '\end{document}\n')
+            row = row.format(**csv_dict)
+
+            # Escape underscores for latex formatting
+            row = row.replace('_','\_')
+
+            # Write
+            f.write(row)
+
+        f.write('\end{tabu}\end{center}\\vspace{5mm}\n'
+                'All quantities are reported as point estimate +- statistical error from the ITC data fitting procedure. '
+                'The upper bound ($1\%$) was used for errors reported to be $<1\%$. We also included a 3\% relative '
+                'uncertainty in the titrant concentration assuming the stoichiometry coefficient to be fitted to the ITC '
+                'data for the Isaacs (CB8) dataset, where concentration error had not been factored in to the original'
+                'error estimates..\\\\\n'
+                '($^a$) Statistical errors were propagated from the $K_a$ measurements. \\\\\n'
+                '($^b$) All experiments were performed at 298 K. \\\\\n'
+                '($^c$) Direct ITC titration. \\\\\n'
+                '($^d$) Competitive ITC titration with C1.\n'
+                '($^e$) Competitive ITC titration with C2.\n'
+                '\end{document}\n')
