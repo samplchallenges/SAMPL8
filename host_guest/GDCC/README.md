@@ -35,9 +35,10 @@ General disclaimer: The protonation state of the host may in some cases be not c
 # What's here
 
 - `source_files`: Source files provided by Bruce Gibb and Paolo Suating, giving structures of hosts and guests. All other files provided here will be derived from these as we will document here.
-
+- `guest_files`: Generated structure files in `sdf`,`mol2`, and `pdb`, for guests (G1 - G5) related to SAMPL8 hosts TEMOA and TEEtOA.
+- `host_files`: Generated structure files in `sdf`, `mol2`, and `pdb`, for SAMPL8 hosts TEMOA and TEEtOA
+- `input_maker.ipynb`: Jupyter notebook to generate guest and host inputs from source files.  
 
 ## What's coming
 - Submission file format (likely to match SAMPL7)
 - Submission instructions
-- Curated PDB/mol2/SDF files we will generate in a uniform manner from the source data.
