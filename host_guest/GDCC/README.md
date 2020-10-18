@@ -10,6 +10,8 @@ The SAMPL8 GDCC challenge design is now finalized (as of Oct. 14, 2020) with the
 The challenge submission deadline is Feb. 4, 2021.
 The challenge consists of predicting binding free energies of five compounds to both of TEMOA and TEETOA.
 
+Additional files/inputs will be provided in the near future.
+
 ## The SAMPL8 GDCC Challenge: Sterics and flexibility
 
 The two hosts shown below, tetramethyl octa acid (TEMOA) and tetraethyl octa acid (TEETOA) differ only in the functionalization around the cavity rim.
