@@ -396,7 +396,7 @@ if __name__ == '__main__':
         writer.writeheader()
         writer.writerows(csv_dicts)
 
-   # Skip making a LaTex table for now
+   
    # Create a LaTex table.
     os.makedirs('PDFTable', exist_ok=True)
     old_host = ''
@@ -411,8 +411,8 @@ if __name__ == '__main__':
                 '\\begin{tabu}')
 
        # Cell alignment.
-       #field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
-        field_names = ['ID', 'name', 'SMILES', '$K_a$ (M$^{-1}$)', 'd$K_a$ (M$^{-1}$)', '$\\Delta H$ (kcal/mol)', '$d\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol)', 'd$T\\Delta S$ (kcal/mol)', 'n', '$\\Delta G$ (kcal/mol', 'd$\\Delta G$ (kcal/mol)']
+        field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
+        #field_names = ['ID', 'name', 'SMILES', '$K_a$ (M$^{-1}$)', 'd$K_a$ (M$^{-1}$)', '$\\Delta H$ (kcal/mol)', '$d\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol)', 'd$T\\Delta S$ (kcal/mol)', 'n', '$\\Delta G$ (kcal/mol', 'd$\\Delta G$ (kcal/mol)']
         f.write('{| ' + ' | '.join(['c' for _ in range(len(field_names))]) + ' |}\n')
 
         # Table header.
@@ -437,6 +437,17 @@ if __name__ == '__main__':
 
 
             row = '{ID} & {name}'
+            # add a superscript to reflect the different ITC experiments for CB8
+            superscript = ''
+            if csv_dict['ID'] == 'CB8-G1' or csv_dict['ID'] == 'CB8-G2' or csv_dict['ID'] == 'CB8-G7':
+                superscript += 'c'
+            elif csv_dict['ID'] == 'CB8-G3' or csv_dict['ID'] == 'CB8-G4':
+                superscript += 'd'
+            elif csv_dict['ID'] == 'CB8-G5' or csv_dict['ID'] == 'CB8-G6':
+                superscript += 'e'
+            if superscript != '':
+                row += '$^{{(' + superscript + ')}}$'
+
             for k in ['Ka', 'DG', 'DH', 'TDS']:
                 row += ' & '
 
@@ -453,18 +464,6 @@ if __name__ == '__main__':
                         row += ') $\\times$ 10'
                         if first_significant_digit != 1:
                             row += '$^{{{{{}}}}}$'.format(first_significant_digit)
-
-                # Add superscripts for different types of ITC experiments (CB8)
-                superscript = ''
-                if k == 'Ka':
-                    if csv_dict['ID'] == 'CB8-G1' or csv_dict['ID'] == 'CB8-G2' or csv_dict['ID'] == 'CB8-G7':
-                        superscript += 'c' 
-                    elif csv_dict['ID'] == 'CB8-G3' or csv_dict['ID'] == 'CB8-G4':
-                        superscript += 'd'
-                    elif csv_dict['ID'] == 'CB8-G5' or csv_dict['ID'] == 'CB8-G6':
-                        superscript += 'e'
-                if superscript != '':
-                    row += '$^{{(' + superscript + ')}}$'
 
                # Check if we used the upperbound.
                #superscript = ''
@@ -498,6 +497,6 @@ if __name__ == '__main__':
                 '($^a$) Statistical errors were propagated from the $K_a$ measurements. \\\\\n'
                 '($^b$) All experiments were performed at 298 K. \\\\\n'
                 '($^c$) Direct ITC titration. \\\\\n'
-                '($^d$) Competitive ITC titration with C1.\n'
+                '($^d$) Competitive ITC titration with C1. \\\\\n'
                 '($^e$) Competitive ITC titration with C2.\n'
                 '\end{document}\n')
