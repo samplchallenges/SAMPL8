@@ -24,8 +24,6 @@ Each of these new binding determinations will be carried out in triplicate using
 
 ![](guests.png)
 
-![](guests.png)
-
 (Tentative:) For all compounds for which binding is being determined by ITC, binding enthalpy measurements will also be available. Thus, binding enthalpy values can optionally be submitted and will be judged as data is available (that is, for most compounds).
 
 ### Additional technical details
