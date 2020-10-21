@@ -44,7 +44,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add preliminary results (plots, tables, etc) for the host-guest challenge. Currently only includes CB8. (10/1/20)
 - Add source files and tentative deadline for GDCC challenge (2020-10-14)
 - Add guest and host curated/generated sdf,mol2,pdb files for the GDCC challenge (10/17/20)
-- Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets.   (10/17/20)
+- Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
 
 
 ## Challenge construction
