@@ -24,6 +24,8 @@ Each of these new binding determinations will be carried out in triplicate using
 
 ![](guests.png)
 
+![](guests.png)
+
 (Tentative:) For all compounds for which binding is being determined by ITC, binding enthalpy measurements will also be available. Thus, binding enthalpy values can optionally be submitted and will be judged as data is available (that is, for most compounds).
 
 ### Additional technical details
@@ -40,9 +42,11 @@ General disclaimer: The protonation state of the host may in some cases be not c
 
 - `source_files`: Source files provided by Bruce Gibb and Paolo Suating, giving structures of hosts and guests. All other files provided here will be derived from these as we will document here.
 - selected image files derived from the source files
+- `guest_files`: Generated structure files in `sdf`,`mol2`, and `pdb`, for guests (G1 - G5) related to SAMPL8 hosts TEMOA and TEEtOA.
+- `host_files`: Generated structure files in `sdf`, `mol2`, and `pdb`, for SAMPL8 hosts TEMOA and TEEtOA
+- `input_maker.ipynb`: Jupyter notebook to generate guest and host inputs from source files.  
 
 
 ## What's coming
 - Submission file format (likely to match SAMPL7)
 - Submission instructions
-- Curated PDB/mol2/SDF files we will generate in a uniform manner from the source data.
