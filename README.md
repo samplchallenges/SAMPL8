@@ -25,7 +25,7 @@ Of course, we also appreciate it if you cite any overview/experimental papers re
 
 ## What's coming
 
-At a later date, we will announce details of other SAMPL8 host-guest challenges, including a likely cyclodextrin-derivative challenge with the Gilson lab currently on hold due to COVID-19-related lab shutdowns. The GDCC sterics and flexibility challenge details and files are now available as of 10/17/20. Submission instructions and submission format (template file) will be added at a later date. 
+At a later date, we will announce details of other SAMPL8 host-guest challenges, including a likely cyclodextrin-derivative challenge with the Gilson lab currently on hold due to COVID-19-related lab shutdowns. The GDCC sterics and flexibility challenge details and files are now available as of 10/17/20. Submission instructions and submission format (template file) will be added at a later date.
 
 We are also in the process of sorting out details of other SAMPL challenges in the physical properties area and potentially also on protein-ligand binding, but these are still awaiting dataset collection and/or construction so no details can be announced yet.
 
@@ -45,6 +45,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add source files and tentative deadline for GDCC challenge (2020-10-14)
 - Add guest and host curated/generated sdf,mol2,pdb files for the GDCC challenge (10/17/20)
 - Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
+- Add minor additional notes on GDCC experiments/provenance (2020-12-23)
 
 
 ## Challenge construction
