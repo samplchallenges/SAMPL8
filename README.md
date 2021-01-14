@@ -25,7 +25,7 @@ Of course, we also appreciate it if you cite any overview/experimental papers re
 
 ## What's coming
 
-At a later date, we will announce details of other SAMPL8 host-guest challenges, including a likely cyclodextrin-derivative challenge with the Gilson lab currently on hold due to COVID-19-related lab shutdowns. The GDCC sterics and flexibility challenge details and files are now available as of 10/17/20. Submission instructions and submission format (template file) will be added at a later date.
+At a later date, we will announce details of other SAMPL8 host-guest challenges, including a likely cyclodextrin-derivative challenge with the Gilson lab currently on hold due to COVID-19-related lab shutdowns. The GDCC sterics and flexibility challenge details and files are now available as of 10/17/20. Submission instructions and template file for GDCC sterics and flexibility challenge are now available as of 1/14/21.
 
 We are also in the process of sorting out details of other SAMPL challenges in the physical properties area and potentially also on protein-ligand binding, but these are still awaiting dataset collection and/or construction so no details can be announced yet.
 
@@ -46,6 +46,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add guest and host curated/generated sdf,mol2,pdb files for the GDCC challenge (10/17/20)
 - Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
 - Add minor additional notes on GDCC experiments/provenance (2020-12-23)
+- Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
 
 
 ## Challenge construction
@@ -65,7 +66,7 @@ The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests whi
 
 The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
-**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. The submission format will be provided at a later date, but will largely match that for SAMPL7 and for CB8 submissions.
+**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt)
 
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
