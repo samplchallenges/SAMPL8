@@ -8,8 +8,9 @@ Your predictions must be uploaded via our [SAMPL8 submission web-server](http://
 
 You must use the provided templates to upload your predictions. Templates are:
 - [CB8_submission.txt](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt) for the Isaacs CB8 challenge
+- [GDCC_submission.txt](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt)
 
-File names must begin with "CB8" (as in the template files) and be followed by an underscore or dash.
+File names must begin with "CB8" or "GDCC" (as in the template files) and be followed by an underscore or dash.
 The remainder of the filename is up to you.
 
 Note that the submission server runs on AWS and has a URL involving "elasticbeanstalk.com". It is also listed as "not secure" at present, but don't be concerned about that aspect.
@@ -26,10 +27,11 @@ Anonymous participation is not allowed.
 
 ## Molecular systems
 
-The CB8 host-guest system category is detailed in the main README.md.  
+The CB8 and GDCC host-guest system categories are detailed in their main README.md.  
 
 ### Optional systems:
 CB8-G8 and CB8-G9 are not part of this challenge and will not be judged.
+TEMOA-G3 is optional since binding free energies are available in literature, and will not be judged. 
 
 ### Optional systems:
 All submissions are required to have predicted binding **free energies**, predicted standard error,
