@@ -43,7 +43,7 @@ General disclaimer: The protonation state of the host may in some cases be not c
 - `guest_files`: Generated structure files in `sdf`,`mol2`, and `pdb`, for guests (G1 - G5) related to SAMPL8 hosts TEMOA and TEEtOA.
 - `host_files`: Generated structure files in `sdf`, `mol2`, and `pdb`, for SAMPL8 hosts TEMOA and TEEtOA
 - `input_maker.ipynb`: Jupyter notebook to generate guest and host inputs from source files.  
-
+- `GDCC_submission.txt`: Example submission file for submitting to our system (please replace text and values with your own!). Filenames must begin with "GDCC". See [host_guest_instructions.md](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) for submission instructions.
 
 ## What's coming
 - Submission file format (likely to match SAMPL7)
