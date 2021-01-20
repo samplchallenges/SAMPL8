@@ -1,6 +1,6 @@
 # The SAMPL8 GDCC Challenge
 
-For SAMPL7, the Gibb group is contributing binding data for five
+For SAMPL8, the Gibb group is contributing binding data for five
 guests to two Gibb Deep Cavity Cavitand (GDCC) hosts related to the "octa acid"
 hosts seen in prior challenges. One is the [TEMOA ("OAH") host seen in SAMPL6](https://github.com/samplchallenges/SAMPL6/blob/master/host_guest_description.md) and the other, named TEETOA, differs by the replacement of a methyl at the cavity rim with an ethyl.
 
@@ -9,8 +9,6 @@ hosts seen in prior challenges. One is the [TEMOA ("OAH") host seen in SAMPL6](h
 The SAMPL8 GDCC challenge design is now finalized (as of Oct. 14, 2020) with the details as given below.
 The challenge submission deadline is Feb. 4, 2021.
 The challenge consists of predicting binding free energies of five compounds to both of TEMOA and TEETOA.
-
-Additional files/inputs will be provided in the near future.
 
 ## The SAMPL8 GDCC Challenge: Sterics and flexibility
 
@@ -43,8 +41,6 @@ General disclaimer: The protonation state of the host may in some cases be not c
 - `guest_files`: Generated structure files in `sdf`,`mol2`, and `pdb`, for guests (G1 - G5) related to SAMPL8 hosts TEMOA and TEEtOA.
 - `host_files`: Generated structure files in `sdf`, `mol2`, and `pdb`, for SAMPL8 hosts TEMOA and TEEtOA
 - `input_maker.ipynb`: Jupyter notebook to generate guest and host inputs from source files.  
-
-
-## What's coming
-- Submission file format (likely to match SAMPL7)
-- Submission instructions
+- `GDCC_submission.txt`: Example submission file for submitting to our system (please replace text and values with your own!). Filenames must begin with "GDCC". See [host_guest_instructions.md](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) for submission instructions.
+- Submission file format, as in SAMPL7; see [GDCC_submissions.txt](GDCC_submissions.txt)
+- Submission instructions: Upload your completed submission file to [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
