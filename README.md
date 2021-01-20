@@ -68,7 +68,7 @@ The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests whi
 
 The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
-**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt) [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
+**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
 
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
