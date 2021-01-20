@@ -20,7 +20,8 @@ We also ask you to cite the SAMPL dataset(s) you used. These are versioned on Ze
 Of course, we also appreciate it if you cite any overview/experimental papers relevant to the particular SAMPL challenge you participated in.
 
 ## What's here
-- Host-guest challenge files for the CB8 challenge.
+- Host-guest challenge files for the CB8 challenge and results from this challenge
+- Host-guest challenge files for the GDCC challenge.
 - [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
 
 ## What's coming
@@ -47,6 +48,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
 - Add minor additional notes on GDCC experiments/provenance (2020-12-23)
 - Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
+- Add GDCC submission server link (1/20/21)
 
 
 ## Challenge construction
@@ -66,7 +68,7 @@ The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests whi
 
 The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
-**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt)
+**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt) [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
 
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
