@@ -49,13 +49,14 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add minor additional notes on GDCC experiments/provenance (2020-12-23)
 - Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
 - Add GDCC submission server link (1/20/21)
+- Add info on physical properties challenge
 
 
 ## Challenge construction
 
 ### Overview
 
-The SAMPL8 phase of challenges includes at least several new host-guest challenges (CB8, cyclodextrin derivatives, and Gibb's deep cavity cavitands) with details on the latter two awaiting experimental data collection after COVID-19 lab reopenings. We hope to have a logP/logD/pKa challenge or challenges and perhaps also protein-ligand, but this will depend on experimental details and data availability.
+The SAMPL8 phase of challenges includes at least several new host-guest challenges (CB8, cyclodextrin derivatives, and Gibb's deep cavity cavitands) with details on the latter two awaiting experimental data collection after COVID-19 lab reopenings. We are also shortly posting inputs for our physical properties challenge with GSK (details below) including pKa and logD prediction.
 
 
 ### The CB8 challenge
@@ -70,8 +71,22 @@ The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) ho
 
 **Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
 
+### The GSK physical properties challenges
+
+We recently finalized work with GSK on data collection for a physical properties challenge. The data is currently clearing legal review at GSK and a challenge is forthcoming in the immediate future. We have collected:
+
+- pKa data for 24 compounds
+- pH-dependent solubility for these compounds
+- logD for 11 of these compounds for distribution between different phases: water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50
+
+It is likely we would run first a pKa prediction challenge on the 24 compounds, and then a logD challenge.
+
+Currently, we welcome input on whether this data should be incorporated into a single challenge, or staged out to form the basis of two challenges. For example, we might hold back some of the distribution coefficient data for selected solvents to allow for a second challenge.
+
+
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
+- `physical_properties`: Details on physical properties challenge (to be posted very soon)
 
 ## SAMPL-related
 If you give a SAMPL-related talk or presentation or an analysis of its data, and are willing to share publicly, please consider posting on Zenodo and linking it to the [SAMPL Zenodo community](https://zenodo.org/communities/sampl?page=1&size=20).
