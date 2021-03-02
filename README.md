@@ -23,6 +23,7 @@ Of course, we also appreciate it if you cite any overview/experimental papers re
 - Host-guest challenge files for the CB8 challenge and results from this challenge
 - Host-guest challenge files for the GDCC challenge.
 - [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
+- Introductory details on the GSK physical properties challenge.
 
 ## What's coming
 
@@ -50,6 +51,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
 - Add GDCC submission server link (1/20/21)
 - Add info on physical properties challenge
+- 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
 
 
 ## Challenge construction
@@ -73,20 +75,20 @@ The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) ho
 
 ### The GSK physical properties challenges
 
-We recently finalized work with GSK on data collection for a physical properties challenge. The data is currently clearing legal review at GSK and a challenge is forthcoming in the immediate future. We have collected:
+We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and a challenge is under construction. We have collected:
 
 - pKa data for 24 compounds
 - pH-dependent solubility for these compounds
-- logD for 11 of these compounds for distribution between different phases: water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50
+- logD for 11 of these compounds for distribution between different phases: water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50.
 
 It is likely we would run first a pKa prediction challenge on the 24 compounds, and then a logD challenge.
 
-Currently, we welcome input on whether this data should be incorporated into a single challenge, or staged out to form the basis of two challenges. For example, we might hold back some of the distribution coefficient data for selected solvents to allow for a second challenge.
+Details on dataset collection [are available in this talk from the GCC/EuroSAMPL workshop](https://dx.doi.org/10.5281/zenodo.4245127)
 
 
 ## MANIFEST
 - `host_guest`: Details on host-guest challenges.
-- `physical_properties`: Details on physical properties challenge (to be posted very soon)
+- `physical_properties`: Details on physical properties challenge
 
 ## SAMPL-related
 If you give a SAMPL-related talk or presentation or an analysis of its data, and are willing to share publicly, please consider posting on Zenodo and linking it to the [SAMPL Zenodo community](https://zenodo.org/communities/sampl?page=1&size=20).
