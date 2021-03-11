@@ -36,94 +36,19 @@ Our full dataset includes partitioning for these biphasic systems:
 In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 or pH 8 depending on the pKa of the compound, and will be specified when the log D challenge is launched (e.g. for one compound water might have been at pH 3 and for another, at pH 8)
 
 For our compounds, we have measurements for these combinations of solute and solvent system:
-- SAMPL8-5:
-  - octanol-water
-  - cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-1
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-6
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-3
-    - NOT octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-10
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-7
-    - octanol-water
-    - NOT cyclohexane-water
-    - NOT ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-9
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - NOT TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-12
-    - octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-17
-    - NOT octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-16
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-14
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - NOT TBME-water
-  - NOT cyclohexane-water
+|  | octaxl-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
+|-|:-:|-|-|-|-|-|-|
+| SAMPL8-1 | ✓ | x | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SAMPL8-3 | x | x | ✓ | x | ✓ | x | x |
+| SAMPL8-5 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | x |
+| SAMPL8-6 | ✓ | x | ✓ | x | ✓ | ✓ | ✓ |
+| SAMPL8-7 | ✓ | x | x | x | ✓ | x | x |
+| SAMPL8-9 | ✓ | x | ✓ | x | ✓ | x | x |
+| SAMPL8-10 | ✓ | x | ✓ | ✓ | ✓ | ✓ | x |
+| SAMPL8-12 | ✓ | x | ✓ | x | ✓ | x | x |
+| SAMPL8-14 | ✓ | x | ✓ | x | ✓ | x | x |
+| SAMPL8-16 | ✓ | x | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SAMPL8-17 | x | x | ✓ | x | ✓ | x | x |
 
 ## What's here?
 - A Powerpoint file (and PDF thereof) from GSK giving the identity of the compounds under consideration
