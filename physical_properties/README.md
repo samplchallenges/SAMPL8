@@ -66,6 +66,6 @@ For our compounds, we have measurements for these combinations of solute and sol
 
 ## Manifest
 - [`source_data/`](source_data): Files provided by GSK
-- [`SAMPL7_molecule_ID_and_SMILES.csv`](SAMPL7_molecule_ID_and_SMILES.csv): A `.CSV` file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
-- [`microstates/`](microstates): This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in [`SAMPL7_molecule_ID_and_SMILES.csv`](SAMPL7_molecule_ID_and_SMILES.csv)). This directory will be updated at a later time to include enumerated microstates of each SAMPL molecule.
+- [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv): A `.CSV` file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
+- [`microstates/`](microstates): This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv)). This directory will be updated at a later time to include enumerated microstates of each SAMPL molecule.
 - [`images/`](images): Folder containing images related to this challenge in various formats.
