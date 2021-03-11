@@ -42,7 +42,7 @@ In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 
 
 For our compounds, we have measurements for these combinations of solute and solvent system:
 |  | octaxl-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
-|-|:-:|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|
 | SAMPL8-1 | ✓ | x | ✓ | ✓ | ✓ | ✓ | ✓ |
 | SAMPL8-3 | x | x | ✓ | x | ✓ | x | x |
 | SAMPL8-5 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | x |
