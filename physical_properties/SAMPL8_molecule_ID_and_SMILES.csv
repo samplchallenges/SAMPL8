@@ -1,0 +1,24 @@
+SAMPL8 Molecule ID,isomeric SMILES
+SAMPL8-1,OC(=O)c1ccccc1Nc1cccc(c1)C(F)(F)F
+SAMPL8-2,CS(=O)(=O)c1ccc(CCC(O)=O)cc1
+SAMPL8-3,NS(=O)(=O)c1cc(C(O)=O)c(NCc2ccco2)cc1Cl
+SAMPL8-4,Br.Cc1sc(Nc2ccc(C#N)c(Cl)c2)nc1C(O)=O
+SAMPL8-5,[Na+].[O-]C(=O)Cc1ccccc1Nc1c(Cl)cccc1Cl
+SAMPL8-6,Cc1ccc(Cl)cc1NCc1ccc(s1)C(O)=O
+SAMPL8-7,Nc1nc2ccc(Br)cc2n1CC1(O)CCOCC1
+SAMPL8-8,COC(=O)c1cn2cccc(c2n1)C(F)(F)F
+SAMPL8-9,Nc1nc2ccc(Br)cc2n1CC1(O)CCCCC1
+SAMPL8-10,Cl.CS(=O)(=O)c1cccc(c1)-c1ccc(CNCc2c(F)cccc2Cl)cc1
+SAMPL8-11,Cn1c2c(OC[C@H]3CC[C@H](N)CC3)c(F)cnc2ccc1=O
+SAMPL8-12,Cc1ccc(Cc2cnc(N)nc2N2CCOCC2)cc1
+SAMPL8-13,C[C@@H](Oc1cc(sc1C(N)=O)-n1cnc2ccc(cc12)S(C)(=O)=O)c1ccccc1Cl
+SAMPL8-14,Cl.Cc1cc(Cc2cnc(N)nc2N)cc(c1O)C(C)(C)C
+SAMPL8-15,Cc1ccccc1Nc1nc(Cl)nc2ccccc12
+SAMPL8-16,CC(C)(C)OC(=O)NCc1nc2ccccc2[nH]1
+SAMPL8-17,Nc1nc2ccc(Br)cc2n1CC1(CO)CCOCC1
+SAMPL8-18,COc1ccc(Nc2nc(Cl)nc3ccccc23)cc1OC
+SAMPL8-19,COc1ncc(Cc2c[nH]c(SCc3nc4ccccc4n3C)nc2=O)cn1
+SAMPL8-20,Nc1n[nH]c2nc(c(Cl)cc12)-c1ccccc1
+SAMPL8-21,COc1cc(Cc2c(N)nc(N)nc2OC)cc(OC)c1O
+SAMPL8-22,COc1cc2nc(Cl)nc(N)c2cc1OC
+SAMPL8-23,Cc1nc2cc(O)ccc2s1
