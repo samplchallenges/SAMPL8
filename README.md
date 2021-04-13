@@ -55,6 +55,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
 - 2021-03-10:Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
 - Add GDCC experimental measurements (3/25/21)
+- 2021-04-13: Add GDCC submissions for analysis
 
 ## Challenge construction
 
