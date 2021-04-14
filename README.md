@@ -56,6 +56,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - 2021-03-10:Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
 - Add GDCC experimental measurements (3/25/21)
 - 2021-04-13: Add GDCC submissions for analysis
+- 2021-04-13: Add GSK challenge deadline
 
 ## Challenge construction
 
@@ -89,6 +90,8 @@ It is likely we would run first a pKa prediction challenge on the 24 compounds, 
 Details on dataset collection [are available in this talk from the GCC/EuroSAMPL workshop](https://dx.doi.org/10.5281/zenodo.4245127).
 
 GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule will be added at a later time.
+
+Submission deadlines are in August, 2021, as [discussed in the challenge details](physical_properties/README.md).
 
 
 ## MANIFEST

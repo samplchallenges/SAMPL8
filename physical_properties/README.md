@@ -1,6 +1,6 @@
 # The SAMPL8 physical properties challenge
 
-We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and we are now making challenge details and input files available. The challenge will include pKa prediction as well as logD between (diverse) organic phases.
+We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and challenge details and input files are now available. The challenge will include pKa prediction as well as logD between (diverse) organic phases.
 
 For details on [SAMPL8 physical properties dataset collection, refer to this GCC/EuroSAMPL talk](https://dx.doi.org/10.5281/zenodo.4245127) by Aakankschit Nandkeolyar and Matthew Bahr. Full details of the experiments, along with the results of the measurements, are available in a paper draft which will be submitted after the challenge closes.
 
@@ -9,6 +9,8 @@ For details on [SAMPL8 physical properties dataset collection, refer to this GCC
 We have collected pKa data for 23 diverse compounds, along with pH-dependent solubility. The pKa data will form the basis for an initial pKa challenge, followed by release of the pKa data.
 
 We also measured logD for 11 of these compounds for distribution between different phases: : water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50. These logD values will form the basis for a logD challenge which will run after the pKa challenge.  
+
+We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25, 2021 for the logD challenge. We will release pKa values immediately upon the close of the pKa challenge to allow these to be used in logD predictions if desired. 
 
 ## A view of the compounds
 
