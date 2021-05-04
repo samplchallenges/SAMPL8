@@ -53,7 +53,8 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add GDCC submission server link (1/20/21)
 - Add info on physical properties challenge
 - 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
-- 2021-03-10:Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
+- 2021-03-10: Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
+- 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Added enumerated microstates for the challenge molecules.
 
 
 ## Challenge construction
@@ -87,12 +88,12 @@ It is likely we would run first a pKa prediction challenge on the 24 compounds, 
 
 Details on dataset collection [are available in this talk from the GCC/EuroSAMPL workshop](https://dx.doi.org/10.5281/zenodo.4245127).
 
-GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule will be added at a later time.
+GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule are available (as of 5/4/21).
 
 
 ## MANIFEST
-- `host_guest`: Details on host-guest challenges.
-- `physical_properties`: Details on physical properties challenge
+- [`host_guest/`](host_guest/): Details on host-guest challenges.
+- [`physical_properties/`](physical_properties/): Details on the GSK physical properties challenge
 
 ## SAMPL-related
 If you give a SAMPL-related talk or presentation or an analysis of its data, and are willing to share publicly, please consider posting on Zenodo and linking it to the [SAMPL Zenodo community](https://zenodo.org/communities/sampl?page=1&size=20).
