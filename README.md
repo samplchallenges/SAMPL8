@@ -58,6 +58,7 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add GDCC experimental measurements (3/25/21)
 - 2021-04-13: Add GDCC submissions for analysis
 - 2021-04-13: Add GSK challenge deadline
+- 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Added enumerated microstates for the challenge molecules.
 
 ## Challenge construction
 
