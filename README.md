@@ -59,7 +59,6 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - 2021-04-13: Add GDCC submissions for analysis
 - 2021-04-13: Add GSK challenge deadline
 
-
 ## Challenge construction
 
 ### Overview
