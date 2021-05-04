@@ -1,0 +1,23 @@
+microstate ID,canonical isomeric SMILES
+SAMPL8-3_micro000,c1cc(oc1)CN=C2C=C(C(=CC2=C(O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro001,c1cc(oc1)CN=C2CC(=C(C=C2C(=O)[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro002,c1cc(oc1)CN=C2CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro003,c1cc(oc1)CN=C2CC(=C(C=C2C(=O)O)S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro004,c1cc(oc1)CN=C2C=C(C(C=C2C(=O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro005,c1cc(oc1)CN=C2C=C(C(=CC2=C(O)[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro006,c1cc(oc1)CNc2cc(c(cc2C(=O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro007,c1cc(oc1)CN=C2C=C(C(C=C2C(=O)[O-])S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro008,c1cc(oc1)CN=C2C=C(C(=CC2C(=O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro009,c1cc(oc1)CN=C2C=C(C(=CC2C(=O)[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro010,c1cc(oc1)CNc2cc(c(cc2C(=O)[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro011,c1cc(oc1)CN=C2C=C(C(C=C2C(=O)O)S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro012,c1cc(oc1)CN=C2C=C(C(=CC2=C(O)[O-])S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro013,c1cc(oc1)C[NH+]=C2C=C(C(=CC2=C([O-])[O-])S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro014,c1cc(oc1)CNc2cc(c(cc2C(=O)[O-])S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro015,c1cc(oc1)CN=C2C=C(C(=CC2=C(O)O)S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro016,c1cc(oc1)CNc2cc(c(cc2C(=O)O)S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro017,c1cc(oc1)CN=C2C=C(C(=CC2C(=O)O)S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro018,c1cc(oc1)CN=C2C=C(C(C=C2C(=O)[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro019,c1cc(oc1)CN=C2CC(=C(C=C2C(=O)[O-])S(=O)(=O)[NH-])Cl
+SAMPL8-3_micro020,c1cc(oc1)C[NH+]=C2C=C(C(=CC2=C([O-])[O-])S(=O)(=O)N)Cl
+SAMPL8-3_micro021,c1cc(oc1)CN=C2C=C(C(=CC2C(=O)[O-])S(=O)(=O)[NH-])Cl
