@@ -80,17 +80,19 @@ The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) ho
 
 ### The GSK physical properties challenges
 
-We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and a challenge is under construction. We have collected:
+We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and a challenge is underway. We have collected:
 
 - pKa data for 24 compounds
 - pH-dependent solubility for these compounds
 - logD for 11 of these compounds for distribution between different phases: water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50.
 
-It is likely we would run first a pKa prediction challenge on the 24 compounds, and then a logD challenge.
+We will first run a pKa challenge on the 24 compounds, and then a logD challenge.
 
 Details on dataset collection [are available in this talk from the GCC/EuroSAMPL workshop](https://dx.doi.org/10.5281/zenodo.4245127).
 
 GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule are available (as of 5/4/21).
+
+Generally, the challenge structure resembles that of the [SAMPL7 physical properties challenge](https://doi.org/10.26434/chemrxiv.14461962.v1).
 
 
 ## MANIFEST
