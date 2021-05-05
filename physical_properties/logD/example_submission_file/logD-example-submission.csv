@@ -3,7 +3,6 @@
 # This file will be automatically parsed. It must contain the following four elements:
 # predictions, name of method, software listing, and method description.
 # These elements must be provided in the order shown with their respective headers.
-# Please fill out a separate submission template for each biphasic system considered.
 #
 # Any line that begins with a # is considered a comment and will be ignored when parsing.
 #
@@ -12,6 +11,8 @@
 #
 # It is mandatory to submit logD predictions for all challenge molecules.
 # Incomplete submissions will not be accepted.
+# You must submit predictions for atleast one solvent pair (eg. Octanol-water, Cyclohexane-water, Ethyl acetate-water, etc etc).
+#
 # Please report the general molecule `ID tag` in the form of `SAMPL8-X` (e.g. SAMPL8-1, SAMPL8-2, etc).
 # Please indicate the microstate(s) used in the `Molecule ID/IDs considered (no commas)` section (e.g. `SAMPL8-1_micro000`, `SAMPL8-1_micro000 SAMPL8-1_extra001`)
 # Please report standard error of the mean (SEM) and model uncertainty.
@@ -24,8 +25,44 @@
 # If multiple microstates are used, please report the order of population in the aqueous phase in descending order.
 # Please list microstate populations, SMILES strings and the molecule IDs in the `METHOD DESCRIPTION SECTION` section further below.
 #
-# The list of predictions must begin with the 'Predictions:' keyword as illustrated here.
-Predictions:
+# Predictions for each solvent pair must have it's own header, as illustrated here.
+Octanol-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+Cyclohexane-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+Ethyl acetate-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+Heptane-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+MEK-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+TBME-water predictions:
+SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
+SAMPL8-2,SM38_micro000,0.41,0.88,2
+SAMPL8-3,SM39_micro000,2.25,1.02,2
+#etc etc
+
+Cyclohexane-DMF predictions:
 SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
 SAMPL8-2,SM38_micro000,0.41,0.88,2
 SAMPL8-3,SM39_micro000,2.25,1.02,2
@@ -57,14 +94,41 @@ GAFF-TIP3P-Hamiltonian-Replica-Exchange
 #
 # COMPUTE TIME SECTION
 #
-# Please provide the average compute time across all of the molecules.
+# Please provide the average compute time across all of the molecules, per biphasic system.
 # For physical methods, report the GPU and/or CPU compute time in hours.
 # For empirical methods, report the query time in hours.
 # Create a new line for each processor type.
 # The 'Compute time:' keyword is required as shown here.
 Compute time:
+
+octanol-water:
 28 hours, CPU
 5.5 hours, GPU
+
+cyclohexane-water:
+35 hours, CPU
+7.5 hours, GPU
+
+ethyl acetate-water:
+42 hours, CPU
+8.5 hours, GPU
+
+heptane-water:
+41 hours, CPU
+7.2 hours, GPU
+
+MEK-water:
+48 hours, CPU
+10.5 hours, GPU
+
+TBME-water:
+36 hours, CPU
+8.5 hours, GPU
+
+cyclohexane-DMF:
+55 hours, CPU
+20.5 hours, GPU
+
 
 #
 # COMPUTING AND HARDWARE SECTION
@@ -102,6 +166,8 @@ Physical (MM)
 #
 # Methodology and computational details.
 # Level of details should be roughly equivalent to that used in a publication.
+# Please list out the method details of predictions for each solvent pair considered.
+#
 # Please include the values of key parameters with units.
 # Please explain how statistical uncertainties were estimated.
 #
@@ -109,8 +175,43 @@ Physical (MM)
 #
 # Use as many lines of text as you need.
 # All text following the 'Method:' keyword will be regarded as part of your free text methods description.
+
 Method:
+
 Free text methods section describing the approach and calculations in full detail.
+
+
+Octanol-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+Cyclohexane-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+Ethyl acetate-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+Heptane-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+MEK-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+TBME-water predictions:
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
+SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
+SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
+
+Cyclohexane-DMF predictions:
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
