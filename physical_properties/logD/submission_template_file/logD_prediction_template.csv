@@ -9,9 +9,10 @@
 #
 # PREDICTION SECTION
 #
-# It is mandatory to submit logD predictions for all challenge molecules.
-# Incomplete submissions will not be accepted.
-# You must submit predictions for atleast one solvent pair (eg. Octanol-water, Cyclohexane-water, Ethyl acetate-water, etc etc).
+# It is mandatory to submit logD predictions for all challenge molecules for
+# which data is available in at least one solvent pair.
+# See https://github.com/samplchallenges/SAMPL8/tree/master/physical_properties for data availability.
+# You must submit predictions for at least one solvent pair (eg. Octanol-water, Cyclohexane-water, Ethyl acetate-water, etc etc).
 #
 # Please report the general molecule `ID tag` in the form of `SAMPL8-X` (e.g. SAMPL8-1, SAMPL8-2, etc).
 # Please indicate the microstate(s) used in the `Molecule ID/IDs considered (no commas)` section (e.g. `SAMPL8-1_micro000`, `SAMPL8-1_micro000 SAMPL8-1_extra001`)
@@ -25,7 +26,9 @@
 # If multiple microstates are used, please report the order of population in the aqueous phase in descending order.
 # Please list microstate populations, SMILES strings and the molecule IDs in the `METHOD DESCRIPTION SECTION` section further below.
 #
-# Predictions for each solvent pair must have it's own header, as illustrated here.
+# Predictions for each solvent pair must have their own header, as illustrated here.
+#
+# We recommend editing this file with a plain text editor (e.g. vi, eMacs, etc.) and NOT a spreadsheet.
 Octanol-water predictions:
 
 Cyclohexane-water predictions:
