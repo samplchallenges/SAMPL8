@@ -28,6 +28,8 @@
 # Please list microstate populations, SMILES strings and the molecule IDs in the `METHOD DESCRIPTION SECTION` section further below.
 #
 # Predictions for each solvent pair must have their own header, as illustrated here.
+#
+# We recommend editing this file with a plain text editor (e.g. vi, eMacs, etc.) and NOT a spreadsheet.
 Octanol-water predictions:
 SAMPL8-1,SAMPL8-X_extra001,0.41,0.88,2
 SAMPL8-2,SM38_micro000,0.41,0.88,2

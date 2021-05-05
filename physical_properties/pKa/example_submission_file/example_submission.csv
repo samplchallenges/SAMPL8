@@ -10,6 +10,7 @@
 #
 # It is mandatory to submit relative free energy (RFE) predictions for all 22 molecules. Incomplete submissions will not be accepted.
 # Please report RFE standard error of the mean (SEM) and RFE model uncertainty.
+# Note that we here follow the same sign convention and submission format as the SAMPL7 pKa challenge.
 #
 # The data in each prediction line should be structured as follows:
 # Microstate ID of reference state, Microstate ID of the predicted microstate, total charge, RFE, RFE SEM, RFE model uncertainty

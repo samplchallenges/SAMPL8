@@ -10,7 +10,9 @@ We have collected pKa data for 23 diverse compounds, along with pH-dependent sol
 
 We also measured logD for 11 of these compounds for distribution between different phases: : water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50. These logD values will form the basis for a logD challenge which will run after the pKa challenge.  
 
-We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25, 2021 for the logD challenge. We will release pKa values immediately upon the close of the pKa challenge to allow these to be used in logD predictions if desired. 
+We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25, 2021 for the logD challenge. We will release pKa values immediately upon the close of the pKa challenge to allow these to be used in logD predictions if desired.
+
+The general format of the challenge will follow that of SAMPL7, so refer to the [SAMPL7 physical properties overview paper](https://doi.org/10.26434/chemrxiv.14461962.v1) for details.
 
 ## A view of the compounds
 
@@ -22,7 +24,7 @@ We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25,
 
 The pKa challenge involves predicting pKa values for SAMPL8 compounds SAMPL8-1 through SAMPL8-23 (except that for SAMPL8-11 and 13 we were only able to measure pH-dependent solubility but no pKa). pH-dependent solubility measurements are also available so please reach out if you are interested in predicting these. [Preliminary details of the experiments are available in this talk](https://zenodo.org/record/4245127).
 
-As in [the SAMPL7 physical properties challenge](https://github.com/samplchallenges/SAMPL7/tree/master/physical_property/pKa), we will be collecting pKa values predicted as relative free energies to transition between microstates relative to a reference microstate for each compound; these can be estimated from predicted microstate populations. In some cases, compounds had multiple pKa values, and these are handled within the same framework.
+As in [the SAMPL7 physical properties challenge](https://github.com/samplchallenges/SAMPL7/tree/master/physical_property/pKa), we will be collecting pKa values predicted as relative free energies to transition between microstates relative to a reference microstate for each compound; these can be estimated from predicted microstate populations. In some cases, compounds had multiple pKa values, and these are handled within the same framework. Refer to our [SAMPL7 report](https://doi.org/10.26434/chemrxiv.14461962.v1).
 
 In some cases, compounds have multiple measured pKa values; submissions for these cases should still follow the same format. Details and submission file format will be posted shortly.
 
