@@ -76,7 +76,7 @@ The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests whi
 
 The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
-**Deadline**: The deadline for GDCC submissions was Feb. 4, 2021. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC).
+**Deadline**: The deadline for GDCC submissions was Feb. 21, 2021 (updated from Feb. 4, 2021). [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC). Challenge is closed and experimental results/data is [available here](https://github.com/samplechallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/Final-Data-Table-031621-SAMPL8.docx)
 
 ### The GSK physical properties challenges
 
@@ -93,6 +93,8 @@ Details on dataset collection [are available in this talk from the GCC/EuroSAMPL
 GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule are available (as of 5/4/21).
 
 Generally, the challenge structure resembles that of the [SAMPL7 physical properties challenge](https://doi.org/10.26434/chemrxiv.14461962.v1).
+
+Submission deadlines are in August, 2021, as [discussed in the challenge details](physical_properties/README.md).
 
 
 ## MANIFEST

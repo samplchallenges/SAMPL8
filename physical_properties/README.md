@@ -1,15 +1,22 @@
 # The SAMPL8 physical properties challenge
 
-We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and we are now making challenge details and input files available. The challenge will include pKa prediction as well as logD between (diverse) organic phases.
+We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and challenge details and input files are now available. The challenge will include pKa prediction as well as logD between (diverse) organic phases.
 
-For details on [SAMPL8 physical properties dataset collection, refer to this GCC/EuroSAMPL talk](https://dx.doi.org/10.5281/zenodo.4245127]) by Aakankschit Nandkeolyar and Matthew Bahr. Full details of the experiments, along with the results of the measurements, are available in a paper draft which will be submitted after the challenge closes.
+For details on [SAMPL8 physical properties dataset collection, refer to this GCC/EuroSAMPL talk](https://dx.doi.org/10.5281/zenodo.4245127) by Aakankschit Nandkeolyar and Matthew Bahr. Full details of the experiments, along with the results of the measurements, are available in a paper draft which will be submitted after the challenge closes.
 
 ## Overview
 
-We have collected pKa data for 24 diverse compounds, along with pH-dependent solubility. The pKa data will form the basis for an initial pKa challenge, followed by release of the pKa data.
+We have collected pKa data for 23 diverse compounds, along with pH-dependent solubility. The pKa data will form the basis for an initial pKa challenge, followed by release of the pKa data.
 
 We also measured logD for 11 of these compounds for distribution between different phases: : water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50. These logD values will form the basis for a logD challenge which will run after the pKa challenge.  
 
+We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25, 2021 for the logD challenge. We will release pKa values immediately upon the close of the pKa challenge to allow these to be used in logD predictions if desired. 
+
+## A view of the compounds
+
+![23 SAMPL8 molecules](images/SAMPL8-molecules.png)
+
+**Fig 1. SAMPL8 Challenge molecules.**
 
 ## The pKa challenge
 
@@ -36,94 +43,20 @@ Our full dataset includes partitioning for these biphasic systems:
 In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 or pH 8 depending on the pKa of the compound, and will be specified when the log D challenge is launched (e.g. for one compound water might have been at pH 3 and for another, at pH 8)
 
 For our compounds, we have measurements for these combinations of solute and solvent system:
-- SAMPL8-5:
-  - octanol-water
-  - cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-1
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-6
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-3
-    - NOT octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-10
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-7
-    - octanol-water
-    - NOT cyclohexane-water
-    - NOT ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-9
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - NOT TBME-water
-  - NOT cyclohexane-DMF
-- SAMPL8-12
-    - octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-17
-    - NOT octanol-water
-    - NOT cyclohexane-water
-    - ethyl acetate-water
-    - NOT heptane-water
-    - MEK-water
-    - NOT TBME-water
-    - NOT cyclohexane-DMF
-- SAMPL8-16
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - heptane-water
-  - MEK-water
-  - TBME-water
-  - cyclohexane-DMF
-- SAMPL8-14
-  - octanol-water
-  - NOT cyclohexane-water
-  - ethyl acetate-water
-  - NOT heptane-water
-  - MEK-water
-  - NOT TBME-water
-  - NOT cyclohexane-water
+|           | octaxl-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
+|-----------|--------------|-------------------|---------------------|---------------|-----------|------------|-----------------|
+| SAMPL8-1  |       ✓      |         x         |          ✓          |       ✓       |     ✓     |      ✓     |        ✓        |
+| SAMPL8-3  |       x      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
+| SAMPL8-5  |       ✓      |         ✓         |          ✓          |       ✓       |     ✓     |      ✓     |        x        |
+| SAMPL8-6  |       ✓      |         x         |          ✓          |       x       |     ✓     |      ✓     |        ✓        |
+| SAMPL8-7  |       ✓      |         x         |          x          |       x       |     ✓     |      x     |        x        |
+| SAMPL8-9  |       ✓      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
+| SAMPL8-10 |       ✓      |         x         |          ✓          |       ✓       |     ✓     |      ✓     |        x        |
+| SAMPL8-12 |       ✓      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
+| SAMPL8-14 |       ✓      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
+| SAMPL8-16 |       ✓      |         x         |          ✓          |       ✓       |     ✓     |      ✓     |        ✓        |
+| SAMPL8-17 |       x      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
+
 
 ## What's here?
 - A Powerpoint file (and PDF thereof) from GSK giving the identity of the compounds under consideration
@@ -135,6 +68,7 @@ For our compounds, we have measurements for these combinations of solute and sol
 - Submission link
 
 ## Manifest
-- `source_data`: Files provided by GSK
-- `SAMPL7_molecule_ID_and_SMILES.csv`: A .CSV file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
-- `microstates/`: This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in `SAMPL7_molecule_ID_and_SMILES.csv`). This directory will be updated at a later time to include enumerated microstates of each SAMPL molecule.
+- [`source_data/`](source_data): Files provided by GSK
+- [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv): A `.CSV` file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
+- [`microstates/`](microstates): This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv)). This directory will be updated at a later time to include enumerated microstates of each SAMPL molecule.
+- [`images/`](images): Folder containing images related to this challenge in various formats.
