@@ -1,0 +1,5 @@
+microstate ID,canonical isomeric SMILES
+SAMPL8-22_micro000,COc1cc2c(cc1OC)nc([nH]c2=N)Cl
+SAMPL8-22_micro001,COc1cc2c(cc1OC)[n-]c(nc2=N)Cl
+SAMPL8-22_micro002,COc1cc2c(cc1OC)nc(nc2N)Cl
+SAMPL8-22_micro003,COc1cc2c(cc1OC)[nH]c(nc2=N)Cl

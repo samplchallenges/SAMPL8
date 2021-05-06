@@ -53,10 +53,11 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - Add GDCC submission server link (1/20/21)
 - Add info on physical properties challenge
 - 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
-- 2021-03-10:Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
+- 2021-03-10: Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
 - Add GDCC experimental measurements (3/25/21)
 - 2021-04-13: Add GDCC submissions for analysis
 - 2021-04-13: Add GSK challenge deadline
+- 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
 
 ## Challenge construction
 
@@ -79,24 +80,26 @@ The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) ho
 
 ### The GSK physical properties challenges
 
-We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and a challenge is under construction. We have collected:
+We recently finalized work with GSK on data collection for a physical properties challenge. The data recently cleared legal review at GSK and a challenge is underway. We have collected:
 
 - pKa data for 24 compounds
 - pH-dependent solubility for these compounds
 - logD for 11 of these compounds for distribution between different phases: water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50.
 
-It is likely we would run first a pKa prediction challenge on the 24 compounds, and then a logD challenge.
+We will first run a pKa challenge on the 24 compounds, and then a logD challenge.
 
 Details on dataset collection [are available in this talk from the GCC/EuroSAMPL workshop](https://dx.doi.org/10.5281/zenodo.4245127).
 
-GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule will be added at a later time.
+GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format are now available (3/10/21). Enumerated microstates of each molecule are available (as of 5/4/21).
+
+Generally, the challenge structure resembles that of the [SAMPL7 physical properties challenge](https://doi.org/10.26434/chemrxiv.14461962.v1).
 
 Submission deadlines are in August, 2021, as [discussed in the challenge details](physical_properties/README.md).
 
 
 ## MANIFEST
-- `host_guest`: Details on host-guest challenges.
-- `physical_properties`: Details on physical properties challenge
+- [`host_guest/`](host_guest/): Details on host-guest challenges.
+- [`physical_properties/`](physical_properties/): Details on the GSK physical properties challenge
 
 ## SAMPL-related
 If you give a SAMPL-related talk or presentation or an analysis of its data, and are willing to share publicly, please consider posting on Zenodo and linking it to the [SAMPL Zenodo community](https://zenodo.org/communities/sampl?page=1&size=20).

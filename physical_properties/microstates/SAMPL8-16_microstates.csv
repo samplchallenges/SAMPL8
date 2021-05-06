@@ -1,0 +1,13 @@
+microstate ID,canonical isomeric SMILES
+SAMPL8-16_micro000,CC(C)(C)OC(=O)NCc1[nH]c2ccccc2n1
+SAMPL8-16_micro001,CC(C)(C)OC(=NCC1=Nc2ccccc2[NH2+]1)O
+SAMPL8-16_micro002,CC(C)(C)OC(=NC=C1Nc2ccccc2N1)O
+SAMPL8-16_micro003,CC(C)(C)OC(=O)NC=C1[NH2+]c2ccccc2N1
+SAMPL8-16_micro004,CC(C)(C)OC(=O)NCc1[nH]c2ccccc2[nH+]1
+SAMPL8-16_micro005,CC(C)(C)OC(=O)N=CC1Nc2ccccc2N1
+SAMPL8-16_micro006,CC(C)(C)OC(=O)N=CC1[NH2+]c2ccccc2N1
+SAMPL8-16_micro007,CC(C)(C)OC(=O)NC=C1Nc2ccccc2N1
+SAMPL8-16_micro008,CC(C)(C)OC(=NCc1[nH]c2ccccc2[nH+]1)O
+SAMPL8-16_micro009,CC(C)(C)OC(=NC=C1[NH2+]c2ccccc2N1)O
+SAMPL8-16_micro010,CC(C)(C)OC(=O)NCC1=Nc2ccccc2[NH2+]1
+SAMPL8-16_micro011,CC(C)(C)OC(=NCc1[nH]c2ccccc2n1)O
