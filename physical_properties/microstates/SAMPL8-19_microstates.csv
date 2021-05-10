@@ -1,0 +1,27 @@
+microstate ID,canonical isomeric SMILES
+SAMPL8-19_micro000,CN1c2ccccc2NC1=CSc3[nH]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro001,CN1c2ccccc2[NH2+]C1=CSc3[nH]cc(c(=O)n3)Cc4cnc(nc4)OC
+SAMPL8-19_micro002,C[n+]1c2ccccc2[nH]c1CSc3[nH]cc(c(=O)[nH+]3)Cc4cnc(nc4)OC
+SAMPL8-19_micro003,Cn1c2ccccc2[nH+]c1CSc3[nH+]c(c(cn3)Cc4cnc(nc4)OC)O
+SAMPL8-19_micro004,CN1c2ccccc2NC1=CSc3[nH+]cc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro005,C[n+]1c2ccccc2[nH]c1CSc3[nH]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro006,Cn1c2ccccc2nc1CSc3[nH]cc(c(=O)[nH+]3)Cc4cnc(nc4)OC
+SAMPL8-19_micro007,Cn1c2ccccc2nc1CSc3[nH]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro008,C[n+]1c2ccccc2[nH]c1CSc3ncc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro009,Cn1c2ccccc2[nH+]c1CSc3[nH]cc(c(=O)n3)Cc4cnc(nc4)OC
+SAMPL8-19_micro010,CN1c2ccccc2NC1=CSc3[n-]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro011,Cn1c2ccccc2nc1CSc3[n-]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro012,CN1c2ccccc2[NH2+]C1=CSc3[nH]c(=O)c(c[nH+]3)Cc4cnc(nc4)OC
+SAMPL8-19_micro013,Cn1c2ccccc2nc1CSc3[nH]cc(c(=O)n3)Cc4cnc(nc4)OC
+SAMPL8-19_micro014,CN1c2ccccc2[NH2+]C1=CSc3[n-]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro015,Cn1c2ccccc2nc1CSc3ncc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro016,CN1c2ccccc2[NH2+]C1=CSc3[nH]c(=O)c(cn3)Cc4cnc(nc4)OC
+SAMPL8-19_micro017,Cn1c2ccccc2[nH+]c1CSc3[nH+]cc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro018,Cn1c2ccccc2nc1CSc3[nH+]c(c(cn3)Cc4cnc(nc4)OC)O
+SAMPL8-19_micro019,Cn1c2ccccc2nc1CSc3[nH+]cc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro020,CN1c2ccccc2NC1=CSc3ncc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro021,CN1c2ccccc2[NH2+]C1=CSc3[nH+]cc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro022,CN1c2ccccc2NC1=CSc3[nH]c(=O)c(c[nH+]3)Cc4cnc(nc4)OC
+SAMPL8-19_micro023,CN1c2ccccc2[NH2+]C1=CSc3ncc(c(n3)O)Cc4cnc(nc4)OC
+SAMPL8-19_micro024,Cn1c2ccccc2[nH+]c1CSc3ncc(c(n3)[O-])Cc4cnc(nc4)OC
+SAMPL8-19_micro025,CN1c2ccccc2NC1=CSc3[nH]cc(c(=O)n3)Cc4cnc(nc4)OC
