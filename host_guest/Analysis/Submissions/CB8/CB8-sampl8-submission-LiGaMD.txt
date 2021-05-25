@@ -102,4 +102,4 @@ Other Physical
 # Non-ranked submissions are accepted so we can verify that they were made before the deadline.
 # The "Ranked:" keyword is required, and expects a Boolean value (True/False)
 Ranked:
-True
+False
