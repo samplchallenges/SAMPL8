@@ -6,13 +6,13 @@ For details on [SAMPL8 physical properties dataset collection, refer to this GCC
 
 ## Overview
 
-We have collected pKa data for 23 diverse compounds, along with pH-dependent solubility. The pKa data will form the basis for an initial pKa challenge, followed by release of the pKa data.
+We have collected pKa data for 23 diverse compounds, along with pH-dependent solubility (which was used to determine pKa). The pKa data will form the basis for an initial pKa challenge, followed by release of the pKa data.
 
 We also measured logD for 11 of these compounds for distribution between different phases: : water-octanol, water-cyclohexane, water-ethyl acetate, water-heptane, water-MEK, water-TBME, and cyclohexane-DMF. Not all combinations of distribution coefficient are available because of compound solubility in the different phases. The total number of data points/combinations of (compound)x(phase identities) is between 40 and 50. These logD values will form the basis for a logD challenge which will run after the pKa challenge.  
 
 We are planning on a deadline of Aug. 3, 2021 for the pKa challenge and Aug. 25, 2021 for the logD challenge. We will release pKa values immediately upon the close of the pKa challenge to allow these to be used in logD predictions if desired.
 
-The general format of the challenge will follow that of SAMPL7, so refer to the [SAMPL7 physical properties overview paper](https://doi.org/10.26434/chemrxiv.14461962.v1) for details.
+The general format of the challenge will follow that of SAMPL7, so refer to the [SAMPL7 physical properties overview paper](https://doi.org/10.26434/chemrxiv.14461962.v1) for details. Challenge instructions are also being made available here in the relevant subdirectories.
 
 ## A view of the compounds
 
@@ -62,12 +62,12 @@ For our compounds, we have measurements for these combinations of solute and sol
 
 ## What's here?
 - A Powerpoint file (and PDF thereof) from GSK giving the identity of the compounds under consideration
+- Submission formats
+- Challenge instructions for the pKa challenge
 
 ## What's coming?
-- Machine readable files containing the compounds comprising the pKa and logD challenges.
-- Challenge timeline and deadlines
-- Submission format
 - Submission link
+- Challenge instructions for the logD challenge
 
 ## Manifest
 - [`source_data/`](source_data): Files provided by GSK

@@ -24,13 +24,11 @@ Of course, we also appreciate it if you cite any overview/experimental papers re
 - Host-guest challenge files for the GDCC challenge.
 - [Host-guest participation instructions](https://github.com/samplchallenges/SAMPL8/blob/master//host_guest_instructions.md) with information on the submissions format, etc. Submission templates are available in the the subdirectories for individual host-guest systems.
 - Introductory details on the GSK physical properties challenge.
-- GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format. Enumerated microstates of each molecule will be added at a later time.
+- GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format, and enumerated microstates
 
 ## What's coming
 
-At a later date, we will announce details of other SAMPL8 host-guest challenges, including a likely cyclodextrin-derivative challenge with the Gilson lab currently on hold due to COVID-19-related lab shutdowns. The GDCC sterics and flexibility challenge details and files are now available as of 10/17/20. Submission instructions and template file for GDCC sterics and flexibility challenge are now available as of 1/14/21.
-
-We are also in the process of sorting out details of other SAMPL challenges in the physical properties area and potentially also on protein-ligand binding, but these are still awaiting dataset collection and/or construction so no details can be announced yet.
+We will make available challenge instructions for the logD challenge, as well as links to the submission server.
 
 
 ## Changes and Data Set Versions
@@ -58,23 +56,24 @@ We are also in the process of sorting out details of other SAMPL challenges in t
 - 2021-04-13: Add GDCC submissions for analysis
 - 2021-04-13: Add GSK challenge deadline
 - 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
+- 2021-07-05: Update example submission for pKa challenge; add pKa challenge instructions; update README files.
 
 ## Challenge construction
 
 ### Overview
 
-The SAMPL8 phase of challenges includes at least several new host-guest challenges (CB8, cyclodextrin derivatives, and Gibb's deep cavity cavitands) with details on the latter two awaiting experimental data collection after COVID-19 lab reopenings. We are also shortly posting inputs for our physical properties challenge with GSK (details below) including pKa and logD prediction.
+The SAMPL8 phase of challenges included two new host-guest challenges (CB8 and Gibb's deep cavity cavitands). We are currently running our physical properties challenge with GSK (details below) including pKa and logD prediction.
 
 
 ### The CB8 challenge
 
-The CB8 "drugs of abuse" challenge focuses on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group has prepared a paper for publication [available here](https://chemrxiv.org/articles/preprint/In_Vitro_and_In_Vivo_Sequestration_of_Phencyclidine_by_Me4Cucurbit_8_uril/12994004). Experimental results/data is available [in this repository](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/).
+The CB8 "drugs of abuse" challenge focused on binding of CB8 to seven guests which are drugs of abuse, including morphine, hydromorphine, methamphetamine, cocaine and others. Binding has been experimentally characterized, a provisional patent filed, and the Isaacs group has prepared a paper for publication [available here](https://chemrxiv.org/articles/preprint/In_Vitro_and_In_Vivo_Sequestration_of_Phencyclidine_by_Me4Cucurbit_8_uril/12994004). Experimental results/data is available [in this repository](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/).
 
 **Deadline**: The deadline for CB8 submissions was September 15, 2020. [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/CB8/CB8_submissions.txt).
 
 ### The GDCC challenge
 
-The GDCC challenge focuses on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
+The GDCC challenge focused on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
 **Deadline**: The deadline for GDCC submissions was Feb. 21, 2021 (updated from Feb. 4, 2021). [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC). Challenge is closed and experimental results/data is [available here](https://github.com/samplechallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/Final-Data-Table-031621-SAMPL8.docx)
 
