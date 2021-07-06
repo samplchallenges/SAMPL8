@@ -30,38 +30,42 @@ from pkganalysis.stats import (compute_bootstrap_statistics, rmse, mae,
 # This script is adapted from SAMPL6/SAMPL7 work by Andrea Rizzi and David Mobley. 
 
 # UPDATES TO PRESENT
-# - (DONE) Update host-guest systems, names/etc (only CB8 for now)
+# - (DONE) Update host-guest systems, names/etc (CB8 and GDCC for now)
 # - (DONE) Update user-map ( not directly on script)
-# - (DONE) Make experimental tables using generate_tables.py (only CB8 for now; not directly on script)
+# - (DONE) Make experimental tables using generate_tables.py (CB8 and GDCC for now; not directly on script)
 # - (DONE) Update submission files and give unique method name(s) (not directly on script)
 #      - Particularly for participants who included multiple submissions. 
-# - (DONE) Update/exclude compounds with previously published values. (CB8 --> G8, G9)
+# - (DONE) Update/exclude compounds with previously published values. (CB8 --> G8, G9 ; GDCC --> TEMOA-G3)
 # - (DONE) Update to have "ranked only" and "all" (ranked and non-ranked) analysis output separate
 # - (DONE) Include new submission (late submission), update submission file, re-run analysis
+# - (DONE) Include GDCC dataset for analysis, re-run analysis.
+# - (DONE) Update/Correct submission, received late email of ranked submission needs to be changed to non-ranked (CB8)
 
 
 # TO DO / WIP
 # - Update script to generate single plot of correlations of ranked methods for each dataset
-#      - Currently works as is, need to fix titles (or change method name), change number of plots, etc. 
-#
+#      - Almost complete, need to fix titles (or change method name), change number of plots, etc. 
+# - Update script after figure5 to generate plots of methods that correctly predict strongest/weakest binders. 
+# - Update script to commpare similar methods, typically by name (i.e. force field, sampling, charging scheme, water, etc)
+# - Update/Correct error(s) "divide by zero" and/or "Runtime Error: Double scalars". Perhaps due to GDCC dataset. 
+#       - Not sure what is causing this yet. 
 
 # =============================================================================
 # CONSTANTS
 # =============================================================================
 
 # Paths to input data.
-#HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH = '../Submissions/GDCC/'
-HOST_GUEST_CB8_SUBMISSIONS_DIR_PATH = '/home/amezcum1/SAMPL8/host_guest/Analysis/Submissions/CB8/'
+HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/Analysis/Submissions/GDCC/'
+HOST_GUEST_CB8_SUBMISSIONS_DIR_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/Analysis/Submissions/CB8/'
 #HOST_GUEST_CD_SUBMISSIONS_DIR_PATH = '../Submissions/CD/'
-EXPERIMENTAL_DATA_FILE_PATH = '/home/amezcum1/SAMPL8/host_guest/Analysis/ExperimentalMeasurements/experimental_measurements.csv'
+EXPERIMENTAL_DATA_FILE_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/Analysis/ExperimentalMeasurements/experimental_measurements.csv'
 
 # Host color scheme.
 HOST_PALETTE = {
-   # 'OA': '#FFBE0C',
-   # 'exoOA': '#FF0C0C', #First pass
-   # 'GDCC': '#FFBE0C',
+    'TEMOA': '#FFBE0C',
+    'TEETOA': '#FF0C0C', #First pass
+    'GDCC': '#FFBE0C',
     'CB8': 'C0',
-   # 'clip': 'C0',
    # 'CD': 'C2',
    # 'bCD': 'C2',
    # 'MGLab_8': 'C2',
@@ -100,7 +104,7 @@ class HostGuestSubmission(SamplSubmission):
 
     TEST_SUBMISSION_SIDS = {}
     # The IDs of submissions for reference calculations. Should be strings of submission IDs
-    REF_SUBMISSION_SIDS = ['31', '32', '33', '34']  
+    REF_SUBMISSION_SIDS = ['31', '32', '33', '34', '48', '49', '50', '51']  
 
     # Section of the submission file.
     SECTIONS = {'Predictions', 'Participant name', 'Participant organization', 'Name', 'Software', 'Method', 'Category', 'Ranked'}
@@ -118,7 +122,7 @@ class HostGuestSubmission(SamplSubmission):
     #HOST_NAMES = { 'CLIP': ['CLIP'], 'CD':['bCD', 'MGLab_8', 'MGLab_9', 'MGLab_19', 'MGLab_23', 'MGLab_24', 'MGLab_34', 'MGLab_35', 'MGLab_36'],
     #            'GDCC':['OA', 'exoOA'] }
 
-    HOST_NAMES = { 'CB8': ['CB8']}
+    HOST_NAMES = { 'CB8': ['CB8'], 'GDCC': ['TEMOA', 'TEETOA']}
 
     RENAME_METHODS = {}
 
@@ -157,11 +161,14 @@ class HostGuestSubmission(SamplSubmission):
         # Required system System IDs
         CB8_guests = ['G1', 'G2', 'G3', 'G5', 'G6', 'G7']
         #CD_guests = ['g1','g2']
-        #GDCC_guests = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
+        GDCC_guests = ['G1', 'G2', 'G3', 'G4', 'G5']
+        #GDCC_hosts = copy.copy(self.HOST_NAMES['GDCC'])
         #CD_hosts = copy.copy(self.HOST_NAMES['CD'])
         #CD_hosts.remove('bCD')
 
-        self.REQUIRED_SYSTEM_IDs = {'CB8':[f'CB8-{guest}' for guest in CB8_guests]}
+        self.REQUIRED_SYSTEM_IDs = {'CB8':[f'CB8-{guest}' for guest in CB8_guests], 
+                                    'GDCC':['TEMOA-G1', 'TEMOA-G2', 'TEMOA-G4', 'TEMOA-G5'] + ['TEETOA-G1', 'TEETOA-G2','TEETOA-G3', 
+                                        'TEETOA-G4', 'TEETOA-G5']}
         #self.REQUIRED_SYSTEM_IDs = {'CB8':[f'CB8-{guest}' for guest in CB8_guests],
         #                        'CD':[f'{host}-{guest}' for guest in CD_guests for host in CD_hosts],
         #                         'GDCC':[f'exoOA-{guest}' for guest in GDCC_guests] + ['OA-g7', 'OA-g8']}
@@ -835,7 +842,7 @@ def merge_submissions(submissions, discard_not_matched=True):
         except KeyError:
             submissions_by_name[submission.name] = [submission]
 
-    # Merge OA/TEMOA submissions that use the same method into a single submission object.
+    # Merge TEMOA/TEETOA submissions that use the same method into a single submission object.
     merged_submissions = []
     for method_name, method_submissions in submissions_by_name.items():
         # Check that the submissions come from the same participant,
@@ -902,7 +909,7 @@ class SplitBootstrapSubmissionCollection(HostGuestSubmissionCollection):
         # We'll print all the methods in alphabetical order.
         methods = sorted(data.ID.unique())
 
-        # Build a table with statistics of OA/TEMOA and CB8 side by side.
+        # Build a table with statistics of TEMOA/TEETOA and CB8 side by side.
         # The first column of the table list the methods.
         table = [['{:15s}'.format(method)] for method in methods]
         for hue in self.collections:
@@ -980,7 +987,7 @@ class SplitBootstrapSubmissionCollection(HostGuestSubmissionCollection):
 
         # # Print mean statistics.
         # temp = self._collections_statistics
-        # for hue in ['OA/TEMOA', 'CB8']:
+        # for hue in ['TEMOA/TEETOA', 'CB8']:
         #     for stats_name in stats_names:
         #         print(hue, stats_name, temp[temp[self.hue] == hue][stats_name].mean())
 
@@ -1025,13 +1032,17 @@ if __name__ == '__main__':
         #names = ('System ID', 'name', 'SMILES', '$Kd_1$', 'd$Kd_1$','$\Delta H_1$', 'd$\Delta H_1$', '$Kd_2$', 'd$Kd_2$','$\Delta H_2$', 'd$\Delta H_2$',
         #         'T$\Delta$S', 'dT$\Delta$S', 'n', '$Ka_1$', 'd$Ka_1$', '$Ka_2$', 'd$Ka_2$', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H',
         #         '$\Delta$G', 'd$\Delta$G')
-        names = ('System ID', 'name', 'SMILES', '$Ka_1$', 'd$Ka_1$','$\Delta H_1$', 'd$\Delta H_1$', 
-                'T$\Delta$S_1', 'dT$\Delta$S_1', '$Ka_2$', 'd$Ka_2$', '$\Delta H_2$', 'd$\Delta H_2$', 
-                'T$\Delta$S_2', 'dT$\Delta$S_2', 'n', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H', '$\Delta$G', 
-                'd$\Delta$G', 'T$\Delta$S', 'dT$\Delta$S')
+        #names = ('System ID', 'name', 'SMILES', '$Ka_1$', 'd$Ka_1$','$\Delta H_1$', 'd$\Delta H_1$', 
+        #        'T$\Delta$S_1', 'dT$\Delta$S_1', '$Ka_2$', 'd$Ka_2$', '$\Delta H_2$', 'd$\Delta H_2$', 
+        #        'T$\Delta$S_2', 'dT$\Delta$S_2', 'n', '$Ka$','d$Ka','$\Delta$H', 'd$\Delta$H', '$\Delta$G', 
+        #        'd$\Delta$G', 'T$\Delta$S', 'dT$\Delta$S')
+        names = ('System ID', 'name', 'SMILES', '$Ka$', 'd$Ka$', '$\Delta$H', 'd$\Delta$H', 'T$\Delta$S', 
+                'dT$\Delta$S', 'n', '$\Delta$G', 'd$\Delta$G')
 
         experimental_data = pd.read_csv(f, sep=';', names=names, index_col='System ID', skiprows=1)
         #Don't read experimental values which are non-numeric -- e.g. the experiments didn't work/weren't done
+        #experimental_data = experimental_data.dropna(subset=['$\Delta$G', '$Ka$', 'd$Ka$', '$\Delta$H',
+        #    'd$\Delta$H', 'd$\Delta$G', 'T$\Delta$S', 'dT$\Delta$S'])
         experimental_data = experimental_data.dropna(subset=['$\Delta$G'])
 
     # Convert numeric values to dtype float.
@@ -1044,7 +1055,7 @@ if __name__ == '__main__':
 
     # Import user map.
     try:
-        with open('/home/amezcum1/SAMPL8/host_guest/Analysis/SAMPL8-user-map-HG.csv', 'r') as f:
+        with open('/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/Analysis/SAMPL8-user-map-HG.csv', 'r') as f:
             user_map = pd.read_csv(f)
     except FileNotFoundError:
         user_map=None
@@ -1091,25 +1102,24 @@ if __name__ == '__main__':
     # Instantiate two sets of HostGuestSubmissionCollections -- one which ignores reference calculations
     # and one which doesn't.
 
-    # Load submissions data. For now only CB8
+    # Load submissions data. For now only CB8 and GDCC
     print("Loading CB8 submissions")
     submissions_cb8 = load_submissions(HostGuestSubmission, HOST_GUEST_CB8_SUBMISSIONS_DIR_PATH, user_map)
-    #print("Loading GDCC submissions")
-    #submissions_oa_exooa = load_submissions(HostGuestSubmission, HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH, user_map)
+    print("Loading GDCC submissions")
+    submissions_temoa_teetoa = load_submissions(HostGuestSubmission, HOST_GUEST_GDCC_SUBMISSIONS_DIR_PATH, user_map)
     #print("Loading CD submissions")
     #submissions_cd = load_submissions(HostGuestSubmission, HOST_GUEST_CD_SUBMISSIONS_DIR_PATH, user_map)
 
-    ## Make split submissions for the two hosts within GDCC
-    #submissions_oa = []
-    #submissions_exooa = []
-    #for submission in submissions_oa_exooa:
-    #    a, b = submission.split(['OA', 'exoOA'])
-    #    submissions_oa.append(a)
-    #    submissions_exooa.append(b)
+    # Make split submissions for the two hosts within GDCC
+    submissions_temoa = []
+    submissions_teetoa = []
+    for submission in submissions_temoa_teetoa:
+        a, b = submission.split(['TEMOA', 'TEETOA'])
+        submissions_temoa.append(a)
+        submissions_teetoa.append(b)
 
     # Make a set of all the submissions
-    #submissions_all = submissions_trimertrip + submissions_oa_exooa + submissions_cd
-    submissions_all = submissions_cb8
+    submissions_all = submissions_cb8 + submissions_temoa + submissions_teetoa
 
     # Make directories for output
     if not os.path.isdir('../Ranked_Accuracy'): os.mkdir('../Ranked_Accuracy')
@@ -1117,6 +1127,7 @@ if __name__ == '__main__':
     if not os.path.isdir('../Ranked_Accuracy/PaperImages'): os.mkdir('../Ranked_Accuracy/PaperImages')
 
     if not os.path.isdir('../All_Accuracy'): os.mkdir('../All_Accuracy')
+    if not os.path.isdir('../All_Accuracy/MoleculesStatistics'): os.mkdir('../All_Accuracy/MoleculesStatistics')
     if not os.path.isdir('../All_Accuracy/PaperImages'): os.mkdir('../All_Accuracy/PaperImages')
 
     # Create submission collections
@@ -1129,8 +1140,32 @@ if __name__ == '__main__':
             output_directory_path='../All_Accuracy/CB8', 
             ignore_refcalcs = False, ranked_only = False)
 
-    # Eventually other SAMPL8 host-guest system collections will go here
+    print("Creating submission collection for GDCC collectively")
+    collection_gdcc = HostGuestSubmissionCollection(submissions_temoa_teetoa, experimental_data,
+                                                   output_directory_path='../Ranked_Accuracy/GDCC')
 
+    print("Creating submission collection for all GDCC collectively, including non-ranked")
+    collection_gdcc_nonranked = HostGuestSubmissionCollection(submissions_temoa_teetoa, experimental_data,
+            output_directory_path='../All_Accuracy/GDCC',
+            ignore_refcalcs = False, ranked_only = False)
+
+    print("Creating submission collection for TEMOA")
+    collection_temoa = HostGuestSubmissionCollection(submissions_temoa, experimental_data,
+                                                    output_directory_path='../Ranked_Accuracy/TEMOA')
+
+    print("Creating submission collection for TEMOA, including non-ranked")
+    collection_temoa_nonranked = HostGuestSubmissionCollection(submissions_temoa, experimental_data,
+            output_directory_path='../All_Accuracy/TEMOA',
+            ignore_refcalcs = False, ranked_only = False)
+
+    print("Creating submission collection for TEETOA")
+    collection_teetoa = HostGuestSubmissionCollection(submissions_teetoa, experimental_data,
+                                                     output_directory_path='../Ranked_Accuracy/TEETOA')
+
+    print("Creating submission collection for TEETOA, including non-ranked")
+    collection_teetoa_nonranked = HostGuestSubmissionCollection(submissions_teetoa, experimental_data,
+            output_directory_path='../All_Accuracy/TEETOA',
+            ignore_refcalcs = False, ranked_only = False)
     
     # Create ranked submission for combine set of hosts. Will be for ranked molecule statistics
     print("Creating submission collection for combined set of hosts")
@@ -1143,22 +1178,47 @@ if __name__ == '__main__':
             output_directory_path='../All_Accuracy/MoleculesStatistics', 
             allow_multiple = True, ignore_refcalcs = False, ranked_only = False)
 
-    # Systems to be excluded (optionals)
+    # Systems to be excluded (optionals and systems not detected).For GDCC TEMOA-G3, and CB8 CB8-G8 and CB8-G9 are optional.
     def remove_optional(submission_collection_data):
-        return submission_collection_data[(submission_collection_data.system_id != 'CB8-G8') &
+        return submission_collection_data[(submission_collection_data.system_id != 'TEMOA-G3') &
+                (submission_collection_data.system_id != 'CB8-G8') &
                 (submission_collection_data.system_id != 'CB8-G9')]
 
-    #make new collections and remove optionals. In case any particpants included G8 & G9    
-    #print("Making new collection set & removing optional host-guest systems from CB8 collection")
-    #collection_cb8_no_optional = HostGuestSubmissionCollection(submissions_cb8, experimental_data,
-    #                                                                output_directory_path='../Ranked_Accuracy/CB8_no_optional')
-    #collection_cb8_no_optional.data = remove_optional(collection_cb8_no_optional.data)
+    #make new collections and remove optionals. For GDCC and TEMOA optional system is TEMOA-G3, for CB8 its CB8-G8 and CB8-G9.
+    print("Making new collection set (ranked only) & removing optional host-guest systems from GDCC collection")
+    collection_gdcc_no_optional = HostGuestSubmissionCollection(submissions_temoa_teetoa, experimental_data,
+                                                                    output_directory_path='../Ranked_Accuracy/GDCC_no_optional')
+    collection_gdcc_no_optional.data = remove_optional(collection_gdcc_no_optional.data)
 
-    #print("Making new collection set & removing optional host-guest systems from CB8 (including nonranked) collection")
-    #collection_cb8_nonranked_no_optional = HostGuestSubmissionCollection(submissions_cb8, experimental_data, 
-    #        output_directory_path='../All_Accuracy/CB8_no_optional', 
-    #        ignore_refcalcs = False, ranked_only = False)
-    #collection_cb8_nonranked_no_optional.data = remove_optional(collection_cb8_nonranked_no_optional.data)
+    print("Making new collection set (including nonranked) & removing optional host-guest systems from GDCC collection")
+    collection_gdcc_nonranked_no_optional = HostGuestSubmissionCollection(submissions_temoa_teetoa, experimental_data, 
+            output_directory_path='../All_Accuracy/GDCC_no_optional', 
+            ignore_refcalcs = False, ranked_only = False)
+    collection_gdcc_nonranked_no_optional.data = remove_optional(collection_gdcc_nonranked_no_optional.data)
+
+    print("Making new collection set (ranked only) & removing optional host-guest systems from TEMOA collection")
+    collection_temoa_no_optional = HostGuestSubmissionCollection(submissions_temoa, experimental_data,
+                                                                     output_directory_path='../Ranked_Accuracy/TEMOA_no_optional')
+    collection_temoa_no_optional.data = remove_optional(collection_temoa_no_optional.data)
+
+    print("Making new collection set (including nonranked) & removing optional host-guest systems from TEMOA collection")
+    collection_temoa_nonranked_no_optional = HostGuestSubmissionCollection(submissions_temoa, experimental_data,
+            output_directory_path='../All_Accuracy/TEMOA_no_optional',
+            ignore_refcalcs = False, ranked_only = False)
+    collection_temoa_nonranked_no_optional.data = remove_optional(collection_temoa_nonranked_no_optional.data)
+
+    print("Removing optional host-guest systems from CB8 ranked collection")
+    collection_cb8.data = remove_optional(collection_cb8.data)
+
+    print("Removing optional host-guest systems from CB8 ranked+nonranked collection")
+    collection_cb8_nonranked.data = remove_optional(collection_cb8_nonranked.data)
+
+    print("Removing optional host-guest systems from entire ranked collection")
+    collection_all.data = remove_optional(collection_all.data)
+
+    print("Removing optional host-guest systems from entire ranked+nonranked collection")
+    collection_all_nonranked.data = remove_optional(collection_all_nonranked.data)
+
 
     # =============================================================================
     # CREATE AUTOMATIC ANALYSIS ON THE REPO.
@@ -1168,7 +1228,7 @@ if __name__ == '__main__':
 
     # NOTE: Do not include collection_all or collection_all_nonranked here. 
     # Generate correlation plots and statistics
-    for collection in [collection_cb8, collection_cb8_nonranked]:
+    for collection in [collection_cb8, collection_cb8_nonranked, collection_gdcc, collection_gdcc_nonranked, collection_temoa, collection_temoa_nonranked, collection_teetoa, collection_teetoa_nonranked, collection_gdcc_no_optional, collection_gdcc_nonranked_no_optional, collection_temoa_no_optional, collection_temoa_nonranked_no_optional]:
         sns.set_context('notebook')
         collection.generate_correlation_plots()
 
@@ -1186,12 +1246,12 @@ if __name__ == '__main__':
                                                 latex_header_conversions=latex_header_conversions,
                                                 stats_limits=stats_limits)
 
-    # Generate molecule statistics and plots for all ranked submissions (right now only CB8) 
+    # Generate molecule statistics and plots for all ranked submissions (for now only CB8 and GDCC) 
     # Don't modify original collection_all as we'll use it later.
     collection = copy.deepcopy(collection_all)
     
     # Exclude "OPTIONAL" HOST-GUEST SYSTEMS
-    collection.data = collection.data[~collection.data.system_id.isin({'CB8-G8','CB8-G9'})]
+    collection.data = collection.data[~collection.data.system_id.isin({'TEMOA-G3', 'CB8-G8', 'CB8-G9'})]
     collection.generate_molecules_plot()
     collection.generate_statistics_tables(stats_funcs_molecules, 'StatisticsTables', groupby='system_id',
                                           sort_stat='MAE', ordering_functions=ordering_functions,
@@ -1203,7 +1263,7 @@ if __name__ == '__main__':
     # Generate molecule statistics and plots for all submissions (ranked and non ranked)
     collection_nr = copy.deepcopy(collection_all_nonranked)
     # Exclude "OPTIONAL" HOST-GUEST SYSTEMS
-    collection_nr.data = collection_nr.data[~collection_nr.data.system_id.isin({'CB8-G8','CB8-G9'})]
+    collection_nr.data = collection_nr.data[~collection_nr.data.system_id.isin({'TEMOA-G3', 'CB8-G8', 'CB8-G9'})]
     collection_nr.generate_molecules_plot()
     collection_nr.generate_statistics_tables(stats_funcs_molecules, 'StatisticsTables', groupby='system_id', 
             sort_stat='MAE', ordering_functions=ordering_functions, 
@@ -1226,11 +1286,18 @@ if __name__ == '__main__':
     #                                                    output_directory_path='../Accuracy/OA-TEMOA')
 
     # Create a set of all the methods.
-    all_methods = set(collection_cb8.data.method.unique())
-    #all_methods.update(set(collection_cb8_nonranked.data.method.unique()))
+    all_methods = set(collection_all_nonranked.data.method.unique())
+    #all_methods.update(set(collection_cb8.data.method.unique()))
+    #all_methods.update(set(collection_temoa.data.method.unique()))
+    #all_methods.update(set(collection_temoa_nonranked.data.method.unique()))
+    #all_methods.update(set(collection_teetoa.data.method.unique()))
+    #all_methods.update(set(collection_teetoa_nonranked.data.method.unique()))
+
+    # Create a set of only ranked methods
+    ranked_methods = set(collection_all.data.method.unique())
 
     # Submissions using experimental corrections.
-    #is_corrected = lambda m: ('MovTyp' in m and m[-1] != 'N') or 'SOMD-D' in m or 'RFEC' in m or 'US-GAFF-C' == m
+    #is_corrected = lambda m: ('MovTyp' in m and m[-1] != 'N') or 'MMGBSA' in m or 'MMPBSA' in m 
     #corrected_methods = {m for m in all_methods if is_corrected(m)}
 
     # For movable type we plot only GE3N, GE3O, GE3L, KT1N, KT1L, GT1N, GT1L.
@@ -1292,7 +1359,7 @@ if __name__ == '__main__':
         for row_idx in range(n_rows-1):
             axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,10,2)])
             #axes.extend([fig.add_subplot(grid[row_idx, c:c+2]) for c in range(1,7,2)])
-        axes.extend([fig.add_subplot(grid[-1, c:c+2]) for c in range(1,10,2)])
+        axes.extend([fig.add_subplot(grid[-1, c:c+2]) for c in range(1,5,2)])
 
         # Associate a color to each host.
         for method, ax in zip(plotted_methods, axes):
@@ -1319,21 +1386,22 @@ if __name__ == '__main__':
         fig.text(0.015, 0.5, '$\Delta$G (calc) [kcal/mol]', va='center', rotation='vertical', size='large')
         fig.text(0.5, 0.015, '$\Delta$G (exp) [kcal/mol]', ha='center', size='large')
 
-        #plt.tight_layout(pad=0.9, rect=[0.0, 0.025, 1.0, 1.0])
-        plt.tight_layout(pad=1.5)
+        plt.tight_layout(pad=0.9, rect=[0.0, 0.025, 1.0, 1.0])
+        #plt.tight_layout(pad=1.5)
         plt.savefig('../Ranked_Accuracy/PaperImages/{}.pdf'.format(file_name))
-
+    
+    # Create correlation plot of ranked methods only. 
     correlation_plots(
         #plotted_methods = sorted(set(all_methods) - set(exclusions) - {'NULL'}),
         #plotted_methods = sorted(set(all_methods) - set(exclusions)),
-        plotted_methods = sorted(set(all_methods)),
-        file_name='Figure3_correlation_plots'
+        plotted_methods = sorted(set(ranked_methods)),
+        file_name='Figure_correlation_plots_ranked_methods'
     )
 
-    # Supplementary figure with correlations plots of movable type calculations.
+    # Supplementary figure with correlations plots of both ranked and non-ranked methods
     #correlation_plots(
-    #    plotted_methods = sorted(m for m in all_methods if 'MovTyp' in m),
-    #    file_name='SIFigure_correlation_plots_movtyp'
+    #    plotted_methods = sorted(set(all_methods)),
+    #    file_name='Figure_correlation_plots_all_methods'
     #)
 
 
@@ -1356,7 +1424,7 @@ if __name__ == '__main__':
     statistics = pd.read_json('../Ranked_Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
 
     # Remove OPTIONALS (). Plots error by molecule only for ranked
-    statistics = statistics[~statistics.index.isin({'CB8-G8','CB8-G9'})]
+    statistics = statistics[~statistics.index.isin({'TEMOA-G3', 'CB8-G8', 'CB8-G9'})]
     statistics.sort_values(by='RMSE', inplace=True)
     for ax, stats_name in zip(axes, stats_names):
         # Build palette.
@@ -1376,8 +1444,8 @@ if __name__ == '__main__':
     # all methods including nonranked
     statistics_nr = pd.read_json('../All_Accuracy/MoleculesStatistics/StatisticsTables/statistics.json', orient='index')
 
-    # Remove Options (). Plots error by molecule for all submissions (includes non ranked)
-    statistics_nr = statistics_nr[~statistics_nr.index.isin({'CB8-G8','CB8-G9'})]
+    # Remove OPTIONALS (). Plots error by molecule for all submissions (includes non ranked)
+    statistics_nr = statistics_nr[~statistics_nr.index.isin({'TEMOA-G3', 'CB8-G9', 'CB8-G9'})]
     statistics_nr.sort_values(by='RMSE', inplace=True)
     for ax, stats_name in zip(axes, stats_names):
         # Build palette.
@@ -1395,8 +1463,8 @@ if __name__ == '__main__':
     plt.savefig('../All_Accuracy/PaperImages/error_by_molecule.pdf')
 
     #Break before making next image. Test all of the above.
-    import sys
-    sys.exit('Stop before generating tightest binders plot')
+    #import sys
+    #sys.exit('Stop before generating tightest binders plot')
 
 
     # Create table presenting which methods got the tightest binders.
@@ -1405,16 +1473,16 @@ if __name__ == '__main__':
     sns.set_style('white')
 
     # Consider only the methods that are part of the main analysis.
-    plotted_methods = sorted(set(all_methods) - set(exclusions))
+    plotted_methods = sorted(set(ranked_methods) - set(exclusions))
 
     # Create a Dataframe summarizing if a method got the tightest binders correctly for each guest set.
     data = collections.OrderedDict()  # Data in dict format.
     # Tightest binders and columns of the Pandas Dataframe.
-    tighest_binders =['CLIP-g19', 'MGLab35-g2', 'OA-g8', 'exoOA-g8']
+    tighest_binders =['CB8-G6', 'TEMOA-G2', 'TEETOA-G2']
     for method in plotted_methods:
         data[method] = []
 
-        for collection, tighest_binder in zip([collection_trimertrip, collection_cd_no_optional, collection_oa_no_optional, collection_exooa, collection_trimertrip_nonranked, collection_cd_nonranked_no_optional, collection_oa_nonranked_no_optional, collection_exooa_nonranked], tighest_binders):
+        for collection, tighest_binder in zip([collection_cb8, collection_temoa, collection_teetoa], tighest_binders):
             method_data = collection.data[collection.data.method == method]
 
             # Get the tightest binder predicted by the method for the set.
@@ -1448,15 +1516,12 @@ if __name__ == '__main__':
     data = collections.OrderedDict(data)
 
     # Convert table to dataframe. 
-    columns = ['CLIP-g19', 'CLIP-g19-incorrect', 'CLIP-g19-notsubmitted',
-            'MGLab35-g2', 'MGLab35-g2-incorrect', 'MGLab35-g2-notsubmitted', 
-            'OA-g8', 'OA-g8-incorrect', 'OA-g8-notsubmitted',
-            'exoOA-g8', 'exoOA-g8-incorrect', 'exoOA-g8-notsubmitted']
-    #columns = ['Clip-g17', 'MGLab35-g2', 'OA-g8', 'exoOA-g8']
-    palette = [sns.desaturate(color, 0.75) for color in [HOST_PALETTE['CLIP'], '0.7', 'white',
-                                                         HOST_PALETTE['CD'], '0.7', 'white',
-                                                         HOST_PALETTE['OA'], '0.7', 'white',
-                                                         HOST_PALETTE['exoOA'], '0.7', 'white']] #make OA, exoOA 
+    columns = ['CB8-G6', 'CB8-G6-incorrect', 'CB8-G6-notsubmitted',
+            'TEMOA-G2', 'TEMOA-G2-incorrect', 'TEMOA-G2-notsubmitted', 
+            'TEETOA-G2', 'TEETOA-G2-incorrect', 'TEETOA-G2-notsubmitted']
+    palette = [sns.desaturate(color, 0.75) for color in [HOST_PALETTE['CB8'], '0.7', 'white',
+                                                         HOST_PALETTE['TEMOA'], '0.7', 'white',
+                                                         HOST_PALETTE['TEETOA'], '0.7', 'white']] 
     data = pd.DataFrame.from_dict(data, orient='index', columns=columns)
 
     # Plot percentage of correct binders across methods.
@@ -1468,9 +1533,9 @@ if __name__ == '__main__':
 
     # Plot table.
     #ax = data.plot.barh(stacked=True, color=palette, figsize=(7.25/3.1,5))
-    ax = data.plot.barh(stacked=True, color=palette, figsize=(10, 10)) # TRY NEW FIG SIZE HERE
+    ax = data.plot.barh(stacked=True, color=palette, figsize=(10, 10)) # TRY NEW FIG SIZE
     ax.xaxis.set_ticks([0.5, 1.5, 2.5, 3.5]) # ADD ANOTHER TICK 3.5
-    ax.xaxis.set_ticklabels(['CLIP', 'CD', 'OA', 'exoOA'])
+    ax.xaxis.set_ticklabels(['CB8', 'TEMOA', 'TEETOA'])
     ax.set_title('Methods predicting the tightest binders')
 
     # Configure lengend to hide the missing/incorrect labels.
@@ -1490,27 +1555,37 @@ if __name__ == '__main__':
 
     plt.tight_layout(rect=[0, 0.0, 1, 1], pad=0.1)
     # plt.show()
-    plt.savefig('../Accuracy/PaperImages/tightest_binders.pdf') #FOR NOW
+    plt.savefig('../Ranked_Accuracy/PaperImages/tightest_binders.pdf')
 
-    # # Generate the initial statistics table for the paper.
+
+    #Break before making next image. Test all of the above.
+    import sys
+    sys.exit('Stop before generating next plot/table')
+
+
+    # Generate the initial statistics table for the paper.
     # -------------------------------------------------------
-    # stats_funcs = collections.OrderedDict([
+    #stats_funcs = collections.OrderedDict([
     #     ('RMSE', rmse),
     #     ('ME', me),
     #     ('R2', r2),
     #     ('kendall_tau', kendall_tau)
     # ])
-    # collection.generate_paper_table(stats_funcs, exclusions)
+    #collection.generate_paper_table(stats_funcs, exclusions)
 
-    # # Create initial table of methods with and without bonus challenge.
-    # # ------------------------------------------------------------------
-    # # We include only the ones that submitted entries for the bonus challenge.
-    # exclusions = all_methods - {'ForceMatch', 'ForceMatch-QMMM', 'Tinker-AMOEBA',
-    #                             'DFT(B3PW91)', 'DFT(B3PW91)-D3', 'MMPBSA-GAFF'}
-    # collection = SplitBootstrapSubmissionCollection(collection_cb, collection_cb_no_bonus,
-    #                                                 hue='dataset', collection1_hue='BONUS', collection2_hue='NOBONUS',
-    #                                                 output_directory_path='../MergedCB8')
-    # collection.generate_paper_table(stats_funcs, exclusions)
+    #Break before making next image. Test all of the above
+    #import sys
+    #sys.exit('Stop before generating next plot/table')
+
+    # Create initial table of methods with and without bonus challenge.
+    # ------------------------------------------------------------------
+    # We include only the ones that submitted entries for the bonus challenge.
+    #exclusions = all_methods - {'ForceMatch', 'ForceMatch-QMMM', 'Tinker-AMOEBA',
+    #                            'DFT(B3PW91)', 'DFT(B3PW91)-D3', 'MMPBSA-GAFF'}
+    #collection = SplitBootstrapSubmissionCollection(collection_cb, collection_cb_no_bonus,
+    #                                                hue='dataset', collection1_hue='BONUS', collection2_hue='NOBONUS',
+    #                                                output_directory_path='../MergedCB8')
+    #collection.generate_paper_table(stats_funcs, exclusions)
 
     # # Compute statistics similar to old review papers.
     # # ----------------------------------------
