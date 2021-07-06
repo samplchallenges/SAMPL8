@@ -56,7 +56,7 @@ University of Barcelona
 # The "Name:" keyword is required, as shown here.
 # 40 character limit.
 Name:
-MACHINE-LEARNING/NNET/CORINA-descriptors
+ML/NNET/CORINA-descriptors-8
 #
 # All major software packages used and their versions
 # Following is sample text; please edit to your taste.
