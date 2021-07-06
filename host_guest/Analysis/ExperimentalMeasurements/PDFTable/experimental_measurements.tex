@@ -5,9 +5,9 @@
 \begin{document}
 \begin{center}
 \footnotesize
-\begin{tabu}{| c | c | c | c | c | c | c |}
+\begin{tabu}{| c | c | c | c | c | c | c | c | c | c | c | c |}
 \hline
-\rowfont{\bfseries} ID & name & $K_a$ (M$^{-1}$) & $\Delta G$ (kcal/mol) $^{(a)}$ & $\Delta H$ (kcal/mol) & $T\Delta S$ (kcal/mol) $^{(b)}$ & $n$ \\
+\rowfont{\bfseries} ID & name & SMILES & $K_a$ (M$^{-1}$) & d$K_a$ (M$^{-1}$) & $\Delta H$ (kcal/mol) & $d\Delta H$ (kcal/mol) & $T\Delta S$ (kcal/mol) & d$T\Delta S$ (kcal/mol) & n & $\Delta G$ (kcal/mol & d$\Delta G$ (kcal/mol) \\
 \hline
 \hline
 CB8-G1 & Methamphetamine$^{(c)}$ & 150000.0 +- 10000.0 & -7.05 +- 0.04 & -7.8 +- 0.3 & -0.8 +- 0.3 &  1.00 \\
@@ -24,11 +24,35 @@ CB8-G6 & PhenylCyclohexylPiperidine(PCP)$^{(e)}$ & 21000000000.0 +- 2000000000.0
 \hline
 CB8-G7 & Cocaine$^{(c)}$ & 640000.0 +- 50000.0 & -7.92 +- 0.04 & -8.3 +- 0.3 & -0.3 +- 0.3 &  1.00 \\
 \hline
+\hline
+TEMOA-G1 & 3-hydroxy-2-napththoic acid & 130000.0 +- 10000.0 & -6.96 +- 0.05 & -17.0 +- 1.0 & 10.0 +- 1.0 &  1.00 \\
+\hline
+TEMOA-G2 & p-bromophenol & 1480000.0 +- 60000.0 & -8.41 +- 0.02 & -15.7 +- 0.2 & 7.2 +- 0.2 &  1.00 \\
+\hline
+TEMOA-G3 & cyclopentylacetic acid & 17400.0 +- 700.0 & -5.78 +- 0.02 & -7.9 +- 0.2 & 2.2 +- 0.2 &  1.00 \\
+\hline
+TEMOA-G4 & piperonylic acid & 460000.0 +- 20000.0 & -7.72 +- 0.02 & -17.7 +- 0.3 & 10.0 +- 0.3 &  1.00 \\
+\hline
+TEMOA-G5 & p-toluic acid & 78000.0 +- 3000.0 & -6.67 +- 0.02 & -14.2 +- 0.8 & 7.6 +- 0.7 &  1.00 \\
+\hline
+\hline
+TEETOA-G1 & 3-hydroxy-2-napththoic acid & 2000.0 +- 200.0 & -4.49 +- 0.05 & -13.6 +- 0.2 & 9.2 +- 0.1 &  1.00 \\
+\hline
+TEETOA-G2 & p-bromophenol & 6100.0 +- 200.0 & -5.16 +- 0.02 & -11.6 +- 0.3 & 6.5 +- 0.3 &  1.00 \\
+\hline
+TEETOA-G3 & cyclopentylacetic acid$^{(f)}$ & NaN +- NaN & NaN +- NaN & NaN +- NaN & NaN +- NaN &  1.00 \\
+\hline
+TEETOA-G4 & piperonylic acid & 1900.0 +- 200.0 & -4.47 +- 0.05 & -13.0 +- 0.9 & 8.5 +- 0.8 &  1.00 \\
+\hline
+TEETOA-G5 & p-toluic acid$^{(g)}$ & 270.0 +- 10.0 & -3.32 +- 0.02 & NaN +- NaN & NaN +- NaN &  1.00 \\
+\hline
 \end{tabu}\end{center}\vspace{5mm}
-All quantities are reported as point estimate +- statistical error from the ITC data fitting procedure. The upper bound ($1\%$) was used for errors reported to be $<1\%$. We also included a 3\% relative uncertainty in the titrant concentration assuming the stoichiometry coefficient to be fitted to the ITC data for the Isaacs (CB8) dataset, where concentration error had not been factored in to the originalerror estimates..\\
+All quantities are reported as point estimate +- statistical error from the ITC data fitting procedure. The upper bound ($1\%$) was used for errors reported to be $<1\%$. We also included a 3\% relative uncertainty in the titrant concentration assuming the stoichiometry coefficient to be fitted to the ITC data for the Isaacs (CB8) dataset, where concentration error had not been factored in to the originalerror estimates. For the TEMOA/TEETOA sets, provided uncertainties already include concentration error.\\
 ($^a$) Statistical errors were propagated from the $K_a$ measurements. \\
 ($^b$) All experiments were performed at 298 K. \\
 ($^c$) Direct ITC titration. \\
 ($^d$) Competitive ITC titration with C1. \\
-($^e$) Competitive ITC titration with C2.
+($^e$) Competitive ITC titration with C2.\\
+($^f$) Binding is too weak to be observed by NMR or ITC. \\
+($^g$) Determined by 1H NMR spectroscopy.
 \end{document}
