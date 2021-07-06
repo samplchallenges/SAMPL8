@@ -45,7 +45,7 @@ Our full dataset includes partitioning for these biphasic systems:
 In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 or pH 8 depending on the pKa of the compound, and will be specified when the log D challenge is launched (e.g. for one compound water might have been at pH 3 and for another, at pH 8)
 
 For our compounds, we have measurements for these combinations of solute and solvent system:
-|           | octaxl-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
+|           | octanol-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
 |-----------|--------------|-------------------|---------------------|---------------|-----------|------------|-----------------|
 | SAMPL8-1  |       ✓      |         x         |          ✓          |       ✓       |     ✓     |      ✓     |        ✓        |
 | SAMPL8-3  |       x      |         x         |          ✓          |       x       |     ✓     |      x     |        x        |
