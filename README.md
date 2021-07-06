@@ -57,6 +57,7 @@ We will make available challenge instructions for the logD challenge, as well as
 - 2021-04-13: Add GSK challenge deadline
 - 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
 - 2021-07-05: Update example submission for pKa challenge; add pKa challenge instructions; update README files.
+- Add GDCC (TEMOA/TEETOA) to SAMPL8 host-guest analysis, add/update preliminary statistics and analysis tables, plots, and figures for GDCC dataset. (7/6/21)
 
 ## Challenge construction
 
