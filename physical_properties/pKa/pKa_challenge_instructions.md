@@ -12,13 +12,15 @@ The first microstate in each CSV file indicated by `SAMPL8-XX_micro000` is our s
 All possible tautomers of each ionization (charge) state are defined as distinct protonation microstates.
 
 ### Submitting your predictions
-A submission template file can be found in the [submission_template/](submission_template/) directory and an example submission file can be found in [example_submission_file/](example_submission_file/). Predictions must be submitted via our AWS submissions server, [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL7-pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL7-pKa). **Note that as of Sept. 28, 2020, this format is being corrected/changed/clarified. Please follow our [email list](http://eepurl.com/dPj11j) (be sure to indicate interest in SAMPL7 and pKa) to get a notification when we fix the format and update instructions, likely Sept. 30 or Oct. 1**.
+A submission template file can be found in the [submission_template/](submission_template/) directory and an example submission file can be found in [example_submission_file/](example_submission_file/). Predictions must be submitted via our AWS submissions server, [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pKa).
+
+**For any critical updates, please follow our [email list](http://eepurl.com/dPj11j) (be sure to indicate interest in SAMPL8 and pKa).**.
 
 ### Filling out the submission file
 
 - Fill one [`submission_template/pKa_prediction_template.csv`](submission_template/pKa_prediction_template.csv) template for all molecules predicted with one method. You may submit predictions from multiple methods, but you should fill a separate template file for each different method. Your filename should begin with the characters "pKa".
 
-- Record the pair of microstates IDs associated with each relative free energy calculation between the reference state and the predicted microstates. Enumerated microstates, IDs, SMILES strings and SDF/MOL2 files can be found in https://github.com/samplchallenges/SAMPL7/tree/master/physical_property/pKa/microstates.
+- Record the pair of microstates IDs associated with each relative free energy calculation between the reference state and the predicted microstates. Enumerated microstates, IDs, SMILES strings and SDF/MOL2 files can be found in https://github.com/samplchallenges/SAMPL8/tree/master/physical_property/pKa/microstates.
 
 - We **highly recommend including your predicted macroscopic pKa values for each compound in your `Method` section** in the specified format; see template.
 
