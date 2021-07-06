@@ -29,16 +29,12 @@ T = 298 * u.kelvin
 R = u.MOLAR_GAS_CONSTANT_R
 RELATIVE_TITRANT_CONC_ERROR = 0.03
 
-CB8_GUESTS_SMILES_PATH = '/home/amezcum1/SAMPL8/host_guest/CB8/guest_files/CB8_guest_smiles.txt'
-CB8_GUESTS_NAMES_PATH = '/home/amezcum1/SAMPL8/host_guest/CB8/guest_files/CB8_guest_names.txt' 
-#GDCC_GUESTS_SMILES_PATH = '../../GDCC_and_guests/guest_files/GDCC_guest_smiles.txt'
-#CD_GUESTS_SMILES_PATH = '../../cyclodextrin_derivatives/guest_files/cyclodextrin_guest_smiles.txt'
-#CLIP_GUESTS_NAMES_PATH = '../../Isaacs_clip/guest_files/trimertrip_guest_names.txt'
-#GDCC_GUESTS_NAMES_PATH = '../../GDCC_and_guests/guest_files/GDCC_guest_names.txt'
-#CD_GUESTS_NAMES_PATH = '../../cyclodextrin_derivatives/guest_files/cyclodextrin_guest_names.txt'
-#CD_HOST_NAMES = ['bCD', 'MGLab_8', 'MGLab_9','MGLab_19', 'MGLab_23', 'MGLab_24', 'MGLab_34', 'MGLab_35', 'MGLab_36']
+CB8_GUESTS_SMILES_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/CB8/guest_files/CB8_guest_smiles.txt'
+CB8_GUESTS_NAMES_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/CB8/guest_files/CB8_guest_names.txt' 
+GDCC_GUESTS_SMILES_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/GDCC/guest_files/guest_smiles.txt'
+GDCC_GUESTS_NAMES_PATH = '/mnt/c/users/marty/desktop/SAMPL8_test/host_guest/GDCC/guest_files/guest_names.txt'
 
-# Experimental results as provided by the Gibb, Isaacs and Gilson groups.
+# Experimental results as provided by the Gibb and Isaacs groups.
 # The error is relative. None means that the error is <1%.
 # For CB8-G2, only considering the 1:1 binding data. 
 EXPERIMENTAL_DATA = OrderedDict([
@@ -91,7 +87,67 @@ EXPERIMENTAL_DATA = OrderedDict([
         #('DG', -7.93 * u.kilocalories_per_mole), ('dDG', None * u.kilocalories_per_mole),
         ('TDS', 0.37 * u.kilocalories_per_mole), ('dTDS', None * u.kilocalories_per_mole),
         ('n', 1.00)
-    ]))
+    ])),
+    ('TEMOA-G1', OrderedDict([
+	('DG',-29.1 * u.kilojoules_per_mole), ('dDG', 0.2 * u.kilojoules_per_mole),
+	('DH',-71.2 * u.kilojoules_per_mole), ('dDH', 5.3 * u.kilojoules_per_mole),
+	('TDS',42.1 * u.kilojoules_per_mole), ('dTDS', 5.1 * u.kilojoules_per_mole),
+	('n', 1)
+    ])),
+    ('TEMOA-G2', OrderedDict([
+	('DG', -35.2 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole),
+	('DH', -65.6 * u.kilojoules_per_mole), ('dDH', 1.0 * u.kilojoules_per_mole),
+	('TDS', 30.3 * u.kilojoules_per_mole), ('dTDS', 1.0 * u.kilojoules_per_mole),
+	('n', 1)
+    ])),
+    ('TEMOA-G3', OrderedDict([
+	('DG', -24.2 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole),
+	('DH', -33.2 * u.kilojoules_per_mole), ('dDH', 1.0 * u.kilojoules_per_mole),
+	('TDS', 9.0 * u.kilojoules_per_mole), ('dTDS', 0.8 * u.kilojoules_per_mole),
+	('n', 1)
+    ])),
+    ('TEMOA-G4', OrderedDict([
+	('DG', -32.3 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole),
+	('DH', -74.1 * u.kilojoules_per_mole), ('dDH', 1.4 * u.kilojoules_per_mole),
+	('TDS', 41.8 * u.kilojoules_per_mole), ('dTDS', 1.3 * u.kilojoules_per_mole),
+	('n', 1)    
+    ])),
+    ('TEMOA-G5', OrderedDict([
+	('DG', -27.9 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole),
+	('DH', -59.6 * u.kilojoules_per_mole), ('dDH', 3.2 * u.kilojoules_per_mole),
+	('TDS', 31.7 * u.kilojoules_per_mole), ('dTDS', 3.1 * u.kilojoules_per_mole),
+    	('n', 1)
+    ])),
+    ('TEETOA-G1', OrderedDict([
+	('DG', -18.8 * u.kilojoules_per_mole), ('dDG', 0.2 * u.kilojoules_per_mole),
+	('DH', -57.1 * u.kilojoules_per_mole), ('dDH', 0.7 * u.kilojoules_per_mole),
+	('TDS', 38.3 * u.kilojoules_per_mole), ('dTDS', 0.6 * u.kilojoules_per_mole), 
+    	('n', 1)
+    ])), 
+    ('TEETOA-G2', OrderedDict([
+	('DG', -21.6 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole),
+	('DH', -48.7 * u.kilojoules_per_mole), ('dDH', 1.2 * u.kilojoules_per_mole),
+	('TDS', 27.2 * u.kilojoules_per_mole), ('dTDS', 1.1 * u.kilojoules_per_mole),
+    	('n', 1)
+    ])),
+    ('TEETOA-G3', OrderedDict([
+	('DG', 'NaN' ), ('dDG', 'NaN'),
+	('DH', 'NaN' ), ('dDH', 'NaN'), 
+	('TDS', 'NaN'), ('dTDS', 'NaN'),
+    	('n', 1)
+    ])),
+    ('TEETOA-G4', OrderedDict([
+	('DG', -18.7 * u.kilojoules_per_mole), ('dDG', 0.2 * u.kilojoules_per_mole),
+	('DH', -54.3 * u.kilojoules_per_mole), ('dDH', 3.6 * u.kilojoules_per_mole),
+	('TDS', 35.6 * u.kilojoules_per_mole), ('dTDS', 3.4 * u.kilojoules_per_mole),
+    	('n', 1)
+    ])),
+    ('TEETOA-G5', OrderedDict([
+	('DG', -13.9 * u.kilojoules_per_mole), ('dDG', 0.1 * u.kilojoules_per_mole), 
+	('DH', 'NaN'), ('dDH', 'NaN'),
+	('TDS', 'NaN'), ('dTDS', 'NaN'),
+    	('n', 1)
+    ])),
 ])
 
 
@@ -239,14 +295,14 @@ if __name__ == '__main__':
 
     smiles_by_host = {
         'CB8': load_smiles(CB8_GUESTS_SMILES_PATH),
-        #'OA' : load_smiles(GDCC_GUESTS_SMILES_PATH),
-        #'exoOA' : load_smiles(GDCC_GUESTS_SMILES_PATH),
+        'TEMOA' : load_smiles(GDCC_GUESTS_SMILES_PATH),
+        'TEETOA' : load_smiles(GDCC_GUESTS_SMILES_PATH),
     }
 
     names_by_host = {
         'CB8': load_names(CB8_GUESTS_NAMES_PATH),
-        #'OA' : load_names(GDCC_GUESTS_NAMES_PATH),
-        #'exoOA' : load_names(GDCC_GUESTS_NAMES_PATH),
+        'TEMOA' : load_names(GDCC_GUESTS_NAMES_PATH),
+        'TEETOA' : load_names(GDCC_GUESTS_NAMES_PATH),
     }
 
     #for host in CD_HOST_NAMES:
@@ -254,7 +310,7 @@ if __name__ == '__main__':
     #    names_by_host[host] = load_names(CD_GUESTS_NAMES_PATH)
     
     #Note: eventually will need to add the other hosts here. 
-    for host in ['CB8']:
+    for host in ['CB8', 'TEMOA', 'TEETOA']:
         molecule_names[host] = {}
         for smi, gid in smiles_by_host[host]:
             for name, gid2 in names_by_host[host]:
@@ -373,12 +429,12 @@ if __name__ == '__main__':
         #        assert np.isclose(np.around(computed_TDS, decimals=2), system_data['TDS'], atol=0.0200000000000001, rtol=0.0)
 
 
-        ## Report only error most significant digit.
-        #for k in ['Ka', 'DH', 'TDS', 'DG']:
-        #    if k in system_data:
-        #        quantity, uncertainty = system_data[k], system_data['d' + k]
-        #        if uncertainty is not None:
-        #            system_data[k], system_data['d' + k] = reduce_to_first_significant_digit(quantity, uncertainty)
+        # Report only error most significant digit.
+        for k in ['Ka', 'DH', 'TDS', 'DG']:
+            if k in system_data:
+                quantity, uncertainty = system_data[k], system_data['d' + k]
+                if uncertainty is not None:
+                    system_data[k], system_data['d' + k] = reduce_to_first_significant_digit(quantity, uncertainty)
 
     # Create output JSON file.
     with open('experimental_measurements.json', 'w') as f:
@@ -411,8 +467,8 @@ if __name__ == '__main__':
                 '\\begin{tabu}')
 
        # Cell alignment.
-        field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
-        #field_names = ['ID', 'name', 'SMILES', '$K_a$ (M$^{-1}$)', 'd$K_a$ (M$^{-1}$)', '$\\Delta H$ (kcal/mol)', '$d\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol)', 'd$T\\Delta S$ (kcal/mol)', 'n', '$\\Delta G$ (kcal/mol', 'd$\\Delta G$ (kcal/mol)']
+        #field_names = ['ID', 'name', '$K_a$ (M$^{-1}$)', '$\\Delta G$ (kcal/mol) $^{(a)}$', '$\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol) $^{(b)}$', '$n$']
+        field_names = ['ID', 'name', 'SMILES', '$K_a$ (M$^{-1}$)', 'd$K_a$ (M$^{-1}$)', '$\\Delta H$ (kcal/mol)', '$d\\Delta H$ (kcal/mol)', '$T\\Delta S$ (kcal/mol)', 'd$T\\Delta S$ (kcal/mol)', 'n', '$\\Delta G$ (kcal/mol', 'd$\\Delta G$ (kcal/mol)']
         f.write('{| ' + ' | '.join(['c' for _ in range(len(field_names))]) + ' |}\n')
 
         # Table header.
@@ -437,7 +493,7 @@ if __name__ == '__main__':
 
 
             row = '{ID} & {name}'
-            # add a superscript to reflect the different ITC experiments for CB8
+            # add a superscript to reflect the different experiments (ITC or NMR) for CB8 and GDCCs
             superscript = ''
             if csv_dict['ID'] == 'CB8-G1' or csv_dict['ID'] == 'CB8-G2' or csv_dict['ID'] == 'CB8-G7':
                 superscript += 'c'
@@ -445,6 +501,10 @@ if __name__ == '__main__':
                 superscript += 'd'
             elif csv_dict['ID'] == 'CB8-G5' or csv_dict['ID'] == 'CB8-G6':
                 superscript += 'e'
+            elif csv_dict['ID'] == 'TEETOA-G3':
+                superscript += 'f'
+            elif csv_dict['ID'] == 'TEETOA-G5':
+                superscript += 'g'
             if superscript != '':
                 row += '$^{{(' + superscript + ')}}$'
 
@@ -493,10 +553,12 @@ if __name__ == '__main__':
                 'The upper bound ($1\%$) was used for errors reported to be $<1\%$. We also included a 3\% relative '
                 'uncertainty in the titrant concentration assuming the stoichiometry coefficient to be fitted to the ITC '
                 'data for the Isaacs (CB8) dataset, where concentration error had not been factored in to the original'
-                'error estimates..\\\\\n'
+                'error estimates. For the TEMOA/TEETOA sets, provided uncertainties already include concentration error.\\\\\n'
                 '($^a$) Statistical errors were propagated from the $K_a$ measurements. \\\\\n'
                 '($^b$) All experiments were performed at 298 K. \\\\\n'
                 '($^c$) Direct ITC titration. \\\\\n'
                 '($^d$) Competitive ITC titration with C1. \\\\\n'
-                '($^e$) Competitive ITC titration with C2.\n'
+                '($^e$) Competitive ITC titration with C2.\\\\\n'
+		'($^f$) Binding is too weak to be observed by NMR or ITC. \\\\\n'
+		'($^g$) Determined by 1H NMR spectroscopy.\n'
                 '\end{document}\n')
