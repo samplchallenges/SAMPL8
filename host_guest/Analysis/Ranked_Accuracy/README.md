@@ -2,8 +2,8 @@
 
 ## Manifest
 
-- `CB8`(under construction): Analysis and results of ranked methods for CB8 systems.
-- `GDCC`(under construction): Analysis and results of ranked methods for GDCC (TEMOA/TEETOA) systems.
-- `GDCC_no_optional`(under construction): Analysis and results of ranked methods for GDCC (TEMOA/TEETOA) systems, excluding optional system(s).
-- `MoleculesStatistics`(under construction): Analysis and results for individual host-guest systems
-- `PaperImages`(under construction): Plots and images of ranked methods for paper
+- `CB8`: Analysis and results of ranked methods for CB8 systems.
+- `GDCC`: Analysis and results of ranked methods for GDCC (TEMOA/TEETOA) systems.
+- `GDCC_no_optional`: Analysis and results of ranked methods for GDCC (TEMOA/TEETOA) systems, excluding optional system(s).
+- `MoleculesStatistics`: Analysis and results for individual host-guest systems
+- `PaperImages`: Plots and images of ranked methods for paper
