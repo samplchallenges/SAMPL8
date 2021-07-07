@@ -120,6 +120,9 @@ Category:
 #
 # Use as many lines of text as you need.
 # All text following the 'Method:' keyword will be regarded as part of your free text methods description.
+#
+# Important: Please do not use phrases which are identical to the section headers of logD data. For example do not use "Octanol-water predictions:",
+# but use "Octanol-water predictions" instead (without the colon) or any other form. 
 
 Method:
 

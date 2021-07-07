@@ -179,43 +179,46 @@ Physical (MM)
 #
 # Use as many lines of text as you need.
 # All text following the 'Method:' keyword will be regarded as part of your free text methods description.
+#
+# Important: Please do not use phrases which are identical to the section headers of logD data. For example do not use "Octanol-water predictions:", 
+# but use "Octanol-water predictions" instead (without the colon) or any other form. See example below.
 
 Method:
 
 Free text methods section describing the approach and calculations in full detail.
 
 
-Octanol-water predictions:
+Octanol-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-Cyclohexane-water predictions:
+Cyclohexane-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-Ethyl acetate-water predictions:
+Ethyl acetate-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-Heptane-water predictions:
+Heptane-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-MEK-water predictions:
+MEK-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-TBME-water predictions:
+TBME-water predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
 
-Cyclohexane-DMF predictions:
+Cyclohexane-DMF predictions
 SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 60% population
 SAMPL8-1_extra001, CS(=O)(=O)Nc1, 25% population
 SAMPL8-1_extra002, CS(=O)(=O)[N-], 15% population
