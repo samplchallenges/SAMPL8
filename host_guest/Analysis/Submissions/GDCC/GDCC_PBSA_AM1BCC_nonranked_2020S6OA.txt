@@ -56,7 +56,7 @@ Michigan State University, East Lansing
 # The "Name:" keyword is required, as shown here.
 # 40 character limit.
 Name:
-AM1BCC/MMPBSA/TIP4PEW/MD
+AM1BCC/MMPBSA/TIP4PEW/MD_NR2
 #
 # All major software packages used and their versions
 # Following is sample text; please edit to your taste.
