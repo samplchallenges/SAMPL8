@@ -607,8 +607,8 @@ class SamplSubmission:
         # Load predictions.
         sections = self._load_sections(file_path)  # From parent-class.
         print(sections)
-        self.data = sections['Predictions']  # This is a list
-        self.data = pd.DataFrame(data=self.data) # Now a DataFrame
+        #self.data = sections['Predictions']  # This is a list
+        #self.data = pd.DataFrame(data=self.data) # Now a DataFrame
         #self.name = sections['Name'][0] #want this to take the place of the 5 letter code
         self.file_name = file_name
 
@@ -734,7 +734,7 @@ class logDSubmission(SamplSubmission):
         print(file_name)
 
 
-        # Load predictions.
+        # Load predictions for all different solvent systems
         sections = self._load_sections(file_path)  # From parent-class.
         self.data_Octanol_water = sections['Octanol-water predictions']  # This is a pandas DataFrame.
         self.data_Cyclohexane_water = sections['Cyclohexane-water predictions']  # This is a pandas DataFrame.
@@ -756,8 +756,8 @@ class logDSubmission(SamplSubmission):
 
 
 
-    def compute_logD_statistics(self, experimental_data, stats_funcs):
-        data = self._create_comparison_dataframe('logD mean', self.data, experimental_data)
+    def compute_logD_statistics(self, predicted_data, experimental_data, stats_funcs):
+        data = self._create_comparison_dataframe('logD mean', predicted_data, experimental_data)
 
         # Create lists of stats functions to pass to compute_bootstrap_statistics.
         stats_funcs_names, stats_funcs = zip(*stats_funcs.items())
@@ -770,14 +770,14 @@ class logDSubmission(SamplSubmission):
                                         bootstrap_statistics[i])
                                         for i in range(len(stats_funcs)))
 
-    def compute_logD_model_uncertainty_statistics(self,experimental_data):
+    def compute_logD_model_uncertainty_statistics(self,predicted_data,experimental_data):
 
         # Create a dataframe for data necessary for error slope analysis
         expt_logD_series = experimental_data["logD mean"]
         expt_logD_SEM_series = experimental_data["logD SEM"]
-        pred_logD_series = self.data["logD mean"]
-        pred_logD_SEM_series = self.data["logD SEM"]
-        pred_logD_mod_unc_series = self.data["logD model uncertainty"]
+        pred_logD_series = predicted_data["logD mean"]
+        pred_logD_SEM_series = predicted_data["logD SEM"]
+        pred_logD_mod_unc_series = predicted_data["logD model uncertainty"]
 
         # Concatenate the columns into a single dataframe.
         data_exp =  pd.concat([expt_logD_series, expt_logD_SEM_series], axis=1)
@@ -1034,7 +1034,7 @@ class logDSubmissionCollection:
             plt.savefig(output_path)
 
 
-def generate_statistics_tables(submissions, stats_funcs, directory_path, file_base_name,
+def generate_statistics_tables(submissions, predicted_data, stats_funcs, directory_path, file_base_name,
                                 sort_stat=None, ordering_functions=None,
                                 latex_header_conversions=None, ignore_refcalcs = True):
     stats_names = list(stats_funcs.keys())
@@ -1067,10 +1067,10 @@ def generate_statistics_tables(submissions, stats_funcs, directory_path, file_ba
         print('\rGenerating bootstrap statistics for submission {} ({}/{})'
                   ''.format(method_name, i + 1, len(submissions)), end='')
 
-        bootstrap_statistics = submission.compute_logD_statistics(experimental_data, stats_funcs)
+        bootstrap_statistics = submission.compute_logD_statistics(predicted_data,experimental_data, stats_funcs)
 
         # Compute error slope
-        error_slope_bootstrap_statistics, QQplot_data = submission.compute_logD_model_uncertainty_statistics(experimental_data)
+        error_slope_bootstrap_statistics, QQplot_data = submission.compute_logD_model_uncertainty_statistics(predicted_data,experimental_data)
         #print("error_slope_bootstrap_statistics:\n")
         #print(error_slope_bootstrap_statistics)
 
