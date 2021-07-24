@@ -66,7 +66,7 @@ For our compounds, we have measurements for these combinations of solute and sol
 - Challenge instructions for the challenges ([pKa](pKa/pKa_challenge_instructions.md), [logD](logD/logD_challenge_instructions.md))
 - Submission links:
   - [pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pka)
-  - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD)
+  - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD) (**As of July 24 this server is not yet working and we may have to wait til the pKa challenge concludes in order to fix it.**)
 
 ## What's coming?
 - Analysis after the challenges close
