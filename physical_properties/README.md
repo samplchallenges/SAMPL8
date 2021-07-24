@@ -63,14 +63,18 @@ For our compounds, we have measurements for these combinations of solute and sol
 ## What's here?
 - A Powerpoint file (and PDF thereof) from GSK giving the identity of the compounds under consideration
 - Submission formats
-- Challenge instructions for the pKa challenge
+- Challenge instructions for the challenges ([pKa](pKa/pKa_challenge_instructions.md), [logD](logD/logD_challenge_instructions.md))
+- Submission links:
+  - [pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pka)
+  - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD)
 
 ## What's coming?
-- Submission link
-- Challenge instructions for the logD challenge
+- Analysis after the challenges close
 
 ## Manifest
 - [`source_data/`](source_data): Files provided by GSK
 - [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv): A `.CSV` file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
 - [`microstates/`](microstates): This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv)). This directory will be updated at a later time to include enumerated microstates of each SAMPL molecule.
 - [`images/`](images): Folder containing images related to this challenge in various formats.
+- `pKa`: pKa challenge details and instructions
+- `logD`: logD challenge details and instructions
