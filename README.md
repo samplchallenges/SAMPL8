@@ -57,7 +57,8 @@ We will make available challenge instructions for the logD challenge, as well as
 - 2021-04-13: Add GSK challenge deadline
 - 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
 - 2021-07-05: Update example submission for pKa challenge; add pKa challenge instructions; update README files.
-- 2021-07-06: Add GDCC (TEMOA/TEETOA) to SAMPL8 host-guest analysis, add/update preliminary statistics and analysis tables, plots, and figures for GDCC dataset. 
+- 2021-07-06: Add GDCC (TEMOA/TEETOA) to SAMPL8 host-guest analysis, add/update preliminary statistics and analysis tables, plots, and figures for GDCC dataset.
+- 2021-07-24: Add submission link for logD challenge; update submission format example for logD challenge. Add logD challenge instructions.
 
 ## Challenge construction
 
@@ -94,7 +95,7 @@ GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file fo
 
 Generally, the challenge structure resembles that of the [SAMPL7 physical properties challenge](https://doi.org/10.26434/chemrxiv.14461962.v1).
 
-Submission deadlines are in August, 2021, as [discussed in the challenge details](physical_properties/README.md).
+Submission deadlines are in August, 2021, as [discussed in the challenge details](physical_properties/README.md). Submission links are available from the files giving instructions for each challenge component.
 
 
 ## MANIFEST
