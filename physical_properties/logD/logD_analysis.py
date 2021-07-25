@@ -658,14 +658,18 @@ class SamplSubmission:
 
         # Create a Pandas dataframe from the CSV format.
         for section_name in cls.CSV_SECTIONS:
+            #print(section_name)
             csv_str = io.StringIO('\n'.join(sections[section_name]))
             columns = cls.CSV_SECTIONS[section_name]
+            #print(columns)
             id_column = columns[0]
+            #print(id_column)
             #print("trying", sections)
             section = pd.read_csv(csv_str, index_col=id_column, names=columns, skipinitialspace=True)
             #section = pd.read_csv(csv_str, names=columns, skipinitialspace=True)
             sections[section_name] = section
         return sections
+
 
     @classmethod
     def _create_comparison_dataframe(cls, column_name, submission_data, experimental_data):
@@ -725,6 +729,21 @@ class logDSubmission(SamplSubmission):
                     "TBME-water predictions": ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
                     "Cyclohexane-DMF predictions": ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty")}
 
+    #CSV_SECTIONS = {"Octanol-water predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                "Cyclohexane-water predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                "Ethyl acetate-water predictions": {'names':("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                "Heptane-water predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                "MEK-water predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #               "TBME-water predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                "Cyclohexane-DMF predictions": {'names': ("Molecule ID", "ID tag", "logD mean", "logD SEM", "logD model uncertainty"),
+    #                    'index_col': "Molecule ID"},
+    #                }
 
     def __init__(self, file_path, user_map):
         super().__init__(file_path, user_map)
@@ -735,18 +754,20 @@ class logDSubmission(SamplSubmission):
 
 
         # Load predictions for all different solvent systems
+        self.data = {}
         sections = self._load_sections(file_path)  # From parent-class.
-        self.data_Octanol_water = sections['Octanol-water predictions']  # This is a pandas DataFrame.
-        self.data_Cyclohexane_water = sections['Cyclohexane-water predictions']  # This is a pandas DataFrame.
-        self.data_Ethyl_acetate_water = sections['Ethyl acetate-water predictions']  # This is a pandas DataFrame.
-        self.data_Heptane_water = sections['Heptane-water predictions']  # This is a pandas DataFrame.
-        self.data_MEK_water = sections['MEK-water predictions']  # This is a pandas DataFrame.
-        self.data_TBME_water = sections['TBME-water predictions']  # This is a pandas DataFrame.
-        self.data_Cyclohexane_DMF = sections['Cyclohexane-DMF predictions']  # This is a pandas DataFrame.
+        self.data['Octanol-water predictions'] = sections['Octanol-water predictions']  # This is a pandas DataFrame.
+        self.data['Cyclohexane-water predictions'] = sections['Cyclohexane-water predictions']  # This is a pandas DataFrame.
+        self.data['Ethyl acetate-water predictions'] = sections['Ethyl acetate-water predictions']  # This is a pandas DataFrame.
+        self.data['Heptane-water predictions'] = sections['Heptane-water predictions']  # This is a pandas DataFrame.
+        self.data['MEK-water predictions'] = sections['MEK-water predictions']  # This is a pandas DataFrame.
+        self.data['TBME-water predictions'] = sections['TBME-water predictions']  # This is a pandas DataFrame.
+        self.data['Cyclohexane-DMF predictions'] = sections['Cyclohexane-DMF predictions']  # This is a pandas DataFrame.
         #self.participant = sections['Participant name'][0].strip()
         self.method_name = sections['Name'][0]
         self.category = sections['Category'][0] # New section for logD challenge.
         self.ranked = sections['Ranked'][0].strip() =='True'
+        self.sections = sections
 
          # Check if this is a reference submission
         self.reference_submission = False
