@@ -34,3 +34,15 @@ SAMPL8-14_micro031,Cc1cc(cc(c1[O-])C(C)(C)C)Cc2cnc([n-]c2=[NH2+])[NH-]
 SAMPL8-14_micro032,Cc1cc(cc(c1[O-])C(C)(C)C)Cc2cnc([nH]c2=N)N
 SAMPL8-14_micro033,Cc1cc(cc(c1O)C(C)(C)C)Cc2c[nH]c(=N)nc2N
 SAMPL8-14_micro034,Cc1cc(cc(c1O)C(C)(C)C)Cc2c[nH]c(=N)[nH]c2=N
+SAMPL8-14_dortmund002,Cc1cc(Cc2c[nH+]c(N)nc2N)cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund004,Cc1cc(Cc2cnc(=[NH2+])[nH]c2N)cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund006,Cc1cc(Cc2c[nH]c(=N)[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund007,Cc1cc(Cc2c[nH]c(=N)[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund009,Cc1cc(Cc2cnc(N)[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund011,Cc1cc(Cc2c[nH]c(=[NH2+])nc2N)cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund012,Cc1cc(Cc2c[nH]c(N)nc2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund001,Cc1cc(Cc2c[nH+]c(N)[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund003,Cc1cc(Cc2c[nH+]c(=[NH2+])[nH]c2N)cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund005,Cc1cc(Cc2c[nH]c(=[NH2+])[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund008,Cc1cc(Cc2c[nH+]c(N)[nH]c2=[NH2+])cc(C(C)(C)C)c1O
+SAMPL8-14_dortmund010,Cc1cc(Cc2c[nH]c(=[NH2+])nc2[NH3+])cc(C(C)(C)C)c1O

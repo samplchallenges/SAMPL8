@@ -3,3 +3,9 @@ SAMPL8-12_micro000,Cc1ccc(cc1)Cc2cnc(nc2N3CCOCC3)N
 SAMPL8-12_micro001,Cc1ccc(cc1)Cc2c[n-]c(nc2=[N+]3CCOCC3)[NH-]
 SAMPL8-12_micro002,Cc1ccc(cc1)Cc2cnc(=N)[nH]c2N3CCOCC3
 SAMPL8-12_micro003,Cc1ccc(cc1)Cc2c[nH]c(=N)nc2N3CCOCC3
+SAMPL8-12_dortmund002,Cc1ccc(Cc2c[nH+]c(N)nc2N2CCOCC2)cc1
+SAMPL8-12_dortmund004,Cc1ccc(Cc2c[nH]c(=[NH2+])nc2N2CCOCC2)cc1
+SAMPL8-12_dortmund006,Cc1ccc(Cc2cnc(=[NH2+])[nH]c2N2CCOCC2)cc1
+SAMPL8-12_dortmund001,Cc1ccc(Cc2c[nH+]c(N)[nH]c2=[N+]2CCOCC2)cc1
+SAMPL8-12_dortmund003,Cc1ccc(Cc2c[nH]c(=[NH2+])nc2[NH+]2CCOCC2)cc1
+SAMPL8-12_dortmund005,Cc1ccc(Cc2c[nH+]c(=[NH2+])[nH]c2N2CCOCC2)cc1
