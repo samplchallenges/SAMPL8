@@ -25,6 +25,7 @@
 # The list of predictions must begin with the 'Predictions:' keyword as illustrated here.,,,,,,
 Predictions:
 SAMPL8-1_micro000,SAMPL8-1_extra001,1,1.1,0.1,1.4,OC(=O)c1:c:c:c:c:c:1[NH2+]c2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_extra002,1,1.12,0.1,1.4,OC(=O)c1:c:c:c:c:c:1[NH2+]c2:c:c:c:c(:c:2)C(F)(F)F
 SAMPL8-1_micro000,SAMPL8-1_micro000,0,0,0.1,1.4,OC(=O)c1:c:c:c:c:c:1Nc2:c:c:c:c(:c:2)C(F)(F)F
 SAMPL8-1_micro000,SAMPL8-1_micro007,0,15.42,0.1,1.4,OC(=O)C1=CC=CC/C/1=N\c2:c:c:c:c(:c:2)C(F)(F)F
 SAMPL8-1_micro000,SAMPL8-1_micro010,0,14.07,0.1,1.4,OC(=O)C1=CCC=C/C/1=N\c2:c:c:c:c(:c:2)C(F)(F)F
@@ -38,22 +39,27 @@ SAMPL8-11_micro000,SAMPL8-11_micro002,1,-4.02,0.1,0.73,CN1C(=O)C=Cc2[nH+]cc(F)c(
 SAMPL8-11_micro000,SAMPL8-11_micro001,1,-15.04,0.1,0.73,CN1C(=O)C=Cc2:n:c:c(F):c(OCC3CCC([NH3+])CC3):c1:2
 SAMPL8-11_micro000,SAMPL8-11_micro000,0,0,0.1,0.73,CN1C(=O)C=Cc2:n:c:c(F):c(OCC3CCC(N)CC3):c1:2
 SAMPL8-12_micro000,SAMPL8-12_extra001,2,-2.48,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH3+]):n:c:2[NH+]3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra007,2,-8.9,0.1,1.4,Cc1:c:c:c(CC2=CNC(=NC2=N3CCOCC3)[NH2+2]):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra008,2,-15.46,0.1,1.4,Cc1:c:c:c(Cc2:c:[nH]:c([NH2+2]):[nH]:c:2N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_extra002,1,-3.86,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH3+]):n:c:2N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_extra003,1,-11.7,0.1,1.4,Cc1:c:c:c(CC2=CNC(=[NH2+])N=C2N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_extra004,1,-9.45,0.1,1.4,Cc1:c:c:c(CC2=C(NC(=[NH2+])N=C2)N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_extra005,1,-3.09,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c(N):n:c:2[NH+]3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra009,1,-9.43,,,Cc1:c:c:c(CC2=C(NC(=[NH2+])N=C2)N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_micro000,0,0,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c(N):n:c:2N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_micro002,0,8.49,0.1,1.4,Cc1:c:c:c(CC2=C(NC(=N)N=C2)N3CCOCC3):c:c:1
-SAMPL8-12_micro000,SAMPL8-12_extra006,0,6.11,0.1,1.4,Cc1:c:c:c(CC2=CNC(=N)N=C2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_micro003 ,0,6.11,0.1,1.4,Cc1:c:c:c(CC2=CNC(=N)N=C2N3CCOCC3):c:c:1
 SAMPL8-12_micro000,SAMPL8-12_micro001,-1,19.98,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH-]):n:c:2N3CCOCC3):c:c:1
 SAMPL8-13_micro000,SAMPL8-13_micro001,1,-3.66,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=O)N)n2c[nH+]c3:c:c:c(:c:c2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
 SAMPL8-13_micro000,SAMPL8-13_extra001,1,-0.62,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=[NH2+])O)n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
 SAMPL8-13_micro000,SAMPL8-13_micro000,0,0,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=O)N)n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
-SAMPL8-13_micro000,SAMPL8-13_extra002,-1,17.22,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=N)[O-])n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-13_micro000,SAMPL8-13_micro002,-1,17.22,,,CC(Oc1:c:c(:s:c:1C(=N)[O-])n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-14_micro000,SAMPL8-14_extra009,2,-24.98,0.1,1.4,Cc1:c:c(Cc2:c:[nH]:c(N):[nH]:c:2[NH2+2]):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra001,1,-20.17,0.1,1.4,Cc1:c:c(CC2=CNC(=[NH2+])N=C2N):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra002,1,-17.95,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=[NH2+])N=C2):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra003,1,-9.57,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2[NH3+]):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra004,1,-12.04,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH3+]):n:c:2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra010,1,-13.11,,,Cc1:c:c(Cc2:c:[nH]:c(=N):[nH]:c:2=[NH2+]):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_micro024,0,-8.34,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2N):c:c(:c:1O)C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra005,0,-4.46,0.1,1.4,Cc1:c:c(CC2=CNC(=[NH2+])N=C2N):c:c(:c:1[O-])C(C)(C)C
 SAMPL8-14_micro000,SAMPL8-14_extra006,0,-1.07,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=[NH2+])N=C2):c:c(:c:1[O-])C(C)(C)C
@@ -95,8 +101,7 @@ SAMPL8-16_micro000,SAMPL8-16_extra005,-2,31.52,0.1,1.4,CC(C)(C)O\C(=N\Cc1:n:c2:c
 SAMPL8-17_micro000,SAMPL8-17_micro002,1,-10.16,0.1,1.4,OCC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCOCC1
 SAMPL8-17_micro000,SAMPL8-17_micro003,1,-0.29,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
 SAMPL8-17_micro000,SAMPL8-17_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
-SAMPL8-17_micro000,SAMPL8-17_extra001,0,1.35,0.1,1.4,OCC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCOCC1
-SAMPL8-17_micro000,SAMPL8-17_micro004,0,3.1,0.1,1.4,OCC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCOCC1
+SAMPL8-17_micro000,SAMPL8-17_micro004,0,1.35,0.1,1.4,OCC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCOCC1
 SAMPL8-17_micro000,SAMPL8-17_micro001,-1,15.77,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
 SAMPL8-18_micro000,SAMPL8-18_extra001,1,-3.28,0.1,1.4,COc1:c:c:c(:c:c:1OC)\N=C\2/NC(=[NH+]c3:c:c:c:c:c2:3)Cl
 SAMPL8-18_micro000,SAMPL8-18_micro004,1,-13.41,0.1,1.4,COc1:c:c:c(Nc2nc(Cl)[nH+]c3:c:c:c:c:c2:3):c:c:1OC
@@ -146,10 +151,13 @@ SAMPL8-20_micro000,SAMPL8-20_micro000,0,0,0.1,1.4,Clc1:c:c2C(=N)NNc:2:n:c:1c3:c:
 SAMPL8-20_micro000,SAMPL8-20_micro001,0,1.49,0.1,1.4,ClC1=C(NC2=NNC(=N)C2=C1)c3:c:c:c:c:c:3
 SAMPL8-20_micro000,SAMPL8-20_extra003,-1,3.83,0.1,1.4,Nc1:[n-]:n:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
 SAMPL8-21_micro000,SAMPL8-21_extra001,2,-17.45,0.1,1.4,COc1:c:c(Cc2:c([NH3+]):n:c([NH3+]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra010,2,-28.41,,,COC1=N=C(N)NC(=C1Cc2:c:c(OC):c(O):c(OC):c:2)[NH2+2]
+SAMPL8-21_micro000,SAMPL8-21_extra011,2,-20.97,,,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=N)N=C([NH2+2])N1
 SAMPL8-21_micro000,SAMPL8-21_extra002,1,-24.33,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=[NH2+])NC(=N1)N
 SAMPL8-21_micro000,SAMPL8-21_extra003,1,-22.44,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=[NH2+])N=C(N)N1
 SAMPL8-21_micro000,SAMPL8-21_extra004,1,-16.52,0.1,1.4,COc1:c:c(Cc2:c([NH3+]):n:c(N):n:c:2OC):c:c(OC):c:1O
 SAMPL8-21_micro000,SAMPL8-21_extra005,1,-17.34,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH3+]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra012,1,-16.11,,,COc1:[nH]:c(=N):[nH]:c(=[NH2+]):c:1Cc2:c:c(OC):c(O):c(OC):c:2
 SAMPL8-21_micro000,SAMPL8-21_micro028,0,-13.62,0.1,1.4,COc1:c:c(Cc2:c(N):n:c(N):n:c:2OC):c:c(OC):c:1O
 SAMPL8-21_micro000,SAMPL8-21_extra006,0,-10.88,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=[NH2+])NC(=N1)N
 SAMPL8-21_micro000,SAMPL8-21_extra007,0,-9.91,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=[NH2+])N=C(N)N1
@@ -174,6 +182,7 @@ SAMPL8-21_micro000,SAMPL8-21_micro004,-2,25.71,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]
 SAMPL8-21_micro000,SAMPL8-21_micro005,-2,16.23,0.1,1.4,COc1:c:c(Cc2:c([NH-]):n:c(N):n:c:2OC):c:c(OC):c:1[O-]
 SAMPL8-21_micro000,SAMPL8-21_micro012,-2,26.82,0.1,1.4,COc1:c:c(Cc2:c([NH-]):n:c([NH-]):n:c:2OC):c:c(OC):c:1O
 SAMPL8-21_micro000,SAMPL8-21_micro015,-2,17.31,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH-]):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-22_micro000,SAMPL8-22_extra004,2,-13.99,,,COc1:c:c2NC(=N=C([NH2+2])c:2:c:c:1OC)Cl
 SAMPL8-22_micro000,SAMPL8-22_extra001,1,-15.13,0.1,1.4,COc1:c:c2NC(=NC(=[NH2+])c:2:c:c:1OC)Cl
 SAMPL8-22_micro000,SAMPL8-22_extra002,1,-13.7,0.1,1.4,COc1:c:c2N=C(Cl)NC(=[NH2+])c:2:c:c:1OC
 SAMPL8-22_micro000,SAMPL8-22_extra003,1,-6.46,0.1,1.4,COc1:c:c2:n:c(Cl):n:c([NH3+]):c:2:c:c:1OC
@@ -188,7 +197,8 @@ SAMPL8-23_micro000,SAMPL8-23_micro000,0,0,0.1,1.4,Oc1:c:c:c2SC(=C)Nc:2:c:1
 SAMPL8-23_micro000,SAMPL8-23_micro005,-1,1.53,0.1,1.4,Cc1:n:c2:c:c([O-]):c:c:c:2:s:1
 SAMPL8-23_micro000,SAMPL8-23_micro002,-1,12.62,0.1,1.4,[O-]c1:c:c:c2SC(=C)Nc:2:c:1
 SAMPL8-3_micro000,SAMPL8-3_extra001,1,-25.07,0.1,1.4,NS(=O)(=O)c1:c:c(C(=O)O):c([NH2+]Cc2:o:c:c:c:2):c:c:1Cl
-SAMPL8-3_micro000,SAMPL8-3_micro000,0,0,0.1,1.4,c1cc(oc1)CN=C2C=C(C(=CC2=C(O)O)S(=O)(=O)N)Cl
+SAMPL8-3_micro000,SAMPL8-3_extra003,1,-18.37,,,NS(=O)(=O)C1=CC(=C(O)O)C(=CC1=[Cl+])NCc2:o:c:c:c:2
+SAMPL8-3_micro000,SAMPL8-3_micro000,0,0,0.1,1.4,NS(=O)(=O)C1=CC(=C(O)O)\C(=N/Cc2:o:c:c:c:2)\C=C1Cl
 SAMPL8-3_micro000,SAMPL8-3_micro006,0,-26.5,0.1,1.4,NS(=O)(=O)c1:c:c(C(=O)O):c(NCc2:o:c:c:c:2):c:c:1Cl
 SAMPL8-3_micro000,SAMPL8-3_extra002,0,-15.41,0.1,1.4,OC(=O)c1:c:c(:c(Cl):c:c:1[NH2+]Cc2:o:c:c:c:2)S(=N)(=O)[O-]
 SAMPL8-3_micro000,SAMPL8-3_micro016,-1,-16.58,0.1,1.4,OC(=O)c1:c:c(:c(Cl):c:c:1NCc2:o:c:c:c:2)S(=N)(=O)[O-]
@@ -222,12 +232,11 @@ SAMPL8-7_micro000,SAMPL8-7_micro001,-1,16.43,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:
 SAMPL8-8_micro000,SAMPL8-8_micro001,1,-2.56,0.1,0.73,COC(=O)c1cn2cccc(c2[nH+]1)C(F)(F)F
 SAMPL8-8_micro000,SAMPL8-8_micro002,1,13.47,0.1,0.73,CO\C(=c\1/:c:[n+]2:c:c:c:c(:c:2:n:1)C(F)(F)F)\O
 SAMPL8-8_micro000,SAMPL8-8_micro000,0,0,0.1,0.73,COC(=O)c1:c:n2:c:c:c:c(:c:2:n:1)C(F)(F)F
-SAMPL8-9_micro000,SAMPL8-9_micro002,1,-10.6,0.1,1.4,OC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCCCC1
-SAMPL8-9_micro000,SAMPL8-9_micro004,1,-0.11,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
-SAMPL8-9_micro000,SAMPL8-9_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
-SAMPL8-9_micro000,SAMPL8-9_extra001,0,2.27,0.1,1.4,OC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCCCC1
-SAMPL8-9_micro000,SAMPL8-9_micro003,0,3.08,0.1,1.4,OC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCCCC1
-SAMPL8-9_micro000,SAMPL8-9_micro001,-1,16.75,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+SAMPL8-9_micro002,SAMPL8-9_micro002,1,-10.6,0.1,1.4,OC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCCCC1
+SAMPL8-9_micro002,SAMPL8-9_micro004,1,-0.11,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+SAMPL8-9_micro002,SAMPL8-9_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+SAMPL8-9_micro002,SAMPL8-9_micro003,0,2.2,0.1,1.4,OC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCCCC1
+SAMPL8-9_micro002,SAMPL8-9_micro001,-1,16.75,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
 
 #,,,,,,
 #,,,,,,
@@ -320,7 +329,7 @@ The COSMO-RS algorithm by itself has no statistical error. The overall workflow 
 
 #,,,,,,
 Macro pKa values
-SAMPL8-1,-0.8,1,0
+SAMPL8-1,-0.61,1,0
 SAMPL8-1,3.69,0,-1
 SAMPL8-2,3.99,0,-1
 SAMPL8-3,-1.04,1,0
@@ -340,11 +349,12 @@ SAMPL8-9,12.28,0,-1
 SAMPL8-10,8.44,1,0
 SAMPL8-11,3.02,2,1
 SAMPL8-11,11.02,1,0
-SAMPL8-12,-6.76,2,1
+SAMPL8-12,2.76,2,1
 SAMPL8-12,8.58,1,0
 SAMPL8-12,14.65,0,-1
 SAMPL8-13,2.69,1,0
 SAMPL8-13,12.62,0,-1
+SAMPL8-14,3.53,2,1
 SAMPL8-14,8.68,1,0
 SAMPL8-14,9.8,0,-1
 SAMPL8-14,13.71,-1,-2
@@ -362,10 +372,11 @@ SAMPL8-19,6.67,0,-1
 SAMPL8-20,0.41,2,1
 SAMPL8-20,4.64,1,0
 SAMPL8-20,10.19,0,-1
-SAMPL8-21,-5.05,2,1
+SAMPL8-21,2.99,2,1
 SAMPL8-21,7.86,1,0
 SAMPL8-21,8.65,0,-1
 SAMPL8-21,13.2,-1,-2
+SAMPL8-22,-0.84,2,1
 SAMPL8-22,5.52,1,0
 SAMPL8-22,12.61,0,-1
 SAMPL8-23,4.51,1,0
