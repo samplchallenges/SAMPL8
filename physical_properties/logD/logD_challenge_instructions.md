@@ -1,12 +1,14 @@
 ## logD Challenge Instructions
 
-The SAMPL8 Multi-solvent logD Challenge consists of predicting logD values for small molecules between a variety of different solvents (see grid in the [physical properties README.md](https://github.com/samplchallenges/SAMPL8/tree/master/physical_properties/README.md)). A submission template file can be found in the [`submission_template/`](submission_template) directory and an example submission file can be found in the [`example_submission_file`](example_submission_file) directory. Predictions must be submitted via our AWS submissions server, [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD). **As of July 24 this server is not yet working and we may have to wait til the pKa challenge concludes in order to fix it.**
+The SAMPL8 Multi-solvent logD Challenge consists of predicting logD values for small molecules between a variety of different solvents (see grid in the [physical properties README.md](https://github.com/samplchallenges/SAMPL8/tree/master/physical_properties/README.md)). A submission template file can be found in the [`submission_template/`](submission_template) directory and an example submission file can be found in the [`example_submission_file`](example_submission_file) directory. Predictions must be submitted via our AWS submissions server, [http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD).
 
 **Predictions should be submitted as calculated logD values** in dimensionless units.
 
 **The submission deadline is Aug. 24, 2021**.
 
 In general the format/style of this challenge is similar to that for the SAMPL7 logP/logD challenge, except that we are using dimensionless units (rather than free energy units) and now, each solute may have been measured across multiple solvent phases, substantially changing the submission format. Note also that *only logD values are available*, not logP values, though pKa values will be released before the challenge deadline (after the pKa challenge closes in early August).
+
+**Experimental details posted 2021-08-20**: We just provided additional clarification on the logD experiments; the experiments were done at pH 8 for compounds SAMPL8-1, 3, 5 and 6; all other compounds were measured at pH 3. This information will also be published in the SAMPL8 manuscript, which will be available after the challenge closes.
 
 ### Filling out the submission file
 

@@ -42,7 +42,7 @@ Our full dataset includes partitioning for these biphasic systems:
 - MEK-water
 - TBME-water
 - cyclohexane-DMF
-In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 or pH 8 depending on the pKa of the compound, and will be specified when the log D challenge is launched (e.g. for one compound water might have been at pH 3 and for another, at pH 8)
+In all cases water was Britton-Robinson buffer from Ricca. The pH used was pH 3 or pH 8 depending on the pKa of the compound, and will be specified when the log D challenge is launched (e.g. for one compound water might have been at pH 3 and for another, at pH 8). (Update 2021-08-20: pH 8 was used for SAMPL8-1, 3, 5 and 6; all other compounds were done at pH 3.)
 
 For our compounds, we have measurements for these combinations of solute and solvent system:
 |           | octanol-water | cyclohexane-water | ethyl acetate-water | heptane-water | MEK-water | TBME-water | cyclohexane-DMF |
@@ -66,7 +66,7 @@ For our compounds, we have measurements for these combinations of solute and sol
 - Challenge instructions for the challenges ([pKa](pKa/pKa_challenge_instructions.md), [logD](logD/logD_challenge_instructions.md))
 - Submission links:
   - [pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pka)
-  - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD) 
+  - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD)
 
 ## What's coming?
 - Analysis after the challenges close
