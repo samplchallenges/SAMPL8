@@ -61,6 +61,7 @@ We will make available challenge instructions for the logD challenge, as well as
 - 2021-07-24: Add submission link for logD challenge; update submission format example for logD challenge. Add logD challenge instructions.
 - 2021-08-03: Add additional optional microstates from Stefan Kast/Nicolas Tielker from TU Dortmund
 - 2021-08-20: Add experimental pH for logD measurements (pH 8 for SAMPL8-1, 3, 5 and 6; pH 3 for all other compounds)
+- 2021-08-23: Update logD deadline to Aug. 31
 
 ## Challenge construction
 
