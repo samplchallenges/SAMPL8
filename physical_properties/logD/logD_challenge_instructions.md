@@ -4,7 +4,7 @@ The SAMPL8 Multi-solvent logD Challenge consists of predicting logD values for s
 
 **Predictions should be submitted as calculated logD values** in dimensionless units.
 
-**The submission deadline is Aug. 24, 2021**.
+**The submission deadline is Aug. 31, 2021**.
 
 In general the format/style of this challenge is similar to that for the SAMPL7 logP/logD challenge, except that we are using dimensionless units (rather than free energy units) and now, each solute may have been measured across multiple solvent phases, substantially changing the submission format. Note also that *only logD values are available*, not logP values, though pKa values will be released before the challenge deadline (after the pKa challenge closes in early August).
 
