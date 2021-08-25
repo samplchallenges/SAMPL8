@@ -6,6 +6,16 @@ Also provided are the molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB 
 
 Please note, the microstate lists provided here may not be comprehensive, and indeed, on 2021-08-03 we added several additional optional microstates (for compounds 1, 3, 12, 14, 21 and 22) from Stefan Kast and Nicolas Tielker, with microstate IDs including "dortmund". These are optional and included in case they are helpful. There may be some redundancy, e.g. we noticed that SAMPL8-21_dortmund004 and SAMPL8-21_dortmund005 seem equivalent, and SAMPL8-22_dortmund001 and SAMPL8-22_dortmund003 seem equivalent.
 
+We also added some additional microstates from Michael Diedenhofen (Biovia/Dassault/3DS) he used in his submission, after the challenge closed, in case these are useful in analysis.
+
+Diedenhofen also kindly provided this list of microstates that he thinks are equivalent; if you have any additions, please let us know:
+> SAMPL8-4_micro000 <-> SAMPL8-4_micro004
+> SAMPL8-14_micro000 <-> SAMPL8-14_micro016
+> SAMPL8-14_micro002 <-> SAMPL8-14_micro023
+> SAMPL8-14_micro006 <-> SAMPL8-14_micro034
+> SAMPL8-14_micro013 <-> SAMPL8-14_micro033
+> SAMPL8-14_micro017 <-> SAMPL8-14_micro030
+
 ### Manifest
 - [`make_mol2_sdf_pdb_files.ipynb`](make_mol2_sdf_pdb_files.ipynb) - The jupyter notebook used to generate the MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) files for molecules using OpenEye toolkits and the SMILES strings and codenames found in the `SAMPL8_molecule_ID_and_SMILES.csv` files.
 - [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv) - A `.CSV` file that indicates SAMPL8 challenge molecule IDs and SMILES.
