@@ -1,0 +1,212 @@
+# LOGD PREDICTIONS
+#
+# This file will be automatically parsed. It must contain the following four elements:
+# predictions, name of method, software listing, and method description.
+# These elements must be provided in the order shown with their respective headers.
+#
+# Any line that begins with a # is considered a comment and will be ignored when parsing.
+#
+#
+# PREDICTION SECTION
+#
+# It is mandatory to submit logD predictions for all challenge molecules for
+# which data is available in at least one solvent pair.
+# See https://github.com/samplchallenges/SAMPL8/tree/master/physical_properties for data availability.
+# You must submit predictions for at least one solvent pair (eg. Octanol-water, Cyclohexane-water, Ethyl acetate-water, etc etc).
+#
+# Please report the general molecule `ID tag` in the form of `SAMPL8-X` (e.g. SAMPL8-1, SAMPL8-2, etc).
+# Please indicate the microstate(s) used in the `Molecule ID/IDs considered (no commas)` section (e.g. `SAMPL8-1_micro000`, `SAMPL8-1_micro000 SAMPL8-1_micro000`)
+# Please report standard error of the mean (SEM) and model uncertainty.
+#
+# The data in each prediction line should be structured as follows:
+# ID tag, Molecule ID/IDs considered (no commas), logD prediction, logD SEM, logD model uncertainty
+#
+#
+# List out all IDs considered/input to your calculations in the second column (`Molecule ID/IDs considered (no commas)`). See challenge instructions.
+# If multiple microstates are used, please report the order of population in the aqueous phase in descending order.
+# Please list microstate populations, SMILES strings and the molecule IDs in the `METHOD DESCRIPTION SECTION` section further below.
+#
+# Predictions for each solvent pair must have their own header, as illustrated here.
+#
+# We recommend editing this file with a plain text editor (e.g. vi, eMacs, etc.) and NOT a spreadsheet.
+Octanol-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,0.35,0.42,0.58
+SAMPL8-5, SAMPL8-5_micro000,-0.57,0.27,0.58
+SAMPL8-6,SAMPL8-6_micro000,-0.56,0.23,0.58
+SAMPL8-7,SAMPL8-7_micro000,-1.68,0.29,0.58
+SAMPL8-9,SAMPL8-9_micro000,-0.39,0.30,0.58
+SAMPL8-10,SAMPL8-10_micro000,0.06,0.40,0.58
+SAMPL8-12,SAMPL8-12_micro000,-1.85,0.31,0.58
+SAMPL8-14,SAMPL8-14_micro024,-2.63,0.42,0.58
+SAMPL8-16,SAMPL8-16_micro000,-0.41,0.25,0.58
+
+Cyclohexane-water predictions:
+SAMPL8-5, SAMPL8-5_micro000,-0.41,0.30,0.76
+
+Ethyl acetate-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,2.66,0.88,0.98
+SAMPL8-3,SAMPL8-3_micro000,-0.97,1.00,0.98
+SAMPL8-5, SAMPL8-5_micro000,1.73,0.36,0.98
+SAMPL8-6,SAMPL8-6_micro000,1.22,0.56,0.98
+SAMPL8-9,SAMPL8-9_micro000,3.09,0.62,0.98
+SAMPL8-10,SAMPL8-10_micro000,0.44,0.70,0.98
+SAMPL8-12,SAMPL8-12_micro000,-0.11,0.76,0.98
+SAMPL8-14,SAMPL8-14_micro024,-1.73,0.82,0.98
+SAMPL8-16,SAMPL8-16_micro000,4.62,0.67,0.98
+SAMPL8-17,SAMPL8-17_micro000,3.92,0.58,0.98
+
+Heptane-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,1.26,0.84,0.77
+SAMPL8-5, SAMPL8-5_micro000,-0.70,0.32,0.77
+SAMPL8-10,SAMPL8-10_micro000,-4.07,0.45,0.77
+SAMPL8-16,SAMPL8-16_micro000,-1.27,0.47,0.77
+
+MEK-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,0.46,0.44,0.92
+SAMPL8-3,SAMPL8-3_micro000,-6.18,0.39,0.92
+SAMPL8-5, SAMPL8-5_micro000,0.70,0.31,0.92
+SAMPL8-6,SAMPL8-6_micro000,0.01,0.30,0.92
+SAMPL8-7,SAMPL8-7_micro000,-0.86,0.37,0.92
+SAMPL8-9,SAMPL8-9_micro000,-1.39,0.42,0.92
+SAMPL8-10,SAMPL8-10_micro000,-2.66,0.39,0.92
+SAMPL8-12,SAMPL8-12_micro000,-5.01,0.35,0.92
+SAMPL8-14,SAMPL8-14_micro024,-7.02,0.47,0.92
+SAMPL8-16,SAMPL8-16_micro000,-0.10,0.30,0.92
+SAMPL8-17,SAMPL8-17_micro000,-0.59,0.37,0.92
+
+TBME-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,-0.48,0.47,0.81
+SAMPL8-5, SAMPL8-5_micro000,-0.70,0.30,0.81
+SAMPL8-6,SAMPL8-6_micro000,-1.77,0.23,0.81
+SAMPL8-10,SAMPL8-10_micro000,-4.09,0.38,0.81
+SAMPL8-16,SAMPL8-16_micro000,-1.52,0.28,0.81
+
+Cyclohexane-DMF predictions:
+SAMPL8-1,SAMPL8-1_micro000,-6.60,0.99,0.90
+SAMPL8-6,SAMPL8-6_micro000,-8.22,0.65,0.90
+SAMPL8-16,SAMPL8-16_micro000,-6.03,0.90,0.90
+
+#
+#
+# Please list your name, using only UTF-8 characters as described above. The "Participant name:" entry is required.
+Participant name:
+Shuzhe Wang
+
+#
+#
+# Please list your organization/affiliation, using only UTF-8 characters as described above.
+Participant organization:
+ETH Zurich
+
+#
+#
+# NAME SECTION
+#
+# Please provide an informal but informative name of the method used.
+# The name must not exceed 40 characters.
+# The 'Name:' keyword is required as shown here.
+Name:
+Molecular Dynamics Fingerprints (MDFPs)
+
+#
+#
+# COMPUTE TIME SECTION
+#
+# Please provide the average compute time across all of the molecules, per biphasic system.
+# For physical methods, report the GPU and/or CPU compute time in hours.
+# For empirical methods, report the query time in hours.
+# Create a new line for each processor type.
+# The 'Compute time:' keyword is required as shown here.
+Compute time:
+
+octanol-water:
+0.25 hours, GPU
+
+cyclohexane-water:
+0.25 hours, GPU
+
+ethyl acetate-water:
+0.25 hours, GPU
+
+heptane-water:
+0.25 hours, GPU
+
+MEK-water:
+0.25 hours, GPU
+
+TBME-water:
+0.25 hours, GPU
+
+cyclohexane-DMF:
+0.25 hours, GPU
+
+#
+# COMPUTING AND HARDWARE SECTION
+#
+# Please provide details of the computing resources that were used to train models and make predictions.
+# Please specify compute time for training models and querying separately for empirical prediction methods.
+# Provide a detailed description of the hardware used to run the simulations.
+# The 'Computing and hardware:' keyword is required as shown here.
+Computing and hardware:
+All the MD simulations and machine learning model building were carreid out on the HPC Euler cluster at ETH Zurich.
+To train the models, each molecule in the dataset needs to be simulated and the feature vector extracted. This takes ~15 min on the GPU. The subsequent model training time takes tens of minutes.
+For querying each new molecule, a new simulation needs to be carried out, the model inference time is negligible. 
+
+# SOFTWARE SECTION
+#
+# List all major software packages used and their versions.
+# Create a new line for each software.
+# The 'Software:' keyword is required.
+Software:
+MDFPtools 0.0.1
+xgboost 0.90
+
+# METHOD CATEGORY SECTION
+#
+# State which method category your prediction method is better described as:
+# `Physical (MM)`, `Physical (QM)`, `Empirical`, or `Mixed`.
+# Pick only one category label.
+# The `Category:` keyword is required.
+Category:
+Mixed
+
+
+# METHOD DESCRIPTION SECTION
+#
+# Methodology and computational details.
+# Level of details should be roughly equivalent to that used in a publication.
+# Please list out the method details of predictions for each solvent pair considered.
+#
+# Please include the values of key parameters with units.
+# Please explain how statistical uncertainties were estimated.
+#
+# Please report SMILES strings and populations of all the microstates used in calculations in this section.
+#
+# Use as many lines of text as you need.
+# All text following the 'Method:' keyword will be regarded as part of your free text methods description.
+#
+# Important: Please do not use phrases which are identical to the section headers of logD data. For example do not use "Octanol-water predictions:",
+# but use "Octanol-water predictions" instead (without the colon) or any other form. 
+
+Method:
+
+The detailed procedure has been described in this previous publication:`10.1021/acs.jcim.6b00778`. Here we used the toolkit workflow described in `10.1007/s10822-019-00252-6`.
+
+We generate feature vectors from MD simulation and build machine learning models to predict solvation free eneriges or logP.
+
+For all solvent-pairs except of octanol-water, measured solvation free energies in the respective solvents were used to train models to predict solvation free energies. We then obtained the logP as this can be inferred from the solvation free energies analytically.
+
+For octanol water, machine learning modele is built to directly predict the logP. This is because the amount of data for measured logP octanol-water is orders of magnitude higher than the data for the solvation free energies.
+
+The logP values are subsequently analyatically corrected using the provided pKa to give the logD predictions here.
+
+The standard error of mean (SEM) is estimated from models built using different folds of cross-validation. The overall model uncertainty is estimated by looking at the overall MAE from the cross-validation. 
+
+
+#
+#
+# All submissions must either be ranked or non-ranked.
+# Only one ranked submission per participant is allowed, but you can turn in as many nonranked submissions as you want (we will still run analysis on them).
+# The "Ranked:" keyword is required, and expects a Boolean value (True/False)
+Ranked:
+True

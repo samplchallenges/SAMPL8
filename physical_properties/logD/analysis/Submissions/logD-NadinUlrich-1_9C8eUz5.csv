@@ -1,0 +1,181 @@
+# LOGD PREDICTIONS
+#
+# This file will be automatically parsed. It must contain the following four elements:
+# predictions, name of method, software listing, and method description.
+# These elements must be provided in the order shown with their respective headers.
+#
+# Any line that begins with a # is considered a comment and will be ignored when parsing.
+#
+#
+# PREDICTION SECTION
+#
+# It is mandatory to submit logD predictions for all challenge molecules for
+# which data is available in at least one solvent pair.
+# See https://github.com/samplchallenges/SAMPL8/tree/master/physical_properties for data availability.
+# You must submit predictions for at least one solvent pair (eg. Octanol-water, Cyclohexane-water, Ethyl acetate-water, etc etc).
+#
+# Please report the general molecule `ID tag` in the form of `SAMPL8-X` (e.g. SAMPL8-1, SAMPL8-2, etc).
+# Please indicate the microstate(s) used in the `Molecule ID/IDs considered (no commas)` section (e.g. `SAMPL8-1_micro000`, `SAMPL8-1_micro000 SAMPL8-1_extra001`)
+# Please report standard error of the mean (SEM) and model uncertainty.
+#
+# The data in each prediction line should be structured as follows:
+# ID tag, Molecule ID/IDs considered (no commas), logD prediction, logD SEM, logD model uncertainty
+#
+#
+# List out all IDs considered/input to your calculations in the second column (`Molecule ID/IDs considered (no commas)`). See challenge instructions.
+# If multiple microstates are used, please report the order of population in the aqueous phase in descending order.
+# Please list microstate populations, SMILES strings and the molecule IDs in the `METHOD DESCRIPTION SECTION` section further below.
+#
+# Predictions for each solvent pair must have their own header, as illustrated here.
+#
+# We recommend editing this file with a plain text editor (e.g. vi, eMacs, etc.) and NOT a spreadsheet.
+Octanol-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,2.13,0.02,0.47
+SAMPL8-5,SAMPL8-5_micro000,0.65,0.02,0.47
+SAMPL8-6,SAMPL8-6_micro000,0.82,0.02,0.47
+SAMPL8-7,SAMPL8-7_micro000,-1.96,0.02,0.47
+SAMPL8-9,SAMPL8-9_micro000,-0.09,0.02,0.47
+SAMPL8-10,SAMPL8-10_micro000,-1.16,0.02,0.47
+SAMPL8-12,SAMPL8-12_micro000,-1.76,0.02,0.47
+SAMPL8-14,SAMPL8-14_micro024,-0.69,0.02,0.47
+SAMPL8-16,SAMPL8-16_micro000,0.78,0.02,0.47
+
+Cyclohexane-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+Ethyl acetate-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+Heptane-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+MEK-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+TBME-water predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+Cyclohexane-DMF predictions:
+SAMPL8-1,SAMPL8-1_micro000,5,0.02,10
+
+#
+#
+# Please list your name, using only UTF-8 characters as described above. The "Participant name:" entry is required.
+Participant name:
+Nadin Ulrich
+
+#
+#
+# Please list your organization/affiliation, using only UTF-8 characters as described above.
+Participant organization:
+Helmholtz Centre for Environmental Research GmbH - UFZ 
+
+#
+#
+# NAME SECTION
+#
+# Please provide an informal but informative name of the method used.
+# The name must not exceed 40 characters.
+# The 'Name:' keyword is required as shown here.
+Name:
+DNN_taut
+
+#
+#
+# COMPUTE TIME SECTION
+#
+# Please provide the average compute time across all of the molecules, per biphasic system.
+# For physical methods, report the GPU and/or CPU compute time in hours.
+# For empirical methods, report the query time in hours.
+# Create a new line for each processor type.
+# The 'Compute time:' keyword is required as shown here.
+Compute time:
+0.01, CPU
+
+
+
+#
+# COMPUTING AND HARDWARE SECTION
+#
+# Please provide details of the computing resources that were used to train models and make predictions.
+# Please specify compute time for training models and querying separately for empirical prediction methods.
+# Provide a detailed description of the hardware used to run the simulations.
+# The 'Computing and hardware:' keyword is required as shown here.
+Computing and hardware:
+DNN model was trained on a Tuxedo book (Intel core i7, 64
+GB RAM) using a NVIDIA RTX2080 Max Q (8 GB). The a training
+of the DNN was ~3.5 h. Calculation of the predictions with the 
+developed model took only 1 min.
+
+# SOFTWARE SECTION
+#
+# List all major software packages used and their versions.
+# Create a new line for each software.
+# The 'Software:' keyword is required.
+Software:
+DeepChem library  2.216,17
+Tensorflow 1.14.0
+Python  3.5.6
+
+# METHOD CATEGORY SECTION
+#
+# State which method category your prediction method is better described as:
+# `Physical (MM)`, `Physical (QM)`, `Empirical`, or `Mixed`.
+# Pick only one category label.
+# The `Category:` keyword is required.
+Category:
+Empirical
+
+# METHOD DESCRIPTION SECTION
+#
+# Methodology and computational details.
+# Level of details should be roughly equivalent to that used in a publication.
+# Please list out the method details of predictions for each solvent pair considered.
+#
+# Please include the values of key parameters with units.
+# Please explain how statistical uncertainties were estimated.
+#
+# Please report SMILES strings and populations of all the microstates used in calculations in this section.
+#
+# Use as many lines of text as you need.
+# All text following the 'Method:' keyword will be regarded as part of your free text methods description.
+#
+# Important: Please do not use phrases which are identical to the section headers of logD data. For example do not use "Octanol-water predictions:",
+# but use "Octanol-water predictions" instead (without the colon) or any other form. 
+
+Method:
+The predictions were done using a deep neural network (DNN) publihed in Ulrich, N. et al. (2021) "Exploring the octanol–water partition coefficient dataset using 
+deep learning techniques and data augmentation. Commun. Chem., 4, 1–10. "
+The DNN model was developed using the DeepChem library v. 2.216,17 and Tensorflow 
+v.1.14.0 in Python v. 3.5.6. SMILES of the chemicals
+were converted into graphs (ConvMolFeaturizer) and used as features. The 
+feed-forward network consists of two hidden layers with 64, and 128 neurons,
+which were connected to a dense layer (with ReLU activation function) followed by
+batch normalization (including a dropout of 0.1) and the output layer (with tanh
+activation function). Each hidden layer was constructed by a graph convolution, a
+batch normalization and a graph pool layer. The DNN was
+trained for 60 epochs, with a batch size of 50 and the learning
+rate was set to 0.0001. Salts were removed for the input SMILES.
+Octanol-water predictions
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string
+SAMPL8-7_micro000, challenge provided SAMPL8-7_micro000 SMILES string
+SAMPL8-9_micro000, challenge provided SAMPL8-9_micro000 SMILES string
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string
+SAMPL8-12_micro000, challenge provided SAMPL8-12_micro000 SMILES string
+SAMPL8-14_micro024, challenge provided SAMPL8-14_micro024 SMILES string
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string
+
+
+
+The model and model environment can be found on our GitHub repository
+https://github.com/nadinulrich/log_P_prediction
+Partitioning of ions was assumed insignificant, logD values were calculated from 
+the logP values of the neutral species by multiplying the neutral fraction.
+Uncertainties are proided as the rmse found in model development.
+
+
+
+#
+#
+# All submissions must either be ranked or non-ranked.
+# Only one ranked submission per participant is allowed, but you can turn in as many nonranked submissions as you want (we will still run analysis on them).
+# The "Ranked:" keyword is required, and expects a Boolean value (True/False)
+Ranked:
+True
