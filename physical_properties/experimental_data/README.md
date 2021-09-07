@@ -10,3 +10,6 @@ This provides experimental results from GSK for the SAMPL8 physical properties c
 - `pKa.csv`: CSV file, hand-typed from "SAMPL8 Final Readout_pH-Solubility Pub.pptx" by David Mobley on July 19, 2021, which gives pKa values by compound as listed in that powerpoint.
 - `Log D Summary Calculations Final MNB Pub.xls`: A spreadsheet which gives logD for the different compounds in different solvents, provided by Matt Bahr on Feb. 12, 2021
 - `SAMPL8 Final Readout Distribution Coefficient Pub.pptx`: A Powerpoint file with distribution coefficient details in the different solvents, provided by Matt Bahr on Feb. 12, 2021
+
+### To be added:
+- A preprint of the experimental paper (or a link to a preprint of it)
