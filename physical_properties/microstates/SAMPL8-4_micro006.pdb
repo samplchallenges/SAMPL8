@@ -1,0 +1,51 @@
+ATOM      1 C2   GLY A   1       0.392  -5.161   0.684  1.00 20.00           C
+ATOM      2 N2   GLY A   1       0.508  -3.789   0.787  1.00 20.00           N
+ATOM      3 O1   GLY A   1       2.021  -5.292  -1.042  1.00 20.00           O
+ATOM      4 O2   GLY A   1       1.048  -7.204  -0.338  1.00 20.00           O
+ATOM      5 C11  GLY A   1       1.230  -5.958  -0.323  1.00 20.00           C
+HETATM    6 C1   UNK A   1       0.410   2.145  -1.333  1.00 20.00           C
+HETATM    7 C3   UNK A   1      -0.516  -5.755   1.535  1.00 20.00           C
+HETATM    8 C4   UNK A   1      -0.316  -3.361   1.718  1.00 20.00           C
+HETATM    9 C5   UNK A   1      -0.146   1.387   0.840  1.00 20.00           C
+HETATM   10 C6   UNK A   1      -0.358   0.384   1.702  1.00 20.00           C
+HETATM   11 C7   UNK A   1       0.151  -1.278  -0.180  1.00 20.00           C
+HETATM   12 C8   UNK A   1       0.216   1.126  -0.542  1.00 20.00           C
+HETATM   13 C9   UNK A   1       0.355  -0.247  -1.015  1.00 20.00           C
+HETATM   14 C10  UNK A   1      -0.220  -1.021   1.238  1.00 20.00           C
+HETATM   15 C12  UNK A   1      -0.889  -7.175   1.693  1.00 20.00           C
+HETATM   16 N1   UNK A   1       0.596   3.124  -2.093  1.00 20.00           N
+HETATM   17 N3   UNK A   1      -0.418  -1.997   2.049  1.00 20.00           N
+HETATM   18 S1   UNK A   1      -1.259  -4.556   2.511  1.00 20.00           S
+HETATM   19 Cl1  UNK A   1       0.785  -0.570  -2.662  1.00 20.00          CL
+HETATM   20  H   UNK A   1      -0.245   2.415   1.177  1.00 20.00           H
+HETATM   21  H   UNK A   1      -0.628   0.579   2.734  1.00 20.00           H
+HETATM   22  H   UNK A   1       0.248  -2.309  -0.506  1.00 20.00           H
+HETATM   23  H 1 UNK A   1      -0.251  -7.672   2.441  1.00 20.00           H
+HETATM   24  H 2 UNK A   1      -1.938  -7.293   2.014  1.00 20.00           H
+HETATM   25  H 3 UNK A   1      -0.795  -7.734   0.747  1.00 20.00           H
+HETATM   26  H   UNK A   1      -0.671  -1.784   3.016  1.00 20.00           H
+TER      27      UNK A   1 
+CONECT    1    7
+CONECT    2    8
+CONECT    6   12   16
+CONECT    7    1   15   18
+CONECT    8    2   17   18
+CONECT    9   10   12   20
+CONECT   10    9   14   21
+CONECT   11   13   14   22
+CONECT   12    6    9   13
+CONECT   13   11   12   19
+CONECT   14   10   11   17
+CONECT   15    7   23   24   25
+CONECT   16    6
+CONECT   17    8   14   26
+CONECT   18    7    8
+CONECT   19   13
+CONECT   20    9
+CONECT   21   10
+CONECT   22   11
+CONECT   23   15
+CONECT   24   15
+CONECT   25   15
+CONECT   26   17
+END

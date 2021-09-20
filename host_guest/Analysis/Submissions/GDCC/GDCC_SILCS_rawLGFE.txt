@@ -57,7 +57,7 @@ University of Maryland, Baltimore
 # The "Name:" keyword is required, as shown here.
 # 40 character limit.
 Name:
-SILCS/LGFE/TIP3P/GCMC-MD
+SILCS/LGFE/TIP3P/GCMC-MD_NR
 #
 # All major software packages used and their versions
 # Following is sample text; please edit to your taste.

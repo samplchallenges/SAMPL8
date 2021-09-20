@@ -1,0 +1,33 @@
+\documentclass[8pt]{article}
+\usepackage[a4paper,margin=0.2in,tmargin=0.5in,bmargin=0.5in,landscape]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+\begin{footnotesize}
+\begin{longtable}{|cccccccc|}
+\toprule
+                           ID & sid &    RMSE [kcal/mol] &     MAE [kcal/mol] &         ME [kcal/mol] &              R$^2$ &                    m &               $\tau$ \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{{Continued on next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+               DDM/AMOEBA/BAR &  44 &  0.84 [0.45, 1.50] &  0.67 [0.36, 1.29] &    0.12 [-0.62, 0.80] &  0.78 [0.17, 0.98] &    0.97 [0.40, 1.37] &    0.72 [0.16, 1.00] \\
+  ATM/GAFF2-AM1BCC/TIP3P/HREM &  37 &  1.71 [1.24, 4.23] &  1.38 [0.95, 3.60] &   -0.07 [-2.03, 2.16] &  0.79 [0.07, 0.95] &    1.66 [0.45, 3.05] &    0.67 [0.00, 1.00] \\
+ PMF/GAFF2-AM1BCC/TIP3P/MD-US &  38 &  1.79 [1.26, 4.27] &  1.49 [0.98, 3.68] &    0.19 [-1.81, 2.43] &  0.69 [0.03, 0.94] &    1.50 [0.24, 3.00] &   0.67 [-0.07, 1.00] \\
+     AM1BCC/MMPBSA/TIP4PEW/MD &  43 &  1.95 [1.16, 3.15] &  1.54 [0.88, 2.75] &    1.00 [-0.42, 2.35] &  0.02 [0.00, 0.78] &   0.07 [-0.62, 0.72] &   0.20 [-0.68, 0.75] \\
+ ML/NNET/CORINA-descriptors-8 &  39 &  2.25 [1.39, 3.67] &  1.93 [1.09, 3.31] &    0.52 [-1.22, 2.30] &  0.54 [0.00, 0.89] &  -0.35 [-1.12, 0.37] &  -0.61 [-0.94, 0.48] \\
+     SILCS/LGFE/TIP3P/GCMC-MD &  36 &  2.27 [1.33, 3.64] &  1.89 [1.05, 3.21] &   -0.19 [-1.98, 1.49] &  0.26 [0.00, 0.86] &  -0.32 [-1.06, 0.42] &  -0.25 [-0.88, 0.48] \\
+        DDM/C36/TIP3P/MD/MBAR &  45 &  4.26 [1.89, 6.36] &  3.11 [1.47, 5.41] &  -3.04 [-5.30, -1.01] &  0.03 [0.00, 0.64] &   0.33 [-1.09, 2.00] &   0.22 [-0.50, 0.79] \\
+     MD/ParamChem/TIP3P/REUS/ &  46 &  4.71 [2.53, 6.83] &  3.80 [2.05, 5.97] &  -3.75 [-5.93, -1.76] &  0.01 [0.00, 0.65] &   0.17 [-1.15, 1.66] &   0.11 [-0.50, 0.76] \\
+\end{longtable}
+\end{footnotesize}
+\end{center}
+
+\end{document}

@@ -1,0 +1,431 @@
+Octanol-water predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,1.29,0.01,1.69
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,1.30,0.01,1.69
+SAMPL8-6,SAMPL8-6_micro000 SAMPL8-6_micro004 SAMPL8-6_micro005 SAMPL8-6_micro007 SAMPL8-6_micro008,0.72,0.01,1.69
+SAMPL8-7,SAMPL8-7_micro000 SAMPL8-7_micro004,-0.49,0.01,1.69
+SAMPL8-9,SAMPL8-9_micro000 SAMPL8-9_micro003,-0.40,0.01,1.69
+SAMPL8-10,SAMPL8-10_micro000,0.49,0.01,1.69
+SAMPL8-12,SAMPL8-12_micro000 SAMPL8-12_micro002 SAMPL8-12_micro003,0.57,0.01,1.69
+SAMPL8-14,SAMPL8-14_micro000 SAMPL8-14_micro002 SAMPL8-14_micro006 SAMPL8-14_micro013 SAMPL8-14_micro016 SAMPL8-14_micro017 SAMPL8-14_micro023 SAMPL8-14_micro024 SAMPL8-14_micro030 SAMPL8-14_micro033 SAMPL8-14_micro034,-0.42,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,2.09,0.01,1.69
+
+Cyclohexane-water predictions:
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,-0.68,0.01,1.69
+
+Ethyl acetate-water predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,3.41,0.01,1.69
+SAMPL8-17,SAMPL8-17_micro000 SAMPL8-17_micro004,1.08,0.01,1.69
+SAMPL8-3,SAMPL8-3_micro000 SAMPL8-3_micro002 SAMPL8-3_micro004 SAMPL8-3_micro006 SAMPL8-3_micro008,0.83,0.01,1.69
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,2.89,0.01,1.69
+SAMPL8-6,SAMPL8-6_micro000 SAMPL8-6_micro004 SAMPL8-6_micro005 SAMPL8-6_micro007 SAMPL8-6_micro008,2.92,0.01,1.69
+SAMPL8-9,SAMPL8-9_micro000 SAMPL8-9_micro003,3.34,0.01,1.69
+SAMPL8-10,SAMPL8-10_micro000,1.95,0.01,1.69
+SAMPL8-12,SAMPL8-12_micro000 SAMPL8-12_micro002 SAMPL8-12_micro003,1.45,0.01,1.69
+SAMPL8-14,SAMPL8-14_micro000 SAMPL8-14_micro002 SAMPL8-14_micro006 SAMPL8-14_micro013 SAMPL8-14_micro016 SAMPL8-14_micro017 SAMPL8-14_micro023 SAMPL8-14_micro024 SAMPL8-14_micro030 SAMPL8-14_micro033 SAMPL8-14_micro034,1.04,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,3.34,0.01,1.69
+
+Heptane-water predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,3.00,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,3.10,0.01,1.69
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,1.87,0.01,1.69
+SAMPL8-10,SAMPL8-10_micro000,1.02,0.01,1.69
+
+MEK-water predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,1.60,0.01,1.69
+SAMPL8-3,SAMPL8-3_micro000 SAMPL8-3_micro002 SAMPL8-3_micro004 SAMPL8-3_micro006 SAMPL8-3_micro008,-4.59,0.01,1.69
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,1.03,0.01,1.69
+SAMPL8-6,SAMPL8-6_micro000 SAMPL8-6_micro004 SAMPL8-6_micro005 SAMPL8-6_micro007 SAMPL8-6_micro008,0.23,0.01,1.69
+SAMPL8-7,SAMPL8-7_micro000 SAMPL8-7_micro004,-3.07,0.01,1.69
+SAMPL8-9,SAMPL8-9_micro000 SAMPL8-9_micro003,-1.28,0.01,1.69
+SAMPL8-10,SAMPL8-10_micro000,-1.02,0.01,1.69
+SAMPL8-12,SAMPL8-12_micro000 SAMPL8-12_micro002 SAMPL8-12_micro003,-1.04,0.01,1.69
+SAMPL8-14,SAMPL8-14_micro000 SAMPL8-14_micro002 SAMPL8-14_micro006 SAMPL8-14_micro013 SAMPL8-14_micro016 SAMPL8-14_micro017 SAMPL8-14_micro023 SAMPL8-14_micro024 SAMPL8-14_micro030 SAMPL8-14_micro033 SAMPL8-14_micro034,-1.41,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,0.99,0.01,1.69
+SAMPL8-17,SAMPL8-17_micro000 SAMPL8-17_micro004,-3.09,0.01,1.69
+
+TBME-water predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,2.46,0.01,1.69
+SAMPL8-5,SAMPL8-5_micro000 SAMPL8-5_micro001 SAMPL8-5_micro004 SAMPL8-5_micro005,1.95,0.01,1.69
+SAMPL8-6,SAMPL8-6_micro000 SAMPL8-6_micro004 SAMPL8-6_micro005 SAMPL8-6_micro007 SAMPL8-6_micro008,1.71,0.01,1.69
+SAMPL8-10,SAMPL8-10_micro000,0.19,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,1.89,0.01,1.69
+
+Cyclohexane-DMF predictions:
+SAMPL8-1,SAMPL8-1_micro000 SAMPL8-1_micro006 SAMPL8-1_micro007 SAMPL8-1_micro009 SAMPL8-1_micro010,0.37,0.01,1.69
+SAMPL8-6,SAMPL8-6_micro000 SAMPL8-6_micro004 SAMPL8-6_micro005 SAMPL8-6_micro007 SAMPL8-6_micro008,-0.43,0.01,1.69
+SAMPL8-16,SAMPL8-16_micro000 SAMPL8-16_micro002 SAMPL8-16_micro005 SAMPL8-16_micro007 SAMPL8-16_micro011,-0.67,0.01,1.69
+
+
+Participant name:
+Stefan M. Kast, Nicolas Tielker
+
+Participant organization:
+TU Dortmund University
+
+Name:
+EC_RISM_logD
+
+Compute time:
+
+octanol-water:
+85 hours, CPU
+
+cyclohexane-water:
+60 hours, CPU
+
+ethylacetate-water:
+84 hours, CPU
+
+heptane-water:
+70 hours, CPU
+
+MEK-water:
+85 hours, CPU
+
+TBME-water:
+74 hours, CPU
+
+cyclohexane-DMF:
+55 hours, CPU
+
+Computing and hardware:
+All calculations were conducted on the LiDO 3 high performance cluster of TU Dortmund University. Calculations were automatically scheduled and ran on either an Intel Xeon E5-4604v4 or an Intel Xeon E5-2640v4 CPU, depending on node availability.
+
+Software:
+Corina 4.3.0
+Gaussian 09 Rev E.01
+Gaussian 16 Rev C.01
+3D RISM (inhouse development)
+EC-RISM (inhouse development)
+Python 3.6
+Anaconda2018.12
+Amber 12
+Mathematica 12.2 (Wolfram)
+
+Category:
+Physical (QM)
+
+Method:
+Geometries were generated using Maestro 2017-2/Macromodel with the OPLS3/Water force field with mixed torsional/low-mode sampling, 100 steps per RB and 1000 steps max (default parameters). These conformers were then optimized using Gaussian 16revC01 with IEF-PCM using default settings for their respective solvent (substituting diethylether for mtbe) at the B3LYP/6-311+G(d,p) level of theory.
+Additional stereoisomers were treated as if they were additional conformational states so that for each microstate only up to 5 conformations with the lowest PCM energies for each solvent were treated with EC-RISM/MP2/6-311+G(d,p) using the PSE2 closure for water and heptane and the PSE1 closure for all other solvents [REF1] and the resulting EC-RISM energies corrected using (c1*mu_{ex}+c2*PMV_{EC-RISM}+c3) since only neutral species were considered for the calculation of the transfer free energy. All corrections except for the one for cyclohexane have a fixed parameter of c3 = 0. Additionally, the correction for water has a fixed parameter c1 = 1, because for cyclohexane and water these parameters were found to be of no predictive value in previous challenges [REF2].
+The transfer free energy of a compound was then calculated by dG_trans=G_{wat}-G_{org}, where G_{m} refers to the partition function estimate of the solvent specific free energy by summing over the conformational and tautomer states [REF3]. The log P can then be calculated by log P = dG_trans/(RT*ln(10)). The log D was calculated at a pH of 8 for SAMPL8-1,3,5 and 6 and at a pH of 3 for all other compounds using all calculated macrostate pKa values for the compounds by applying the multiprotic log D formula [REF4].
+The SEM was estimated as the convergence criterion for a single EC-RISM calculation. The uncertainty was estimated as the RMSE of the log D prediction performance in the SAMPL7 set of compounds.
+
+References:
+REF1: N. Tielker, D. Tomazic, J. Heil, T. Kloss, S. Ehrhart, S. Guessregen, K. F. Schmidt, S. M. Kast, J. Comput.-Aided Mol. Des. 30, 1035-1044 (2016).
+REF2: N. Tielker, L. Eberlein, S. Guessregen, S. M. Kast, J. Comput.-Aided Mol. Des. 32, 1151-1163 (2018).
+REF3: N. Tielker, D. Tomazic, L. Eberlein, S. Guessregen, S. M. Kast, J. Comput.-Aided Mol. Des. 34, 453-461 (2020).
+REF4: A. Avdeef, Assessment of Distribution-pH Profiles, Lipophilicity in drug action and toxicology, edited by V. Pliska, B. Testa, H. van de Waterbeemd, VCH Publishers Inc., New York NY (USA), (1996).
+
+water
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-2_micro000, challenge provided SAMPL8-2_micro000 SMILES string, 100% population
+SAMPL8-2_micro002, challenge provided SAMPL8-2_micro002 SMILES string, 0% population
+SAMPL8-3_micro006, challenge provided SAMPL8-3_micro006 SMILES string, 100% population
+SAMPL8-3_micro004, challenge provided SAMPL8-3_micro004 SMILES string, 0% population
+SAMPL8-3_micro002, challenge provided SAMPL8-3_micro002 SMILES string, 0% population
+SAMPL8-3_micro008, challenge provided SAMPL8-3_micro008 SMILES string, 0% population
+SAMPL8-3_micro000, challenge provided SAMPL8-3_micro000 SMILES string, 0% population
+SAMPL8-4_micro010, challenge provided SAMPL8-4_micro010 SMILES string, 100% population
+SAMPL8-4_micro001, challenge provided SAMPL8-4_micro001 SMILES string, 0% population
+SAMPL8-4_micro000, challenge provided SAMPL8-4_micro000 SMILES string, 0% population
+SAMPL8-4_micro004, challenge provided SAMPL8-4_micro004 SMILES string, 0% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 54% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 46% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 87% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 13% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-7_micro000, challenge provided SAMPL8-7_micro000 SMILES string, 100% population
+SAMPL8-7_micro004, challenge provided SAMPL8-7_micro004 SMILES string, 0% population
+SAMPL8-8_micro000, challenge provided SAMPL8-8_micro000 SMILES string, 100% population
+SAMPL8-9_micro000, challenge provided SAMPL8-9_micro000 SMILES string, 100% population
+SAMPL8-9_micro003, challenge provided SAMPL8-9_micro003 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-11_micro000, challenge provided SAMPL8-11_micro000 SMILES string, 100% population
+SAMPL8-12_micro000, challenge provided SAMPL8-12_micro000 SMILES string, 100% population
+SAMPL8-12_micro003, challenge provided SAMPL8-12_micro003 SMILES string, 0% population
+SAMPL8-12_micro002, challenge provided SAMPL8-12_micro002 SMILES string, 0% population
+SAMPL8-13_micro000, challenge provided SAMPL8-13_micro000 SMILES string, 100% population
+SAMPL8-14_micro024, challenge provided SAMPL8-14_micro024 SMILES string, 100% population
+SAMPL8-14_micro033, challenge provided SAMPL8-14_micro033 SMILES string, 0% population
+SAMPL8-14_micro002, challenge provided SAMPL8-14_micro002 SMILES string, 0% population
+SAMPL8-14_micro023, challenge provided SAMPL8-14_micro023 SMILES string, 0% population
+SAMPL8-14_micro013, challenge provided SAMPL8-14_micro013 SMILES string, 0% population
+SAMPL8-14_micro017, challenge provided SAMPL8-14_micro017 SMILES string, 0% population
+SAMPL8-14_micro030, challenge provided SAMPL8-14_micro030 SMILES string, 0% population
+SAMPL8-14_micro016, challenge provided SAMPL8-14_micro016 SMILES string, 0% population
+SAMPL8-14_micro000, challenge provided SAMPL8-14_micro000 SMILES string, 0% population
+SAMPL8-14_micro034, challenge provided SAMPL8-14_micro034 SMILES string, 0% population
+SAMPL8-14_micro006, challenge provided SAMPL8-14_micro006 SMILES string, 0% population
+SAMPL8-15_micro001, challenge provided SAMPL8-15_micro001 SMILES string, 100% population
+SAMPL8-15_micro002, challenge provided SAMPL8-15_micro002 SMILES string, 0% population
+SAMPL8-15_micro000, challenge provided SAMPL8-15_micro000 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+SAMPL8-17_micro000, challenge provided SAMPL8-17_micro000 SMILES string, 100% population
+SAMPL8-17_micro004, challenge provided SAMPL8-17_micro004 SMILES string, 0% population
+SAMPL8-18_micro002, challenge provided SAMPL8-18_micro002 SMILES string, 100% population
+SAMPL8-18_micro000, challenge provided SAMPL8-18_micro000 SMILES string, 0% population
+SAMPL8-18_micro001, challenge provided SAMPL8-18_micro001 SMILES string, 0% population
+SAMPL8-19_micro007, challenge provided SAMPL8-19_micro007 SMILES string, 82% population
+SAMPL8-19_micro013, challenge provided SAMPL8-19_micro013 SMILES string, 14% population
+SAMPL8-19_micro024, challenge provided SAMPL8-19_micro024 SMILES string, 2% population
+SAMPL8-19_micro015, challenge provided SAMPL8-19_micro015 SMILES string, 2% population
+SAMPL8-19_micro000, challenge provided SAMPL8-19_micro000 SMILES string, 0% population
+SAMPL8-19_micro025, challenge provided SAMPL8-19_micro025 SMILES string, 0% population
+SAMPL8-19_micro020, challenge provided SAMPL8-19_micro020 SMILES string, 0% population
+SAMPL8-19_micro014, challenge provided SAMPL8-19_micro014 SMILES string, 0% population
+SAMPL8-20_micro022, challenge provided SAMPL8-20_micro022 SMILES string, 100% population
+SAMPL8-20_micro017, challenge provided SAMPL8-20_micro017 SMILES string, 0% population
+SAMPL8-20_micro018, challenge provided SAMPL8-20_micro018 SMILES string, 0% population
+SAMPL8-20_micro000, challenge provided SAMPL8-20_micro000 SMILES string, 0% population
+SAMPL8-20_micro001, challenge provided SAMPL8-20_micro001 SMILES string, 0% population
+SAMPL8-20_micro004, challenge provided SAMPL8-20_micro004 SMILES string, 0% population
+SAMPL8-20_micro021, challenge provided SAMPL8-20_micro021 SMILES string, 0% population
+SAMPL8-20_micro009, challenge provided SAMPL8-20_micro009 SMILES string, 0% population
+SAMPL8-20_micro013, challenge provided SAMPL8-20_micro013 SMILES string, 0% population
+SAMPL8-20_micro019, challenge provided SAMPL8-20_micro019 SMILES string, 0% population
+SAMPL8-20_micro010, challenge provided SAMPL8-20_micro010 SMILES string, 0% population
+SAMPL8-20_micro012, challenge provided SAMPL8-20_micro012 SMILES string, 0% population
+SAMPL8-20_micro027, challenge provided SAMPL8-20_micro027 SMILES string, 0% population
+SAMPL8-20_micro023, challenge provided SAMPL8-20_micro023 SMILES string, 0% population
+SAMPL8-20_micro024, challenge provided SAMPL8-20_micro024 SMILES string, 0% population
+SAMPL8-20_micro008, challenge provided SAMPL8-20_micro008 SMILES string, 0% population
+SAMPL8-20_micro020, challenge provided SAMPL8-20_micro020 SMILES string, 0% population
+SAMPL8-21_micro028, challenge provided SAMPL8-21_micro028 SMILES string, 100% population
+SAMPL8-21_micro025, challenge provided SAMPL8-21_micro025 SMILES string, 0% population
+SAMPL8-21_micro023, challenge provided SAMPL8-21_micro023 SMILES string, 0% population
+SAMPL8-21_micro029, challenge provided SAMPL8-21_micro029 SMILES string, 0% population
+SAMPL8-21_micro008, challenge provided SAMPL8-21_micro008 SMILES string, 0% population
+SAMPL8-21_micro000, challenge provided SAMPL8-21_micro000 SMILES string, 0% population
+SAMPL8-22_micro002, challenge provided SAMPL8-22_micro002 SMILES string, 100% population
+SAMPL8-22_micro000, challenge provided SAMPL8-22_micro000 SMILES string, 0% population
+SAMPL8-22_micro003, challenge provided SAMPL8-22_micro003 SMILES string, 0% population
+SAMPL8-23_micro007, challenge provided SAMPL8-23_micro007 SMILES string, 100% population
+SAMPL8-23_micro003, challenge provided SAMPL8-23_micro003 SMILES string, 0% population
+SAMPL8-23_micro000, challenge provided SAMPL8-23_micro000 SMILES string, 0% population
+SAMPL8-23_micro004, challenge provided SAMPL8-23_micro004 SMILES string, 0% population
+
+butanone
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-3_micro006, challenge provided SAMPL8-3_micro006 SMILES string, 100% population
+SAMPL8-3_micro004, challenge provided SAMPL8-3_micro004 SMILES string, 0% population
+SAMPL8-3_micro002, challenge provided SAMPL8-3_micro002 SMILES string, 0% population
+SAMPL8-3_micro008, challenge provided SAMPL8-3_micro008 SMILES string, 0% population
+SAMPL8-3_micro000, challenge provided SAMPL8-3_micro000 SMILES string, 0% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 81% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 19% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-7_micro000, challenge provided SAMPL8-7_micro000 SMILES string, 100% population
+SAMPL8-7_micro004, challenge provided SAMPL8-7_micro004 SMILES string, 0% population
+SAMPL8-9_micro000, challenge provided SAMPL8-9_micro000 SMILES string, 100% population
+SAMPL8-9_micro003, challenge provided SAMPL8-9_micro003 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-12_micro000, challenge provided SAMPL8-12_micro000 SMILES string, 100% population
+SAMPL8-12_micro003, challenge provided SAMPL8-12_micro003 SMILES string, 0% population
+SAMPL8-12_micro002, challenge provided SAMPL8-12_micro002 SMILES string, 0% population
+SAMPL8-14_micro024, challenge provided SAMPL8-14_micro024 SMILES string, 100% population
+SAMPL8-14_micro023, challenge provided SAMPL8-14_micro023 SMILES string, 0% population
+SAMPL8-14_micro002, challenge provided SAMPL8-14_micro002 SMILES string, 0% population
+SAMPL8-14_micro013, challenge provided SAMPL8-14_micro013 SMILES string, 0% population
+SAMPL8-14_micro033, challenge provided SAMPL8-14_micro033 SMILES string, 0% population
+SAMPL8-14_micro017, challenge provided SAMPL8-14_micro017 SMILES string, 0% population
+SAMPL8-14_micro030, challenge provided SAMPL8-14_micro030 SMILES string, 0% population
+SAMPL8-14_micro000, challenge provided SAMPL8-14_micro000 SMILES string, 0% population
+SAMPL8-14_micro016, challenge provided SAMPL8-14_micro016 SMILES string, 0% population
+SAMPL8-14_micro034, challenge provided SAMPL8-14_micro034 SMILES string, 0% population
+SAMPL8-14_micro006, challenge provided SAMPL8-14_micro006 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+SAMPL8-17_micro000, challenge provided SAMPL8-17_micro000 SMILES string, 100% population
+SAMPL8-17_micro004, challenge provided SAMPL8-17_micro004 SMILES string, 0% population
+
+cyclohexane
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 99% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 1% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+
+diethylether
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 90% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 10% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+
+DMF
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+
+ethylacetate
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-3_micro006, challenge provided SAMPL8-3_micro006 SMILES string, 100% population
+SAMPL8-3_micro004, challenge provided SAMPL8-3_micro004 SMILES string, 0% population
+SAMPL8-3_micro002, challenge provided SAMPL8-3_micro002 SMILES string, 0% population
+SAMPL8-3_micro008, challenge provided SAMPL8-3_micro008 SMILES string, 0% population
+SAMPL8-3_micro000, challenge provided SAMPL8-3_micro000 SMILES string, 0% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 77% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 23% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-9_micro000, challenge provided SAMPL8-9_micro000 SMILES string, 100% population
+SAMPL8-9_micro003, challenge provided SAMPL8-9_micro003 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-12_micro000, challenge provided SAMPL8-12_micro000 SMILES string, 100% population
+SAMPL8-12_micro003, challenge provided SAMPL8-12_micro003 SMILES string, 0% population
+SAMPL8-12_micro002, challenge provided SAMPL8-12_micro002 SMILES string, 0% population
+SAMPL8-14_micro024, challenge provided SAMPL8-14_micro024 SMILES string, 100% population
+SAMPL8-14_micro023, challenge provided SAMPL8-14_micro023 SMILES string, 0% population
+SAMPL8-14_micro002, challenge provided SAMPL8-14_micro002 SMILES string, 0% population
+SAMPL8-14_micro013, challenge provided SAMPL8-14_micro013 SMILES string, 0% population
+SAMPL8-14_micro033, challenge provided SAMPL8-14_micro033 SMILES string, 0% population
+SAMPL8-14_micro017, challenge provided SAMPL8-14_micro017 SMILES string, 0% population
+SAMPL8-14_micro030, challenge provided SAMPL8-14_micro030 SMILES string, 0% population
+SAMPL8-14_micro016, challenge provided SAMPL8-14_micro016 SMILES string, 0% population
+SAMPL8-14_micro000, challenge provided SAMPL8-14_micro000 SMILES string, 0% population
+SAMPL8-14_micro006, challenge provided SAMPL8-14_micro006 SMILES string, 0% population
+SAMPL8-14_micro034, challenge provided SAMPL8-14_micro034 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+SAMPL8-17_micro000, challenge provided SAMPL8-17_micro000 SMILES string, 100% population
+SAMPL8-17_micro004, challenge provided SAMPL8-17_micro004 SMILES string, 0% population
+
+heptane
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 98% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 2% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+
+octanol
+SAMPL8-1_micro000, challenge provided SAMPL8-1_micro000 SMILES string, 100% population
+SAMPL8-1_micro010, challenge provided SAMPL8-1_micro010 SMILES string, 0% population
+SAMPL8-1_micro007, challenge provided SAMPL8-1_micro007 SMILES string, 0% population
+SAMPL8-1_micro009, challenge provided SAMPL8-1_micro009 SMILES string, 0% population
+SAMPL8-1_micro006, challenge provided SAMPL8-1_micro006 SMILES string, 0% population
+SAMPL8-5_micro001, challenge provided SAMPL8-5_micro001 SMILES string, 52% population
+SAMPL8-5_micro000, challenge provided SAMPL8-5_micro000 SMILES string, 48% population
+SAMPL8-5_micro005, challenge provided SAMPL8-5_micro005 SMILES string, 0% population
+SAMPL8-5_micro004, challenge provided SAMPL8-5_micro004 SMILES string, 0% population
+SAMPL8-6_micro000, challenge provided SAMPL8-6_micro000 SMILES string, 100% population
+SAMPL8-6_micro007, challenge provided SAMPL8-6_micro007 SMILES string, 0% population
+SAMPL8-6_micro008, challenge provided SAMPL8-6_micro008 SMILES string, 0% population
+SAMPL8-6_micro005, challenge provided SAMPL8-6_micro005 SMILES string, 0% population
+SAMPL8-6_micro004, challenge provided SAMPL8-6_micro004 SMILES string, 0% population
+SAMPL8-7_micro000, challenge provided SAMPL8-7_micro000 SMILES string, 100% population
+SAMPL8-7_micro004, challenge provided SAMPL8-7_micro004 SMILES string, 0% population
+SAMPL8-9_micro000, challenge provided SAMPL8-9_micro000 SMILES string, 100% population
+SAMPL8-9_micro003, challenge provided SAMPL8-9_micro003 SMILES string, 0% population
+SAMPL8-10_micro000, challenge provided SAMPL8-10_micro000 SMILES string, 100% population
+SAMPL8-12_micro000, challenge provided SAMPL8-12_micro000 SMILES string, 100% population
+SAMPL8-12_micro003, challenge provided SAMPL8-12_micro003 SMILES string, 0% population
+SAMPL8-12_micro002, challenge provided SAMPL8-12_micro002 SMILES string, 0% population
+SAMPL8-14_micro024, challenge provided SAMPL8-14_micro024 SMILES string, 100% population
+SAMPL8-14_micro023, challenge provided SAMPL8-14_micro023 SMILES string, 0% population
+SAMPL8-14_micro002, challenge provided SAMPL8-14_micro002 SMILES string, 0% population
+SAMPL8-14_micro013, challenge provided SAMPL8-14_micro013 SMILES string, 0% population
+SAMPL8-14_micro033, challenge provided SAMPL8-14_micro033 SMILES string, 0% population
+SAMPL8-14_micro017, challenge provided SAMPL8-14_micro017 SMILES string, 0% population
+SAMPL8-14_micro030, challenge provided SAMPL8-14_micro030 SMILES string, 0% population
+SAMPL8-14_micro016, challenge provided SAMPL8-14_micro016 SMILES string, 0% population
+SAMPL8-14_micro034, challenge provided SAMPL8-14_micro034 SMILES string, 0% population
+SAMPL8-14_micro006, challenge provided SAMPL8-14_micro006 SMILES string, 0% population
+SAMPL8-14_micro000, challenge provided SAMPL8-14_micro000 SMILES string, 0% population
+SAMPL8-16_micro000, challenge provided SAMPL8-16_micro000 SMILES string, 100% population
+SAMPL8-16_micro011, challenge provided SAMPL8-16_micro011 SMILES string, 0% population
+SAMPL8-16_micro007, challenge provided SAMPL8-16_micro007 SMILES string, 0% population
+SAMPL8-16_micro005, challenge provided SAMPL8-16_micro005 SMILES string, 0% population
+SAMPL8-16_micro002, challenge provided SAMPL8-16_micro002 SMILES string, 0% population
+
+
+Ranked:
+False
