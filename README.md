@@ -64,6 +64,7 @@ We will make available challenge instructions for the logD challenge, as well as
 - 2021-08-23: Update logD deadline to Aug. 31
 - 2021-08-25: Add additional retrospective microstate information, and information on possible duplicate microstates, in case it is helpful for those doing analysis. See `microstates/README.md`.
 - 2021-09-07: Add logD submissions, user map
+- 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
 
 ## Challenge construction
 
