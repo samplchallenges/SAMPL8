@@ -23,9 +23,9 @@ import math
 # =============================================================================
 
 # Paths to input data.
-LOGD_SUBMISSIONS_DIR_PATH = './analysis/Submissions'
+LOGD_SUBMISSIONS_DIR_PATH = './calculate_logD/logD_predictions'
 EXPERIMENTAL_DATA_FILE_PATH = './logD_experimental_values.csv'
-USER_MAP_FILE_PATH = './SAMPL8-logD-user-map.csv'
+USER_MAP_FILE_PATH = './calculate_logD/user-map.csv'
 
 # =============================================================================
 # STATS FUNCTIONS
