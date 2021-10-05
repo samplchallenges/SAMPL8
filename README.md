@@ -63,6 +63,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2021-08-23: Update logD deadline to Aug. 31
 - 2021-08-25: Add additional retrospective microstate information, and information on possible duplicate microstates, in case it is helpful for those doing analysis. See `microstates/README.md`.
 - 2021-09-07: Add logD submissions, user map
+- 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
 - 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
 
 ## Challenge construction
