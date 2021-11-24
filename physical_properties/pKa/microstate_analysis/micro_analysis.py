@@ -233,6 +233,11 @@ class pKaSubmissionCollection:
         # Submissions for pKa.
         for submission in submissions_RFE:
             #print(submission.file_name)
+            ref_state = pd.DataFrame(submission.data.index)
+            new_index = submission.data['Alternate State']
+            submission.data = submission.data.set_index(new_index)
+            submission.data['Alternate State'] = ref_state.values
+
             if "RFE-NHLBI-TZVP-QM" in submission.method_name and no_outliers:
                 continue
             #print(submission.method_name)
@@ -495,26 +500,26 @@ if __name__ == '__main__':
 
 
     # Ridge plot using all predictions
-    #ridge_plot(df = collection_logP.data, by = "ID tag", column = "Relative microstate free energy prediction",
-    #            figsize = (5, 8), colormap=cm.plasma,
-    #            output_directory_path=output_directory_path, fig_name="ridgeplot_all_FE_predictions")
+    ridge_plot(df = collection_logP.data, by = "ID tag", column = "Relative microstate free energy prediction",
+               figsize = (5, 8), colormap=cm.plasma,
+               output_directory_path=output_directory_path, fig_name="ridgeplot_all_FE_predictions")
 
 
     # Violin plot using all predictions
-    #violinplot(df = collection_data, output_directory_path=output_directory_path, width=5,fig_name="violinplot_all_FE_predictions" )
+    violinplot(df = collection_data, output_directory_path=output_directory_path, width=5,fig_name="violinplot_all_FE_predictions" )
 
 
-    #df = collection_logP.data
-    #df2=df.groupby("ID tag")["Relative microstate free energy prediction"].agg(['count','mean', 'min', 'max','std'])
-    #df3=df.groupby("ID tag")["Relative microstate free energy SEM"].agg(['mean'])
-    #df4=pd.merge(df2, df3, left_index=True, right_index=True)
-    #df4.columns = ['prediction count', 'average FE prediction', 'min prediction', 'max prediction', 'prediction STD', 'average SEM']
-    #df4['ID tag'] = df4.index
+    df = collection_logP.data
+    df2=df.groupby("ID tag")["Relative microstate free energy prediction"].agg(['count','mean', 'min', 'max','std'])
+    df3=df.groupby("ID tag")["Relative microstate free energy SEM"].agg(['mean'])
+    df4=pd.merge(df2, df3, left_index=True, right_index=True)
+    df4.columns = ['prediction count', 'average FE prediction', 'min prediction', 'max prediction', 'prediction STD', 'average SEM']
+    df4['ID tag'] = df4.index
     #df4.reset_index(level=0, inplace=True)
-    #df4.to_csv(output_directory_path+"/numbers.csv")
+    df4.to_csv(output_directory_path+"/numbers.csv")
 
     # Barplot of average FE predictions
-    #barplot(df=df4, output_directory_path=output_directory_path, figsize=(28,10), fig_name="barplot_average_FE_predictions")
+    barplot(df=df4, output_directory_path=output_directory_path, figsize=(28,10), fig_name="barplot_average_FE_predictions")
 
 
 
