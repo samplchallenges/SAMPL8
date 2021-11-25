@@ -385,8 +385,8 @@ if __name__ == '__main__':
         plt.close('all')
         plt.rcParams['axes.labelsize'] = 12
         plt.rcParams['xtick.labelsize'] = 12
-        plt.rcParams['ytick.labelsize'] = 12
-        plt.rcParams['axes.labelsize'] = 14
+        plt.rcParams['ytick.labelsize'] = 3
+        plt.rcParams['axes.labelsize'] = 12
         #plt.rcParams['figure.autolayout'] = True
         #plt.tight_layout()
 
@@ -403,8 +403,8 @@ if __name__ == '__main__':
 
     def ridge_plot_wo_overlap(df, by, column, figsize, colormap, output_directory_path):
         plt.close('all')
-        plt.rcParams['axes.labelsize'] = 14
-        plt.rcParams['xtick.labelsize'] = 14
+        plt.rcParams['axes.labelsize'] = 12
+        plt.rcParams['xtick.labelsize'] = 6
         plt.rcParams['figure.autolayout'] = True
         plt.tight_layout()
 
@@ -456,7 +456,7 @@ if __name__ == '__main__':
 
         plt.style.use(["seaborn-talk", "seaborn-whitegrid"])
         plt.rcParams['axes.labelsize'] = 20
-        plt.rcParams['xtick.labelsize'] = 14
+        plt.rcParams['xtick.labelsize'] = 6
         plt.rcParams['ytick.labelsize'] = 18
         plt.rcParams['legend.fontsize'] = 16
         plt.rcParams['legend.handlelength']
@@ -501,7 +501,7 @@ if __name__ == '__main__':
 
     # Ridge plot using all predictions
     ridge_plot(df = collection_logP.data, by = "ID tag", column = "Relative microstate free energy prediction",
-               figsize = (5, 8), colormap=cm.plasma,
+               figsize = (8, 10), colormap=cm.plasma,
                output_directory_path=output_directory_path, fig_name="ridgeplot_all_FE_predictions")
 
 
