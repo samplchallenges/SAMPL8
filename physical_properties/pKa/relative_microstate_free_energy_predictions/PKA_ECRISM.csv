@@ -72,11 +72,6 @@ SAMPL8-9_micro000,SAMPL8-9_micro003,0,4.81,0.01,1.04
 SAMPL8-9_micro000,SAMPL8-9_micro002,1,-7.75,0.01,1.04
 SAMPL8-9_micro000,SAMPL8-9_micro004,1,0.06,0.01,1.04
 SAMPL8-10_micro000,SAMPL8-10_micro001,1,-9.88,0.01,1.04
-SAMPL8-11_micro000,SAMPL8-11_micro001,1,-12.19,0.01,1.04
-SAMPL8-11_micro000,SAMPL8-11_micro002,1,-0.84,0.01,1.04
-SAMPL8-11_micro000,SAMPL8-11_micro004,1,2.92,0.01,1.04
-SAMPL8-11_micro000,SAMPL8-11_micro003,2,-12.43,0.01,1.04
-SAMPL8-11_micro000,SAMPL8-11_micro005,2,-8.35,0.01,1.04
 SAMPL8-12_micro000,SAMPL8-12_micro001,-1,24.43,0.01,1.04
 SAMPL8-12_micro000,SAMPL8-12_micro002,0,14.34,0.01,1.04
 SAMPL8-12_micro000,SAMPL8-12_micro003,0,9.51,0.01,1.04
@@ -86,8 +81,6 @@ SAMPL8-12_micro000,SAMPL8-12_extra006,1,-1.52,0.01,1.04,Cc1ccc(Cc2cnc(=[NH2+])[n
 SAMPL8-12_micro000,SAMPL8-12_extra001,2,0.68,0.01,1.04,Cc1ccc(Cc2c[nH+]c(N)[nH]c2=[N+]2CCOCC2)cc1
 SAMPL8-12_micro000,SAMPL8-12_extra003,2,0.31,0.01,1.04,Cc1ccc(Cc2c[nH]c(=[NH2+])nc2[NH+]2CCOCC2)cc1
 SAMPL8-12_micro000,SAMPL8-12_extra005,2,1.07,0.01,1.04,Cc1ccc(Cc2c[nH+]c(=[NH2+])[nH]c2N2CCOCC2)cc1
-SAMPL8-13_micro000,SAMPL8-13_micro002,-1,20.69,0.01,1.04
-SAMPL8-13_micro000,SAMPL8-13_micro001,1,-0.15,0.01,1.04
 SAMPL8-14_micro000,SAMPL8-14_micro014,-3,53.59,0.01,1.04
 SAMPL8-14_micro000,SAMPL8-14_micro001,-2,27.69,0.01,1.04
 SAMPL8-14_micro000,SAMPL8-14_micro003,-2,25.25,0.01,1.04
@@ -295,7 +288,7 @@ Amber 12
 Mathematica 12.2 (Wolfram)
 
 Category:
-Physical (QM+LEC)
+QM+LEC
 
 Method:
 Geometries were generated using Maestro 2020-4/Macromodel with the OPLS3/Water force field with mixed torsional/low-mode sampling, 100 steps per RB and 1000 steps max (default parameters).
