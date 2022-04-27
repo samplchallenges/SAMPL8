@@ -65,6 +65,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2021-09-07: Add logD submissions, user map
 - 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
 - 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
+- 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset. 
 
 ## Challenge construction
 
@@ -84,6 +85,8 @@ The CB8 "drugs of abuse" challenge focused on binding of CB8 to seven guests whi
 The GDCC challenge focused on binding of two Gibb Deep Cavity Cavitand (GDCC) hosts (related to the familiar OctaAcid) to five guests. Binding has been experimentally characterized and these compounds form the basis of this challenge, as detailed [in this repository](host_guest/GDCC/README.md).
 
 **Deadline**: The deadline for GDCC submissions was Feb. 21, 2021 (updated from Feb. 4, 2021). [The submission format is available](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/GDCC/GDCC_submissions.txt). Additionally, [SAMPL8 GDCC predictions may be submitted here](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-GDCC). Challenge is closed and experimental results/data is [available here](https://github.com/samplechallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/Final-Data-Table-031621-SAMPL8.docx)
+
+GDCC experimental publication is available. doi:10.1021/acs.jpcb.2c00628
 
 ### The GSK physical properties challenges
 
