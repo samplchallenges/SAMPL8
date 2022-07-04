@@ -9,3 +9,9 @@ General analysis of pK<sub>a</sub> predictions include calculated vs predicted p
 95%-percentile bootstrap confidence intervals of all the statistics were reported.
 
 Molecular statistics analysis was performed to indicate which molecules were more difficult to predict accurately across submitted methods. Error statistics (MAE and RMSE) were calculated for each molecule averaging across all methods or for all methods within a method category.
+
+## Manifest
+- [`titration_curves.py`](titration_curves.py)- Script used to generate titration curves data frame containing all combinations of experimental and predicted macro-pKas.
+- [`Titration_Curves.pdf`](Titration_Curves.pdf)- Document that contains the derivation used to calculate the macro-pKa's from the microstate relative free energy changes submitted.
+- [`titration_curves_plots/`](titration_curves_plots/)- This directory contains all the titration curves and a csv file that contains a dataframe with all the predicted and experimental macro-pKas.
+- [`macro_pKas_data.csv`](titration_curves_plots/macro_pKas_data.csv)- Dataframe that contains all the combinations of predicted macro-pKas and experimental macro-pKas for all compounds across all submissions.
