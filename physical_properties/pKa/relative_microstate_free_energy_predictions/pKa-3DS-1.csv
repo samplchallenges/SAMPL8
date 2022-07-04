@@ -1,0 +1,393 @@
+# RELATIVE FREE ENERGY PREDICTIONS (for pKa prediction),,,,,,
+#,,,,,,
+# This file will be automatically parsed. It must contain the following four elements:,,,,,,
+# predictions, name of method, software listing, and method description.,,,
+# These elements must be provided in the order shown with their respective headers.,,,,,,
+#,,,,,,
+# Any line that begins with a # is considered a comment and will be ignored when parsing.,,,,,,
+#,,,,,,
+# PREDICTION SECTION,,,,,,
+#,,,,,,
+# It is mandatory to submit relative free energy (RFE) predictions for all 23 molecules. Incomplete submissions will not be accepted.,,,,,,
+# Please report RFE standard error of the mean (SEM) and RFE model uncertainty.,,,,,,
+# Note that we here follow the same sign convention and submission format as the SAMPL7 pKa challenge.,,,,,,
+#,,,,,,
+# The data in each prediction line should be structured as follows:,,,,,,
+# Microstate ID of reference state, Microstate ID of the predicted microstate, total charge, RFE, RFE SEM, RFE model uncertainty,
+#,,,,,,
+# If you have evaluated additional microstates, include the following:,,,,,
+# Microstate ID of reference state, Microstate ID of the predicted microstate, total charge, RFE, RFE SEM, RFE model uncertainty, SMILES string of the predicted microstate
+#,,,,,,
+# The molecule ID of the other microstate needs to be in the format: `SAMPL8-X_extra001` (number can vary),,,,,,
+# Also email us the `.mol2` file of your microstate with explicit hydrogens and correct bond orders,,,,,,
+# Please send the `.mol2` file to the email listed on the instructions page.,,,,,,
+#,,,,,,
+# The list of predictions must begin with the 'Predictions:' keyword as illustrated here.,,,,,,
+Predictions:
+SAMPL8-1_micro000,SAMPL8-1_extra001,1,1.1,0.1,1.4,OC(=O)c1:c:c:c:c:c:1[NH2+]c2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_extra002,1,1.12,0.1,1.4,OC(=O)c1:c:c:c:c:c:1[NH2+]c2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_micro000,0,0,0.1,1.4,OC(=O)c1:c:c:c:c:c:1Nc2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_micro007,0,15.42,0.1,1.4,OC(=O)C1=CC=CC/C/1=N\c2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_micro010,0,14.07,0.1,1.4,OC(=O)C1=CCC=C/C/1=N\c2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-1_micro000,SAMPL8-1_micro004,-1,5.03,0.1,1.4,[O-]C(=O)c1:c:c:c:c:c:1Nc2:c:c:c:c(:c:2)C(F)(F)F
+SAMPL8-10_micro000,SAMPL8-10_micro001,1,-11.52,0.1,0.73,CS(=O)(=O)c1:c:c:c:c(:c:1)c2:c:c:c(C[NH2+]Cc3:c(F):c:c:c:c:3Cl):c:c:2
+SAMPL8-10_micro000,SAMPL8-10_micro000,0,0,0.1,0.73,CS(=O)(=O)c1:c:c:c:c(:c:1)c2:c:c:c(CNCc3:c(F):c:c:c:c:3Cl):c:c:2
+SAMPL8-11_micro000,SAMPL8-11_micro003,2,-19.16,0.1,0.73,CN1C(=O)C=Cc2[nH+]cc(F)c(OCC3CCC([NH3+])CC3)c12
+SAMPL8-11_micro000,SAMPL8-11_micro005,2,-11.73,0.1,0.73,CN1C(=CC=C2N=CC(=[F+])C(=C12)OCC3CCC([NH3+])CC3)O
+SAMPL8-11_micro000,SAMPL8-11_micro004,1,3.52,0.1,0.73,CN1C(=CC=C2N=CC(=[F+])C(=C12)OCC3CCC(N)CC3)O
+SAMPL8-11_micro000,SAMPL8-11_micro002,1,-4.02,0.1,0.73,CN1C(=O)C=Cc2[nH+]cc(F)c(OCC3CCC(N)CC3)c12
+SAMPL8-11_micro000,SAMPL8-11_micro001,1,-15.04,0.1,0.73,CN1C(=O)C=Cc2:n:c:c(F):c(OCC3CCC([NH3+])CC3):c1:2
+SAMPL8-11_micro000,SAMPL8-11_micro000,0,0,0.1,0.73,CN1C(=O)C=Cc2:n:c:c(F):c(OCC3CCC(N)CC3):c1:2
+SAMPL8-12_micro000,SAMPL8-12_extra001,2,-2.48,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH3+]):n:c:2[NH+]3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra007,2,-8.9,0.1,1.4,Cc1:c:c:c(CC2=CNC(=NC2=N3CCOCC3)[NH2+2]):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra008,2,-15.46,0.1,1.4,Cc1:c:c:c(Cc2:c:[nH]:c([NH2+2]):[nH]:c:2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra002,1,-3.86,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH3+]):n:c:2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra003,1,-11.7,0.1,1.4,Cc1:c:c:c(CC2=CNC(=[NH2+])N=C2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra004,1,-9.45,0.1,1.4,Cc1:c:c:c(CC2=C(NC(=[NH2+])N=C2)N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra005,1,-3.09,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c(N):n:c:2[NH+]3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_extra009,1,-9.43,,,Cc1:c:c:c(CC2=C(NC(=[NH2+])N=C2)N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_micro000,0,0,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c(N):n:c:2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_micro002,0,8.49,0.1,1.4,Cc1:c:c:c(CC2=C(NC(=N)N=C2)N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_micro003 ,0,6.11,0.1,1.4,Cc1:c:c:c(CC2=CNC(=N)N=C2N3CCOCC3):c:c:1
+SAMPL8-12_micro000,SAMPL8-12_micro001,-1,19.98,0.1,1.4,Cc1:c:c:c(Cc2:c:n:c([NH-]):n:c:2N3CCOCC3):c:c:1
+SAMPL8-13_micro000,SAMPL8-13_micro001,1,-3.66,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=O)N)n2c[nH+]c3:c:c:c(:c:c2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-13_micro000,SAMPL8-13_extra001,1,-0.62,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=[NH2+])O)n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-13_micro000,SAMPL8-13_micro000,0,0,0.1,1.4,CC(Oc1:c:c(:s:c:1C(=O)N)n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-13_micro000,SAMPL8-13_micro002,-1,17.22,,,CC(Oc1:c:c(:s:c:1C(=N)[O-])n2:c:n:c3:c:c:c(:c:c:2:3)S(=O)(=O)C)c4:c:c:c:c:c:4Cl
+SAMPL8-14_micro000,SAMPL8-14_extra009,2,-24.98,0.1,1.4,Cc1:c:c(Cc2:c:[nH]:c(N):[nH]:c:2[NH2+2]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra001,1,-20.17,0.1,1.4,Cc1:c:c(CC2=CNC(=[NH2+])N=C2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra002,1,-17.95,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=[NH2+])N=C2):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra003,1,-9.57,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2[NH3+]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra004,1,-12.04,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH3+]):n:c:2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra010,1,-13.11,,,Cc1:c:c(Cc2:c:[nH]:c(=N):[nH]:c:2=[NH2+]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro024,0,-8.34,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra005,0,-4.46,0.1,1.4,Cc1:c:c(CC2=CNC(=[NH2+])N=C2N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra006,0,-1.07,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=[NH2+])N=C2):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra007,0,8.49,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2[NH3+]):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_extra008,0,3.48,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH3+]):n:c:2N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro000,0,0,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=N)N=C2):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro002,0,-1.6,0.1,1.4,Cc1:c:c(CC2=CN=C(N)NC2=N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro013,0,-2.12,0.1,1.4,Cc1:c:c(CC2=CNC(=N)N=C2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro017,0,-0.72,0.1,1.4,Cc1:c:c(CC2=CNC(=NC2=N)N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro008,-1,5.03,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro004,-1,17.03,0.1,1.4,Cc1:c:c(CC2=CNC(=N)N=C2[NH-]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro005,-1,12.52,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH-]):n:c:2N):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro010,-1,10.84,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2[NH-]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro021,-1,16.17,0.1,1.4,Cc1:c:c(CC2=C([NH-])NC(=N)N=C2):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro022,-1,12.07,0.1,1.4,Cc1:c:c(CC2=CNC(=NC2=N)N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro027,-1,15.61,0.1,1.4,Cc1:c:c(Cc2:c:[nH]:c(=N):[nH]:c:2=N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro028,-1,11.87,0.1,1.4,Cc1:c:c(CC2=CNC(=N)N=C2N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro029,-1,13.36,0.1,1.4,Cc1:c:c(CC2=C(N)NC(=N)N=C2):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro032,-1,11.67,0.1,1.4,Cc1:c:c(CC2=CN=C(N)NC2=N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro007,-2,29.11,0.1,1.4,Cc1:c:c(CC2=C([NH-])NC(=N)N=C2):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro018,-2,33.99,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH-]):n:c:2[NH-]):c:c(:c:1O)C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro020,-2,29.99,0.1,1.4,Cc1:c:c(CC2=CNC(=N)N=C2[NH-]):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro001,-2,25.5,0.1,1.4,Cc1:c:c(Cc2:c:n:c([NH-]):n:c:2N):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-14_micro000,SAMPL8-14_micro003,-2,23.78,0.1,1.4,Cc1:c:c(Cc2:c:n:c(N):n:c:2[NH-]):c:c(:c:1[O-])C(C)(C)C
+SAMPL8-15_micro000,SAMPL8-15_micro004,1,-11.73,0.1,0.73,Cc1:c:c:c:c:c:1Nc2nc(Cl)[nH+]c3:c:c:c:c:c2:3
+SAMPL8-15_micro000,SAMPL8-15_micro003,1,-7.07,0.1,0.73,Cc1:c:c:c:c:c:1Nc2[nH+]c(Cl)nc3:c:c:c:c:c2:3
+SAMPL8-15_micro000,SAMPL8-15_micro001,0,-6.24,0.1,0.73,Cc1:c:c:c:c:c:1Nc2:n:c(Cl):n:c3:c:c:c:c:c:2:3
+SAMPL8-15_micro000,SAMPL8-15_micro000,0,0,0.1,0.73,Cc1:c:c:c:c:c:1\N=C\2/N=C(Cl)Nc3:c:c:c:c:c2:3
+SAMPL8-15_micro000,SAMPL8-15_micro002,0,0.13,0.1,0.73,Cc1:c:c:c:c:c:1\N=C\2/NC(=Nc3:c:c:c:c:c2:3)Cl
+SAMPL8-16_micro000,SAMPL8-16_micro004,1,-9.29,0.1,1.4,CC(C)(C)OC(=O)NCc1[nH+]c2:c:c:c:c:c:2[nH]1
+SAMPL8-16_micro000,SAMPL8-16_micro008,1,3.73,0.1,1.4,CC(C)(C)O\C(=N\Cc1[nH+]c2:c:c:c:c:c:2[nH]1)\O
+SAMPL8-16_micro000,SAMPL8-16_micro000,0,0,0.1,1.4,CC(C)(C)OC(=O)NCc1:n:c2:c:c:c:c:c:2:[nH]:1
+SAMPL8-16_micro000,SAMPL8-16_extra002,0,9.79,0.1,1.4,CC(C)(C)O\C(=N\Cc1[nH+]c2:c:c:c:c:c:2[nH]1)\[O-]
+SAMPL8-16_micro000,SAMPL8-16_micro007,0,11.36,0.1,1.4,CC(C)(C)OC(=O)NC=C1Nc2:c:c:c:c:c:2N1
+SAMPL8-16_micro000,SAMPL8-16_micro011,0,12.94,0.1,1.4,CC(C)(C)O\C(=N\Cc1:n:c2:c:c:c:c:c:2:[nH]:1)\O
+SAMPL8-16_micro000,SAMPL8-16_extra003,-1,14.79,0.1,1.4,CC(C)(C)OC(=O)NCc1:n:c2:c:c:c:c:c:2:[n-]:1
+SAMPL8-16_micro000,SAMPL8-16_extra004,-1,18.2,0.1,1.4,CC(C)(C)O\C(=N\Cc1:n:c2:c:c:c:c:c:2:[nH]:1)\[O-]
+SAMPL8-16_micro000,SAMPL8-16_extra005,-2,31.52,0.1,1.4,CC(C)(C)O\C(=N\Cc1:n:c2:c:c:c:c:c:2:[n-]:1)\[O-]
+SAMPL8-17_micro000,SAMPL8-17_micro002,1,-10.16,0.1,1.4,OCC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCOCC1
+SAMPL8-17_micro000,SAMPL8-17_micro003,1,-0.29,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
+SAMPL8-17_micro000,SAMPL8-17_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
+SAMPL8-17_micro000,SAMPL8-17_micro004,0,1.35,0.1,1.4,OCC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCOCC1
+SAMPL8-17_micro000,SAMPL8-17_micro001,-1,15.77,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(CO)CCOCC3
+SAMPL8-18_micro000,SAMPL8-18_extra001,1,-3.28,0.1,1.4,COc1:c:c:c(:c:c:1OC)\N=C\2/NC(=[NH+]c3:c:c:c:c:c2:3)Cl
+SAMPL8-18_micro000,SAMPL8-18_micro004,1,-13.41,0.1,1.4,COc1:c:c:c(Nc2nc(Cl)[nH+]c3:c:c:c:c:c2:3):c:c:1OC
+SAMPL8-18_micro000,SAMPL8-18_micro003,1,-8.93,0.1,1.4,COc1:c:c:c(Nc2[nH+]c(Cl)nc3:c:c:c:c:c2:3):c:c:1OC
+SAMPL8-18_micro000,SAMPL8-18_micro002,0,-6.2,0.1,1.4,COc1:c:c:c(Nc2:n:c(Cl):n:c3:c:c:c:c:c:2:3):c:c:1OC
+SAMPL8-18_micro000,SAMPL8-18_micro001,0,-0.01,0.1,1.4,COc1:c:c:c(:c:c:1OC)\N=C\2/N=C(Cl)Nc3:c:c:c:c:c2:3
+SAMPL8-18_micro000,SAMPL8-18_micro000,0,0,0.1,1.4,COc1:c:c:c(:c:c:1OC)\N=C\2/NC(=Nc3:c:c:c:c:c2:3)Cl
+SAMPL8-18_micro000,SAMPL8-18_micro005,-1,9.28,0.1,1.4,COc1:c:c:c(:c:c:1OC)\N=C\2/N=C(Cl)[N-]c3:c:c:c:c:c2:3
+SAMPL8-19_micro000,SAMPL8-19_extra001,2,-17.93,0.1,1.4,COc1ncc(CC2=CN=C(NC2=O)SCc3[nH+]c4:c:c:c:c:c:4n3C)c[nH+]1
+SAMPL8-19_micro000,SAMPL8-19_extra002,2,-17.61,0.1,1.4,COc1ncc(CC2=CNC(=NC2=O)SCc3[nH+]c4:c:c:c:c:c:4n3C)c[nH+]1
+SAMPL8-19_micro000,SAMPL8-19_micro002,2,-16.48,0.1,1.4,COc1:n:c:c(CC2=CNC(=[NH+]C2=O)SCc3[nH+]c4:c:c:c:c:c:4n3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro003,2,-11.98,0.1,1.4,COc1:n:c:c(Cc2cnc(SCc3[nH+]c4:c:c:c:c:c:4n3C)[nH+]c2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro017,2,-15.61,0.1,1.4,COc1:n:c:c(Cc2c[nH+]c(SCc3[nH+]c4:c:c:c:c:c:4n3C)nc2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro005,1,-13.16,0.1,1.4,COc1:n:c:c(CC2=CN=C(NC2=O)SCc3[nH+]c4:c:c:c:c:c:4n3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro009,1,-13.08,0.1,1.4,COc1:n:c:c(CC2=CNC(=NC2=O)SCc3[nH+]c4:c:c:c:c:c:4n3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro004,1,-2.69,0.1,1.4,COc1:n:c:c(Cc2c[nH+]c(S\C=C\3/Nc4:c:c:c:c:c:4N3C)nc2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro022,1,-5.68,0.1,1.4,COc1:n:c:c(CC2=CNC(=[NH+]C2=O)S\C=C\3/Nc4:c:c:c:c:c:4N3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro008,1,-10.02,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(SCc3[nH+]c4:c:c:c:c:c:4n3C):n:c:2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro006,1,-8.81,0.1,1.4,COc1:n:c:c(CC2=CNC(=[NH+]C2=O)SCc3:n:c4:c:c:c:c:c:4:n:3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro019,1,-7.61,0.1,1.4,COc1:n:c:c(Cc2c[nH+]c(SCc3:n:c4:c:c:c:c:c:4:n:3C)nc2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro013,0,-4.78,0.1,1.4,COc1:n:c:c(CC2=CNC(=NC2=O)SCc3:n:c4:c:c:c:c:c:4:n:3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_extra003,0,0.46,0.1,1.4,COc1ncc(Cc2:c:n:c(SCc3:n:c4:c:c:c:c:c:4:n:3C):n:c:2[O-])c[nH+]1
+SAMPL8-19_micro000,SAMPL8-19_micro024,0,-3.68,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(SCc3[nH+]c4:c:c:c:c:c:4n3C):n:c:2[O-]):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro007,0,-4.65,0.1,1.4,COc1:n:c:c(CC2=CN=C(NC2=O)SCc3:n:c4:c:c:c:c:c:4:n:3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro000,0,0,0.1,1.4,COc1:n:c:c(CC2=CN=C(NC2=O)S\C=C\3/Nc4:c:c:c:c:c:4N3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro015,0,-1.6,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(SCc3:n:c4:c:c:c:c:c:4:n:3C):n:c:2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro020,0,5.61,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(S\C=C\3/Nc4:c:c:c:c:c:4N3C):n:c:2O):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro025,0,-0.49,0.1,1.4,COc1:n:c:c(CC2=CNC(=NC2=O)S\C=C\3/Nc4:c:c:c:c:c:4N3C):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro011,-1,4.07,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(SCc3:n:c4:c:c:c:c:c:4:n:3C):n:c:2[O-]):c:n:1
+SAMPL8-19_micro000,SAMPL8-19_micro010,-1,11.09,0.1,1.4,COc1:n:c:c(Cc2:c:n:c(S\C=C\3/Nc4:c:c:c:c:c:4N3C):n:c:2[O-]):c:n:1
+SAMPL8-2_micro000,SAMPL8-2_micro000,0,0,0.1,0.7,CS(=O)(=O)c1:c:c:c(CCC(=O)O):c:c:1
+SAMPL8-2_micro000,SAMPL8-2_micro002,0,14.92,0.1,0.7,CS(=O)(=O)c1:c:c:c(CC=C(O)O):c:c:1
+SAMPL8-2_micro000,SAMPL8-2_micro001,-1,5.45,0.1,0.7,CS(=O)(=O)c1:c:c:c(CCC(=O)[O-]):c:c:1
+SAMPL8-20_micro000,SAMPL8-20_extra001,2,-16.95,0.1,1.4,[NH3+]c1n[nH+]c2[nH]c(c(Cl)cc12)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro006,1,-16.19,0.1,1.4,ClC1=C(NC2=NNC(=[NH2+])C2=C1)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro015,1,-10.14,0.1,1.4,[NH3+]c1nnc2[nH]c(c(Cl)cc12)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro011,1,-10.96,0.1,1.4,[NH3+]c1:[nH]:n:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro002,1,-15.02,0.1,1.4,Nc1n[nH+]c2[nH]c(c(Cl)cc12)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro003,1,-15.94,0.1,1.4,Clc1:c:c2C(=[NH2+])NNc:2:n:c:1c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro026,1,-14.92,0.1,1.4,[NH3+]c1:n:[nH]:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro016,1,-4.71,0.1,1.4,Clc1cc2C(=N)NNc2[nH+]c1c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro022,0,-10.05,0.1,1.4,Nc1:n:[nH]:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro018,0,-4.05,0.1,1.4,Nc1:n:n:c2:[nH]:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro017,0,-8.69,0.1,1.4,Nc1:[nH]:n:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_extra002,0,-2.57,0.1,1.4,Clc1:c:c2:c(:n:n:c:2=N):n:c:1c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro000,0,0,0.1,1.4,Clc1:c:c2C(=N)NNc:2:n:c:1c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_micro001,0,1.49,0.1,1.4,ClC1=C(NC2=NNC(=N)C2=C1)c3:c:c:c:c:c:3
+SAMPL8-20_micro000,SAMPL8-20_extra003,-1,3.83,0.1,1.4,Nc1:[n-]:n:c2:n:c(:c(Cl):c:c:1:2)c3:c:c:c:c:c:3
+SAMPL8-21_micro000,SAMPL8-21_extra001,2,-17.45,0.1,1.4,COc1:c:c(Cc2:c([NH3+]):n:c([NH3+]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra010,2,-28.41,,,COC1=N=C(N)NC(=C1Cc2:c:c(OC):c(O):c(OC):c:2)[NH2+2]
+SAMPL8-21_micro000,SAMPL8-21_extra011,2,-20.97,,,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=N)N=C([NH2+2])N1
+SAMPL8-21_micro000,SAMPL8-21_extra002,1,-24.33,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=[NH2+])NC(=N1)N
+SAMPL8-21_micro000,SAMPL8-21_extra003,1,-22.44,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=[NH2+])N=C(N)N1
+SAMPL8-21_micro000,SAMPL8-21_extra004,1,-16.52,0.1,1.4,COc1:c:c(Cc2:c([NH3+]):n:c(N):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra005,1,-17.34,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH3+]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra012,1,-16.11,,,COc1:[nH]:c(=N):[nH]:c(=[NH2+]):c:1Cc2:c:c(OC):c(O):c(OC):c:2
+SAMPL8-21_micro000,SAMPL8-21_micro028,0,-13.62,0.1,1.4,COc1:c:c(Cc2:c(N):n:c(N):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_extra006,0,-10.88,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=[NH2+])NC(=N1)N
+SAMPL8-21_micro000,SAMPL8-21_extra007,0,-9.91,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=[NH2+])N=C(N)N1
+SAMPL8-21_micro000,SAMPL8-21_extra008,0,-1.78,0.1,1.4,COc1:c:c(Cc2:c([NH3+]):n:c(N):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-21_micro000,SAMPL8-21_extra009,0,-3.59,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH3+]):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-21_micro000,SAMPL8-21_micro000,0,0,0.1,1.4,COc1:[nH]:c(=N):[nH]:c(=N):c:1Cc2:c:c(OC):c(O):c(OC):c:2
+SAMPL8-21_micro000,SAMPL8-21_micro008,0,-3.45,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=N)N=C(N)N1
+SAMPL8-21_micro000,SAMPL8-21_micro023,0,-6.76,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=N)NC(=N1)N
+SAMPL8-21_micro000,SAMPL8-21_micro025,0,-6.73,0.1,1.4,COC1=NC(=N)NC(=C1Cc2:c:c(OC):c(O):c(OC):c:2)N
+SAMPL8-21_micro000,SAMPL8-21_micro029,0,-4.09,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=NC(=N)N1)N
+SAMPL8-21_micro000,SAMPL8-21_micro022,-1,-1.81,0.1,1.4,COc1:c:c(Cc2:c(N):n:c(N):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-21_micro000,SAMPL8-21_micro016,-1,5.6,0.1,1.4,COc1:c:c(Cc2:c([NH-]):n:c(N):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_micro007,-1,14.85,0.1,1.4,COC1=C(Cc2:c:c(OC):c(O):c(OC):c:2)C(=NC(=N)N1)[NH-]
+SAMPL8-21_micro000,SAMPL8-21_micro009,-1,6.06,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH-]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_micro018,-1,3,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=N)NC(=N1)N
+SAMPL8-21_micro000,SAMPL8-21_micro020,-1,5.69,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=NC(=N)N1)N
+SAMPL8-21_micro000,SAMPL8-21_micro024,-1,4.22,0.1,1.4,COC1=NC(=N)NC(=C1Cc2:c:c(OC):c([O-]):c(OC):c:2)N
+SAMPL8-21_micro000,SAMPL8-21_micro026,-1,7.84,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=N)N=C(N)N1
+SAMPL8-21_micro000,SAMPL8-21_micro027,-1,9.4,0.1,1.4,COc1:[nH]:c(=N):[nH]:c(=N):c:1Cc2:c:c(OC):c([O-]):c(OC):c:2
+SAMPL8-21_micro000,SAMPL8-21_micro013,-2,19.05,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=N)NC(=N1)[NH-]
+SAMPL8-21_micro000,SAMPL8-21_micro004,-2,25.71,0.1,1.4,COC1=C(Cc2:c:c(OC):c([O-]):c(OC):c:2)C(=N)N=C([NH-])N1
+SAMPL8-21_micro000,SAMPL8-21_micro005,-2,16.23,0.1,1.4,COc1:c:c(Cc2:c([NH-]):n:c(N):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-21_micro000,SAMPL8-21_micro012,-2,26.82,0.1,1.4,COc1:c:c(Cc2:c([NH-]):n:c([NH-]):n:c:2OC):c:c(OC):c:1O
+SAMPL8-21_micro000,SAMPL8-21_micro015,-2,17.31,0.1,1.4,COc1:c:c(Cc2:c(N):n:c([NH-]):n:c:2OC):c:c(OC):c:1[O-]
+SAMPL8-22_micro000,SAMPL8-22_extra004,2,-13.99,,,COc1:c:c2NC(=N=C([NH2+2])c:2:c:c:1OC)Cl
+SAMPL8-22_micro000,SAMPL8-22_extra001,1,-15.13,0.1,1.4,COc1:c:c2NC(=NC(=[NH2+])c:2:c:c:1OC)Cl
+SAMPL8-22_micro000,SAMPL8-22_extra002,1,-13.7,0.1,1.4,COc1:c:c2N=C(Cl)NC(=[NH2+])c:2:c:c:1OC
+SAMPL8-22_micro000,SAMPL8-22_extra003,1,-6.46,0.1,1.4,COc1:c:c2:n:c(Cl):n:c([NH3+]):c:2:c:c:1OC
+SAMPL8-22_micro000,SAMPL8-22_micro002,0,-7.61,0.1,1.4,COc1:c:c2:n:c(Cl):n:c(N):c:2:c:c:1OC
+SAMPL8-22_micro000,SAMPL8-22_micro000,0,0,0.1,1.4,COc1:c:c2N=C(Cl)NC(=N)c:2:c:c:1OC
+SAMPL8-22_micro000,SAMPL8-22_micro003,0,0.53,0.1,1.4,COc1:c:c2NC(=NC(=N)c:2:c:c:1OC)Cl
+SAMPL8-22_micro000,SAMPL8-22_micro001,-1,9.6,0.1,1.4,COc1:c:c2:n:c(Cl):n:c([NH-]):c:2:c:c:1OC
+SAMPL8-23_micro000,SAMPL8-23_micro006,1,-16.86,0.1,1.4,Cc1[nH+]c2:c:c(O):c:c:c:2s1
+SAMPL8-23_micro000,SAMPL8-23_micro007,0,-10.72,0.1,1.4,Cc1:n:c2:c:c(O):c:c:c:2:s:1
+SAMPL8-23_micro000,SAMPL8-23_micro003,0,-4.73,0.1,1.4,CC1=S=C2C=CC(=O)C=C2N1
+SAMPL8-23_micro000,SAMPL8-23_micro000,0,0,0.1,1.4,Oc1:c:c:c2SC(=C)Nc:2:c:1
+SAMPL8-23_micro000,SAMPL8-23_micro005,-1,1.53,0.1,1.4,Cc1:n:c2:c:c([O-]):c:c:c:2:s:1
+SAMPL8-23_micro000,SAMPL8-23_micro002,-1,12.62,0.1,1.4,[O-]c1:c:c:c2SC(=C)Nc:2:c:1
+SAMPL8-3_micro000,SAMPL8-3_extra001,1,-25.07,0.1,1.4,NS(=O)(=O)c1:c:c(C(=O)O):c([NH2+]Cc2:o:c:c:c:2):c:c:1Cl
+SAMPL8-3_micro000,SAMPL8-3_extra003,1,-18.37,,,NS(=O)(=O)C1=CC(=C(O)O)C(=CC1=[Cl+])NCc2:o:c:c:c:2
+SAMPL8-3_micro000,SAMPL8-3_micro000,0,0,0.1,1.4,NS(=O)(=O)C1=CC(=C(O)O)\C(=N/Cc2:o:c:c:c:2)\C=C1Cl
+SAMPL8-3_micro000,SAMPL8-3_micro006,0,-26.5,0.1,1.4,NS(=O)(=O)c1:c:c(C(=O)O):c(NCc2:o:c:c:c:2):c:c:1Cl
+SAMPL8-3_micro000,SAMPL8-3_extra002,0,-15.41,0.1,1.4,OC(=O)c1:c:c(:c(Cl):c:c:1[NH2+]Cc2:o:c:c:c:2)S(=N)(=O)[O-]
+SAMPL8-3_micro000,SAMPL8-3_micro016,-1,-16.58,0.1,1.4,OC(=O)c1:c:c(:c(Cl):c:c:1NCc2:o:c:c:c:2)S(=N)(=O)[O-]
+SAMPL8-3_micro000,SAMPL8-3_micro010,-1,-21.87,0.1,1.4,NS(=O)(=O)c1:c:c(C(=O)[O-]):c(NCc2:o:c:c:c:2):c:c:1Cl
+SAMPL8-3_micro000,SAMPL8-3_micro013,-2,-11.76,0.1,1.4,[O-]C(=O)c1:c:c(:c(Cl):c:c:1NCc2:o:c:c:c:2)S(=N)(=O)[O-]
+SAMPL8-4_micro000,SAMPL8-4_micro002,1,-8.01,0.1,1.4,Cc1sc(Nc2:c:c:c(C#N):c(Cl):c:2)[nH+]c1C(=O)O
+SAMPL8-4_micro000,SAMPL8-4_micro010,0,-4.21,0.1,1.4,Cc1:s:c(Nc2:c:c:c(C#N):c(Cl):c:2):n:c:1C(=O)O
+SAMPL8-4_micro000,SAMPL8-4_extra001,0,14.42,0.1,1.4,Cc1:s:c(\N=C/2\C=CC(=C=N)C(=C2)Cl):n:c:1C(=O)O
+SAMPL8-4_micro000,SAMPL8-4_extra002,0,12.93,0.1,1.4,CC1=[S+]\C(=N/c2:c:c:c(C#N):c(Cl):c:2)\[N-]C1=C(O)O
+SAMPL8-4_micro000,SAMPL8-4_micro000,0,0,0.1,1.4,CC1=C(N\C(=N/c2:c:c:c(C#N):c(Cl):c:2)\S1)C(=O)O
+SAMPL8-4_micro000,SAMPL8-4_micro001,0,-4.17,0.1,1.4,Cc1sc(Nc2:c:c:c(C#N):c(Cl):c:2)[nH+]c1C(=O)[O-]
+SAMPL8-4_micro000,SAMPL8-4_micro005,-1,0.23,0.1,1.4,Cc1:s:c(Nc2:c:c:c(C#N):c(Cl):c:2):n:c:1C(=O)[O-]
+SAMPL8-4_micro000,SAMPL8-4_micro003,-1,3.58,0.1,1.4,CC1=C(N\C(=N/c2:c:c:c(C#N):c(Cl):c:2)\S1)C(=O)[O-]
+SAMPL8-4_micro000,SAMPL8-4_micro008,-1,9.72,0.1,1.4,CC1=C([N-]\C(=N/c2:c:c:c(C#N):c(Cl):c:2)\S1)C(=O)O
+SAMPL8-5_micro000,SAMPL8-5_micro003,1,2.16,0.1,1.4,OC(=O)Cc1:c:c:c:c:c:1[NH2+]c2:c(Cl):c:c:c:c:2Cl
+SAMPL8-5_micro000,SAMPL8-5_micro006,1,11.48,0.1,1.4,OC(=Cc1:c:c:c:c:c:1[NH2+]c2:c(Cl):c:c:c:c:2Cl)O
+SAMPL8-5_micro000,SAMPL8-5_micro000,0,0,0.1,1.4,OC(=O)Cc1:c:c:c:c:c:1Nc2:c(Cl):c:c:c:c:2Cl
+SAMPL8-5_micro000,SAMPL8-5_micro005,0,11.15,0.1,1.4,OC(=Cc1:c:c:c:c:c:1Nc2:c(Cl):c:c:c:c:2Cl)O
+SAMPL8-5_micro000,SAMPL8-5_micro001,0,7.09,0.1,1.4,[O-]C(=O)Cc1:c:c:c:c:c:1[NH2+]c2:c(Cl):c:c:c:c:2Cl
+SAMPL8-5_micro000,SAMPL8-5_micro007,-1,4.41,0.1,1.4,[O-]C(=O)Cc1:c:c:c:c:c:1Nc2:c(Cl):c:c:c:c:2Cl
+SAMPL8-6_micro000,SAMPL8-6_micro003,1,-5.38,0.1,1.4,Cc1:c:c:c(Cl):c:c:1[NH2+]Cc2:c:c:c(:s:2)C(=O)O
+SAMPL8-6_micro000,SAMPL8-6_micro000,0,0,0.1,1.4,Cc1:c:c:c(Cl):c:c:1NCc2:c:c:c(:s:2)C(=O)O
+SAMPL8-6_micro000,SAMPL8-6_micro007,0,-0.35,0.1,1.4,Cc1:c:c:c(Cl):c:c:1[NH2+]Cc2:c:c:c(:s:2)C(=O)[O-]
+SAMPL8-6_micro000,SAMPL8-6_micro001,-1,4.18,0.1,1.4,Cc1:c:c:c(Cl):c:c:1NCc2:c:c:c(:s:2)C(=O)[O-]
+SAMPL8-6_micro000,SAMPL8-6_micro009,-1,23.45,0.1,1.4,Cc1:c:c:c(Cl):c:c:1N\C=C/2\S\C(=C(/O)\[O-])\C=C2
+SAMPL8-7_micro000,SAMPL8-7_micro002,1,-10.91,0.1,1.4,OC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCOCC1
+SAMPL8-7_micro000,SAMPL8-7_micro003,1,0.37,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCOCC3
+SAMPL8-7_micro000,SAMPL8-7_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCOCC3
+SAMPL8-7_micro000,SAMPL8-7_micro004,0,2.36,0.1,1.4,OC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCOCC1
+SAMPL8-7_micro000,SAMPL8-7_micro001,-1,16.43,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCOCC3
+SAMPL8-8_micro000,SAMPL8-8_micro001,1,-2.56,0.1,0.73,COC(=O)c1cn2cccc(c2[nH+]1)C(F)(F)F
+SAMPL8-8_micro000,SAMPL8-8_micro002,1,13.47,0.1,0.73,CO\C(=c\1/:c:[n+]2:c:c:c:c(:c:2:n:1)C(F)(F)F)\O
+SAMPL8-8_micro000,SAMPL8-8_micro000,0,0,0.1,0.73,COC(=O)c1:c:n2:c:c:c:c(:c:2:n:1)C(F)(F)F
+SAMPL8-9_micro002,SAMPL8-9_micro002,1,-10.6,0.1,1.4,OC1(CN2C(=[NH2+])Nc3:c:c:c(Br):c:c2:3)CCCCC1
+SAMPL8-9_micro002,SAMPL8-9_micro004,1,-0.11,0.1,1.4,[NH3+]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+SAMPL8-9_micro002,SAMPL8-9_micro000,0,0,0.1,1.4,Nc1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+SAMPL8-9_micro002,SAMPL8-9_micro003,0,2.2,0.1,1.4,OC1(CN2C(=N)Nc3:c:c:c(Br):c:c2:3)CCCCC1
+SAMPL8-9_micro002,SAMPL8-9_micro001,-1,16.75,0.1,1.4,[NH-]c1:n:c2:c:c:c(Br):c:c:2:n:1CC3(O)CCCCC3
+
+#,,,,,,
+#,,,,,,
+# Please list your name," using only UTF-8 characters as described above. The ""Participant name:"" entry is required.",,,,,
+Participant name:
+"Michael Diedenhofen, Selman Terzi, Frank Eckert"
+
+#,,,,,,
+#,,,,,,
+# Please list your organization/affiliation, using only UTF-8 characters as described above.,,,,,
+Participant organization:
+Dassault Systemes Deutschland GmbH BIOVIA
+
+#,,,,,,
+#,,,,,,
+# NAME SECTION
+#,,,,,,
+# Please provide an informal but informative name of the method used.,,,,,,
+# The name of the method should not exceed 40 characters.,,,,,,
+# The 'Name:' keyword is required as shown here.,,,,,,
+Name:
+COSMO-RS one pKa fit
+
+#,,,,,,
+#,,,,,,
+# COMPUTE TIME SECTION,,,,,,
+#,,,,,,
+# Please provide the average compute time across all of the molecules.,,,,,,
+# For physical methods, report the GPU and/or CPU compute time in hours.,,,,,
+# For empirical methods, report the query time in hours.,,,,,
+# Create a new line for each processor type.,,,,,,
+# The 'Compute time:' keyword is required as shown here.,,,,,,
+Compute time:
+1076 hours, CPU
+
+#,,,,,,
+# COMPUTING AND HARDWARE SECTION,,,,,,
+#,,,,,,
+# Please provide details of the computing resources that were used to train models and make predictions.,,,,,,
+# Please specify compute time for training models and querying separately for empirical prediction methods.,,,,,,
+# Provide a detailed description of the hardware used to run the simulations.,,,,,,
+# The 'Computing and hardware:' keyword is required as shown here.,,,,,,
+Computing and hardware:
+We have use a linux cluster (Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz). The calculations could use up to 20 cores. The number of actually use CPU differ during the steps of the conformer search procedure
+The timings given above are wall times estimated from 33 structures and extrapolated to 203 microstates
+
+# SOFTWARE SECTION,,,,,,
+#,,,,,,
+# List all major software packages used and their versions.,,,,,,
+# Create a new line for each software.,,,,,,
+# The 'Software:' keyword is required.,,,,,,
+Software:
+BIOVIA COSMOquick 2021: A proprietary tool of Dassault Systemes to generate tautomeric states.
+BIOVIA COSMOconf 2021: A proprietary tool of Dassault Systemes for conformer generation (uses TURBOMOLE and COSMOtherm)
+BIOVIA COSMOtherm 2021: The proprietary software developed and distributed by Dassault Systemes, which uses COSMO-RS. COSMO-RS is a published theory: Klamt A (1995) Conductor-like screening model for real solvents: a new approach to the quantitative calculation of solvation phenomena. J Phys Chem 99:2224-2235. https://doi.org/10.1021/j100007a062
+TURBOMOLE 7.5: The quantum chemistry suite. University of Karlsruhe and Forschungszentrum Karlsruhe GmbH, 1989-2007, TURBOMOLE GmbH, since 2007; available from http://www.turbomole.com: Karlsruhe, Germany,2020
+# METHOD CATEGORY SECTION
+#,,,,,,
+# State if your prediction method is better classified as an,,,,,,
+# experimental database lookup (DL), linear free energy relationship (LFER),,,,,
+# quantitative structure-property relationship or machine learning (QSPR/ML),,,,,,
+# quantum mechanics without empirical correction (QM) model, quantum mechanics with,,,,,
+# linear empirical correction (QM+LEC), and combined quantum mechanics and molecular,,,,,
+# mechanics (QM+MM), or Other, using the following category labels:,,,,
+# `DL`, `LFER`, `QSPR/ML`, `QM`, `QM+LEC`, `QM+MM` or `Other`.,
+#,,,,,,
+# Pick only one category label.,,,,,,
+# The `Category:` keyword is required.,,,,,,
+Category:
+LFER
+
+# METHOD DESCRIPTION SECTION,,,,,,
+#,,,,,,
+# Methodology and computational details.,,,,,,
+# Level of details should be roughly equivalent to that used in a publication.,,,,,,
+# Please include the values of key parameters with units.,,,,,,
+# Please explain how statistical uncertainties were estimated.,,,,,,
+# Use as many lines of text as you need.,,,,,,
+#,,,,,,
+# We strongly encourage you to submit your predicted macro pKa values in this section in consecutive lines following this format:,,,,,,
+# compound name, macro pKa, initial formal charge, formal charge after transition, e.g.:,,
+# SAMPL8-1,3.5,0,1,,,
+Method:
+Workflow
+"1) We used COSMOquick to generate possible tautomeric and ionic states. Irrelevant states where discarded due to an internal energy threshold implemented in COSMOquick. In a subsequent manual check we discarded all dissociated structures. After a first DFT optimization we checked the relative energies of the microstates with same charge and reduced the number of states with an energy threshold. We performed DFT optimizations of the SAMPL8 microstates proposals and checked the structures against the already created microstates. Missing, energetically relevant structures were added to the set."
+2) COSMOconf was used to create the conformer set of the microstates.
+3)  The conformer sets of the microstates were used to calculate the pKa values of the reactions between the microstates. We used the COSMO-RS theory with the BP-TZVPD-FINE 21 parametrization. The pKa values were predicted using a LFER approach based on the fee Gibbs energies of the microstates at infinite dilution in water.
+"We normally use two LFER fits, one for the pKa (HA +H2O -> H3O+ + A-) and one for the pKa of the conjugated base (BH+ + H2O -> B + H3O+). Here we used the pKa model for SAMPL8-2 and the base pKa model for SAMPL8-10, SAMPL8-11, SAMPL8-15, SAMPL8-8. All other predictions have been done with a harmonized LFER model (fit of one model for the pKa and base pKa data). The RSME values in kcal/mol are 0.7 for the pKa model, 0.73 for the base pKa model, and 1.4 for the harmonized model."
+The COSMO-RS algorithm by itself has no statistical error. The overall workflow including the conformational search (or molecule or state) has a statistical noise smaller than 0.1 kcal/mol.
+
+#,,,,,,
+Macro pKa values
+SAMPL8-1,-0.61,1,0
+SAMPL8-1,3.69,0,-1
+SAMPL8-2,3.99,0,-1
+SAMPL8-3,-1.04,1,0
+SAMPL8-3,3.39,0,-1
+SAMPL8-3,7.41,-1,-2
+SAMPL8-4,2.6,1,0
+SAMPL8-4,3.44,0,-1
+SAMPL8-5,-1.58,1,0
+SAMPL8-5,3.23,0,-1
+SAMPL8-6,3.76,1,0
+SAMPL8-6,3.25,0,-1
+SAMPL8-7,8,1,0
+SAMPL8-7,12.04,0,-1
+SAMPL8-8,1.88,1,0
+SAMPL8-9,7.77,1,0
+SAMPL8-9,12.28,0,-1
+SAMPL8-10,8.44,1,0
+SAMPL8-11,3.02,2,1
+SAMPL8-11,11.02,1,0
+SAMPL8-12,2.76,2,1
+SAMPL8-12,8.58,1,0
+SAMPL8-12,14.65,0,-1
+SAMPL8-13,2.69,1,0
+SAMPL8-13,12.62,0,-1
+SAMPL8-14,3.53,2,1
+SAMPL8-14,8.68,1,0
+SAMPL8-14,9.8,0,-1
+SAMPL8-14,13.71,-1,-2
+SAMPL8-15,4.02,1,0
+SAMPL8-16,6.81,1,0
+SAMPL8-16,10.84,0,-1
+SAMPL8-16,12.27,-1,-2
+SAMPL8-17,7.44,1,0
+SAMPL8-17,11.57,0,-1
+SAMPL8-18,5.29,1,0
+SAMPL8-18,11.35,0,-1
+SAMPL8-19,3.45,2,1
+SAMPL8-19,6.12,1,0
+SAMPL8-19,6.67,0,-1
+SAMPL8-20,0.41,2,1
+SAMPL8-20,4.64,1,0
+SAMPL8-20,10.19,0,-1
+SAMPL8-21,2.99,2,1
+SAMPL8-21,7.86,1,0
+SAMPL8-21,8.65,0,-1
+SAMPL8-21,13.2,-1,-2
+SAMPL8-22,-0.84,2,1
+SAMPL8-22,5.52,1,0
+SAMPL8-22,12.61,0,-1
+SAMPL8-23,4.51,1,0
+SAMPL8-23,8.97,0,-1
+
+#,,,,,,
+#,,,,,,
+# All submissions must either be ranked or non-ranked.,,,,,,
+# Only one ranked submission per participant is allowed.,,,,,,
+# Multiple ranked submissions from the same participant will not be judged.,,,,,,
+# Non-ranked submissions are accepted so we can verify that they were made before the deadline.,,,,,,
+"# The ""Ranked:"" keyword is required", and expects a Boolean value (True/False),,,,,
+Ranked:
+True
