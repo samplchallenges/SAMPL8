@@ -66,6 +66,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
 - 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
 - 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset. 
+- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. 
 
 ## Challenge construction
 
