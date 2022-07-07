@@ -233,6 +233,11 @@ class pKaSubmissionCollection:
         # Submissions for pKa.
         for submission in submissions_RFE:
             #print(submission.file_name)
+            ref_state = pd.DataFrame(submission.data.index)
+            new_index = submission.data['Alternate State']
+            submission.data = submission.data.set_index(new_index)
+            submission.data['Alternate State'] = ref_state.values
+
             if "RFE-NHLBI-TZVP-QM" in submission.method_name and no_outliers:
                 continue
             #print(submission.method_name)
@@ -375,13 +380,13 @@ if __name__ == '__main__':
             # so, add key-value pair
             dict_obj[key] = value
 
-    def ridge_plot(df, by, column, figsize, colormap, output_directory_path, fig_name):
+    def ridge_plot(df, by, column, figsize, colormap, output_directory_path, fig_name,fig_num):
         print("Making ridge plot")
         plt.close('all')
         plt.rcParams['axes.labelsize'] = 12
         plt.rcParams['xtick.labelsize'] = 12
-        plt.rcParams['ytick.labelsize'] = 12
-        plt.rcParams['axes.labelsize'] = 14
+        plt.rcParams['ytick.labelsize'] = 3
+        plt.rcParams['axes.labelsize'] = 12
         #plt.rcParams['figure.autolayout'] = True
         #plt.tight_layout()
 
@@ -393,13 +398,13 @@ if __name__ == '__main__':
 
 
 
-        plt.savefig(output_directory_path + "/" + fig_name+".pdf")
+        plt.savefig(output_directory_path + "/" + fig_name + str(fig_num) + ".pdf")
 
 
     def ridge_plot_wo_overlap(df, by, column, figsize, colormap, output_directory_path):
         plt.close('all')
-        plt.rcParams['axes.labelsize'] = 14
-        plt.rcParams['xtick.labelsize'] = 14
+        plt.rcParams['axes.labelsize'] = 12
+        plt.rcParams['xtick.labelsize'] = 6
         plt.rcParams['figure.autolayout'] = True
         plt.tight_layout()
 
@@ -410,7 +415,7 @@ if __name__ == '__main__':
         plt.savefig(output_directory_path + "/" + "ridgeplot.pdf")
 
 
-    def violinplot(df, output_directory_path, width, fig_name):
+    def violinplot(df, output_directory_path, width, fig_name, fig_num):
         print("Making horizontal violin plot")
 
         plt.close('all')
@@ -422,7 +427,7 @@ if __name__ == '__main__':
                        linewidth=0.5, width=width)
         plt.tight_layout()
         #plt.savefig(output_directory_path + "/" + "violinplot.pdf")
-        plt.savefig(output_directory_path + "/" + fig_name+"_horizontal.pdf")
+        plt.savefig(output_directory_path + "/" + fig_name + "_horizontal" + str(fig_num) + ".pdf")
 
 
 
@@ -440,10 +445,10 @@ if __name__ == '__main__':
         v.set_xticklabels(v.get_xticklabels(),rotation=90)
         plt.tight_layout()
         #plt.savefig(output_directory_path + "/" + "violinplot.pdf")
-        plt.savefig(output_directory_path + "/" + fig_name+".pdf")
+        plt.savefig(output_directory_path + "/" + fig_name + str(fig_num) + ".pdf")
 
 
-    def barplot(df, output_directory_path, figsize, fig_name):
+    def barplot(df, output_directory_path, figsize, fig_name, fig_num):
         print("Making bar plot")
         plt.close('all')
         current_palette = sns.color_palette()
@@ -451,7 +456,7 @@ if __name__ == '__main__':
 
         plt.style.use(["seaborn-talk", "seaborn-whitegrid"])
         plt.rcParams['axes.labelsize'] = 20
-        plt.rcParams['xtick.labelsize'] = 14
+        plt.rcParams['xtick.labelsize'] = 12
         plt.rcParams['ytick.labelsize'] = 18
         plt.rcParams['legend.fontsize'] = 16
         plt.rcParams['legend.handlelength']
@@ -470,7 +475,7 @@ if __name__ == '__main__':
 
         plt.xlabel("Microstates")
         plt.ylabel("Average relative microstate free energy")
-        plt.savefig(output_directory_path + "/" + fig_name+".pdf")
+        plt.savefig(output_directory_path + "/" + fig_name + str(fig_num) + ".pdf")
 
 
 
@@ -491,33 +496,72 @@ if __name__ == '__main__':
     print(collection_logP.data)
     collection_data = read_collection_file(collection_file_path = pKa_submission_collection_file_path)
 
+    # Split Collection Data into separate data frames for each unique microstate
+    unique_ids = collection_logP.data["ID tag"].unique()
+    df_list = []
+    for ids in unique_ids:
+        df_list.append(collection_logP.data.loc[collection_logP.data["ID tag"] == ids])
+
+    # Groups Split dataframes list based on the number of plots desired
+    no_of_plots = np.linspace(1, 9, 9).astype(int) # There are 36 microstates that are being grouped together in each plot
+    df_group_list = []
+    for i in no_of_plots-1:
+        df_group_list.append(df_list[i * 36:(i + 1) * 36])
 
 
+
+
+
+    # Plots
+    output_directory_path_ridge_plots = "./plots/ridge_plots"
+    output_directory_path_violin_plots = "./plots/violin_plots"
+    output_directory_path_bar_plots = "./plots/bar_plots"
+    os.makedirs(output_directory_path_ridge_plots, exist_ok=True)
+    os.makedirs(output_directory_path_violin_plots, exist_ok=True)
+    os.makedirs(output_directory_path_bar_plots, exist_ok=True)
 
     # Ridge plot using all predictions
-    #ridge_plot(df = collection_logP.data, by = "ID tag", column = "Relative microstate free energy prediction",
-    #            figsize = (5, 8), colormap=cm.plasma,
-    #            output_directory_path=output_directory_path, fig_name="ridgeplot_all_FE_predictions")
+    for i in no_of_plots-1:
+        ridge_plot(df = pd.concat(df_group_list[i]), by = "ID tag", column = "Relative microstate free energy prediction",
+               figsize = (8, 10), colormap=cm.plasma,
+               output_directory_path=output_directory_path_ridge_plots, fig_name="ridgeplot_all_FE_predictions", fig_num=i)
 
 
     # Violin plot using all predictions
-    #violinplot(df = collection_data, output_directory_path=output_directory_path, width=5,fig_name="violinplot_all_FE_predictions" )
+    for j in no_of_plots-1:
+        violinplot(df = pd.concat(df_group_list[j]), output_directory_path=output_directory_path_violin_plots,
+                   width=5,fig_name="violinplot_all_FE_predictions", fig_num=j)
+
+    # Bar plots for Each of the grouped Data
+    for k in no_of_plots-1:
+        df = pd.concat(df_group_list[k])
+        df2 = df.groupby("ID tag")["Relative microstate free energy prediction"].agg(
+            ['count', 'mean', 'min', 'max', 'std'])
+        df3 = df.groupby("ID tag")["Relative microstate free energy SEM"].agg(['mean'])
+        df4 = pd.merge(df2, df3, left_index=True, right_index=True)
+        df4.columns = ['prediction count', 'average FE prediction', 'min prediction', 'max prediction',
+                       'prediction STD', 'average SEM']
+        df4['ID tag'] = df4.index
+
+        # Bar plots
+        barplot(df=df4, output_directory_path=output_directory_path_bar_plots, figsize=(28, 10),
+                fig_name="barplot_average_FE_predictions",fig_num=k)
 
 
-    #df = collection_logP.data
-    #df2=df.groupby("ID tag")["Relative microstate free energy prediction"].agg(['count','mean', 'min', 'max','std'])
-    #df3=df.groupby("ID tag")["Relative microstate free energy SEM"].agg(['mean'])
-    #df4=pd.merge(df2, df3, left_index=True, right_index=True)
-    #df4.columns = ['prediction count', 'average FE prediction', 'min prediction', 'max prediction', 'prediction STD', 'average SEM']
-    #df4['ID tag'] = df4.index
+
+
+    # Save Enitre Data set
+    df = collection_logP.data
+    df2=df.groupby("ID tag")["Relative microstate free energy prediction"].agg(['count','mean', 'min', 'max','std'])
+    df3=df.groupby("ID tag")["Relative microstate free energy SEM"].agg(['mean'])
+    df4=pd.merge(df2, df3, left_index=True, right_index=True)
+    df4.columns = ['prediction count', 'average FE prediction', 'min prediction', 'max prediction', 'prediction STD', 'average SEM']
+    df4['ID tag'] = df4.index
     #df4.reset_index(level=0, inplace=True)
-    #df4.to_csv(output_directory_path+"/numbers.csv")
+    df4.to_csv(output_directory_path+"/numbers.csv")
 
     # Barplot of average FE predictions
     #barplot(df=df4, output_directory_path=output_directory_path, figsize=(28,10), fig_name="barplot_average_FE_predictions")
-
-
-
 
 
 

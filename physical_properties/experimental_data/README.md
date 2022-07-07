@@ -13,5 +13,4 @@ This provides experimental results from GSK for the SAMPL8 physical properties c
 - `SAMPL8 - SiriusT3 measurements.pdf`: A pdf file with experimental pKa values for four SAMPL8 compounds determined using a SiriusT3, as provided by Juliana Gretz on June 23, 2022
 - `pKa - SiriusT3 measurements.csv`: CSV file, hand-typed from "SAMPL8 - SiriusT3 measurements.pdf" by Nicolas Tielker on June 28, 2022, which gives pKa values by compound as listed in that pdf.
 
-### To be added:
-- A preprint of the experimental paper (or a link to a preprint of it)
+Experimental data collection is described in this  [paper](https://link.springer.com/article/10.1007/s10822-021-00427-0) in JCAMD.
