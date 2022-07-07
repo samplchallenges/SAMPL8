@@ -65,10 +65,11 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2021-09-07: Add logD submissions, user map
 - 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
 - 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
-- 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset. 
-- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. 
+- 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset.
+- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
 - 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
 - 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
+- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
 
 ## Challenge construction
 
@@ -108,6 +109,8 @@ GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file fo
 Generally, the challenge structure resembles that of the [SAMPL7 physical properties challenge](https://doi.org/10.26434/chemrxiv.14461962.v1).
 
 Submission deadlines were in August, 2021, as [discussed in the challenge details](physical_properties/README.md). Submission links were available from the files giving instructions for each challenge component.
+
+Following the challenge, the pKa and logD for several controversial compounds were re-measured in Paul Czodrowski's laboratory with a Sirius T3. The updated pKa values (which have not yet been used in analysis) are available in the `physical_properties/experimental_data` directory, and the logD updates are forthcoming.
 
 
 ## MANIFEST
