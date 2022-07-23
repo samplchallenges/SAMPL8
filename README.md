@@ -69,7 +69,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
 - 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
 - 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
-- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
+- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
 
 ## Challenge construction
 
@@ -110,7 +110,7 @@ Generally, the challenge structure resembles that of the [SAMPL7 physical proper
 
 Submission deadlines were in August, 2021, as [discussed in the challenge details](physical_properties/README.md). Submission links were available from the files giving instructions for each challenge component.
 
-Following the challenge, the pKa and logD for several controversial compounds were re-measured in Paul Czodrowski's laboratory with a Sirius T3. The updated pKa values (which have not yet been used in analysis) are available in the `physical_properties/experimental_data` directory, and the logD updates are forthcoming.
+Following the challenge, the pKa and logD for several controversial compounds were re-measured in Paul Czodrowski's laboratory with a Sirius T3. The updated pKa values (which have not been used in analysis) are available in the `physical_properties/experimental_data` directory. It is likely that these new values are superior to those originally provided, but at this time we do not plan to update the analysis here to reflect the new values since these were provided long after the challenge closed.
 
 
 ## MANIFEST
