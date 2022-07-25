@@ -15,3 +15,5 @@ Molecular statistics analysis was performed to indicate which molecules were mor
 - [`Titration_Curves.pdf`](Titration_Curves.pdf)- Document that contains the derivation used to calculate the macro-pKa's from the microstate relative free energy changes submitted.
 - [`titration_curve_plots/`](titration_curve_plots/)- This directory contains all the titration curves and a csv file that contains a dataframe with all the predicted and experimental macro-pKas.
 - [`macro_pKas_data.csv`](titration_curve_plots/macro_pKas_data.csv)- Dataframe that contains all the combinations of predicted macro-pKas and experimental macro-pKas for all compounds across all submissions.
+- [`macrostate_analysis.py`](macrostate_analysis.py)- Script used to generate performance statistics for macro-pKa analysis.
+- [`Performance_stats_plots`](Performance_stats_plots/)- This directory contains bar plots and correlation plots associated with the performance statistics.
