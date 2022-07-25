@@ -110,7 +110,7 @@ Generally, the challenge structure resembles that of the [SAMPL7 physical proper
 
 Submission deadlines were in August, 2021, as [discussed in the challenge details](physical_properties/README.md). Submission links were available from the files giving instructions for each challenge component.
 
-Following the challenge, the pKa and logD for several controversial compounds were re-measured in Paul Czodrowski's laboratory with a Sirius T3. The updated pKa values (which have not yet been used in analysis) are available in the `physical_properties/experimental_data` directory, and the logD updates are forthcoming.
+Following the challenge, the pKa and logD for several controversial compounds were re-measured in Paul Czodrowski's laboratory with a Sirius T3. The updated pKa values (which have not been used in analysis) are available in the `physical_properties/experimental_data` directory. It is likely that these new values are superior to those originally provided, but at this time we do not plan to update the analysis here to reflect the new values since these were provided long after the challenge closed.
 
 
 ## MANIFEST
