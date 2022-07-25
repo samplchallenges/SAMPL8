@@ -69,7 +69,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
 - 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
 - 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
-- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
+- 
 
 ## Challenge construction
 
