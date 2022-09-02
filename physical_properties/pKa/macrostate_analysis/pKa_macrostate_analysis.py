@@ -125,43 +125,9 @@ class SamplSubmission:
             csv_str = io.StringIO('\n'.join(sections[section_name]))
             columns = cls.CSV_SECTIONS[section_name]
             id_column = columns[0]
-            #print("trying", sections)
             section = pd.read_csv(csv_str, index_col=id_column, names=columns, skipinitialspace=True)
-            #section = pd.read_csv(csv_str, names=columns, skipinitialspace=True)
             sections[section_name] = section
         return sections
-
-    @classmethod
-    def _create_comparison_dataframe(cls, column_name, submission_data, experimental_data):
-        """Create a single dataframe with submission and experimental data."""
-        # Filter only the systems IDs in this submissions.
-
-
-        experimental_data = experimental_data[experimental_data.index.isin(submission_data.index)] # match by column index
-        # Fix the names of the columns for labelling.
-        submission_series = submission_data[column_name]
-        submission_series.name += ' (calc)'
-        experimental_series = experimental_data[column_name]
-        experimental_series.name += ' (expt)'
-
-        # Concatenate the two columns into a single dataframe.
-        return pd.concat([experimental_series, submission_series], axis=1)
-
-    @classmethod
-    def _create_single_dataframe(cls, column_name, submission_data):
-        """Create a single dataframe with submission and experimental data."""
-        # Filter only the systems IDs in this submissions.
-
-
-        #experimental_data = experimental_data[experimental_data.index.isin(submission_data.index)] # match by column index
-        # Fix the names of the columns for labelling.
-        submission_series = submission_data[column_name]
-        #submission_series.name += ' (calc)'
-        #experimental_series = experimental_data[column_name]
-        #experimental_series.name += ' (expt)'
-
-        # Concatenate the two columns into a single dataframe.
-        return pd.DataFrame(submission_series)#, axis=1) #pd.concat([submission_series], axis=1)
 
 
 # =============================================================================
@@ -296,7 +262,9 @@ if __name__ == '__main__':
     pKa_dt = getdataset(microstates_df,experimental_data,output_PATH_DIR)
     
     ## Compute Popular Transition States across all submission in pKaCollection-
-    popular_transitions_pKa_dt = getpopulartransitions(pKa_dt,experimental_data,output_PATH_DIR)
+    popular_transitions = getpopulartransitions(pKa_dt,experimental_data)
+    
+    popular_transitions_pKa_dt = getpopulartransitionsdata(popular_transitions,pKa_dt,experimental_data,output_PATH_DIR)
     
     ## Correlation Statistics
     Corr_stats = getpKaCorrelationstats(popular_transitions_pKa_dt,output_PATH_DIR)
@@ -309,7 +277,9 @@ if __name__ == '__main__':
     pKa_dt_ranked = getdataset(microstates_df_ranked,experimental_data,output_PATH_DIR_ranked)
     
     ## Compute Popular Transition States across all ranked submissions
-    popular_transitions_pKa_dt_ranked = getpopulartransitions(pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    popular_transitions_ranked = getpopulartransitions(pKa_dt_ranked,experimental_data)
+    
+    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(popular_transitions_ranked,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
     
     ## Correlation Statistics for each submission
     Corr_stats_ranked = getpKaCorrelationstats(popular_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)

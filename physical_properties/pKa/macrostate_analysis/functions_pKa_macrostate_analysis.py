@@ -182,10 +182,10 @@ def getdataset(submission_collection,experimental_data,output_directory):
 
 
 # =============================================================================
-# Generate Dataset-Compute Predicted pKa values
+# Extract popular transition state predictions for each submission
 # =============================================================================    
 
-def getpopulartransitions(data,experimental_data,output_directory):
+def getpopulartransitions(data,experimental_data):
     """Gets the most popular transitions states used for predictions across submissions and extracts these datapoints from the above generated dataset"""
     popular_transitions = pd.DataFrame(columns=["Molecule ID","Experimental pKa","Formal Charge"])
     for idx,row in experimental_data.iterrows():
@@ -194,37 +194,41 @@ def getpopulartransitions(data,experimental_data,output_directory):
         df_temp = pd.DataFrame({"Molecule ID":idx,"Experimental pKa":row['pKa mean'],"Formal Charge":formal_charges1.mode()})
         popular_transitions = pd.concat([popular_transitions,df_temp],ignore_index=True)
     popular_transitions = popular_transitions.drop_duplicates(subset=['Molecule ID','Experimental pKa'],keep=False)
-    
-    pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-    for submission in data.loc[:,'Submission'].unique():
-        submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
-        for idx,row in experimental_data.iterrows():
-            if idx in popular_transitions.loc[:,"Molecule ID"].tolist():
-                popular_transitions_mol = popular_transitions.loc[(popular_transitions.loc[:,'Experimental pKa']==row['pKa mean']) & (popular_transitions.loc[:,"Molecule ID"]==idx),]
-                if row['pKa mean'] in submission_data.loc[:,"Experimental pKa"].tolist() and idx in submission_data.loc[:,"Molecule ID"].tolist():
-                    df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),]
-                    # Control flow for dealing with submissions that don't have the correct transition state for prediction
-                    if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist():
-                        df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
-                    else:
-                        df_temp1 = df_temp1.reset_index()
-                        df_temp1 = df_temp1.drop(['index'],axis=1)
-                        df_temp2 = df_temp1.loc[0,].to_frame().T
-                        df_temp2.loc[:,'Formal Charge'] = popular_transitions_mol.loc[:,"Formal Charge"].values.item()
-                        if abs(df_temp2.loc[:,'Experimental pKa'].values-14) > abs(df_temp2.loc[:,'Experimental pKa'].values-0):
-                            df_temp2.loc[:,'Predicted pKa'] = 14
-                            df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-14)
-                        else:
-                            df_temp2.loc[:,'Predicted pKa']=0
-                            df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-0)
 
-                    # print(df_temp2.to_markdown())
-                    pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
-                    
+    return popular_transitions
+
+
+def getpopulartransitionsdata(popular_transitions,data,experimental_data,output_directory):
+        pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
+        for submission in data.loc[:,'Submission'].unique():
+            submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
+            for idx,row in experimental_data.iterrows():
+                if idx in popular_transitions.loc[:,"Molecule ID"].tolist():
+                    popular_transitions_mol = popular_transitions.loc[(popular_transitions.loc[:,'Experimental pKa']==row['pKa mean']) & (popular_transitions.loc[:,"Molecule ID"]==idx),]
+                    if row['pKa mean'] in submission_data.loc[:,"Experimental pKa"].tolist() and idx in submission_data.loc[:,"Molecule ID"].tolist():
+                        df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),]
+                        # df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
+                        if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist():
+                            df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
+                        else:
+                            df_temp1 = df_temp1.reset_index()
+                            df_temp1 = df_temp1.drop(['index'],axis=1)
+                            df_temp2 = df_temp1.loc[0,].to_frame().T
+                            df_temp2.loc[:,'Formal Charge'] = popular_transitions_mol.loc[:,"Formal Charge"].values.item()
+                            if abs(df_temp2.loc[:,'Experimental pKa'].values-14) > abs(df_temp2.loc[:,'Experimental pKa'].values-0):
+                                df_temp2.loc[:,'Predicted pKa'] = 14
+                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-14)
+                            else:
+                                df_temp2.loc[:,'Predicted pKa']=0
+                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-0)
+
+                        pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
+
+
+
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
         pKa_dt_pop_transition_states.to_csv(output_directory+"popular_transitions_pKa_data.csv")
-        
         plt.figure(figsize=(15,10))
         with sns.axes_style("darkgrid"):
             sns.barplot(x='Method Name',y='Absolute Error',hue="Method Type",palette="Set1",data=pKa_dt_pop_transition_states,dodge=False)
@@ -234,7 +238,7 @@ def getpopulartransitions(data,experimental_data,output_directory):
             plt.gcf().subplots_adjust(bottom=0.25)
             plt.xticks(rotation=90)
         plt.savefig(output_directory+"abs_error_bymethod_plot"+".pdf")
-        
+
         plt.figure(figsize=(15,10))
         sns.barplot(x='Molecule ID',y='Absolute Error',data=pKa_dt_pop_transition_states,dodge=False)
         plt.xlabel("Method", fontsize=14)
@@ -245,18 +249,14 @@ def getpopulartransitions(data,experimental_data,output_directory):
         plt.savefig(output_directory+"abs_error_bymol_plot"+".pdf")
         return pKa_dt_pop_transition_states
 
-    
-
-
 # =============================================================================
 # Correlation Statistics
 # =============================================================================
 
 def getpKaCorrelationstats(data,output_directory):
     """Uses data to compute correlation Statistics and Creates Correlation Plots"""
-    
     perform_stats_submissions = pd.DataFrame(columns=["Submission","R-squared","Slope","Kendall Tau"])
-    for submission_name in data.loc[:,"Submission"].unique():
+    for submission_name in data.loc[:,'Submission'].unique():
         submission_dt = data.loc[data.loc[:,'Submission']==submission_name,]
         # Compute Correlation Statistics
         slope, intercept, r_value, p_value, stderr = scipy.stats.linregress(submission_dt.loc[:,"Experimental pKa"].astype(float),submission_dt.loc[:,"Predicted pKa"].astype(float))
@@ -300,9 +300,10 @@ def getpKaCorrelationstats(data,output_directory):
         if not os.path.exists(Corr_plot_dir):
             os.makedirs(Corr_plot_dir)
         plt.savefig(Corr_plot_dir+submission_name+"Corr_plot"+".pdf")
+        plt.close()
         perform_stats_submissions.to_csv(Corr_plot_dir+"Correlation_statistics.csv")
         
-        return perform_stats_submissions
+    return perform_stats_submissions
 
 
 # =============================================================================
@@ -323,36 +324,36 @@ def getpKaErrorstats(data,output_directory):
         perform_stats_mols = pd.concat([perform_stats_mols,df_temp],ignore_index=True)
         
 
-        if not os.path.exists(output_directory):
-            os.makedirs(output_directory)
-        perform_stats_mols.to_csv(output_directory+"Error_statistics.csv")
-        
-        plt.figure(figsize=(15,10))
-        sns.barplot(x="Molecule ID",y="Root Mean Squared Error",data=perform_stats_mols)
-        plt.xlabel("Molecule ID",fontsize=14)
-        plt.ylabel("RMSE",fontsize=14)
-        plt.title("RMSE across all Molecules",fontsize=16)
-        plt.xticks(rotation=90)
-        plt.savefig(output_directory+"rmse_plot"+".pdf")
-        
-        plt.figure(figsize=(15,10))
-        sns.barplot(x="Molecule ID",y="Mean Error",data=perform_stats_mols)
-        plt.xlabel("Molecule ID",fontsize=14)
-        plt.ylabel("Mean Error",fontsize=14)
-        plt.title("Mean Error across all Molecules",fontsize=16)
-        plt.xticks(rotation=90)
-        plt.savefig(output_directory+"mean_error_plot"+".pdf")
-        
-        plt.figure(figsize=(15,10))
-        sns.barplot(x="Molecule ID",y="Mean Absolute Error",data=perform_stats_mols)
-        plt.xlabel("Molecule ID",fontsize=14)
-        plt.ylabel("Mean Absolute Error",fontsize=14)
-        plt.title("Mean Absolute Error across all Molecules",fontsize=16)
-        plt.xticks(rotation=90)
-        plt.savefig(output_directory+"mean_abs_error_plot"+".pdf")
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    perform_stats_mols.to_csv(output_directory+"Error_statistics.csv")
+
+    plt.figure(figsize=(15,10))
+    sns.barplot(x="Molecule ID",y="Root Mean Squared Error",data=perform_stats_mols)
+    plt.xlabel("Molecule ID",fontsize=14)
+    plt.ylabel("RMSE",fontsize=14)
+    plt.title("RMSE across all Molecules",fontsize=16)
+    plt.xticks(rotation=90)
+    plt.savefig(output_directory+"rmse_plot"+".pdf")
+
+    plt.figure(figsize=(15,10))
+    sns.barplot(x="Molecule ID",y="Mean Error",data=perform_stats_mols)
+    plt.xlabel("Molecule ID",fontsize=14)
+    plt.ylabel("Mean Error",fontsize=14)
+    plt.title("Mean Error across all Molecules",fontsize=16)
+    plt.xticks(rotation=90)
+    plt.savefig(output_directory+"mean_error_plot"+".pdf")
+
+    plt.figure(figsize=(15,10))
+    sns.barplot(x="Molecule ID",y="Mean Absolute Error",data=perform_stats_mols)
+    plt.xlabel("Molecule ID",fontsize=14)
+    plt.ylabel("Mean Absolute Error",fontsize=14)
+    plt.title("Mean Absolute Error across all Molecules",fontsize=16)
+    plt.xticks(rotation=90)
+    plt.savefig(output_directory+"mean_abs_error_plot"+".pdf")
         
 
-        return perform_stats_mols
+    return perform_stats_mols
 
     
 
