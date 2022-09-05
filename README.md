@@ -69,8 +69,13 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
 - 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
 - 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
+<<<<<<< Updated upstream
 - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
 
+=======
+- 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
+- 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
+>>>>>>> Stashed changes
 ## Challenge construction
 
 ### Overview

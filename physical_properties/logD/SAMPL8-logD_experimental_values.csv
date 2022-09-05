@@ -1,23 +1,44 @@
-Molecule ID,logD mean,logD SEM
-SM25,-0.09,0.01
-SM26,-0.87,0.06
-SM27,1.56,0.11
-SM28,1.18,0.08
-SM29,1.61,0.11
-SM30,2.76,0.19
-SM31,1.96,0.14
-SM32,2.44,0.17
-SM33,2.96,0.21
-SM34,2.83,0.2
-SM35,0.87,0.06
-SM36,0.76,0.05
-SM37,1.45,0.1
-SM38,1.03,0.07
-SM39,1.89,0.13
-SM40,1.82,0.13
-SM41,-0.42,0.03
-SM42,0.99,0.07
-SM43,0.42,0.03
-SM44,0.06,0
-SM45,1.06,0.07
-SM46,0.69,0.05
+Solvent Combo,Molecule ID,logD
+Octanol-water,SAMPL8-1,0.8
+Octanol-water,SAMPL8-5,-0.5
+Octanol-water,SAMPL8-6,-0.4
+Octanol-water,SAMPL8-7,-1.3
+Octanol-water,SAMPL8-9,-0.1
+Octanol-water,SAMPL8-10,-0.6
+Octanol-water,SAMPL8-12,-0.7
+Octanol-water,SAMPL8-14,-1
+Octanol-water,SAMPL8-16,-0.4
+Cyclohexane-water,SAMPL8-5,-1.1
+Ethyl acetate-water,SAMPL8-1,0.3
+Ethyl acetate-water,SAMPL8-3,-0.8
+Ethyl acetate-water,SAMPL8-5,0.1
+Ethyl acetate-water,SAMPL8-6,-0.1
+Ethyl acetate-water,SAMPL8-9,-0.8
+Ethyl acetate-water,SAMPL8-10,0.1
+Ethyl acetate-water,SAMPL8-12,-1.4
+Ethyl acetate-water,SAMPL8-14,-0.8
+Ethyl acetate-water,SAMPL8-16,-0.5
+Ethyl acetate-water,SAMPL8-17,-1.4
+Heptane-water,SAMPL8-1,0
+Heptane-water,SAMPL8-5,-1.2
+Heptane-water,SAMPL8-10,-1
+Heptane-water,SAMPL8-16,-1
+MEK-water,SAMPL8-1,-0.2
+MEK-water,SAMPL8-3,-0.6
+MEK-water,SAMPL8-5,-0.4
+MEK-water,SAMPL8-6,-0.5
+MEK-water,SAMPL8-7,-0.4
+MEK-water,SAMPL8-9,0.4
+MEK-water,SAMPL8-10,0
+MEK-water,SAMPL8-12,-0.4
+MEK-water,SAMPL8-14,0.1
+MEK-water,SAMPL8-16,-0.3
+MEK-water,SAMPL8-17,-0.8
+TBME-water,SAMPL8-1,0.1
+TBME-water,SAMPL8-5,0
+TBME-water,SAMPL8-6,-0.2
+TBME-water,SAMPL8-10,-0.9
+TBME-water,SAMPL8-16,-1.2
+Cyclohexane-DMF,SAMPL8-1,-0.7
+Cyclohexane-DMF,SAMPL8-6,0
+Cyclohexane-DMF,SAMPL8-16,-1.3
