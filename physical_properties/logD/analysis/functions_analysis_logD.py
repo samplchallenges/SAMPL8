@@ -153,7 +153,7 @@ def getperformancestatsbysolventcombo(data,output_directory):
     
     error_stats_dt = pd.DataFrame(columns=['Solvent-Combo','Molecule ID','Mean Error','Mean Absolute Error','Root Mean Squared Error'])
     
-    error_plots_dir = output_directory+"Performance_stats_by_solvent_combo/"+"Error_plots/"
+    error_plots_dir = output_directory+"Performance_stats_by_solvent_combo/"+"/Error_plots/"
     if not os.path.exists(error_plots_dir):
         os.makedirs(error_plots_dir)
         
@@ -197,7 +197,7 @@ def getperformancestatsbysolventcombo(data,output_directory):
         plt.gcf().subplots_adjust(bottom=0.35)
         plt.xticks(rotation=90)
         ## Create a new directory and save the plots
-        mean_error_plots_dir = error_plots_dir+"Performance_stats_by_sol_combo/"+"/Mean_Error_plots/"
+        mean_error_plots_dir = error_plots_dir+"/Mean_Error_plots/"
         if not os.path.exists(mean_error_plots_dir):
             os.makedirs(mean_error_plots_dir)
         plt.savefig(mean_error_plots_dir+"Mean_error_"+sol_combo+".pdf")
@@ -213,7 +213,7 @@ def getperformancestatsbysolventcombo(data,output_directory):
         plt.gcf().subplots_adjust(bottom=0.25)
         plt.xticks(rotation=90)
         ## Create a new directory and save the plots
-        rmse_plots_dir = error_plots_dir+"Performance_stats_by_sol_combo/"+"/RMS_Error_plots/"
+        rmse_plots_dir = error_plots_dir+"/RMS_Error_plots/"
         if not os.path.exists(rmse_plots_dir):
             os.makedirs(rmse_plots_dir)
         plt.savefig(rmse_plots_dir+"rmse_"+sol_combo+".pdf")
@@ -229,7 +229,7 @@ def getperformancestatsbysolventcombo(data,output_directory):
         plt.gcf().subplots_adjust(bottom=0.25)
         plt.xticks(rotation=90)
         ## Create a new directory and save the plots
-        mae_plots_dir = error_plots_dir+"Performance_stats_by_sol_combo/"+"/MA_Error_plots/"
+        mae_plots_dir = error_plots_dir+"/MA_Error_plots/"
         if not os.path.exists(mae_plots_dir):
             os.makedirs(mae_plots_dir)
         plt.savefig(mae_plots_dir+"mae_"+sol_combo+".pdf")
