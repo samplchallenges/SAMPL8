@@ -75,7 +75,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 =======
 - 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
 - 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
->>>>>>> Stashed changes
+
 ## Challenge construction
 
 ### Overview
