@@ -72,6 +72,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
 - 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
 - 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
+- 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
 
 ## Challenge construction
 
