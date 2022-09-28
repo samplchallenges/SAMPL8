@@ -1,0 +1,1064 @@
+,Molecule ID,Solvent-Combo,Method Name,Method Category,File Name,Predicted logD,Experimental logD,Absolute Error
+0,SAMPL8-16,Cyclohexane-DMF,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.67,-1.3,0.63
+1,SAMPL8-6,Cyclohexane-DMF,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.43,0.0,0.43
+2,SAMPL8-1,Cyclohexane-DMF,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.37,-0.7,1.0699999999999998
+3,SAMPL8-16,TBME-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.89,-1.2,3.09
+4,SAMPL8-10,TBME-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.19,-0.9,1.09
+5,SAMPL8-6,TBME-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.71,-0.2,1.91
+6,SAMPL8-5,TBME-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.95,0.0,1.95
+7,SAMPL8-1,TBME-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,2.46,0.1,2.36
+8,SAMPL8-17,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-3.09,-0.8,2.29
+9,SAMPL8-16,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.99,-0.3,1.29
+10,SAMPL8-14,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-1.41,0.1,1.51
+11,SAMPL8-12,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-1.04,-0.4,0.64
+12,SAMPL8-10,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-1.02,0.0,1.02
+13,SAMPL8-9,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-1.28,0.4,1.6800000000000002
+14,SAMPL8-7,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-3.07,-0.4,2.67
+15,SAMPL8-6,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.23,-0.5,0.73
+16,SAMPL8-5,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.03,-0.4,1.4300000000000002
+17,SAMPL8-3,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-4.59,-0.6,3.9899999999999998
+18,SAMPL8-1,MEK-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.6,-0.2,1.8
+19,SAMPL8-10,Heptane-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.02,-1.0,2.02
+20,SAMPL8-5,Heptane-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.87,-1.2,3.0700000000000003
+21,SAMPL8-16,Heptane-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,3.1,-1.0,4.1
+22,SAMPL8-1,Heptane-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,3.0,0.0,3.0
+23,SAMPL8-16,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,3.34,-0.5,3.84
+24,SAMPL8-14,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.04,-0.8,1.84
+25,SAMPL8-12,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.45,-1.4,2.8499999999999996
+26,SAMPL8-10,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.95,0.1,1.8499999999999999
+27,SAMPL8-9,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,3.34,-0.8,4.14
+28,SAMPL8-6,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,2.92,-0.1,3.02
+29,SAMPL8-5,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,2.89,0.1,2.79
+30,SAMPL8-3,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.83,-0.8,1.63
+31,SAMPL8-17,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.08,-1.4,2.48
+32,SAMPL8-1,Ethyl acetate-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,3.41,0.3,3.1100000000000003
+33,SAMPL8-5,Cyclohexane-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.68,-1.1,0.42000000000000004
+34,SAMPL8-16,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,2.09,-0.4,2.4899999999999998
+35,SAMPL8-14,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.42,-1.0,0.5800000000000001
+36,SAMPL8-12,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.57,-0.7,1.27
+37,SAMPL8-10,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.49,-0.6,1.0899999999999999
+38,SAMPL8-9,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.4,-0.1,0.30000000000000004
+39,SAMPL8-7,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,-0.49,-1.3,0.81
+40,SAMPL8-6,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,0.72,-0.4,1.12
+41,SAMPL8-5,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.3,-0.5,1.8
+42,SAMPL8-1,Octanol-water,EC_RISM_logD,Physical (QM),logD-ECRISM-2,1.29,0.8,0.49
+43,SAMPL8-16,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-0.59,-0.4,0.18999999999999995
+44,SAMPL8-14,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-2.82,-1.0,1.8199999999999998
+45,SAMPL8-12,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-2.14,-0.7,1.4400000000000002
+46,SAMPL8-10,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-0.17,-0.6,0.42999999999999994
+47,SAMPL8-9,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-1.46,-0.1,1.3599999999999999
+48,SAMPL8-7,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-1.89,-1.3,0.5899999999999999
+49,SAMPL8-6,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-0.89,-0.4,0.49
+50,SAMPL8-5,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-0.33,-0.5,0.16999999999999998
+51,SAMPL8-1,Octanol-water,UCR-PLS3RELB,Empirical,logD-UCRPLS3REL-4,-1.83,0.8,2.63
+52,SAMPL8-16,Cyclohexane-DMF,EC_RISM_logP,Physical (QM),logD-ECRISM-3,0.4,-1.3,1.7000000000000002
+53,SAMPL8-6,Cyclohexane-DMF,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.79,0.0,2.79
+54,SAMPL8-1,Cyclohexane-DMF,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.56,-0.7,4.26
+55,SAMPL8-16,TBME-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.96,-1.2,4.16
+56,SAMPL8-10,TBME-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.43,-0.9,5.33
+57,SAMPL8-6,TBME-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.92,-0.2,5.12
+58,SAMPL8-5,TBME-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.88,0.0,4.88
+59,SAMPL8-1,TBME-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,5.65,0.1,5.550000000000001
+60,SAMPL8-17,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,-1.27,-0.8,0.47
+61,SAMPL8-16,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.06,-0.3,2.36
+62,SAMPL8-14,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,0.96,0.1,0.86
+63,SAMPL8-12,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,0.88,-0.4,1.28
+64,SAMPL8-10,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.21,0.0,3.21
+65,SAMPL8-9,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,1.4,0.4,0.9999999999999999
+66,SAMPL8-7,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,-1.87,-0.4,1.4700000000000002
+67,SAMPL8-6,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.45,-0.5,3.95
+68,SAMPL8-5,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.96,-0.4,4.36
+69,SAMPL8-3,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,-0.9,-0.6,0.30000000000000004
+70,SAMPL8-1,MEK-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.8,-0.2,5.0
+71,SAMPL8-10,Heptane-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,5.26,-1.0,6.26
+72,SAMPL8-5,Heptane-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.8,-1.2,6.0
+73,SAMPL8-16,Heptane-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.16,-1.0,5.16
+74,SAMPL8-1,Heptane-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,6.2,0.0,6.2
+75,SAMPL8-16,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.41,-0.5,4.91
+76,SAMPL8-14,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.41,-0.8,4.21
+77,SAMPL8-12,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.37,-1.4,4.77
+78,SAMPL8-10,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,6.19,0.1,6.090000000000001
+79,SAMPL8-9,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,6.02,-0.8,6.819999999999999
+80,SAMPL8-6,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,6.14,-0.1,6.239999999999999
+81,SAMPL8-5,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,5.82,0.1,5.720000000000001
+82,SAMPL8-3,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.52,-0.8,5.319999999999999
+83,SAMPL8-17,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.91,-1.4,4.3100000000000005
+84,SAMPL8-1,Ethyl acetate-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,6.61,0.3,6.3100000000000005
+85,SAMPL8-5,Cyclohexane-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.25,-1.1,3.35
+86,SAMPL8-16,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.16,-0.4,3.56
+87,SAMPL8-14,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,1.95,-1.0,2.95
+88,SAMPL8-12,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.49,-0.7,3.1900000000000004
+89,SAMPL8-10,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.73,-0.6,5.33
+90,SAMPL8-9,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,2.28,-0.1,2.38
+91,SAMPL8-7,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,0.71,-1.3,2.01
+92,SAMPL8-6,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,3.94,-0.4,4.34
+93,SAMPL8-5,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.22,-0.5,4.72
+94,SAMPL8-1,Octanol-water,EC_RISM_logP,Physical (QM),logD-ECRISM-3,4.49,0.8,3.6900000000000004
+95,SAMPL8-16,Cyclohexane-DMF,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.7,-1.3,0.3999999999999999
+96,SAMPL8-6,Cyclohexane-DMF,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.04,0.0,1.04
+97,SAMPL8-1,Cyclohexane-DMF,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.57,-0.7,1.27
+98,SAMPL8-16,TBME-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.86,-1.2,2.06
+99,SAMPL8-10,TBME-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.28,-0.9,0.62
+100,SAMPL8-6,TBME-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.09,-0.2,1.29
+101,SAMPL8-5,TBME-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.8,0.0,0.8
+102,SAMPL8-1,TBME-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,2.66,0.1,2.56
+103,SAMPL8-17,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-4.85,-0.8,4.05
+104,SAMPL8-16,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.04,-0.3,0.26
+105,SAMPL8-14,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-3.31,0.1,3.41
+106,SAMPL8-12,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-3.1,-0.4,2.7
+107,SAMPL8-10,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.5,0.0,1.5
+108,SAMPL8-9,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.68,0.4,2.08
+109,SAMPL8-7,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-5.5,-0.4,5.1
+110,SAMPL8-6,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.38,-0.5,0.12
+111,SAMPL8-5,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.12,-0.4,0.28
+112,SAMPL8-3,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-4.9,-0.6,4.300000000000001
+113,SAMPL8-1,MEK-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.81,-0.2,2.0100000000000002
+114,SAMPL8-10,Heptane-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.55,-1.0,1.55
+115,SAMPL8-5,Heptane-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.72,-1.2,1.92
+116,SAMPL8-16,Heptane-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,2.06,-1.0,3.06
+117,SAMPL8-1,Heptane-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,3.21,0.0,3.21
+118,SAMPL8-16,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,2.3,-0.5,2.8
+119,SAMPL8-14,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.86,-0.8,0.05999999999999994
+120,SAMPL8-12,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.61,-1.4,0.7899999999999999
+121,SAMPL8-10,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.48,0.1,1.38
+122,SAMPL8-9,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,2.94,-0.8,3.74
+123,SAMPL8-6,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,2.31,-0.1,2.41
+124,SAMPL8-5,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.74,0.1,1.64
+125,SAMPL8-3,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.52,-0.8,1.32
+126,SAMPL8-17,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.67,-1.4,0.7299999999999999
+127,SAMPL8-1,Ethyl acetate-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,3.62,0.3,3.3200000000000003
+128,SAMPL8-5,Cyclohexane-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.83,-1.1,0.73
+129,SAMPL8-16,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.05,-0.4,1.4500000000000002
+130,SAMPL8-14,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-2.32,-1.0,1.3199999999999998
+131,SAMPL8-12,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-1.49,-0.7,0.79
+132,SAMPL8-10,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.02,-0.6,0.62
+133,SAMPL8-9,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-0.8,-0.1,0.7000000000000001
+134,SAMPL8-7,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,-2.92,-1.3,1.6199999999999999
+135,SAMPL8-6,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.11,-0.4,0.51
+136,SAMPL8-5,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,0.14,-0.5,0.64
+137,SAMPL8-1,Octanol-water,EC_RISM_logDexp,Physical (QM),logD-ECRISM-1,1.5,0.8,0.7
+138,SAMPL8-16,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,-0.59,-0.4,0.18999999999999995
+139,SAMPL8-14,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,-0.15,-1.0,0.85
+140,SAMPL8-12,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,0.24,-0.7,0.94
+141,SAMPL8-10,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,1.3,-0.6,1.9
+142,SAMPL8-9,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,0.03,-0.1,0.13
+143,SAMPL8-7,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,0.14,-1.3,1.44
+144,SAMPL8-6,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,-0.24,-0.4,0.16000000000000003
+145,SAMPL8-5,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,-0.02,-0.5,0.48
+146,SAMPL8-1,Octanol-water,UCR-PLS3REL,Empirical,logD-UCRPLS3REL-3,0.34,0.8,0.46
+147,SAMPL8-16,Cyclohexane-DMF,COSMO-RS,Physical (QM),logD-3DS-1,-2.57,-1.3,1.2699999999999998
+148,SAMPL8-6,Cyclohexane-DMF,COSMO-RS,Physical (QM),logD-3DS-1,-3.21,0.0,3.21
+149,SAMPL8-1,Cyclohexane-DMF,COSMO-RS,Physical (QM),logD-3DS-1,-1.52,-0.7,0.8200000000000001
+150,SAMPL8-16,TBME-water,COSMO-RS,Physical (QM),logD-3DS-1,0.41,-1.2,1.6099999999999999
+151,SAMPL8-10,TBME-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.52,-0.9,0.38
+152,SAMPL8-6,TBME-water,COSMO-RS,Physical (QM),logD-3DS-1,0.8,-0.2,1.0
+153,SAMPL8-5,TBME-water,COSMO-RS,Physical (QM),logD-3DS-1,1.83,0.0,1.83
+154,SAMPL8-1,TBME-water,COSMO-RS,Physical (QM),logD-3DS-1,3.39,0.1,3.29
+155,SAMPL8-17,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.27,-0.8,1.47
+156,SAMPL8-16,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.08,-0.3,0.21999999999999997
+157,SAMPL8-14,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.29,0.1,2.39
+158,SAMPL8-12,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.26,-0.4,1.8599999999999999
+159,SAMPL8-10,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.5,0.0,1.5
+160,SAMPL8-9,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.78,0.4,1.1800000000000002
+161,SAMPL8-7,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.58,-0.4,2.18
+162,SAMPL8-6,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.45,-0.5,0.04999999999999999
+163,SAMPL8-5,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.27,-0.4,0.13
+164,SAMPL8-3,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.61,-0.6,1.0100000000000002
+165,SAMPL8-1,MEK-water,COSMO-RS,Physical (QM),logD-3DS-1,0.98,-0.2,1.18
+166,SAMPL8-16,Heptane-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.94,-1.0,1.94
+167,SAMPL8-10,Heptane-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.81,-1.0,1.81
+168,SAMPL8-5,Heptane-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.98,-1.2,0.78
+169,SAMPL8-1,Heptane-water,COSMO-RS,Physical (QM),logD-3DS-1,0.001,0.0,0.001
+170,SAMPL8-17,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.72,-1.4,0.32000000000000006
+171,SAMPL8-16,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,0.76,-0.5,1.26
+172,SAMPL8-14,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.39,-0.8,0.5899999999999999
+173,SAMPL8-12,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.36,-1.4,0.039999999999999813
+174,SAMPL8-10,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,0.07,0.1,0.03
+175,SAMPL8-9,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,0.18,-0.8,0.98
+176,SAMPL8-6,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,0.78,-0.1,0.88
+177,SAMPL8-5,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,1.29,0.1,1.19
+178,SAMPL8-3,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.76,-0.8,0.040000000000000036
+179,SAMPL8-1,Ethyl acetate-water,COSMO-RS,Physical (QM),logD-3DS-1,2.64,0.3,2.3400000000000003
+180,SAMPL8-5,Cyclohexane-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.83,-1.1,0.73
+181,SAMPL8-16,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,0.6,-0.4,1.0
+182,SAMPL8-14,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.46,-1.0,0.45999999999999996
+183,SAMPL8-12,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-1.34,-0.7,0.6400000000000001
+184,SAMPL8-10,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.47,-0.6,0.13
+185,SAMPL8-9,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.11,-0.1,0.009999999999999995
+186,SAMPL8-7,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-2.57,-1.3,1.2699999999999998
+187,SAMPL8-6,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,-0.17,-0.4,0.23
+188,SAMPL8-5,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,0.8,-0.5,1.3
+189,SAMPL8-1,Octanol-water,COSMO-RS,Physical (QM),logD-3DS-1,2.42,0.8,1.6199999999999999
+190,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-2.34,-1.3,1.0399999999999998
+191,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-3.93,0.0,3.93
+192,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-1.21,-0.7,0.51
+193,SAMPL8-16,TBME-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.52,-1.2,5.72
+194,SAMPL8-10,TBME-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.52,-0.9,6.42
+195,SAMPL8-6,TBME-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.44,-0.2,2.64
+196,SAMPL8-5,TBME-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.84,0.0,4.84
+197,SAMPL8-1,TBME-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,6.13,0.1,6.03
+198,SAMPL8-17,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,6.44,-0.8,7.24
+199,SAMPL8-16,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.31,-0.3,4.609999999999999
+200,SAMPL8-14,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-15.1,0.1,15.2
+201,SAMPL8-12,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,3.61,-0.4,4.01
+202,SAMPL8-10,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,7.92,0.0,7.92
+203,SAMPL8-9,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.88,0.4,5.4799999999999995
+204,SAMPL8-7,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,1.88,-0.4,2.28
+205,SAMPL8-6,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.39,-0.5,4.89
+206,SAMPL8-5,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,7.77,-0.4,8.17
+207,SAMPL8-3,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-30.55,-0.6,29.95
+208,SAMPL8-1,MEK-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.98,-0.2,6.180000000000001
+209,SAMPL8-16,Heptane-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,1.58,-1.0,2.58
+210,SAMPL8-10,Heptane-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.27,-1.0,3.27
+211,SAMPL8-5,Heptane-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.97,-1.2,4.17
+212,SAMPL8-1,Heptane-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.4,0.0,4.4
+213,SAMPL8-17,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,6.29,-1.4,7.6899999999999995
+214,SAMPL8-16,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.71,-0.5,6.21
+215,SAMPL8-14,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-14.83,-0.8,14.03
+216,SAMPL8-12,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,4.01,-1.4,5.41
+217,SAMPL8-10,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,6.98,0.1,6.880000000000001
+218,SAMPL8-9,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.86,-0.8,6.66
+219,SAMPL8-6,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,3.47,-0.1,3.5700000000000003
+220,SAMPL8-5,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,5.73,0.1,5.630000000000001
+221,SAMPL8-3,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-33.04,-0.8,32.24
+222,SAMPL8-1,Ethyl acetate-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,6.97,0.3,6.67
+223,SAMPL8-5,Cyclohexane-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.9,-1.1,4.0
+224,SAMPL8-16,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,3.02,-0.4,3.42
+225,SAMPL8-14,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-18.45,-1.0,17.45
+226,SAMPL8-12,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,1.03,-0.7,1.73
+227,SAMPL8-10,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.6,-0.6,3.2
+228,SAMPL8-9,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,2.53,-0.1,2.63
+229,SAMPL8-7,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,-1.17,-1.3,0.13000000000000012
+230,SAMPL8-6,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,1.4,-0.4,1.7999999999999998
+231,SAMPL8-5,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,3.4,-0.5,3.9
+232,SAMPL8-1,Octanol-water,RFE-uESE-extra-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_3,3.5,0.8,2.7
+233,SAMPL8-16,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-6.03,-1.3,4.73
+234,SAMPL8-6,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-8.22,0.0,8.22
+235,SAMPL8-1,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-6.6,-0.7,5.8999999999999995
+236,SAMPL8-16,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.52,-1.2,0.32000000000000006
+237,SAMPL8-10,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-4.09,-0.9,3.19
+238,SAMPL8-6,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.77,-0.2,1.57
+239,SAMPL8-5,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.7,0.0,0.7
+240,SAMPL8-1,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.48,0.1,0.58
+241,SAMPL8-17,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.59,-0.8,0.21000000000000008
+242,SAMPL8-16,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.1,-0.3,0.19999999999999998
+243,SAMPL8-14,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-7.02,0.1,7.119999999999999
+244,SAMPL8-12,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-5.01,-0.4,4.609999999999999
+245,SAMPL8-10,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-2.66,0.0,2.66
+246,SAMPL8-9,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.39,0.4,1.79
+247,SAMPL8-7,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.86,-0.4,0.45999999999999996
+248,SAMPL8-6,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.01,-0.5,0.51
+249,SAMPL8-5,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.7,-0.4,1.1
+250,SAMPL8-3,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-6.18,-0.6,5.58
+251,SAMPL8-1,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.46,-0.2,0.66
+252,SAMPL8-16,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.27,-1.0,0.27
+253,SAMPL8-10,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-4.07,-1.0,3.0700000000000003
+254,SAMPL8-5,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.7,-1.2,0.5
+255,SAMPL8-1,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,1.26,0.0,1.26
+256,SAMPL8-17,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,3.92,-1.4,5.32
+257,SAMPL8-16,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,4.62,-0.5,5.12
+258,SAMPL8-14,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.73,-0.8,0.9299999999999999
+259,SAMPL8-12,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.11,-1.4,1.2899999999999998
+260,SAMPL8-10,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.44,0.1,0.33999999999999997
+261,SAMPL8-9,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,3.09,-0.8,3.8899999999999997
+262,SAMPL8-6,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,1.22,-0.1,1.32
+263,SAMPL8-5,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,1.73,0.1,1.63
+264,SAMPL8-3,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.97,-0.8,0.16999999999999993
+265,SAMPL8-1,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,2.66,0.3,2.3600000000000003
+266,SAMPL8-5,Cyclohexane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.41,-1.1,0.6900000000000002
+267,SAMPL8-16,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.41,-0.4,0.009999999999999953
+268,SAMPL8-14,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-2.63,-1.0,1.63
+269,SAMPL8-12,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.85,-0.7,1.1500000000000001
+270,SAMPL8-10,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.06,-0.6,0.6599999999999999
+271,SAMPL8-9,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.39,-0.1,0.29000000000000004
+272,SAMPL8-7,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-1.68,-1.3,0.3799999999999999
+273,SAMPL8-6,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.56,-0.4,0.16000000000000003
+274,SAMPL8-5,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,-0.57,-0.5,0.06999999999999995
+275,SAMPL8-1,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_ranked,0.35,0.8,0.45000000000000007
+276,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-2.34,-1.3,1.0399999999999998
+277,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-3.93,0.0,3.93
+278,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-1.21,-0.7,0.51
+279,SAMPL8-16,TBME-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.68,-1.2,5.88
+280,SAMPL8-10,TBME-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.7,-0.9,6.6000000000000005
+281,SAMPL8-6,TBME-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.56,-0.2,2.7600000000000002
+282,SAMPL8-5,TBME-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.94,0.0,4.94
+283,SAMPL8-1,TBME-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.85,0.1,5.75
+284,SAMPL8-17,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,6.44,-0.8,7.24
+285,SAMPL8-16,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.31,-0.3,4.609999999999999
+286,SAMPL8-14,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-15.1,0.1,15.2
+287,SAMPL8-12,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,3.61,-0.4,4.01
+288,SAMPL8-10,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,7.92,0.0,7.92
+289,SAMPL8-9,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.88,0.4,5.4799999999999995
+290,SAMPL8-7,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,1.88,-0.4,2.28
+291,SAMPL8-6,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.39,-0.5,4.89
+292,SAMPL8-5,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,7.77,-0.4,8.17
+293,SAMPL8-3,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-30.55,-0.6,29.95
+294,SAMPL8-1,MEK-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.98,-0.2,6.180000000000001
+295,SAMPL8-16,Heptane-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,1.58,-1.0,2.58
+296,SAMPL8-10,Heptane-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.27,-1.0,3.27
+297,SAMPL8-5,Heptane-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.97,-1.2,4.17
+298,SAMPL8-1,Heptane-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.4,0.0,4.4
+299,SAMPL8-17,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,6.29,-1.4,7.6899999999999995
+300,SAMPL8-16,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.71,-0.5,6.21
+301,SAMPL8-14,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-14.83,-0.8,14.03
+302,SAMPL8-12,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,4.01,-1.4,5.41
+303,SAMPL8-10,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,6.98,0.1,6.880000000000001
+304,SAMPL8-9,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.86,-0.8,6.66
+305,SAMPL8-6,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,3.47,-0.1,3.5700000000000003
+306,SAMPL8-5,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,5.73,0.1,5.630000000000001
+307,SAMPL8-3,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-33.04,-0.8,32.24
+308,SAMPL8-1,Ethyl acetate-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,6.97,0.3,6.67
+309,SAMPL8-5,Cyclohexane-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.9,-1.1,4.0
+310,SAMPL8-16,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,3.02,-0.4,3.42
+311,SAMPL8-14,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-18.45,-1.0,17.45
+312,SAMPL8-12,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,1.03,-0.7,1.73
+313,SAMPL8-10,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.6,-0.6,3.2
+314,SAMPL8-9,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,2.53,-0.1,2.63
+315,SAMPL8-7,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,-1.17,-1.3,0.13000000000000012
+316,SAMPL8-6,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,1.4,-0.4,1.7999999999999998
+317,SAMPL8-5,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,3.4,-0.5,3.9
+318,SAMPL8-1,Octanol-water,RFE-uESE-extra-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra_2,3.5,0.8,2.7
+319,SAMPL8-17,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,1.76,-0.8,2.56
+320,SAMPL8-16,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.9,-0.3,0.6000000000000001
+321,SAMPL8-14,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-3.06,0.1,3.16
+322,SAMPL8-12,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,1.34,-0.4,1.7400000000000002
+323,SAMPL8-10,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.4,0.0,0.4
+324,SAMPL8-9,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,1.26,0.4,0.86
+325,SAMPL8-7,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.3,-0.4,0.7
+326,SAMPL8-6,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-1.15,-0.5,0.6499999999999999
+327,SAMPL8-5,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.99,-0.4,1.3900000000000001
+328,SAMPL8-3,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-3.5,-0.6,2.9
+329,SAMPL8-1,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.51,-0.2,0.71
+330,SAMPL8-17,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,3.41,-1.4,4.8100000000000005
+331,SAMPL8-16,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.63,-0.5,0.13
+332,SAMPL8-14,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-4.28,-0.8,3.4800000000000004
+333,SAMPL8-12,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.02,-1.4,1.38
+334,SAMPL8-10,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,5.31,0.1,5.21
+335,SAMPL8-9,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,2.81,-0.8,3.6100000000000003
+336,SAMPL8-6,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,3.2,-0.1,3.3000000000000003
+337,SAMPL8-5,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,5.87,0.1,5.7700000000000005
+338,SAMPL8-3,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,2.95,-0.8,3.75
+339,SAMPL8-1,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,4.27,0.3,3.9699999999999998
+340,SAMPL8-16,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.02,-0.4,0.38
+341,SAMPL8-14,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-1.49,-1.0,0.49
+342,SAMPL8-12,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-1.1,-0.7,0.40000000000000013
+343,SAMPL8-10,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.48,-0.6,1.08
+344,SAMPL8-9,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.56,-0.1,0.4600000000000001
+345,SAMPL8-7,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-1.49,-1.3,0.18999999999999995
+346,SAMPL8-6,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.55,-0.4,0.15000000000000002
+347,SAMPL8-5,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,0.23,-0.5,0.73
+348,SAMPL8-1,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-2,-0.99,0.8,1.79
+349,SAMPL8-17,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,1.76,-0.8,2.56
+350,SAMPL8-16,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.9,-0.3,0.6000000000000001
+351,SAMPL8-14,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-3.05,0.1,3.15
+352,SAMPL8-12,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,1.34,-0.4,1.7400000000000002
+353,SAMPL8-10,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.67,0.0,0.67
+354,SAMPL8-9,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,1.26,0.4,0.86
+355,SAMPL8-7,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.3,-0.4,0.7
+356,SAMPL8-6,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.52,-0.5,0.020000000000000018
+357,SAMPL8-5,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,2.0,-0.4,2.4
+358,SAMPL8-3,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-1.04,-0.6,0.44000000000000006
+359,SAMPL8-1,MEK-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,2.19,-0.2,2.39
+360,SAMPL8-17,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,3.41,-1.4,4.8100000000000005
+361,SAMPL8-16,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.63,-0.5,0.13
+362,SAMPL8-14,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-4.28,-0.8,3.4800000000000004
+363,SAMPL8-12,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.02,-1.4,1.38
+364,SAMPL8-10,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,5.31,0.1,5.21
+365,SAMPL8-9,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,2.81,-0.8,3.6100000000000003
+366,SAMPL8-6,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,3.2,-0.1,3.3000000000000003
+367,SAMPL8-5,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,5.87,0.1,5.7700000000000005
+368,SAMPL8-3,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,2.95,-0.8,3.75
+369,SAMPL8-1,Ethyl acetate-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,4.27,0.3,3.9699999999999998
+370,SAMPL8-16,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.02,-0.4,0.38
+371,SAMPL8-14,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.88,-1.0,0.12
+372,SAMPL8-12,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.5,-0.7,1.2
+373,SAMPL8-10,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.49,-0.6,1.0899999999999999
+374,SAMPL8-9,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.63,-0.1,0.73
+375,SAMPL8-7,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.24,-1.3,1.54
+376,SAMPL8-6,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,0.37,-0.4,0.77
+377,SAMPL8-5,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,1.39,-0.5,1.89
+378,SAMPL8-1,Octanol-water,IEFPCM-MST,Physical (QM),logD-IEFPCMMST-1,-0.02,0.8,0.8200000000000001
+379,SAMPL8-16,Cyclohexane-DMF,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-3.1,-1.3,1.8
+380,SAMPL8-6,Cyclohexane-DMF,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-4.76,0.0,4.76
+381,SAMPL8-1,Cyclohexane-DMF,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-3.7,-0.7,3.0
+382,SAMPL8-16,TBME-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.21,-1.2,0.99
+383,SAMPL8-10,TBME-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.57,-0.9,0.33000000000000007
+384,SAMPL8-6,TBME-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.8,-0.2,1.0
+385,SAMPL8-5,TBME-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.05,0.0,0.05
+386,SAMPL8-1,TBME-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,1.89,0.1,1.7899999999999998
+387,SAMPL8-17,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.59,-0.8,0.79
+388,SAMPL8-16,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.53,-0.3,0.8300000000000001
+389,SAMPL8-14,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.5,0.1,1.6
+390,SAMPL8-12,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.01,-0.4,1.6099999999999999
+391,SAMPL8-10,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.8,0.0,0.8
+392,SAMPL8-9,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.04,0.4,0.44
+393,SAMPL8-7,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.1,-0.4,1.7000000000000002
+394,SAMPL8-6,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,1.27,-0.5,1.77
+395,SAMPL8-5,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.62,-0.4,1.02
+396,SAMPL8-3,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-5.83,-0.6,5.23
+397,SAMPL8-1,MEK-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,2.25,-0.2,2.45
+398,SAMPL8-16,Heptane-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.15,-1.0,1.15
+399,SAMPL8-10,Heptane-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.71,-1.0,1.71
+400,SAMPL8-5,Heptane-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.46,-1.2,1.26
+401,SAMPL8-1,Heptane-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.75,0.0,0.75
+402,SAMPL8-17,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.61,-1.4,0.2100000000000002
+403,SAMPL8-16,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.24,-0.5,0.74
+404,SAMPL8-14,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.19,-0.8,0.3899999999999999
+405,SAMPL8-12,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.38,-1.4,0.98
+406,SAMPL8-10,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.22,0.1,0.32
+407,SAMPL8-9,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.18,-0.8,0.6200000000000001
+408,SAMPL8-6,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.92,-0.1,1.02
+409,SAMPL8-5,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.17,0.1,0.07
+410,SAMPL8-3,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-4.82,-0.8,4.0200000000000005
+411,SAMPL8-1,Ethyl acetate-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,1.81,0.3,1.51
+412,SAMPL8-5,Cyclohexane-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-2.06,-1.1,0.96
+413,SAMPL8-16,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.59,-0.4,0.99
+414,SAMPL8-14,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.24,-1.0,0.76
+415,SAMPL8-12,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.86,-0.7,1.1600000000000001
+416,SAMPL8-10,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-0.02,-0.6,0.58
+417,SAMPL8-9,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.24,-0.1,0.33999999999999997
+418,SAMPL8-7,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,-1.51,-1.3,0.20999999999999996
+419,SAMPL8-6,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,1.05,-0.4,1.4500000000000002
+420,SAMPL8-5,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,0.25,-0.5,0.75
+421,SAMPL8-1,Octanol-water,GC-LSER,Empirical,logD_OllierTranPaluch_LSER_exp,1.81,0.8,1.01
+422,SAMPL8-16,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-0.91,-0.4,0.51
+423,SAMPL8-14,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-2.55,-1.0,1.5499999999999998
+424,SAMPL8-12,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-3.03,-0.7,2.33
+425,SAMPL8-10,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,1.24,-0.6,1.8399999999999999
+426,SAMPL8-9,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-1.99,-0.1,1.89
+427,SAMPL8-7,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-2.09,-1.3,0.7899999999999998
+428,SAMPL8-6,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-1.66,-0.4,1.2599999999999998
+429,SAMPL8-5,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-0.84,-0.5,0.33999999999999997
+430,SAMPL8-1,Octanol-water,UCR-MLR06B,Empirical,logD-UCRMLR06-8,-2.69,0.8,3.49
+431,SAMPL8-16,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-6.03,-1.3,4.73
+432,SAMPL8-6,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-8.22,0.0,8.22
+433,SAMPL8-1,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-6.6,-0.7,5.8999999999999995
+434,SAMPL8-16,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.52,-1.2,0.32000000000000006
+435,SAMPL8-10,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-4.09,-0.9,3.19
+436,SAMPL8-6,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.77,-0.2,1.57
+437,SAMPL8-5,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.7,0.0,0.7
+438,SAMPL8-1,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.48,0.1,0.58
+439,SAMPL8-17,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.59,-0.8,0.21000000000000008
+440,SAMPL8-16,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.1,-0.3,0.19999999999999998
+441,SAMPL8-14,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-7.02,0.1,7.119999999999999
+442,SAMPL8-12,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-5.01,-0.4,4.609999999999999
+443,SAMPL8-10,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-2.66,0.0,2.66
+444,SAMPL8-9,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.39,0.4,1.79
+445,SAMPL8-7,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.86,-0.4,0.45999999999999996
+446,SAMPL8-6,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.01,-0.5,0.51
+447,SAMPL8-5,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.7,-0.4,1.1
+448,SAMPL8-3,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-6.18,-0.6,5.58
+449,SAMPL8-1,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.46,-0.2,0.66
+450,SAMPL8-16,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.27,-1.0,0.27
+451,SAMPL8-10,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-4.07,-1.0,3.0700000000000003
+452,SAMPL8-5,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.7,-1.2,0.5
+453,SAMPL8-1,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,1.26,0.0,1.26
+454,SAMPL8-17,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,3.92,-1.4,5.32
+455,SAMPL8-16,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,4.62,-0.5,5.12
+456,SAMPL8-14,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.73,-0.8,0.9299999999999999
+457,SAMPL8-12,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.11,-1.4,1.2899999999999998
+458,SAMPL8-10,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.44,0.1,0.33999999999999997
+459,SAMPL8-9,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,3.09,-0.8,3.8899999999999997
+460,SAMPL8-6,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,1.22,-0.1,1.32
+461,SAMPL8-5,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,1.73,0.1,1.63
+462,SAMPL8-3,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.97,-0.8,0.16999999999999993
+463,SAMPL8-1,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,2.66,0.3,2.3600000000000003
+464,SAMPL8-5,Cyclohexane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.41,-1.1,0.6900000000000002
+465,SAMPL8-16,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,2.74,-0.4,3.14
+466,SAMPL8-14,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-2.94,-1.0,1.94
+467,SAMPL8-12,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-1.14,-0.7,0.43999999999999995
+468,SAMPL8-10,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.57,-0.6,1.17
+469,SAMPL8-9,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.54,-0.1,0.44000000000000006
+470,SAMPL8-7,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,-0.13,-1.3,1.17
+471,SAMPL8-6,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,1.12,-0.4,1.52
+472,SAMPL8-5,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.81,-0.5,1.31
+473,SAMPL8-1,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked1,0.87,0.8,0.06999999999999995
+474,SAMPL8-16,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-3.92,-1.3,2.62
+475,SAMPL8-6,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-4.39,0.0,4.39
+476,SAMPL8-1,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-3.61,-0.7,2.91
+477,SAMPL8-16,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,0.58,-1.2,1.7799999999999998
+478,SAMPL8-10,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,0.62,-0.9,1.52
+479,SAMPL8-6,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.06,-0.2,2.2600000000000002
+480,SAMPL8-5,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.38,0.0,3.38
+481,SAMPL8-1,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.51,0.1,2.4099999999999997
+482,SAMPL8-17,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.99,-0.8,3.79
+483,SAMPL8-16,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.01,-0.3,2.3099999999999996
+484,SAMPL8-14,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-2.75,0.1,2.85
+485,SAMPL8-12,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-1.03,-0.4,0.63
+486,SAMPL8-10,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.05,0.0,2.05
+487,SAMPL8-9,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,1.69,0.4,1.29
+488,SAMPL8-7,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.77,-0.4,3.17
+489,SAMPL8-6,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.84,-0.5,4.34
+490,SAMPL8-5,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,4.78,-0.4,5.180000000000001
+491,SAMPL8-3,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,-2.18,-0.6,1.58
+492,SAMPL8-1,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.45,-0.2,3.6500000000000004
+493,SAMPL8-16,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,0.83,-1.0,1.83
+494,SAMPL8-10,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,0.64,-1.0,1.6400000000000001
+495,SAMPL8-5,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.38,-1.2,4.58
+496,SAMPL8-1,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,4.25,0.0,4.25
+497,SAMPL8-17,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,7.5,-1.4,8.9
+498,SAMPL8-16,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,6.73,-0.5,7.23
+499,SAMPL8-14,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.54,-0.8,3.34
+500,SAMPL8-12,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.87,-1.4,5.27
+501,SAMPL8-10,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,5.15,0.1,5.050000000000001
+502,SAMPL8-9,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,6.17,-0.8,6.97
+503,SAMPL8-6,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,5.05,-0.1,5.1499999999999995
+504,SAMPL8-5,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,5.81,0.1,5.71
+505,SAMPL8-3,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.03,-0.8,3.83
+506,SAMPL8-1,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,5.65,0.3,5.3500000000000005
+507,SAMPL8-5,Cyclohexane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.67,-1.1,4.77
+508,SAMPL8-16,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,4.85,-0.4,5.25
+509,SAMPL8-14,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,1.33,-1.0,2.33
+510,SAMPL8-12,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.84,-0.7,3.54
+511,SAMPL8-10,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,5.28,-0.6,5.88
+512,SAMPL8-9,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,2.54,-0.1,2.64
+513,SAMPL8-7,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.5,-1.3,4.8
+514,SAMPL8-6,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,4.95,-0.4,5.3500000000000005
+515,SAMPL8-5,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,4.89,-0.5,5.39
+516,SAMPL8-1,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked3,3.86,0.8,3.0599999999999996
+517,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-2.34,-1.3,1.0399999999999998
+518,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-3.93,0.0,3.93
+519,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-1.21,-0.7,0.51
+520,SAMPL8-16,TBME-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.68,-1.2,5.88
+521,SAMPL8-10,TBME-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.7,-0.9,6.6000000000000005
+522,SAMPL8-6,TBME-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.56,-0.2,2.7600000000000002
+523,SAMPL8-5,TBME-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.94,0.0,4.94
+524,SAMPL8-1,TBME-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,6.22,0.1,6.12
+525,SAMPL8-17,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,6.44,-0.8,7.24
+526,SAMPL8-16,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.31,-0.3,4.609999999999999
+527,SAMPL8-14,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-15.1,0.1,15.2
+528,SAMPL8-12,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,3.61,-0.4,4.01
+529,SAMPL8-10,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,7.92,0.0,7.92
+530,SAMPL8-9,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.88,0.4,5.4799999999999995
+531,SAMPL8-7,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,1.88,-0.4,2.28
+532,SAMPL8-6,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.39,-0.5,4.89
+533,SAMPL8-5,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,7.77,-0.4,8.17
+534,SAMPL8-3,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-30.55,-0.6,29.95
+535,SAMPL8-1,MEK-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.98,-0.2,6.180000000000001
+536,SAMPL8-16,Heptane-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,1.58,-1.0,2.58
+537,SAMPL8-10,Heptane-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.27,-1.0,3.27
+538,SAMPL8-5,Heptane-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.97,-1.2,4.17
+539,SAMPL8-1,Heptane-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.4,0.0,4.4
+540,SAMPL8-17,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,6.29,-1.4,7.6899999999999995
+541,SAMPL8-16,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.71,-0.5,6.21
+542,SAMPL8-14,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-14.83,-0.8,14.03
+543,SAMPL8-12,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,4.01,-1.4,5.41
+544,SAMPL8-10,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,6.98,0.1,6.880000000000001
+545,SAMPL8-9,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.86,-0.8,6.66
+546,SAMPL8-6,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,3.47,-0.1,3.5700000000000003
+547,SAMPL8-5,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,5.73,0.1,5.630000000000001
+548,SAMPL8-3,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-33.04,-0.8,32.24
+549,SAMPL8-1,Ethyl acetate-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,6.97,0.3,6.67
+550,SAMPL8-5,Cyclohexane-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.9,-1.1,4.0
+551,SAMPL8-16,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,3.02,-0.4,3.42
+552,SAMPL8-14,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-18.45,-1.0,17.45
+553,SAMPL8-12,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,1.03,-0.7,1.73
+554,SAMPL8-10,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.6,-0.6,3.2
+555,SAMPL8-9,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,2.53,-0.1,2.63
+556,SAMPL8-7,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,-1.17,-1.3,0.13000000000000012
+557,SAMPL8-6,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,1.4,-0.4,1.7999999999999998
+558,SAMPL8-5,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,3.4,-0.5,3.9
+559,SAMPL8-1,Octanol-water,RFE-uESE-extra,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_extra,3.5,0.8,2.7
+560,SAMPL8-16,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-3.92,-1.3,2.62
+561,SAMPL8-6,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-4.39,0.0,4.39
+562,SAMPL8-1,Cyclohexane-DMF,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-3.61,-0.7,2.91
+563,SAMPL8-16,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,0.58,-1.2,1.7799999999999998
+564,SAMPL8-10,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,0.62,-0.9,1.52
+565,SAMPL8-6,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.06,-0.2,2.2600000000000002
+566,SAMPL8-5,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.38,0.0,3.38
+567,SAMPL8-1,TBME-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.51,0.1,2.4099999999999997
+568,SAMPL8-17,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.99,-0.8,3.79
+569,SAMPL8-16,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.01,-0.3,2.3099999999999996
+570,SAMPL8-14,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-2.75,0.1,2.85
+571,SAMPL8-12,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-1.03,-0.4,0.63
+572,SAMPL8-10,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.05,0.0,2.05
+573,SAMPL8-9,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,1.69,0.4,1.29
+574,SAMPL8-7,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.77,-0.4,3.17
+575,SAMPL8-6,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.84,-0.5,4.34
+576,SAMPL8-5,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,4.78,-0.4,5.180000000000001
+577,SAMPL8-3,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,-2.18,-0.6,1.58
+578,SAMPL8-1,MEK-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.45,-0.2,3.6500000000000004
+579,SAMPL8-16,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,0.83,-1.0,1.83
+580,SAMPL8-10,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,0.64,-1.0,1.6400000000000001
+581,SAMPL8-5,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.38,-1.2,4.58
+582,SAMPL8-1,Heptane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,4.25,0.0,4.25
+583,SAMPL8-17,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,7.5,-1.4,8.9
+584,SAMPL8-16,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,6.73,-0.5,7.23
+585,SAMPL8-14,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.54,-0.8,3.34
+586,SAMPL8-12,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.87,-1.4,5.27
+587,SAMPL8-10,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,5.15,0.1,5.050000000000001
+588,SAMPL8-9,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,6.17,-0.8,6.97
+589,SAMPL8-6,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,5.05,-0.1,5.1499999999999995
+590,SAMPL8-5,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,5.81,0.1,5.71
+591,SAMPL8-3,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.03,-0.8,3.83
+592,SAMPL8-1,Ethyl acetate-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,5.65,0.3,5.3500000000000005
+593,SAMPL8-5,Cyclohexane-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.67,-1.1,4.77
+594,SAMPL8-16,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,1.7,-0.4,2.1
+595,SAMPL8-14,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,1.64,-1.0,2.6399999999999997
+596,SAMPL8-12,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.13,-0.7,2.83
+597,SAMPL8-10,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,4.77,-0.6,5.369999999999999
+598,SAMPL8-9,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,2.69,-0.1,2.79
+599,SAMPL8-7,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,1.95,-1.3,3.25
+600,SAMPL8-6,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.27,-0.4,3.67
+601,SAMPL8-5,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.51,-0.5,4.01
+602,SAMPL8-1,Octanol-water,Molecular Dynamics Fingerprints (MDFPs),Mixed,logD_SAMPL8_ShuzheWang_unranked2,3.34,0.8,2.54
+603,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-2.34,-1.3,1.0399999999999998
+604,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-3.93,0.0,3.93
+605,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-1.21,-0.7,0.51
+606,SAMPL8-16,TBME-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.52,-1.2,5.72
+607,SAMPL8-10,TBME-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.52,-0.9,6.42
+608,SAMPL8-6,TBME-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.44,-0.2,2.64
+609,SAMPL8-5,TBME-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.84,0.0,4.84
+610,SAMPL8-1,TBME-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,6.13,0.1,6.03
+611,SAMPL8-17,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,6.44,-0.8,7.24
+612,SAMPL8-16,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.31,-0.3,4.609999999999999
+613,SAMPL8-14,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-15.1,0.1,15.2
+614,SAMPL8-12,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,3.61,-0.4,4.01
+615,SAMPL8-10,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,7.92,0.0,7.92
+616,SAMPL8-9,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.88,0.4,5.4799999999999995
+617,SAMPL8-7,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,1.88,-0.4,2.28
+618,SAMPL8-6,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.39,-0.5,4.89
+619,SAMPL8-5,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,7.77,-0.4,8.17
+620,SAMPL8-3,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-30.55,-0.6,29.95
+621,SAMPL8-1,MEK-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.98,-0.2,6.180000000000001
+622,SAMPL8-16,Heptane-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,1.58,-1.0,2.58
+623,SAMPL8-10,Heptane-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.27,-1.0,3.27
+624,SAMPL8-5,Heptane-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.97,-1.2,4.17
+625,SAMPL8-1,Heptane-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.4,0.0,4.4
+626,SAMPL8-17,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,6.29,-1.4,7.6899999999999995
+627,SAMPL8-16,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.71,-0.5,6.21
+628,SAMPL8-14,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-14.83,-0.8,14.03
+629,SAMPL8-12,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,4.01,-1.4,5.41
+630,SAMPL8-10,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,6.98,0.1,6.880000000000001
+631,SAMPL8-9,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.86,-0.8,6.66
+632,SAMPL8-6,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,3.47,-0.1,3.5700000000000003
+633,SAMPL8-5,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,5.73,0.1,5.630000000000001
+634,SAMPL8-3,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-33.04,-0.8,32.24
+635,SAMPL8-1,Ethyl acetate-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,6.97,0.3,6.67
+636,SAMPL8-5,Cyclohexane-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.9,-1.1,4.0
+637,SAMPL8-16,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,3.02,-0.4,3.42
+638,SAMPL8-14,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-18.45,-1.0,17.45
+639,SAMPL8-12,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,1.03,-0.7,1.73
+640,SAMPL8-10,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.6,-0.6,3.2
+641,SAMPL8-9,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,2.53,-0.1,2.63
+642,SAMPL8-7,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,-1.17,-1.3,0.13000000000000012
+643,SAMPL8-6,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,1.4,-0.4,1.7999999999999998
+644,SAMPL8-5,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,3.4,-0.5,3.9
+645,SAMPL8-1,Octanol-water,RFE-uESE-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_3,3.5,0.8,2.7
+646,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-2.34,-1.3,1.0399999999999998
+647,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-3.93,0.0,3.93
+648,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-1.21,-0.7,0.51
+649,SAMPL8-16,TBME-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.68,-1.2,5.88
+650,SAMPL8-10,TBME-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.7,-0.9,6.6000000000000005
+651,SAMPL8-6,TBME-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.56,-0.2,2.7600000000000002
+652,SAMPL8-5,TBME-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.94,0.0,4.94
+653,SAMPL8-1,TBME-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.85,0.1,5.75
+654,SAMPL8-17,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,6.44,-0.8,7.24
+655,SAMPL8-16,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.31,-0.3,4.609999999999999
+656,SAMPL8-14,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-15.1,0.1,15.2
+657,SAMPL8-12,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,3.61,-0.4,4.01
+658,SAMPL8-10,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,7.92,0.0,7.92
+659,SAMPL8-9,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.88,0.4,5.4799999999999995
+660,SAMPL8-7,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,1.88,-0.4,2.28
+661,SAMPL8-6,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.39,-0.5,4.89
+662,SAMPL8-5,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,7.77,-0.4,8.17
+663,SAMPL8-3,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-30.55,-0.6,29.95
+664,SAMPL8-1,MEK-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.98,-0.2,6.180000000000001
+665,SAMPL8-16,Heptane-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,1.58,-1.0,2.58
+666,SAMPL8-10,Heptane-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.27,-1.0,3.27
+667,SAMPL8-5,Heptane-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.97,-1.2,4.17
+668,SAMPL8-1,Heptane-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.4,0.0,4.4
+669,SAMPL8-17,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,6.29,-1.4,7.6899999999999995
+670,SAMPL8-16,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.71,-0.5,6.21
+671,SAMPL8-14,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-14.83,-0.8,14.03
+672,SAMPL8-12,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,4.01,-1.4,5.41
+673,SAMPL8-10,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,6.98,0.1,6.880000000000001
+674,SAMPL8-9,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.86,-0.8,6.66
+675,SAMPL8-6,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,3.47,-0.1,3.5700000000000003
+676,SAMPL8-5,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,5.73,0.1,5.630000000000001
+677,SAMPL8-3,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-33.04,-0.8,32.24
+678,SAMPL8-1,Ethyl acetate-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,6.97,0.3,6.67
+679,SAMPL8-5,Cyclohexane-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.9,-1.1,4.0
+680,SAMPL8-16,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,3.02,-0.4,3.42
+681,SAMPL8-14,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-18.45,-1.0,17.45
+682,SAMPL8-12,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,1.03,-0.7,1.73
+683,SAMPL8-10,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.6,-0.6,3.2
+684,SAMPL8-9,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,2.53,-0.1,2.63
+685,SAMPL8-7,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,-1.17,-1.3,0.13000000000000012
+686,SAMPL8-6,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,1.4,-0.4,1.7999999999999998
+687,SAMPL8-5,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,3.4,-0.5,3.9
+688,SAMPL8-1,Octanol-water,RFE-uESE-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_2,3.5,0.8,2.7
+689,SAMPL8-16,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,0.78,-0.4,1.1800000000000002
+690,SAMPL8-14,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,-0.69,-1.0,0.31000000000000005
+691,SAMPL8-12,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,-1.76,-0.7,1.06
+692,SAMPL8-10,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,-1.16,-0.6,0.5599999999999999
+693,SAMPL8-9,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,-0.09,-0.1,0.010000000000000009
+694,SAMPL8-7,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,-1.96,-1.3,0.6599999999999999
+695,SAMPL8-6,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,0.82,-0.4,1.22
+696,SAMPL8-5,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,0.65,-0.5,1.15
+697,SAMPL8-1,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1_9C8eUz5,2.13,0.8,1.3299999999999998
+698,SAMPL8-16,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,2.88,-0.4,3.28
+699,SAMPL8-14,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,3.5,-1.0,4.5
+700,SAMPL8-12,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,2.18,-0.7,2.88
+701,SAMPL8-10,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,3.37,-0.6,3.97
+702,SAMPL8-9,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,2.99,-0.1,3.0900000000000003
+703,SAMPL8-7,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,1.66,-1.3,2.96
+704,SAMPL8-6,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,4.62,-0.4,5.0200000000000005
+705,SAMPL8-5,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,4.68,-0.5,5.18
+706,SAMPL8-1,Octanol-water,DNN_taut,Empirical,logD-NadinUlrich-1,4.99,0.8,4.19
+707,SAMPL8-16,Cyclohexane-DMF,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-4.33,-1.3,3.0300000000000002
+708,SAMPL8-6,Cyclohexane-DMF,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-4.34,0.0,4.34
+709,SAMPL8-1,Cyclohexane-DMF,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-4.64,-0.7,3.9399999999999995
+710,SAMPL8-16,TBME-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.06,-1.2,1.14
+711,SAMPL8-10,TBME-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.36,-0.9,0.4600000000000001
+712,SAMPL8-6,TBME-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.99,-0.2,0.79
+713,SAMPL8-5,TBME-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.48,0.0,0.48
+714,SAMPL8-1,TBME-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,2.12,0.1,2.02
+715,SAMPL8-17,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.21,-0.8,0.4099999999999999
+716,SAMPL8-16,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,0.69,-0.3,0.99
+717,SAMPL8-14,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.37,0.1,1.4700000000000002
+718,SAMPL8-12,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-2.33,-0.4,1.9300000000000002
+719,SAMPL8-10,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,0.06,0.0,0.06
+720,SAMPL8-9,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.37,0.4,1.77
+721,SAMPL8-7,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-3.93,-0.4,3.5300000000000002
+722,SAMPL8-6,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.19,-0.5,0.31
+723,SAMPL8-5,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,0.59,-0.4,0.99
+724,SAMPL8-3,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-6.05,-0.6,5.45
+725,SAMPL8-1,MEK-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,2.76,-0.2,2.96
+726,SAMPL8-16,Heptane-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-2.86,-1.0,1.8599999999999999
+727,SAMPL8-10,Heptane-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-3.19,-1.0,2.19
+728,SAMPL8-5,Heptane-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-3.16,-1.2,1.9600000000000002
+729,SAMPL8-1,Heptane-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.97,0.0,0.97
+730,SAMPL8-17,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.32,-1.4,0.07999999999999985
+731,SAMPL8-16,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,0.33,-0.5,0.8300000000000001
+732,SAMPL8-14,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.65,-0.8,0.8499999999999999
+733,SAMPL8-12,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-2.67,-1.4,1.27
+734,SAMPL8-10,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.02,0.1,1.12
+735,SAMPL8-9,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.55,-0.8,0.75
+736,SAMPL8-6,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.62,-0.1,0.52
+737,SAMPL8-5,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.25,0.1,0.35
+738,SAMPL8-3,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-5.96,-0.8,5.16
+739,SAMPL8-1,Ethyl acetate-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,1.98,0.3,1.68
+740,SAMPL8-5,Cyclohexane-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-2.72,-1.1,1.62
+741,SAMPL8-16,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,0.68,-0.4,1.08
+742,SAMPL8-14,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.06,-1.0,0.06000000000000005
+743,SAMPL8-12,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-2.1,-0.7,1.4000000000000001
+744,SAMPL8-10,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.72,-0.6,0.12
+745,SAMPL8-9,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-1.05,-0.1,0.9500000000000001
+746,SAMPL8-7,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-3.28,-1.3,1.9799999999999998
+747,SAMPL8-6,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.43,-0.4,0.02999999999999997
+748,SAMPL8-5,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,-0.39,-0.5,0.10999999999999999
+749,SAMPL8-1,Octanol-water,UFZ-LSER,Empirical,logD_OllierTranPaluch_UFZ_LSER_exp,1.75,0.8,0.95
+750,SAMPL8-16,Cyclohexane-DMF,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-3.27,-1.3,1.97
+751,SAMPL8-6,Cyclohexane-DMF,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-7.38,0.0,7.38
+752,SAMPL8-1,Cyclohexane-DMF,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-4.89,-0.7,4.1899999999999995
+753,SAMPL8-16,TBME-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.58,-1.2,0.62
+754,SAMPL8-10,TBME-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.94,-0.9,0.039999999999999925
+755,SAMPL8-6,TBME-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-2.62,-0.2,2.42
+756,SAMPL8-5,TBME-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.06,0.0,0.06
+757,SAMPL8-1,TBME-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.57,0.1,0.6699999999999999
+758,SAMPL8-17,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.23,-0.8,0.5700000000000001
+759,SAMPL8-16,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,2.2,-0.3,2.5
+760,SAMPL8-14,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,2.4,0.1,2.3
+761,SAMPL8-12,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,3.25,-0.4,3.65
+762,SAMPL8-10,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,2.05,0.0,2.05
+763,SAMPL8-9,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,2.48,0.4,2.08
+764,SAMPL8-7,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,1.08,-0.4,1.48
+765,SAMPL8-6,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.29,-0.5,0.79
+766,SAMPL8-5,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,1.62,-0.4,2.02
+767,SAMPL8-3,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-1.09,-0.6,0.4900000000000001
+768,SAMPL8-1,MEK-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,1.0,-0.2,1.2
+769,SAMPL8-16,Heptane-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.94,-1.0,0.06000000000000005
+770,SAMPL8-10,Heptane-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-1.84,-1.0,0.8400000000000001
+771,SAMPL8-5,Heptane-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.28,-1.2,0.9199999999999999
+772,SAMPL8-1,Heptane-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.65,0.0,0.65
+773,SAMPL8-17,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-1.65,-1.4,0.25
+774,SAMPL8-16,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,1.18,-0.5,1.68
+775,SAMPL8-14,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.93,-0.8,1.73
+776,SAMPL8-12,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,2.44,-1.4,3.84
+777,SAMPL8-10,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.08,0.1,0.020000000000000004
+778,SAMPL8-9,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,1.16,-0.8,1.96
+779,SAMPL8-6,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.9,-0.1,0.8
+780,SAMPL8-5,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.92,0.1,0.8200000000000001
+781,SAMPL8-3,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-2.6,-0.8,1.8
+782,SAMPL8-1,Ethyl acetate-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.41,0.3,0.10999999999999999
+783,SAMPL8-5,Cyclohexane-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.28,-1.1,0.8200000000000001
+784,SAMPL8-16,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.71,-0.4,1.1099999999999999
+785,SAMPL8-14,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.35,-1.0,1.35
+786,SAMPL8-12,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.47,-0.7,1.17
+787,SAMPL8-10,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.53,-0.6,0.06999999999999995
+788,SAMPL8-9,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.72,-0.1,0.82
+789,SAMPL8-7,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.34,-1.3,0.96
+790,SAMPL8-6,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-1.35,-0.4,0.9500000000000001
+791,SAMPL8-5,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,0.19,-0.5,0.69
+792,SAMPL8-1,Octanol-water,"M06LLogD8,4",Physical (QM),logD-davyguan-1,-0.65,0.8,1.4500000000000002
+793,SAMPL8-16,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,0.73,-0.4,1.13
+794,SAMPL8-14,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,-1.15,-1.0,0.1499999999999999
+795,SAMPL8-12,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,-2.05,-0.7,1.3499999999999999
+796,SAMPL8-10,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,-0.66,-0.6,0.06000000000000005
+797,SAMPL8-9,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,-0.3,-0.1,0.19999999999999998
+798,SAMPL8-7,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,-1.65,-1.3,0.34999999999999987
+799,SAMPL8-6,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,0.2,-0.4,0.6000000000000001
+800,SAMPL8-5,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,0.24,-0.5,0.74
+801,SAMPL8-1,Octanol-water,DNN_mono,Empirical,logD-AndreaEbert-1_tF851UO,1.65,0.8,0.8499999999999999
+802,SAMPL8-16,Cyclohexane-DMF,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-2.34,-1.3,1.0399999999999998
+803,SAMPL8-6,Cyclohexane-DMF,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-3.93,0.0,3.93
+804,SAMPL8-1,Cyclohexane-DMF,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-1.21,-0.7,0.51
+805,SAMPL8-16,TBME-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.68,-1.2,5.88
+806,SAMPL8-10,TBME-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.7,-0.9,6.6000000000000005
+807,SAMPL8-6,TBME-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.56,-0.2,2.7600000000000002
+808,SAMPL8-5,TBME-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.94,0.0,4.94
+809,SAMPL8-1,TBME-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.22,0.1,6.12
+810,SAMPL8-17,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.44,-0.8,7.24
+811,SAMPL8-16,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.31,-0.3,4.609999999999999
+812,SAMPL8-14,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-8.72,0.1,8.82
+813,SAMPL8-12,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.9,-0.4,7.300000000000001
+814,SAMPL8-10,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,7.92,0.0,7.92
+815,SAMPL8-9,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.88,0.4,5.4799999999999995
+816,SAMPL8-7,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,1.88,-0.4,2.28
+817,SAMPL8-6,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.39,-0.5,4.89
+818,SAMPL8-5,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,7.77,-0.4,8.17
+819,SAMPL8-3,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-30.55,-0.6,29.95
+820,SAMPL8-1,MEK-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.98,-0.2,6.180000000000001
+821,SAMPL8-16,Heptane-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,1.58,-1.0,2.58
+822,SAMPL8-10,Heptane-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.27,-1.0,3.27
+823,SAMPL8-5,Heptane-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.97,-1.2,4.17
+824,SAMPL8-1,Heptane-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.4,0.0,4.4
+825,SAMPL8-17,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.29,-1.4,7.6899999999999995
+826,SAMPL8-16,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.71,-0.5,6.21
+827,SAMPL8-14,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-8.44,-0.8,7.64
+828,SAMPL8-12,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,7.3,-1.4,8.7
+829,SAMPL8-10,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.98,0.1,6.880000000000001
+830,SAMPL8-9,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.86,-0.8,6.66
+831,SAMPL8-6,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,3.47,-0.1,3.5700000000000003
+832,SAMPL8-5,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,5.73,0.1,5.630000000000001
+833,SAMPL8-3,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-33.04,-0.8,32.24
+834,SAMPL8-1,Ethyl acetate-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,6.97,0.3,6.67
+835,SAMPL8-5,Cyclohexane-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.9,-1.1,4.0
+836,SAMPL8-16,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,3.02,-0.4,3.42
+837,SAMPL8-14,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-12.07,-1.0,11.07
+838,SAMPL8-12,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,4.32,-0.7,5.0200000000000005
+839,SAMPL8-10,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.6,-0.6,3.2
+840,SAMPL8-9,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,2.53,-0.1,2.63
+841,SAMPL8-7,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,-1.17,-1.3,0.13000000000000012
+842,SAMPL8-6,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,1.4,-0.4,1.7999999999999998
+843,SAMPL8-5,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,3.4,-0.5,3.9
+844,SAMPL8-1,Octanol-water,RFE-uESE,Physical (QM),logD_SabatinoRodriguezPaluch_uESE,3.5,0.8,2.7
+845,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-2.34,-1.3,1.0399999999999998
+846,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-3.93,0.0,3.93
+847,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-1.21,-0.7,0.51
+848,SAMPL8-16,TBME-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.21,-1.2,4.41
+849,SAMPL8-10,TBME-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.43,-0.9,5.33
+850,SAMPL8-6,TBME-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,0.68,-0.2,0.8800000000000001
+851,SAMPL8-5,TBME-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.23,0.0,1.23
+852,SAMPL8-1,TBME-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.64,0.1,3.54
+853,SAMPL8-17,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,5.09,-0.8,5.89
+854,SAMPL8-16,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.0,-0.3,3.3
+855,SAMPL8-14,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.6,0.1,3.5
+856,SAMPL8-12,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,2.92,-0.4,3.32
+857,SAMPL8-10,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,6.83,0.0,6.83
+858,SAMPL8-9,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,5.76,0.4,5.359999999999999
+859,SAMPL8-7,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.14,-0.4,4.54
+860,SAMPL8-6,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,2.63,-0.5,3.13
+861,SAMPL8-5,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.16,-0.4,4.5600000000000005
+862,SAMPL8-3,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.25,-0.6,3.85
+863,SAMPL8-1,MEK-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.49,-0.2,3.6900000000000004
+864,SAMPL8-16,Heptane-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,0.27,-1.0,1.27
+865,SAMPL8-10,Heptane-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.18,-1.0,2.1799999999999997
+866,SAMPL8-5,Heptane-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-0.63,-1.2,0.57
+867,SAMPL8-1,Heptane-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.91,0.0,1.91
+868,SAMPL8-17,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.94,-1.4,6.34
+869,SAMPL8-16,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.4,-0.5,4.9
+870,SAMPL8-14,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.88,-0.8,4.68
+871,SAMPL8-12,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,3.32,-1.4,4.72
+872,SAMPL8-10,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,5.89,0.1,5.79
+873,SAMPL8-9,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,5.75,-0.8,6.55
+874,SAMPL8-6,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.72,-0.1,1.82
+875,SAMPL8-5,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,2.13,0.1,2.03
+876,SAMPL8-3,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,0.75,-0.8,1.55
+877,SAMPL8-1,Ethyl acetate-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,4.48,0.3,4.180000000000001
+878,SAMPL8-5,Cyclohexane-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-0.7,-1.1,0.40000000000000013
+879,SAMPL8-16,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.7,-0.4,2.1
+880,SAMPL8-14,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,0.25,-1.0,1.25
+881,SAMPL8-12,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,0.34,-0.7,1.04
+882,SAMPL8-10,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.51,-0.6,2.11
+883,SAMPL8-9,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,2.41,-0.1,2.5100000000000002
+884,SAMPL8-7,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.09,-1.3,2.39
+885,SAMPL8-6,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-0.35,-0.4,0.050000000000000044
+886,SAMPL8-5,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,-0.21,-0.5,0.29000000000000004
+887,SAMPL8-1,Octanol-water,RFE-uESE-exp-3,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_3,1.01,0.8,0.20999999999999996
+888,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-2.34,-1.3,1.0399999999999998
+889,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-3.93,0.0,3.93
+890,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-1.21,-0.7,0.51
+891,SAMPL8-16,TBME-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.37,-1.2,4.57
+892,SAMPL8-10,TBME-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.61,-0.9,5.510000000000001
+893,SAMPL8-6,TBME-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,0.81,-0.2,1.01
+894,SAMPL8-5,TBME-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.33,0.0,1.33
+895,SAMPL8-1,TBME-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.36,0.1,3.26
+896,SAMPL8-17,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,5.09,-0.8,5.89
+897,SAMPL8-16,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.0,-0.3,3.3
+898,SAMPL8-14,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.6,0.1,3.5
+899,SAMPL8-12,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,2.92,-0.4,3.32
+900,SAMPL8-10,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,6.83,0.0,6.83
+901,SAMPL8-9,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,5.76,0.4,5.359999999999999
+902,SAMPL8-7,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.14,-0.4,4.54
+903,SAMPL8-6,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,2.63,-0.5,3.13
+904,SAMPL8-5,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.16,-0.4,4.5600000000000005
+905,SAMPL8-3,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.25,-0.6,3.85
+906,SAMPL8-1,MEK-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.49,-0.2,3.6900000000000004
+907,SAMPL8-16,Heptane-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,0.27,-1.0,1.27
+908,SAMPL8-10,Heptane-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.18,-1.0,2.1799999999999997
+909,SAMPL8-5,Heptane-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-0.63,-1.2,0.57
+910,SAMPL8-1,Heptane-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.91,0.0,1.91
+911,SAMPL8-17,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.94,-1.4,6.34
+912,SAMPL8-16,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.4,-0.5,4.9
+913,SAMPL8-14,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.88,-0.8,4.68
+914,SAMPL8-12,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,3.32,-1.4,4.72
+915,SAMPL8-10,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,5.89,0.1,5.79
+916,SAMPL8-9,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,5.75,-0.8,6.55
+917,SAMPL8-6,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.72,-0.1,1.82
+918,SAMPL8-5,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,2.13,0.1,2.03
+919,SAMPL8-3,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,0.75,-0.8,1.55
+920,SAMPL8-1,Ethyl acetate-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,4.48,0.3,4.180000000000001
+921,SAMPL8-5,Cyclohexane-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-0.7,-1.1,0.40000000000000013
+922,SAMPL8-16,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.7,-0.4,2.1
+923,SAMPL8-14,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,0.25,-1.0,1.25
+924,SAMPL8-12,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,0.34,-0.7,1.04
+925,SAMPL8-10,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.51,-0.6,2.11
+926,SAMPL8-9,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,2.41,-0.1,2.5100000000000002
+927,SAMPL8-7,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.09,-1.3,2.39
+928,SAMPL8-6,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-0.35,-0.4,0.050000000000000044
+929,SAMPL8-5,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,-0.21,-0.5,0.29000000000000004
+930,SAMPL8-1,Octanol-water,RFE-uESE-exp-2,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp_2,1.01,0.8,0.20999999999999996
+931,SAMPL8-16,Cyclohexane-DMF,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-2.34,-1.3,1.0399999999999998
+932,SAMPL8-6,Cyclohexane-DMF,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-3.93,0.0,3.93
+933,SAMPL8-1,Cyclohexane-DMF,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-1.21,-0.7,0.51
+934,SAMPL8-16,TBME-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.37,-1.2,4.57
+935,SAMPL8-10,TBME-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.61,-0.9,5.510000000000001
+936,SAMPL8-6,TBME-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,0.81,-0.2,1.01
+937,SAMPL8-5,TBME-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.33,0.0,1.33
+938,SAMPL8-1,TBME-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.73,0.1,3.63
+939,SAMPL8-17,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,5.09,-0.8,5.89
+940,SAMPL8-16,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.0,-0.3,3.3
+941,SAMPL8-14,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.6,0.1,3.5
+942,SAMPL8-12,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,2.92,-0.4,3.32
+943,SAMPL8-10,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,6.83,0.0,6.83
+944,SAMPL8-9,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,5.76,0.4,5.359999999999999
+945,SAMPL8-7,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.14,-0.4,4.54
+946,SAMPL8-6,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,2.63,-0.5,3.13
+947,SAMPL8-5,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.16,-0.4,4.5600000000000005
+948,SAMPL8-3,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.25,-0.6,3.85
+949,SAMPL8-1,MEK-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.49,-0.2,3.6900000000000004
+950,SAMPL8-16,Heptane-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,0.27,-1.0,1.27
+951,SAMPL8-10,Heptane-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.18,-1.0,2.1799999999999997
+952,SAMPL8-5,Heptane-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-0.63,-1.2,0.57
+953,SAMPL8-1,Heptane-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.91,0.0,1.91
+954,SAMPL8-17,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.94,-1.4,6.34
+955,SAMPL8-16,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.4,-0.5,4.9
+956,SAMPL8-14,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.88,-0.8,4.68
+957,SAMPL8-12,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,3.32,-1.4,4.72
+958,SAMPL8-10,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,5.89,0.1,5.79
+959,SAMPL8-9,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,5.75,-0.8,6.55
+960,SAMPL8-6,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.72,-0.1,1.82
+961,SAMPL8-5,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,2.13,0.1,2.03
+962,SAMPL8-3,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,0.75,-0.8,1.55
+963,SAMPL8-1,Ethyl acetate-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,4.48,0.3,4.180000000000001
+964,SAMPL8-5,Cyclohexane-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-0.7,-1.1,0.40000000000000013
+965,SAMPL8-16,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.7,-0.4,2.1
+966,SAMPL8-14,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,0.25,-1.0,1.25
+967,SAMPL8-12,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,0.34,-0.7,1.04
+968,SAMPL8-10,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.51,-0.6,2.11
+969,SAMPL8-9,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,2.41,-0.1,2.5100000000000002
+970,SAMPL8-7,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.09,-1.3,2.39
+971,SAMPL8-6,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-0.35,-0.4,0.050000000000000044
+972,SAMPL8-5,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,-0.21,-0.5,0.29000000000000004
+973,SAMPL8-1,Octanol-water,RFE-uESE-exp,Physical (QM),logD_SabatinoRodriguezPaluch_uESE_exp,1.01,0.8,0.20999999999999996
+974,SAMPL8-16,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-0.38,-0.4,0.020000000000000018
+975,SAMPL8-14,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-2.76,-1.0,1.7599999999999998
+976,SAMPL8-12,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-2.01,-0.7,1.3099999999999998
+977,SAMPL8-10,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,0.01,-0.6,0.61
+978,SAMPL8-9,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-1.08,-0.1,0.9800000000000001
+979,SAMPL8-7,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-1.56,-1.3,0.26
+980,SAMPL8-6,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-0.78,-0.4,0.38
+981,SAMPL8-5,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-0.24,-0.5,0.26
+982,SAMPL8-1,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2,-1.54,0.8,2.34
+983,SAMPL8-16,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.91,-0.4,0.51
+984,SAMPL8-14,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,0.12,-1.0,1.12
+985,SAMPL8-12,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.65,-0.7,0.04999999999999993
+986,SAMPL8-10,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,2.71,-0.6,3.31
+987,SAMPL8-9,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.5,-0.1,0.4
+988,SAMPL8-7,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.06,-1.3,1.24
+989,SAMPL8-6,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-1.01,-0.4,0.61
+990,SAMPL8-5,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.53,-0.5,0.030000000000000027
+991,SAMPL8-1,Octanol-water,UCR-MLR06,Empirical,logD-UCRMLR06-7,-0.52,0.8,1.32
+992,SAMPL8-16,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,-0.38,-0.4,0.020000000000000018
+993,SAMPL8-14,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,-0.09,-1.0,0.91
+994,SAMPL8-12,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,0.37,-0.7,1.0699999999999998
+995,SAMPL8-10,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,1.48,-0.6,2.08
+996,SAMPL8-9,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,0.41,-0.1,0.51
+997,SAMPL8-7,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,0.47,-1.3,1.77
+998,SAMPL8-6,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,-0.13,-0.4,0.27
+999,SAMPL8-5,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,0.07,-0.5,0.5700000000000001
+1000,SAMPL8-1,Octanol-water,UCR-PLS3,Empirical,logD-UCRPLS3-1,0.63,0.8,0.17000000000000004
+1001,SAMPL8-16,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.05,-0.4,0.65
+1002,SAMPL8-14,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-2.42,-1.0,1.42
+1003,SAMPL8-12,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.91,-0.7,1.21
+1004,SAMPL8-10,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,0.75,-0.6,1.35
+1005,SAMPL8-9,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.0,-0.1,0.9
+1006,SAMPL8-7,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.42,-1.3,0.11999999999999988
+1007,SAMPL8-6,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-0.07,-0.4,0.33
+1008,SAMPL8-5,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.78,-0.5,1.28
+1009,SAMPL8-1,Octanol-water,UCR-MLR0B,Empirical,logD-UCRMLR0-6,-1.54,0.8,2.34
+1010,SAMPL8-16,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,-1.05,-0.4,0.65
+1011,SAMPL8-14,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.25,-1.0,1.25
+1012,SAMPL8-12,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.47,-0.7,1.17
+1013,SAMPL8-10,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,2.22,-0.6,2.8200000000000003
+1014,SAMPL8-9,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.49,-0.1,0.59
+1015,SAMPL8-7,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.61,-1.3,1.9100000000000001
+1016,SAMPL8-6,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.58,-0.4,0.98
+1017,SAMPL8-5,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,-1.47,-0.5,0.97
+1018,SAMPL8-1,Octanol-water,UCR-MLR0,Empirical,logD-UCRMLR0-5,0.63,0.8,0.17000000000000004
+1019,SAMPL8-16,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-0.38,-0.4,0.020000000000000018
+1020,SAMPL8-14,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-2.76,-1.0,1.7599999999999998
+1021,SAMPL8-12,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-2.01,-0.7,1.3099999999999998
+1022,SAMPL8-10,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,0.01,-0.6,0.61
+1023,SAMPL8-9,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-1.08,-0.1,0.9800000000000001
+1024,SAMPL8-7,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-1.56,-1.3,0.26
+1025,SAMPL8-6,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-0.78,-0.4,0.38
+1026,SAMPL8-5,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-0.24,-0.5,0.26
+1027,SAMPL8-1,Octanol-water,UCR-PLS3B,Empirical,logD-UCRPLS3-2_gplfkzn,-1.54,0.8,2.34
+1028,SAMPL8-16,Cyclohexane-DMF,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,-5.3,-1.3,4.0
+1029,SAMPL8-6,Cyclohexane-DMF,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,-5.77,0.0,5.77
+1030,SAMPL8-1,Cyclohexane-DMF,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,-4.6,-0.7,3.8999999999999995
+1031,SAMPL8-16,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,2.11,-1.2,3.3099999999999996
+1032,SAMPL8-10,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,6.16,-0.9,7.0600000000000005
+1033,SAMPL8-6,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.36,-0.2,5.5600000000000005
+1034,SAMPL8-5,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.62,0.0,4.62
+1035,SAMPL8-5,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.65,0.0,5.65
+1036,SAMPL8-1,TBME-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.63,0.1,5.53
+1037,SAMPL8-17,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.03,-0.8,5.83
+1038,SAMPL8-16,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.99,-0.3,4.29
+1039,SAMPL8-14,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.53,0.1,5.430000000000001
+1040,SAMPL8-12,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.19,-0.4,4.590000000000001
+1041,SAMPL8-10,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,7.42,0.0,7.42
+1042,SAMPL8-9,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.86,0.4,5.46
+1043,SAMPL8-7,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,2.85,-0.4,3.25
+1044,SAMPL8-7,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.84,-0.4,5.24
+1045,SAMPL8-6,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,7.44,-0.5,7.94
+1046,SAMPL8-5,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.58,-0.4,5.98
+1047,SAMPL8-5,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,6.11,-0.4,6.510000000000001
+1048,SAMPL8-3,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.83,-0.6,6.43
+1049,SAMPL8-1,MEK-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,6.25,-0.2,6.45
+1050,SAMPL8-5,Cyclohexane-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.61,-1.1,4.71
+1051,SAMPL8-5,Cyclohexane-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.45,-1.1,4.550000000000001
+1052,SAMPL8-16,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.55,-0.4,3.9499999999999997
+1053,SAMPL8-14,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.76,-1.0,4.76
+1054,SAMPL8-12,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.31,-0.7,4.01
+1055,SAMPL8-10,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,6.32,-0.6,6.92
+1056,SAMPL8-9,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.98,-0.1,5.08
+1057,SAMPL8-7,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.8,-1.3,5.1
+1058,SAMPL8-7,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,3.83,-1.3,5.13
+1059,SAMPL8-6,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,5.52,-0.4,5.92
+1060,SAMPL8-5,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.96,-0.5,5.46
+1061,SAMPL8-5,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.94,-0.5,5.44
+1062,SAMPL8-1,Octanol-water,GAFF2-TIP3P-B3LYP,Physical (MM),logD-ZhiyiWu-1,4.77,0.8,3.9699999999999998
