@@ -1,6 +1,6 @@
 # logD analysis
 
-## Mainifest
+## Manifest
 
 - [`Submissions_edited`](Submissions_edited/) - Directory that contains edited submissions. There were certain submissions that required a few manual edits. These submissions included NadinUlrich and Andrea Ebert. We removed predictions for SAMPL8-1 from these submissions, because they contained only predictions for this specific compound and no others. This made it impossible to compare performance of these submissions with that of methods which had predictions for multiple compounds.
 - [`analysis_logD.py`](analysis_logD.py) - Main script used to perform logD analysis
