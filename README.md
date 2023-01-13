@@ -34,44 +34,47 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 
 ### Releases
 - **Release 0.1** ([DOI 10.5281/zenodo.4029560](http://dx.doi.org/10.5281/zenodo.4029560), Sept. 14, 2020): Release version of the info that was here prior to the closing of the [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
+- **Release 1.0** ([DOI 10.5281/zenodo.7535073](https://dx.doi.org/10.5281/zenodo.753073), Jan. 13, 2022): Release of host-guest submissions, GDCC challenge, GSK physical properties challenge, including:
+  - Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo.(9/25/20)
+  - Add experimental measurements and link for CB8 experimental publication. (9/25/20)
+  - Updates submission files (give unique method names and edit ext) (10/1/20)
+  - Updates analysis script (10/1/20)
+  - Add preliminary results (plots, tables, etc) for the host-guest challenge. Currently only includes CB8. (10/1/20)
+  - Add source files and tentative deadline for GDCC challenge (2020-10-14)
+  - Add guest and host curated/generated sdf,mol2,pdb files for the GDCC challenge (10/17/20)
+  - Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
+  - Add minor additional notes on GDCC experiments/provenance (2020-12-23)
+  - Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
+  - Add GDCC submission server link (1/20/21)
+  - Add info on physical properties challenge
+  - 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
+  - 2021-03-10: Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
+  - Add GDCC experimental measurements (3/25/21)
+  - 2021-04-13: Add GDCC submissions for analysis
+  - 2021-04-13: Add GSK challenge deadline
+  - 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
+  - 2021-07-05: Update example submission for pKa challenge; add pKa challenge instructions; update README files.
+  - 2021-07-06: Add GDCC (TEMOA/TEETOA) to SAMPL8 host-guest analysis, add/update preliminary statistics and analysis tables, plots, and figures for GDCC dataset.
+  - 2021-07-24: Add submission link for logD challenge; update submission format example for logD challenge. Add logD challenge instructions.
+  - 2021-08-03: Add additional optional microstates from Stefan Kast/Nicolas Tielker from TU Dortmund
+  - 2021-08-20: Add experimental pH for logD measurements (pH 8 for SAMPL8-1, 3, 5 and 6; pH 3 for all other compounds)
+  - 2021-08-23: Update logD deadline to Aug. 31
+  - 2021-08-25: Add additional retrospective microstate information, and information on possible duplicate microstates, in case it is helpful for those doing analysis. See `microstates/README.md`.
+  - 2021-09-07: Add logD submissions, user map
+  - 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
+  - 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
+  - 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset.
+  - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
+  - 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
+  - 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
+  - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
+  - 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
+  - 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
+
 
 ### Changes not in a release
 
-- Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo.(9/25/20)
-- Add experimental measurements and link for CB8 experimental publication. (9/25/20)
-- Updates submission files (give unique method names and edit ext) (10/1/20)
-- Updates analysis script (10/1/20)
-- Add preliminary results (plots, tables, etc) for the host-guest challenge. Currently only includes CB8. (10/1/20)
-- Add source files and tentative deadline for GDCC challenge (2020-10-14)
-- Add guest and host curated/generated sdf,mol2,pdb files for the GDCC challenge (10/17/20)
-- Update CB8 experimental results and analysis (plots, tables, etc) to correct errors in the first version which had been posted. Note the experimental Ka and/or binding free energy values for Morphine, Hydromorphone, and Cocaine have been updated; see [pdf](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.pdf) and [docx](https://github.com/samplchallenges/SAMPL8/blob/master/host_guest/Analysis/ExperimentalMeasurements/CB8-DOA-SAMPL-Answer-Sheet-20201014.docx) answer sheets. (10/17/20)
-- Add minor additional notes on GDCC experiments/provenance (2020-12-23)
-- Add GDCC submission template, update host-guest submission instructions, update README files (1/14/21)
-- Add GDCC submission server link (1/20/21)
-- Add info on physical properties challenge
-- 2021-03-02: Add links to talk on experimental data collection for GSK physical properties challenge.
-- 2021-03-10: Add GSK physical properties challenge molecules in Tripos MOL2, SDF, and PDB file format (with enumerated microstates of each molecule to be added at a later date).
-- Add GDCC experimental measurements (3/25/21)
-- 2021-04-13: Add GDCC submissions for analysis
-- 2021-04-13: Add GSK challenge deadline
-- 2021-05-04: Add a submission template and an example submission file for both the pKa and logD challenge. Add enumerated microstates for the challenge molecules.
-- 2021-07-05: Update example submission for pKa challenge; add pKa challenge instructions; update README files.
-- 2021-07-06: Add GDCC (TEMOA/TEETOA) to SAMPL8 host-guest analysis, add/update preliminary statistics and analysis tables, plots, and figures for GDCC dataset.
-- 2021-07-24: Add submission link for logD challenge; update submission format example for logD challenge. Add logD challenge instructions.
-- 2021-08-03: Add additional optional microstates from Stefan Kast/Nicolas Tielker from TU Dortmund
-- 2021-08-20: Add experimental pH for logD measurements (pH 8 for SAMPL8-1, 3, 5 and 6; pH 3 for all other compounds)
-- 2021-08-23: Update logD deadline to Aug. 31
-- 2021-08-25: Add additional retrospective microstate information, and information on possible duplicate microstates, in case it is helpful for those doing analysis. See `microstates/README.md`.
-- 2021-09-07: Add logD submissions, user map
-- 2021-10-01: Add Chemaxon pK<sub>a</sub> predictions
-- 2021-10-01: Add link to [preprint on physical properties experiments](https://chemrxiv.org/engage/chemrxiv/article-details/61547c46b19c7e6aade3c2b1)
-- 2022-04-26: Add [experimental publication doi:10.1021/acs.jpcb.2c00628](https://doi.org/10.1021/acs.jpcb.2c00628) for Gibb GDCC Dataset.
-- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds.
-- 2022-07-06: Add [macro-pKa calculations](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/Titration_Curves.pdf) showing the calculation of the macro-pKas from microstate relative free energy changes.
-- 2022-07-06: Add [titration curve plots](https://github.com/samplchallenges/SAMPL8/blob/a4d48eff7330b6710428d324389f1f1a80c51180/physical_properties/pKa/macrostate_analysis/titration_curve_plots) which contains the titration curves for all of the molecules.
-- 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
-- 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
-- 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
+
 
 ## Challenge construction
 
