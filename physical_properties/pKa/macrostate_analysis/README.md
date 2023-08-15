@@ -19,14 +19,23 @@ The macro-pKas were calculated by finding the intersection points of the transit
 |-1|-1|0|
 |-2|-2|-1|
 
-The macrostate analysis performed using [`pKa_macrostate_analysis.py`](pKa_macrostate_analysis.py) assumes that the transitions states for both the experimental and predited pKa are the same. The appropriate transition states for the predicted pKa were selected by means of popular vote, to elaborate further we looked at the most commonly occuring transition state for each pKa per molecule across all submissions. This was selected as the transition state used for each prediction associated with each pKa for each molecule in a submission. Additionally, a minimum error was added to a specific pKa of a compound in a submission if the submission did not contain predictions for that specific compound using the popular transition state. This minimum error was assigned by either setting the predicted pKa for a compound with a missing popular transition in a submission to either 0 or 14 depending on which prediction would have the largest error.
+
+The macrostate analysis performed using [`pKa_macrostate_analysis_popular_trasntions.py`](pKa_macrostate_analysis_popular_transitions.py) and [`pKa_macrostate_analysis_selected_trasntions.py`](pKa_macrostate_analysis_selected_transitions.py) assume that the transitions states for both the experimental and predicted pKa are the same. The appropriate transition states for the predicted pKa were selected by means of popular vote, to elaborate further we looked at the most commonly occuring transition state for each pKa per molecule across all submissions. This was selected as the transition state used for each prediction associated with each pKa for each molecule in a submission. Additionally, a minimum error was added to a specific pKa of a compound in a submission if the submission did not contain predictions for that specific compound using the popular transition state. This minimum error was assigned by either setting the predicted pKa for a compound with a missing popular transition in a submission to either 0 or 14 depending on which prediction would have the largest error.
+
+The selected transitions were compiled based on the following assumptions while looking at the pH log-solubility curves-
+* We assume the species is neutral at the lowest point of the log-solubility pH curves provided in the experimental data.
+* pKa values that are greater than the pH of the lowest point of the log-solubility are treated as acidic with a formal charge of -1
+* pKa values that are lesser than the ph of the lowest point of the log-solubility are treated as basic with a formal charge of +1
+
 
 ## Manifest
+- [`selected_transitions.csv`](selected_transitions.csv)- A .csv file that contains the selected transition states that were manually selected for each compound. 
 - [`titration_curves.py`](titration_curves.py)- Script used to generate titration curves data frame containing all combinations of experimental and predicted macro-pKas.
 - [`Titration_Curves.pdf`](Titration_Curves.pdf)- Document that contains the derivation used to calculate the macro-pKa's from the microstate relative free energy changes submitted.
 - [`titration_curve_plots/`](titration_curve_plots/)- This directory contains all the titration curves and a csv file that contains a dataframe with all the predicted and experimental macro-pKas.
 - [`macro_pKas_data.csv`](titration_curve_plots/macro_pKas_data.csv)- Dataframe that contains all the combinations of predicted macro-pKas and experimental macro-pKas for all compounds across all submissions.
-- [`pKa_macrostate_analysis.py`](pKa_macrostate_analysis.py)- Script used to generate performance statistics for macro-pKa analysis.
+- [`pKa_macrostate_analysis_popular_transitions.py`](pKa_macrostate_analysis_popular_transitions.py)- Script used to generate performance statistics for macro-pKa analysis using popular transition states.
+- [`pKa_macrostate_analysis_selected_transitions.py`](pKa_macrostate_analysis_popular_transitions.py)- Script used to generate performance statistics for macro-pKa analysis using selected transition states.
 - [`functions_pKa_macrostate_analysis.py`](functions_pKa_macrostate_analysis.py) - Script that contains functions used in the estimation of performance statistics for macrostate analysis.
-- [`analysis_ouptuts_all`](analysis_outputs_all/)- This directory contains bar plots and correlation plots associated with the performance statistics for all submissions.
-- [`analysis_outputs_ranked`](analysis_outputs_ranked/)- This directory contains bar plots and correlation plots associated with the performance statistics for all ranked submissions.
+- [`analysis_ouptuts_all`](popular_transitions_analysis/analysis_outputs_all/)- This directory contains bar plots and correlation plots associated with the performance statistics for all submissions.
+- [`analysis_outputs_ranked`](popular_transitions_analysis/analysis_outputs_ranked/)- This directory contains bar plots and correlation plots associated with the performance statistics for all ranked submissions.

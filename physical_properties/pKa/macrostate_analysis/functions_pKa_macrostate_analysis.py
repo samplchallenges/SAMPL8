@@ -185,7 +185,7 @@ def getdataset(submission_collection,experimental_data,output_directory):
 # Extract popular transition state predictions for each submission
 # =============================================================================    
 
-def getpopulartransitions(data,experimental_data):
+def getpopulartransitions(data, experimental_data):
     """Gets the most popular transitions states used for predictions across submissions and extracts these datapoints from the above generated dataset"""
     popular_transitions = pd.DataFrame(columns=["Molecule ID","Experimental pKa","Formal Charge"])
     for idx,row in experimental_data.iterrows():
@@ -198,7 +198,7 @@ def getpopulartransitions(data,experimental_data):
     return popular_transitions
 
 
-def getpopulartransitionsdata(popular_transitions,data,experimental_data,output_directory):
+def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory):
         pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
         for submission in data.loc[:,'Submission'].unique():
             submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
@@ -237,7 +237,7 @@ def getpopulartransitionsdata(popular_transitions,data,experimental_data,output_
             plt.title("Absolute Error based on method",fontsize=16)
             plt.gcf().subplots_adjust(bottom=0.25)
             plt.xticks(rotation=90)
-        plt.savefig(output_directory+"abs_error_bymethod_plot"+".pdf")
+        plt.savefig(output_directory+"abs_error_bymethod_plot"+".pdf", bbox_inches="tight")
 
         plt.figure(figsize=(15,10))
         sns.barplot(x='Molecule ID',y='Absolute Error',data=pKa_dt_pop_transition_states,dodge=False)
@@ -246,7 +246,7 @@ def getpopulartransitionsdata(popular_transitions,data,experimental_data,output_
         plt.title("Absolute Error for each Molecule",fontsize=16)
         plt.gcf().subplots_adjust(bottom=0.25)
         plt.xticks(rotation=90)
-        plt.savefig(output_directory+"abs_error_bymol_plot"+".pdf")
+        plt.savefig(output_directory+"abs_error_bymol_plot"+".pdf", bbox_inches="tight")
         return pKa_dt_pop_transition_states
 
 # =============================================================================
@@ -266,7 +266,7 @@ def getpKaCorrelationstats(data,output_directory):
 
         # Correlation Plots
         sns.set_theme()
-        join_plot =  sns.jointplot(submission_dt.loc[:,"Experimental pKa"].astype(float),submission_dt.loc[:,"Predicted pKa"].astype(float),kind="reg")
+        join_plot =  sns.jointplot(x=submission_dt.loc[:,"Experimental pKa"].astype(float), y=submission_dt.loc[:,"Predicted pKa"].astype(float), kind="reg")
 
         ## Adding Diagonal line to plot with errors
         ### Find extreme values to make axes equal.
@@ -299,7 +299,7 @@ def getpKaCorrelationstats(data,output_directory):
         Corr_plot_dir = output_directory+"Correlation_Plots/"
         if not os.path.exists(Corr_plot_dir):
             os.makedirs(Corr_plot_dir)
-        plt.savefig(Corr_plot_dir+submission_name+"Corr_plot"+".pdf")
+        plt.savefig(Corr_plot_dir+submission_name+"Corr_plot"+".pdf", bbox_inches="tight")
         plt.close()
         perform_stats_submissions.to_csv(Corr_plot_dir+"Correlation_statistics.csv")
         
@@ -334,7 +334,8 @@ def getpKaErrorstats(data,output_directory):
     plt.ylabel("RMSE",fontsize=14)
     plt.title("RMSE across all Molecules",fontsize=16)
     plt.xticks(rotation=90)
-    plt.savefig(output_directory+"rmse_plot"+".pdf")
+    plt.subplots_adjust(bottom=0.15)
+    plt.savefig(output_directory+"rmse_plot"+".pdf", bbox_inches="tight")
 
     plt.figure(figsize=(15,10))
     sns.barplot(x="Molecule ID",y="Mean Error",data=perform_stats_mols)
@@ -342,7 +343,8 @@ def getpKaErrorstats(data,output_directory):
     plt.ylabel("Mean Error",fontsize=14)
     plt.title("Mean Error across all Molecules",fontsize=16)
     plt.xticks(rotation=90)
-    plt.savefig(output_directory+"mean_error_plot"+".pdf")
+    plt.subplots_adjust(bottom=0.15)
+    plt.savefig(output_directory+"mean_error_plot"+".pdf", bbox_inches="tight")
 
     plt.figure(figsize=(15,10))
     sns.barplot(x="Molecule ID",y="Mean Absolute Error",data=perform_stats_mols)
@@ -350,7 +352,8 @@ def getpKaErrorstats(data,output_directory):
     plt.ylabel("Mean Absolute Error",fontsize=14)
     plt.title("Mean Absolute Error across all Molecules",fontsize=16)
     plt.xticks(rotation=90)
-    plt.savefig(output_directory+"mean_abs_error_plot"+".pdf")
+    plt.subplots_adjust(bottom=0.15)
+    plt.savefig(output_directory+"mean_abs_error_plot"+".pdf", bbox_inches="tight")
         
 
     return perform_stats_mols
