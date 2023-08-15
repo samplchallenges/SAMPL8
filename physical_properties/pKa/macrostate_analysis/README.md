@@ -36,6 +36,7 @@ The selected transitions were compiled based on the following assumptions while 
 - [`macro_pKas_data.csv`](titration_curve_plots/macro_pKas_data.csv)- Dataframe that contains all the combinations of predicted macro-pKas and experimental macro-pKas for all compounds across all submissions.
 - [`pKa_macrostate_analysis_popular_transitions.py`](pKa_macrostate_analysis_popular_transitions.py)- Script used to generate performance statistics for macro-pKa analysis using popular transition states.
 - [`pKa_macrostate_analysis_selected_transitions.py`](pKa_macrostate_analysis_popular_transitions.py)- Script used to generate performance statistics for macro-pKa analysis using selected transition states.
-- [`functions_pKa_macrostate_analysis.py`](functions_pKa_macrostate_analysis.py) - Script that contains functions used in the estimation of performance statistics for macrostate analysis.
-- [`analysis_ouptuts_all`](popular_transitions_analysis/analysis_outputs_all/)- This directory contains bar plots and correlation plots associated with the performance statistics for all submissions.
-- [`analysis_outputs_ranked`](popular_transitions_analysis/analysis_outputs_ranked/)- This directory contains bar plots and correlation plots associated with the performance statistics for all ranked submissions.
+- [`functions_pKa_macrostate_analysis.py`](functions_pKa_macrostate_analysis.py)- Script that contains functions used in the estimation of performance statistics for macrostate analysis.
+- [`popular_transitions_analysis/`](popular_transitions_analysis/)-  This directory contains plots associated with analysis of all and ranked methods using popular transition states.
+- [`selected_transitions_analysis/`](selected_transitions_analysis/)- This directory contains plots associated with analysis of all and ranked methods using selected transition states.
+ 
