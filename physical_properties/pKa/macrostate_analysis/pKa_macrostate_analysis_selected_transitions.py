@@ -280,10 +280,8 @@ if __name__ == '__main__':
     # Ranked Submissions Analysis
     pKa_dt_ranked = getdataset(microstates_df_ranked,experimental_data,output_PATH_DIR_ranked)
     
-    ## Compute Popular Transition States across all ranked submissions
-    popular_transitions_ranked = getpopulartransitions(pKa_dt_ranked,experimental_data)
-    
-    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(popular_transitions_ranked,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    ## Compute Selected Transition States across all ranked submissions
+    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
     
     ## Correlation Statistics for each submission
     Corr_stats_ranked = getpKaCorrelationstats(popular_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)
