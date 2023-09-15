@@ -69,13 +69,11 @@ For our compounds, we have measurements for these combinations of solute and sol
   - [pKa](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-pka)
   - [logD](http://sampl-submit.us-west-1.elasticbeanstalk.com/submit/SAMPL8-logD)
 
-## What's coming?
-- Analysis after the challenges close
 
 ## Manifest
 - [`source_data/`](source_data): Files provided by GSK
 - [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv): A `.CSV` file containing SAMPL8 challenge molecule IDs and isomeric SMILES. SMILES were provided by GSK.
 - [`microstates/`](microstates): This directory currently contains molecules in Tripos MOL2 (`.mol2`), SDF (`.sdf`), and PDB (`.pdb`) file format (generated from the SMILES in [`SAMPL8_molecule_ID_and_SMILES.csv`](SAMPL8_molecule_ID_and_SMILES.csv)), as well as enumerated microstates for each molecule. Optional additional microstates (from Stefan Kast and Nicolas Tielker) were added 2021-08-03 for molecules SAMPL8-1, SAMPL8-3, SAMPL8-12, SAMPL8-14, SAMPL8-21, and SAMPL8-22; as these were added late, they use the "_dortmundYYY" extension in the `SAMPL8-XX_microstates.csv` files.
 - [`images/`](images): Folder containing images related to this challenge in various formats.
-- `pKa`: pKa challenge details and instructions
-- `logD`: logD challenge details and instructions
+- [`pKa`](pKa): This folder contains instructions, a submission template and the analysis for the pKa challenge. Also contains challenge input files in .CSV format with relative microstate free energies at a reference pH of 0. This folder contains instructions and a submission template for the pKa challenge. 
+- [`logD`](logD): logD challenge details and instructions. Also contains the results of the analysis of logD data. 
