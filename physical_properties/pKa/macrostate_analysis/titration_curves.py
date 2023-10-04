@@ -392,22 +392,25 @@ for submission in microstates_df:
         exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
         # Macrostate Calculation and Absolute Error Computation
         temp_df2 = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-        for first,second in zip(form_charge,form_charge[1:]):
-            idx = np.argwhere(np.diff(np.sign(charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==first,'pop_charge'].values - charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==second,'pop_charge'].values))).flatten()
-            pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==first,'pH'].values[idx]
+        for first, second in zip(form_charge[1:], form_charge):  # This is just using th
+            idx = np.argwhere(np.diff(np.sign(
+                charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == first, 'pop_charge'].values -
+                charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pop_charge'].values))).flatten()
+            pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pH'].values[idx]
             # Formal Charge Assignment
-            if first==2 and second==3:
-                formal_charge_val=3
-            elif first==1 and second==2:
-                formal_charge_val=2
-            elif first== 0 and second==1:
-                formal_charge_val=1
-            elif first==-1 and second==0:
-                formal_charge_val=-1
-            elif first==-2 and second==-1:
-                formal_charge_val=-2
-            elif first==-3 and second==-2:
-                formal_charge_val=-3
+            # This is based on the end transition state
+            if first == 3 and second == 2:
+                formal_charge_val = 2
+            elif first == 2 and second == 1:
+                formal_charge_val = 1
+            elif first == 1 and second == 0:
+                formal_charge_val = 0
+            elif first == 0 and second == -1:
+                formal_charge_val = -1
+            elif first == -1 and second == -2:
+                formal_charge_val = -2
+            elif first == -2 and second == -3:
+                formal_charge_val = -3
             for exp_pKa in exp_pKas:
                 abs_error = np.abs(pred_pKa-exp_pKa)
                 temp_df3 = pd.DataFrame({'Submission':submission.file_name,'Method Name':submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0],'Formal Charge':formal_charge_val,'Predicted pKa':pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})

@@ -129,7 +129,7 @@ def getdataset(submission_collection,experimental_data,output_directory):
             formal_charge = np.unique(formal_charge)
             form_charge.append(0)
             form_charge = np.unique(form_charge)
-            charge_dist_df = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
+            charge_dist_df = pd.DataFrame(columns = ["pH", "pop_charge", "formal_charge"])
             for charges in form_charge:
                 for pH in pH_vals:
                     n_frac,microstates = pop_charge_microstates(pH,charges,mol_details)
@@ -142,22 +142,23 @@ def getdataset(submission_collection,experimental_data,output_directory):
             exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
             # Macrostate Calculation and Absolute Error Computation
             temp_df2 = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-            for first,second in zip(form_charge,form_charge[1:]):
-                idx = np.argwhere(np.diff(np.sign(charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==first,'pop_charge'].values - charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==second,'pop_charge'].values))).flatten()
-                pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:,'formal_charge']==second,'pH'].values[idx]
+            for first, second in zip(form_charge[1:], form_charge):  # This is just using th
+                idx = np.argwhere(np.diff(np.sign(charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == first, 'pop_charge'].values - charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pop_charge'].values))).flatten()
+                pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pH'].values[idx]
                 # Formal Charge Assignment
-                if first==2 and second==3:
-                    formal_charge_val=3
-                elif first==1 and second==2:
-                    formal_charge_val=2
-                elif first== 0 and second==1:
-                    formal_charge_val=1
-                elif first==-1 and second==0:
-                    formal_charge_val=-1
-                elif first==-2 and second==-1:
-                    formal_charge_val=-2
-                elif first==-3 and second==-2:
-                    formal_charge_val=-3
+                # This is based on the end transition state
+                if first == 3 and second == 2:
+                    formal_charge_val = 2
+                elif first == 2 and second == 1:
+                    formal_charge_val = 1
+                elif first == 1 and second == 0:
+                    formal_charge_val = 0
+                elif first == 0 and second == -1:
+                    formal_charge_val = -1
+                elif first == -1 and second == -2:
+                    formal_charge_val = -2
+                elif first == -2 and second == -3:
+                    formal_charge_val = -3
                 for exp_pKa in exp_pKas:
                     abs_error = np.abs(pred_pKa-exp_pKa)
                     temp_df3 = pd.DataFrame({'Submission':submission.file_name,'Method Name':submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0],'Formal Charge':formal_charge_val,'Predicted pKa':pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})
@@ -187,14 +188,29 @@ def getdataset(submission_collection,experimental_data,output_directory):
 
 def getpopulartransitions(data, experimental_data):
     """Gets the most popular transitions states used for predictions across submissions and extracts these datapoints from the above generated dataset"""
-    popular_transitions = pd.DataFrame(columns=["Molecule ID","Experimental pKa","Formal Charge"])
-    for idx,row in experimental_data.iterrows():
-        formal_charges_withID = data.loc[data.loc[:,'Experimental pKa']==row['pKa mean'],["Molecule ID","Formal Charge"]]#Get all formal Charges with Mol ID
-        formal_charges1 = formal_charges_withID.loc[formal_charges_withID.loc[:,"Molecule ID"]==idx,"Formal Charge"]
-        df_temp = pd.DataFrame({"Molecule ID":idx,"Experimental pKa":row['pKa mean'],"Formal Charge":formal_charges1.mode()})
-        popular_transitions = pd.concat([popular_transitions,df_temp],ignore_index=True)
-    popular_transitions = popular_transitions.drop_duplicates(subset=['Molecule ID','Experimental pKa'],keep=False)
-
+    popular_transitions = pd.DataFrame(columns=["Molecule ID", "Experimental pKa", "Formal Charge"])
+    for idx, row in experimental_data.iterrows():
+        formal_charges_withID = data.loc[data.loc[:, 'Molecule ID'] == idx, ["Molecule ID", "Experimental pKa",
+                                                                                 "Formal Charge"]]  # Get all formal Charges with Mol ID
+        if len(list(formal_charges_withID["Experimental pKa"].drop_duplicates())) > 1:
+            print(idx)
+            formal_charge_feq = formal_charges_withID["Formal Charge"].value_counts().sort_values(ascending=False)[0:2]
+            exp_pKa = list(formal_charges_withID["Experimental pKa"].drop_duplicates())
+            # Add the acidic pKa to the popular Transitions Dataframe
+            df_temp1 = pd.DataFrame(
+                {"Molecule ID": idx, "Experimental pKa": min(exp_pKa), "Formal Charge": [max(formal_charge_feq.index)]})
+            popular_transitions = pd.concat([popular_transitions, df_temp1], ignore_index=True)
+            # Add the basic pKa to the popular Transitions Dataframe
+            df_temp2 = pd.DataFrame(
+                {"Molecule ID": idx, "Experimental pKa": max(exp_pKa), "Formal Charge": [min(formal_charge_feq.index)]})
+            popular_transitions = pd.concat([popular_transitions, df_temp2], ignore_index=True)
+        else:
+            print(idx)
+            df_temp = pd.DataFrame({"Molecule ID": idx, "Experimental pKa": row['pKa mean'],
+                                    "Formal Charge": formal_charges_withID["Formal Charge"].mode()})
+            popular_transitions = pd.concat([popular_transitions, df_temp], ignore_index=True)
+        
+        popular_transitions = popular_transitions.drop_duplicates(subset=['Molecule ID', 'Experimental pKa'])
     return popular_transitions
 
 
