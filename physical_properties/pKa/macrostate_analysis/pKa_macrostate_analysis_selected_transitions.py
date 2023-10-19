@@ -264,30 +264,32 @@ if __name__ == '__main__':
     experimental_data["Molecule ID"] = experimental_data.index
     
     # All Submissions Analysis  
-    pKa_dt = getdataset(microstates_df,experimental_data,output_PATH_DIR)
+    pKa_dt = getdataset(microstates_df, experimental_data, output_PATH_DIR)
     
     ## Compute Selected Transition States across all submission in pKaCollection-
+    # Note that while I am using the getpopulartransitionsdata function I am using the selected transitions .csv file as an input hence the analysis is performed using the selected transitions
     
-    popular_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions,pKa_dt,experimental_data,output_PATH_DIR)
+    selected_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions, pKa_dt, experimental_data, output_PATH_DIR)
     
     ## Correlation Statistics
-    Corr_stats = getpKaCorrelationstats(popular_transitions_pKa_dt,output_PATH_DIR)
+    Corr_stats = getpKaCorrelationstats(selected_transitions_pKa_dt,output_PATH_DIR)
     
     ## Error Statistics
-    Error_stats = getpKaErrorstats(popular_transitions_pKa_dt,output_PATH_DIR)
+    Error_stats = getpKaErrorstats(selected_transitions_pKa_dt,output_PATH_DIR)
     
     
     # Ranked Submissions Analysis
     pKa_dt_ranked = getdataset(microstates_df_ranked,experimental_data,output_PATH_DIR_ranked)
     
     ## Compute Selected Transition States across all ranked submissions
-    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    # Similar to the above Note regarding the function
+    selected_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
     
     ## Correlation Statistics for each submission
-    Corr_stats_ranked = getpKaCorrelationstats(popular_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)
+    Corr_stats_ranked = getpKaCorrelationstats(selected_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)
     
     ## Error Statistics for each molecule 
-    Error_stats_ranked = getpKaErrorstats(popular_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)
+    Error_stats_ranked = getpKaErrorstats(selected_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)
 
     
 

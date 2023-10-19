@@ -33,7 +33,7 @@ The [selected transitions](selected_transitions.csv) were compiled based on the 
 
 
 ## Manifest
-- [`selected_transitions.csv`](selected_transitions.csv)- A .csv file that contains the selected transition states that were manually selected for each compound. 
+- [`selected_transitions.csv`](selected_transitions.csv)- A .csv file that contains the selected transition states that were manually selected for each compound. Please note that the column "Formal Charge" represents the charged state that the molecule is transitioning to.
 - [`titration_curves.py`](titration_curves.py)- Script used to generate titration curves data frame containing all combinations of experimental and predicted macro-pKas.
 - [`Titration_Curves.pdf`](Titration_Curves.pdf)- Document that contains the derivation used to calculate the macro-pKa's from the microstate relative free energy changes submitted.
 - [`titration_curve_plots/`](titration_curve_plots/)- This directory contains all the titration curves and a csv file that contains a dataframe with all the predicted and experimental macro-pKas.

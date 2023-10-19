@@ -9,4 +9,4 @@ Contains data and plots associated with macrostate analysis across all submissio
 - [`rmse_plot.pdf`](rmse_plot.pdf) - A plot that shows the root mean squared error for each molecule.
 - [`Error_statistics.csv`](titration_curve_plots/macro_pKas_data.csv) - A `.csv` file that contains the error statistics (ME, MAE and RMSE) associated with predictions from across all submissions.
 - [`macrostate_pKa_data.csv`](macrostate_pKa_data.csv) - A `.csv` file that contains the macro pKa's computed from the microstates.
-- [`popular_transitions_pKa_data.csv`](popular_transitions_pKa_data.csv) - A `.csv` file that contains the popular transition states for each compound i.e the dominant transition state that occured most frequently across all submissions for each compound.
+- [`popular_transitions_pKa_data.csv`](popular_transitions_pKa_data.csv) - A `.csv` file that contains the popular transition states for each compound i.e the dominant transition state that occured most frequently across all submissions for each compound.  Please note that the column "Formal Charge" represents the charged state that the molecule is transitioning to.
