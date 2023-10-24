@@ -70,12 +70,13 @@ This challenge is concluded; analysis results are still forthcoming for the phys
   - 2022-07-05: Add [alternative experimental measurements](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/pKa%20-%20SiriusT3%20measurements.csv) and [comparison with original data](https://github.com/samplchallenges/SAMPL8/blob/master/physical_properties/experimental_data/SAMPL8%20-%20SiriusT3%20measurements.pdf) of four SAMPL8 compounds. Please note that these new measurements are significantly different for several compounds.
   - 2022-07-25: Add [macrostate analysis plots](https://github.com/samplchallenges/SAMPL8/blob/94a9fbf659a7647275edd42386b638ee31798b40/physical_properties/pKa/macrostate_analysis/Performance_stats_plots) which contains the plots describing performance statistics for macrostate analysis.
   - 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
-  - 2023-08-14: Add [selected transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/selected_transitions_analysis) which contains results of macrostate analysis using maunually selected transition state to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
-  - 2023-08-14: Add [popular transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/popular_transitions_analysis) which contains results of macrostate analysis using popular transition states (most frequently occuring transition state across all submissions for a specific pKa) to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
-  - 2023-09-20: Update to both selected transition state and popular transition state pKa analysis. Revision associated with formal charge assignment in analysis.
+
 
 
 ### Changes not in a release
+  - 2023-08-14: Add [selected transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/selected_transitions_analysis) which contains results of macrostate analysis using maunually selected transition state to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
+  - 2023-08-14: Add [popular transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/popular_transitions_analysis) which contains results of macrostate analysis using popular transition states (most frequently occuring transition state across all submissions for a specific pKa) to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
+  - 2023-10-24: Update, revise, and correct pKa macrostate analysis, including plots and performance statistics. This fixes major errors that had affected these analyses previously, including updates to formal charge assignments for analysis.
 
 
 
