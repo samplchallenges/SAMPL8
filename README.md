@@ -72,7 +72,11 @@ This challenge is concluded; analysis results are still forthcoming for the phys
   - 2022-09-05: Add [logD Analysis](https://github.com/samplchallenges/SAMPL8/tree/logD_analysis/physical_properties/logD/analysis) which contains scripts, data and plots for the logD analysis.
 
 
+
 ### Changes not in a release
+  - 2023-08-14: Add [selected transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/selected_transitions_analysis) which contains results of macrostate analysis using maunually selected transition state to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
+  - 2023-08-14: Add [popular transition state pKa analysis](https://github.com/samplchallenges/SAMPL8/blob/71b95097cfb7207beafe56591a88c9dcf3676c25/physical_properties/pKa/macrostate_analysis/popular_transitions_analysis) which contains results of macrostate analysis using popular transition states (most frequently occuring transition state across all submissions for a specific pKa) to pair appropriate predicted macro pKa with experimental macro pKa for analysis.
+  - 2023-10-24: Update, revise, and correct pKa macrostate analysis, including plots and performance statistics. This fixes major errors that had affected these analyses previously, including updates to formal charge assignments for analysis.
 
 
 
