@@ -370,8 +370,24 @@ for submission in microstates_df:
                 temp_df = pd.DataFrame({"pH":pH_microstates,
                                         "pop_charge":n_frac,
                                         "formal_charge":microstates})
-                charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
-                charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df],ignore_index=True)
+                
+                if charges == 3:
+                    charge_label = "+3"
+                elif charges == 2:
+                    charge_label = "+2"
+                elif charges == 1:
+                    charge_label = "+1"
+                elif charges == 0:
+                    charge_label = "0"
+                elif charges == -1:
+                    charge_label = "-1"
+                elif charges == -2:
+                    charge_label = "-2"
+                elif charges == -3:
+                    charge_label = "-3"
+                    
+                charge_dist_df = charge_dist_df.append({"pH":pH, "pop_charge":pop_charge(pH,charges, mol_details), "formal_charge":charge_label}, ignore_index=True)
+                charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df], ignore_index=True)
         charge_dist_df_microstate["formal_charge"] = charge_dist_df_microstate["formal_charge"].astype("category")
         # Slice DataFrame for Plotting Titration Curves
         plotting_dt_formal_charge = charge_dist_df.loc[charge_dist_df['pH'].between(0,15,inclusive=True),] # Only formal charges
