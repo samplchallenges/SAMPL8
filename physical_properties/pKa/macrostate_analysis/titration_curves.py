@@ -254,13 +254,20 @@ experimental_data["Molecule ID"] = experimental_data.index
 # =============================================================================
 
 # Define Constants
-kB = 1.381 * 6.02214 / 1000.0 # Converts Boltzmann constant to kJ/mol*K
+kB = 1.380649 * 6.02214 / 1000.0 # Converts Boltzmann constant to kJ/mol*K
 beta = (1 / ((kB/4.184) * 300)) # Convert to kcal
 C_unit = (1 /beta)*np.log(10)# C_unit = RT*ln10 from Gunner et. al
-pH_vals = np.arange(-15,22,0.1) # pH values for estimating all macro-pKa's from submissions
+pH_vals = np.arange(-15, 22 , 0.01) # pH values for estimating all macro-pKa's from submissions
 
 # Compute free energy as a function of pH for states
 def DeltaG(pH, state,state_details):
+    """
+    This function is used to calculate the free energies
+    :param pH:
+    :param state:
+    :param state_details:
+    :return:
+    """
     for item in state_details:
         if item[0]==state:
             # 0 serves as the reference state; all transitions are away from 0.
@@ -365,12 +372,11 @@ for submission in microstates_df:
         charge_dist_df_microstate = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
         for charges in form_charge:
             for pH in pH_vals:
-                n_frac,microstates = pop_charge_microstates(pH,charges,mol_details)
+                n_frac, microstates = pop_charge_microstates(pH,charges,mol_details)
                 pH_microstates = np.tile(pH,(len(microstates),))
-                temp_df = pd.DataFrame({"pH":pH_microstates,
+                temp_df = pd.DataFrame({"pH": pH_microstates,
                                         "pop_charge":n_frac,
                                         "formal_charge":microstates})
-                
                 if charges == 3:
                     charge_label = "+3"
                 elif charges == 2:
@@ -386,7 +392,7 @@ for submission in microstates_df:
                 elif charges == -3:
                     charge_label = "-3"
                     
-                charge_dist_df = charge_dist_df.append({"pH":pH, "pop_charge":pop_charge(pH,charges, mol_details), "formal_charge":charge_label}, ignore_index=True)
+                charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
                 charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df], ignore_index=True)
         charge_dist_df_microstate["formal_charge"] = charge_dist_df_microstate["formal_charge"].astype("category")
         # Slice DataFrame for Plotting Titration Curves
@@ -399,8 +405,8 @@ for submission in microstates_df:
         sns.lineplot(data=plotting_dt_microstates,x="pH",y="pop_charge",hue="formal_charge",linestyle="--",palette="husl")
         plt.xticks(np.arange(0,14,1).tolist())
         plt.ylabel("population fraction", fontsize = 14)
-        plt.xlabel("pH",fontsize=14)
-        plt.title(fig_name,fontsize = 18)
+        plt.xlabel("pH", fontsize=14)
+        plt.title(fig_name, fontsize = 18)
         lgd = plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15),fancybox=True, shadow=True, ncol=4,prop={'size': 12})
         plt.savefig("./titration_curve_plots"+"/"+fig_name+".pdf",bbox_extra_artists=(lgd,), bbox_inches='tight')
         plt.close('all')
@@ -408,7 +414,7 @@ for submission in microstates_df:
         exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
         # Macrostate Calculation and Absolute Error Computation
         temp_df2 = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-        for first, second in zip(form_charge[1:], form_charge):  # This is just using th
+        for first, second in zip(form_charge[1:], form_charge):
             idx = np.argwhere(np.diff(np.sign(
                 charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == first, 'pop_charge'].values -
                 charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pop_charge'].values))).flatten()
@@ -429,10 +435,22 @@ for submission in microstates_df:
                 formal_charge_val = -3
             for exp_pKa in exp_pKas:
                 abs_error = np.abs(pred_pKa-exp_pKa)
-                temp_df3 = pd.DataFrame({'Submission':submission.file_name,'Method Name':submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0],'Formal Charge':formal_charge_val,'Predicted pKa':pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})
-                temp_df2 = pd.concat([temp_df2,temp_df3],ignore_index=True)
-        pKa_dt_temp = pd.concat([pKa_dt_temp,temp_df2],ignore_index=True)
-    pKa_dt = pd.concat([pKa_dt,pKa_dt_temp],ignore_index=True)
+                temp_df3 = pd.DataFrame({'Submission': submission.file_name,'Method Name': submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0], 'Formal Charge':formal_charge_val, 'Predicted pKa': pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})
+                temp_df2 = pd.concat([temp_df2, temp_df3],ignore_index=True)
+        if temp_df2.empty:
+            for exp_pKa in exp_pKas:
+                if 14 - exp_pKa > abs(0 - exp_pKa):
+                    pred_pKa = 14
+                else:
+                    pred_pKa = 0
+                abs_error = np.abs(pred_pKa - exp_pKa)
+                temp_df4 = pd.DataFrame({'Submission': submission.file_name, 'Method Name': submission.method_name,
+                                         'Method Type': submission.category, 'Molecule ID': names.split('_')[0],
+                                         'Formal Charge': formal_charge_val, 'Predicted pKa': [pred_pKa],
+                                         'Experimental pKa': exp_pKa, 'Absolute Error': abs_error})
+                temp_df2 = pd.concat([temp_df2, temp_df4], ignore_index=True)
+        pKa_dt_temp = pd.concat([pKa_dt_temp, temp_df2],ignore_index=True)
+    pKa_dt = pd.concat([pKa_dt, pKa_dt_temp],ignore_index=True)
 
 # Write dataframe to csv file
 # Located in the same folder as the titration curves
