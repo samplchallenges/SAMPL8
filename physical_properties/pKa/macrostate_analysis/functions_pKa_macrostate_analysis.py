@@ -335,7 +335,7 @@ def getpKaErrorstats(data,output_directory):
         error = mol_dt.loc[:,'Predicted pKa'].astype(float)-mol_dt.loc[:,'Experimental pKa'].astype(float)
         me = error.mean()
         mae = np.array(mol_dt.loc[:,"Absolute Error"]).mean()
-        rmse = np.sqrt(error**2).mean()
+        rmse = np.sqrt(np.mean(error**2))
         df_temp = pd.DataFrame({"Molecule ID": mol_names,"Mean Error":[me],"Mean Absolute Error":[mae],"Root Mean Squared Error":[rmse]})
         perform_stats_mols = pd.concat([perform_stats_mols,df_temp],ignore_index=True)
         

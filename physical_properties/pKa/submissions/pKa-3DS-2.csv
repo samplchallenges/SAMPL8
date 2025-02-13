@@ -297,7 +297,7 @@ TURBOMOLE 7.5: The quantum chemistry suite. University of Karlsruhe and Forschun
 # Pick only one category label.,,,,,,
 # The `Category:` keyword is required.,,,,,,
 Category:
-LFER
+QM+LEC
 
 # METHOD DESCRIPTION SECTION,,,,,,
 #,,,,,,

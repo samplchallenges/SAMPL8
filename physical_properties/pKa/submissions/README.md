@@ -7,3 +7,4 @@
 - There were issues in reading the following files `pKa-3DS-1.csv`,`pKa-3DS-2.csv`, `pKa-3DS-3.csv`,`PKA_ECRISM.csv` and `pKa_Chemaxon.csv` given that the SMILE strings were in the same line as the predictions. Hence, these files were modified by removing the smile strings before analysis.
 - The `pKa_Chemaxon.csv` file was modified by removing comments with SMILE strings.
 - Since there were no experimental values for the following compounds - SAMPL8-11 and SAMPL8-13 the predictions were also deleted from each one of the submssions to use the automated analysis scripts.
+-Changed Method category for `pKa-3DS.csv` files from LFER to QM+LEC. This was based on a suggestion by Stefan 
