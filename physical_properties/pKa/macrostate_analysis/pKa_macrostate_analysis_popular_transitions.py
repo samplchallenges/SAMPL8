@@ -25,8 +25,8 @@ from functions_pKa_macrostate_analysis import *
 # =============================================================================
 # CONSTANTS
 # =============================================================================
-pKa_SUBMISSIONS_DIR_PATH = '../submissions'
-EXPERIMENTAL_DATA_FILE_PATH = '../experimental_pKas.csv'
+pKa_SUBMISSIONS_DIR_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/submissions'
+EXPERIMENTAL_DATA_FILE_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/experimental_pKas.csv'
 USER_MAP_FILE_PATH = '../SAMPL8-pKa-user-map.csv'
 output_PATH_DIR = "popular_transitions_analysis/analysis_outputs_all/"
 if not os.path.exists(output_PATH_DIR):
@@ -263,8 +263,10 @@ if __name__ == '__main__':
     
     ## Compute Popular Transition States across all submission in pKaCollection-
     popular_transitions = getpopulartransitions(pKa_dt,experimental_data)
+
+    pKa_data_file_name = "popular_transitions_pKa_data.csv"
     
-    popular_transitions_pKa_dt = getpopulartransitionsdata(popular_transitions,pKa_dt,experimental_data,output_PATH_DIR)
+    popular_transitions_pKa_dt = getpopulartransitionsdata(popular_transitions,pKa_dt,experimental_data,output_PATH_DIR, pKa_data_file_name)
     
     ## Correlation Statistics
     Corr_stats = getpKaCorrelationstats(popular_transitions_pKa_dt,output_PATH_DIR)
@@ -279,7 +281,7 @@ if __name__ == '__main__':
     ## Compute Popular Transition States across all ranked submissions
     popular_transitions_ranked = getpopulartransitions(pKa_dt_ranked,experimental_data)
     
-    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(popular_transitions_ranked,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    popular_transitions_pKa_dt_ranked = getpopulartransitionsdata(popular_transitions_ranked,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked, pKa_data_file_name)
     
     ## Correlation Statistics for each submission
     Corr_stats_ranked = getpKaCorrelationstats(popular_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)

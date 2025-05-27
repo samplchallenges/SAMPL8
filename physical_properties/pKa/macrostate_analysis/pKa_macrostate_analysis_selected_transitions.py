@@ -268,8 +268,10 @@ if __name__ == '__main__':
     
     ## Compute Selected Transition States across all submission in pKaCollection-
     # Note that while I am using the getpopulartransitionsdata function I am using the selected transitions .csv file as an input hence the analysis is performed using the selected transitions
+
+    pKa_data_file_name = "selected_transitions_pKa_data.csv"
     
-    selected_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions, pKa_dt, experimental_data, output_PATH_DIR)
+    selected_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions, pKa_dt, experimental_data, output_PATH_DIR, pKa_data_file_name)
     
     ## Correlation Statistics
     Corr_stats = getpKaCorrelationstats(selected_transitions_pKa_dt,output_PATH_DIR)
@@ -283,7 +285,7 @@ if __name__ == '__main__':
     
     ## Compute Selected Transition States across all ranked submissions
     # Similar to the above Note regarding the function
-    selected_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    selected_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked, pKa_data_file_name)
     
     ## Correlation Statistics for each submission
     Corr_stats_ranked = getpKaCorrelationstats(selected_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)

@@ -137,7 +137,7 @@ def getdataset(submission_collection,experimental_data,output_directory):
                     temp_df = pd.DataFrame({"pH":pH_microstates,
                                             "pop_charge":n_frac,
                                             "formal_charge":microstates})
-                    charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
+                    charge_dist_df = pd.concat([charge_dist_df, pd.DataFrame([{"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges}])], ignore_index=True)
             # Experimental Macro pKas
             exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
             # Macrostate Calculation and Absolute Error Computation
@@ -214,7 +214,7 @@ def getpopulartransitions(data, experimental_data):
     return popular_transitions
 
 
-def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory):
+def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory, file_name):
         pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
         for submission in data.loc[:,'Submission'].unique():
             submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
@@ -244,7 +244,7 @@ def getpopulartransitionsdata(popular_transitions, data, experimental_data, outp
 
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
-        pKa_dt_pop_transition_states.to_csv(output_directory+"popular_transitions_pKa_data.csv")
+        pKa_dt_pop_transition_states.to_csv(output_directory+file_name)
         plt.figure(figsize=(17,5))
         with sns.axes_style("darkgrid"):
             sns.barplot(x='Method Name',y='Absolute Error',hue="Method Type",palette="Set1",data=pKa_dt_pop_transition_states,dodge=False)
