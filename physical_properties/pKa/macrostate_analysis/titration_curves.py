@@ -23,8 +23,8 @@ import numpy as np
 pKa_SUBMISSIONS_DIR_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/submissions'
 EXPERIMENTAL_DATA_FILE_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/experimental_pKas.csv'
 USER_MAP_FILE_PATH = '../SAMPL8-pKa-user-map.csv'
-if not os.path.exists("./titration_curve_plots"):
-    os.makedirs("./titration_curve_plots")
+if not os.path.exists("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots/"):
+    os.makedirs("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots/")
 # =============================================================================
 # Utility Classes
 # =============================================================================
@@ -393,12 +393,12 @@ if __name__ == "__main__":
                     elif charges == -3:
                         charge_label = "-3"
                         
-                    charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
+                    pd.concat([charge_dist_df, pd.DataFrame([{"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges}])], ignore_index=True)
                     charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df], ignore_index=True)
             charge_dist_df_microstate["formal_charge"] = charge_dist_df_microstate["formal_charge"].astype("category")
             # Slice DataFrame for Plotting Titration Curves
-            plotting_dt_formal_charge = charge_dist_df.loc[charge_dist_df['pH'].between(0,15,inclusive=True),] # Only formal charges
-            plotting_dt_microstates = charge_dist_df_microstate.loc[charge_dist_df_microstate['pH'].between(0,15,inclusive=True),] # Microstates
+            plotting_dt_formal_charge = charge_dist_df.loc[charge_dist_df['pH'].between(0,15,inclusive="both"),] # Only formal charges
+            plotting_dt_microstates = charge_dist_df_microstate.loc[charge_dist_df_microstate['pH'].between(0,15,inclusive="both"),] # Microstates
             # Graphical Options for Figure
             fig_name = submission.file_name+":"+names.split('_')[0]
             plt.figure(figsize=(10,6))
