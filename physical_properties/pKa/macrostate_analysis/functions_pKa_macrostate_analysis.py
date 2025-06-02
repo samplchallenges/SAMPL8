@@ -215,6 +215,11 @@ def getpopulartransitions(data, experimental_data):
 
 
 def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory, file_name):
+        """
+        This function is used to get the data for the popular transition states for each submission.
+        It takes in the popular transitions, the data, the experimental data, the output directory, and the file name.
+        It returns the pKa data for the popular transition states.
+        """
         pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
         for submission in data.loc[:,'Submission'].unique():
             submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
@@ -222,24 +227,10 @@ def getpopulartransitionsdata(popular_transitions, data, experimental_data, outp
                 if idx in popular_transitions.loc[:,"Molecule ID"].tolist():
                     popular_transitions_mol = popular_transitions.loc[(popular_transitions.loc[:,'Experimental pKa']==row['pKa mean']) & (popular_transitions.loc[:,"Molecule ID"]==idx),]
                     if row['pKa mean'] in submission_data.loc[:,"Experimental pKa"].tolist() and idx in submission_data.loc[:,"Molecule ID"].tolist():
-                        df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),]
-                        # df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
-                        if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist():
+                        df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),] # Slide off data for the same pKa and molecule
+                        if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist(): # Only those molecules in a submission with matching formal charge will be used for analysis and computing statistics
                             df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
-                        else:
-                            df_temp1 = df_temp1.reset_index()
-                            df_temp1 = df_temp1.drop(['index'],axis=1)
-                            df_temp2 = df_temp1.loc[0,].to_frame().T
-                            df_temp2.loc[:,'Formal Charge'] = popular_transitions_mol.loc[:,"Formal Charge"].values.item()
-                            if abs(df_temp2.loc[:,'Experimental pKa'].values-14) > abs(df_temp2.loc[:,'Experimental pKa'].values-0):
-                                df_temp2.loc[:,'Predicted pKa'] = 14
-                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-14)
-                            else:
-                                df_temp2.loc[:,'Predicted pKa']=0
-                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-0)
-
-                        pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
-
+                            pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
 
 
         if not os.path.exists(output_directory):
