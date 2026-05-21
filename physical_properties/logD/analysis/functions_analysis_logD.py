@@ -75,7 +75,7 @@ def getperformancestatsbysubmission(dataset,output_directory):
 
         # Correlation Plots
         sns.set_theme()
-        join_plot =  sns.jointplot(submission_data.loc[:,"Experimental logD"],submission_data.loc[:,"Predicted logD"],kind="reg")
+        join_plot =  sns.jointplot(x=submission_data.loc[:,"Experimental logD"],y=submission_data.loc[:,"Predicted logD"],kind="reg")
 
         ## Adding Diagonal line to plot with errors
         ### Find extreme values to make axes equal.
@@ -115,29 +115,31 @@ def getperformancestatsbysubmission(dataset,output_directory):
         corr_stats_df_by_submission.to_csv(corr_plots_dir+"corr_stats_all_combos"+".csv")
     
     # Absolute Error Plots by Method and hued by method category
-    plt.figure(figsize=(15,10))
+    plt.figure(figsize=(15,5))
     sns.set_theme()
     sns.barplot(x='Method Name',y='Absolute Error', hue = 'Method Category',palette="Set1",data = dataset,dodge=False)
-    plt.xlabel("Method",fontsize = 16)
-    plt.ylabel("Absolute Error",fontsize = 16)
-    plt.title("Absolute Error Plot based on Method-All Solvent Combinations",fontsize=18)
+    plt.xlabel("Method",fontsize = 18)
+    plt.ylabel("Absolute Error",fontsize = 18)
+    plt.title("Absolute Error Plot Based on Method-All Solvent Combinations",fontsize=18)
     plt.legend(loc="best")
     plt.gcf().subplots_adjust(bottom=0.35)
-    plt.xticks(rotation=90)
+    plt.yticks(fontsize=14)
+    plt.xticks(rotation=60, fontsize=16)
     error_plots_dir = output_directory+"Performance_stats_by_submission/"+"Error_plots/"
     if not os.path.exists(error_plots_dir):
         os.makedirs(error_plots_dir)
     plt.savefig(error_plots_dir+"Absolute_Errors_all_combo_by_method"+".pdf")
     
     # Absolute error plot for all solvent combinations
-    plt.figure(figsize=(15,10))
+    plt.figure(figsize=(15,5))
     sns.set_theme()
     sns.barplot(x='Solvent-Combo',y='Absolute Error',palette = 'husl',data = dataset,dodge=False)
-    plt.xlabel("Solvent Combinations",fontsize = 16)
-    plt.ylabel("Absolute Error",fontsize = 16)
-    plt.title("Absolute Error Plot based on Solvent Combinations",fontsize=18)
-    plt.gcf().subplots_adjust(bottom=0.25)
-    plt.xticks(rotation=90)
+    plt.xlabel("Solvent Combinations",fontsize = 18)
+    plt.ylabel("Absolute Error",fontsize = 18)
+    plt.title("Absolute Error Plot Based on Solvent Combinations",fontsize=18)
+    plt.gcf().subplots_adjust(bottom=0.35)
+    plt.yticks(fontsize=14)
+    plt.xticks(rotation=60, fontsize=18)
     plt.savefig(error_plots_dir+"Absolute_error_all_combo_by_solvent_combo"+".pdf")
     
     return corr_stats_df_by_submission
