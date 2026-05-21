@@ -25,14 +25,14 @@ from functions_pKa_macrostate_analysis import *
 # =============================================================================
 # CONSTANTS
 # =============================================================================
-pKa_SUBMISSIONS_DIR_PATH = '../submissions'
-EXPERIMENTAL_DATA_FILE_PATH = '../experimental_pKas.csv'
+pKa_SUBMISSIONS_DIR_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/submissions'
+EXPERIMENTAL_DATA_FILE_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/experimental_pKas.csv'
 USER_MAP_FILE_PATH = '../SAMPL8-pKa-user-map.csv'
-SELECTED_TRANSITIONS_DATA_FILE = './selected_transitions.csv'
-output_PATH_DIR = "selected_transitions_analysis/analysis_outputs_all/"
+SELECTED_TRANSITIONS_DATA_FILE = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/selected_transitions.csv'
+output_PATH_DIR = "/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/selected_transitions_analysis/analysis_outputs_all/"
 if not os.path.exists(output_PATH_DIR):
     os.makedirs(output_PATH_DIR)
-output_PATH_DIR_ranked = "selected_transitions_analysis/analysis_outputs_ranked/"
+output_PATH_DIR_ranked = "/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/selected_transitions_analysis/analysis_outputs_ranked/"
 if not os.path.exists(output_PATH_DIR_ranked):
     os.makedirs(output_PATH_DIR_ranked)
 
@@ -268,8 +268,10 @@ if __name__ == '__main__':
     
     ## Compute Selected Transition States across all submission in pKaCollection-
     # Note that while I am using the getpopulartransitionsdata function I am using the selected transitions .csv file as an input hence the analysis is performed using the selected transitions
+
+    pKa_data_file_name = "selected_transitions_pKa_data.csv"
     
-    selected_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions, pKa_dt, experimental_data, output_PATH_DIR)
+    selected_transitions_pKa_dt = getpopulartransitionsdata(selected_transitions, pKa_dt, experimental_data, output_PATH_DIR, pKa_data_file_name)
     
     ## Correlation Statistics
     Corr_stats = getpKaCorrelationstats(selected_transitions_pKa_dt,output_PATH_DIR)
@@ -283,7 +285,7 @@ if __name__ == '__main__':
     
     ## Compute Selected Transition States across all ranked submissions
     # Similar to the above Note regarding the function
-    selected_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked)
+    selected_transitions_pKa_dt_ranked = getpopulartransitionsdata(selected_transitions,pKa_dt_ranked,experimental_data,output_PATH_DIR_ranked, pKa_data_file_name)
     
     ## Correlation Statistics for each submission
     Corr_stats_ranked = getpKaCorrelationstats(selected_transitions_pKa_dt_ranked,output_PATH_DIR_ranked)

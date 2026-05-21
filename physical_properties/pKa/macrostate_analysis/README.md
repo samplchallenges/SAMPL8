@@ -42,5 +42,5 @@ The [selected transitions](selected_transitions.csv) were compiled based on the 
 - [`pKa_macrostate_analysis_selected_transitions.py`](pKa_macrostate_analysis_popular_transitions.py)- Script used to generate performance statistics for macro-pKa analysis using selected transition states.
 - [`functions_pKa_macrostate_analysis.py`](functions_pKa_macrostate_analysis.py)- Script that contains functions used in the estimation of performance statistics for macrostate analysis.
 - [`popular_transitions_analysis/`](popular_transitions_analysis/)-  This directory contains plots associated with analysis of all and ranked methods using popular transition states.
-- [`selected_transitions_analysis/`](selected_transitions_analysis/)- This directory contains plots associated with analysis of all and ranked methods using selected transition states.
+- [`selected_transitions_analysis/`](selected_transitions_analysis/)- This directory contains plots associated with analysis of all and ranked methods using selected transition states. Note that this file has been modified to a pKa value of SAMPL8-20 (Specifically 11.44 associated with a formal charge of -1) since this formal charge state was not account for in the provided list of microstates.
  

@@ -20,11 +20,11 @@ import numpy as np
 # =============================================================================
 # CONSTANTS
 # =============================================================================
-pKa_SUBMISSIONS_DIR_PATH = '../submissions'
-EXPERIMENTAL_DATA_FILE_PATH = '../experimental_pKas.csv'
+pKa_SUBMISSIONS_DIR_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/submissions'
+EXPERIMENTAL_DATA_FILE_PATH = '/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/experimental_pKas.csv'
 USER_MAP_FILE_PATH = '../SAMPL8-pKa-user-map.csv'
-if not os.path.exists("./titration_curve_plots"):
-    os.makedirs("./titration_curve_plots")
+if not os.path.exists("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots/"):
+    os.makedirs("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots/")
 # =============================================================================
 # Utility Classes
 # =============================================================================
@@ -336,122 +336,123 @@ def pop_charge_microstates(pH, formal_charge, state_details):
 
 # Construct Experimental and Predicted Data Frame
 # Loops over Experimental and Predicted pKa values to construct a data frame that contains all possible combinations of predicted and experimental pKa's
-pKa_dt = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-for submission in microstates_df:
-    submission_data  = submission.data
-    # Create a dictionary with the microstate details for each molecule in the submission
-    molecules = {}
-    for index, row in submission_data.iterrows():
-        SM = index
-        state = row["ID tag"]
-        charge = row["total charge"]
-        rfe = row["pKa mean"]
-        sem = row["pKa SEM"]
-        model_uncertainty = row["pKa model uncertainty"]
+if __name__ == "__main__":
+    pKa_dt = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
+    for submission in microstates_df:
+        submission_data  = submission.data
+        # Create a dictionary with the microstate details for each molecule in the submission
+        molecules = {}
+        for index, row in submission_data.iterrows():
+            SM = index
+            state = row["ID tag"]
+            charge = row["total charge"]
+            rfe = row["pKa mean"]
+            sem = row["pKa SEM"]
+            model_uncertainty = row["pKa model uncertainty"]
 
-        if SM in molecules:
-            molecules[SM].append((state, rfe, charge, sem, model_uncertainty))
-        else:
-            molecules[SM] = [(state, rfe, charge, sem, model_uncertainty)]
+            if SM in molecules:
+                molecules[SM].append((state, rfe, charge, sem, model_uncertainty))
+            else:
+                molecules[SM] = [(state, rfe, charge, sem, model_uncertainty)]
 
-    # Loop over molecules, convert to state_details
-    SM_names = [x for x in molecules.keys()]
-    SM_names.sort()
-    # Loop Over all molecules
-    pKa_dt_temp = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-    for names in SM_names:
-        mol_details = molecules[names] # Get the state details for each molecule
-        form_charge = []
-        for items in mol_details:
-            form_charge.append(items[2])
-        formal_charge = form_charge
-        formal_charge = np.unique(formal_charge)
-        form_charge.append(0)
-        form_charge = np.unique(form_charge)
-        charge_dist_df = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
-        charge_dist_df_microstate = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
-        for charges in form_charge:
-            for pH in pH_vals:
-                n_frac, microstates = pop_charge_microstates(pH,charges,mol_details)
-                pH_microstates = np.tile(pH,(len(microstates),))
-                temp_df = pd.DataFrame({"pH": pH_microstates,
-                                        "pop_charge":n_frac,
-                                        "formal_charge":microstates})
-                if charges == 3:
-                    charge_label = "+3"
-                elif charges == 2:
-                    charge_label = "+2"
-                elif charges == 1:
-                    charge_label = "+1"
-                elif charges == 0:
-                    charge_label = "0"
-                elif charges == -1:
-                    charge_label = "-1"
-                elif charges == -2:
-                    charge_label = "-2"
-                elif charges == -3:
-                    charge_label = "-3"
-                    
-                charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
-                charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df], ignore_index=True)
-        charge_dist_df_microstate["formal_charge"] = charge_dist_df_microstate["formal_charge"].astype("category")
-        # Slice DataFrame for Plotting Titration Curves
-        plotting_dt_formal_charge = charge_dist_df.loc[charge_dist_df['pH'].between(0,15,inclusive=True),] # Only formal charges
-        plotting_dt_microstates = charge_dist_df_microstate.loc[charge_dist_df_microstate['pH'].between(0,15,inclusive=True),] # Microstates
-        # Graphical Options for Figure
-        fig_name = submission.file_name+":"+names.split('_')[0]
-        plt.figure(figsize=(10,6))
-        sns.lineplot(data=plotting_dt_formal_charge,x="pH",y="pop_charge",hue="formal_charge")
-        sns.lineplot(data=plotting_dt_microstates,x="pH",y="pop_charge",hue="formal_charge",linestyle="--",palette="husl")
-        plt.xticks(np.arange(0,14,1).tolist())
-        plt.ylabel("population fraction", fontsize = 14)
-        plt.xlabel("pH", fontsize=14)
-        plt.title(fig_name, fontsize = 18)
-        lgd = plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15),fancybox=True, shadow=True, ncol=4,prop={'size': 12})
-        plt.savefig("./titration_curve_plots"+"/"+fig_name+".pdf",bbox_extra_artists=(lgd,), bbox_inches='tight')
-        plt.close('all')
-        # Experimental Macro pKas
-        exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
-        # Macrostate Calculation and Absolute Error Computation
-        temp_df2 = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
-        for first, second in zip(form_charge[1:], form_charge):
-            idx = np.argwhere(np.diff(np.sign(
-                charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == first, 'pop_charge'].values -
-                charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pop_charge'].values))).flatten()
-            pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pH'].values[idx]
-            # Formal Charge Assignment
-            # This is based on the end transition state
-            if first == 3 and second == 2:
-                formal_charge_val = 2
-            elif first == 2 and second == 1:
-                formal_charge_val = 1
-            elif first == 1 and second == 0:
-                formal_charge_val = 0
-            elif first == 0 and second == -1:
-                formal_charge_val = -1
-            elif first == -1 and second == -2:
-                formal_charge_val = -2
-            elif first == -2 and second == -3:
-                formal_charge_val = -3
-            for exp_pKa in exp_pKas:
-                abs_error = np.abs(pred_pKa-exp_pKa)
-                temp_df3 = pd.DataFrame({'Submission': submission.file_name,'Method Name': submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0], 'Formal Charge':formal_charge_val, 'Predicted pKa': pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})
-                temp_df2 = pd.concat([temp_df2, temp_df3],ignore_index=True)
-        if temp_df2.empty:
-            for exp_pKa in exp_pKas:
-                if 14 - exp_pKa > abs(0 - exp_pKa):
-                    pred_pKa = 14
-                else:
-                    pred_pKa = 0
-                abs_error = np.abs(pred_pKa - exp_pKa)
-                temp_df4 = pd.DataFrame({'Submission': submission.file_name, 'Method Name': submission.method_name,
-                                         'Method Type': submission.category, 'Molecule ID': names.split('_')[0],
-                                         'Formal Charge': formal_charge_val, 'Predicted pKa': [pred_pKa],
-                                         'Experimental pKa': exp_pKa, 'Absolute Error': abs_error})
-                temp_df2 = pd.concat([temp_df2, temp_df4], ignore_index=True)
-        pKa_dt_temp = pd.concat([pKa_dt_temp, temp_df2],ignore_index=True)
-    pKa_dt = pd.concat([pKa_dt, pKa_dt_temp],ignore_index=True)
+        # Loop over molecules, convert to state_details
+        SM_names = [x for x in molecules.keys()]
+        SM_names.sort()
+        # Loop Over all molecules
+        pKa_dt_temp = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
+        for names in SM_names:
+            mol_details = molecules[names] # Get the state details for each molecule
+            form_charge = []
+            for items in mol_details:
+                form_charge.append(items[2])
+            formal_charge = form_charge
+            formal_charge = np.unique(formal_charge)
+            form_charge.append(0)
+            form_charge = np.unique(form_charge)
+            charge_dist_df = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
+            charge_dist_df_microstate = pd.DataFrame(columns = ["pH","pop_charge","formal_charge"])
+            for charges in form_charge:
+                for pH in pH_vals:
+                    n_frac, microstates = pop_charge_microstates(pH,charges,mol_details)
+                    pH_microstates = np.tile(pH,(len(microstates),))
+                    temp_df = pd.DataFrame({"pH": pH_microstates,
+                                            "pop_charge":n_frac,
+                                            "formal_charge":microstates})
+                    if charges == 3:
+                        charge_label = "+3"
+                    elif charges == 2:
+                        charge_label = "+2"
+                    elif charges == 1:
+                        charge_label = "+1"
+                    elif charges == 0:
+                        charge_label = "0"
+                    elif charges == -1:
+                        charge_label = "-1"
+                    elif charges == -2:
+                        charge_label = "-2"
+                    elif charges == -3:
+                        charge_label = "-3"
+                        
+                    pd.concat([charge_dist_df, pd.DataFrame([{"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges}])], ignore_index=True)
+                    charge_dist_df_microstate = pd.concat([charge_dist_df_microstate,temp_df], ignore_index=True)
+            charge_dist_df_microstate["formal_charge"] = charge_dist_df_microstate["formal_charge"].astype("category")
+            # Slice DataFrame for Plotting Titration Curves
+            plotting_dt_formal_charge = charge_dist_df.loc[charge_dist_df['pH'].between(0,15,inclusive="both"),] # Only formal charges
+            plotting_dt_microstates = charge_dist_df_microstate.loc[charge_dist_df_microstate['pH'].between(0,15,inclusive="both"),] # Microstates
+            # Graphical Options for Figure
+            fig_name = submission.file_name+":"+names.split('_')[0]
+            plt.figure(figsize=(10,6))
+            sns.lineplot(data=plotting_dt_formal_charge,x="pH",y="pop_charge",hue="formal_charge")
+            sns.lineplot(data=plotting_dt_microstates,x="pH",y="pop_charge",hue="formal_charge",linestyle="--",palette="husl")
+            plt.xticks(np.arange(0,14,1).tolist())
+            plt.ylabel("population fraction", fontsize = 14)
+            plt.xlabel("pH", fontsize=14)
+            plt.title(fig_name, fontsize = 18)
+            lgd = plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15),fancybox=True, shadow=True, ncol=4,prop={'size': 12})
+            plt.savefig("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots"+"/"+fig_name+".pdf",bbox_extra_artists=(lgd,), bbox_inches='tight')
+            plt.close('all')
+            # Experimental Macro pKas
+            exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
+            # Macrostate Calculation and Absolute Error Computation
+            temp_df2 = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
+            for first, second in zip(form_charge[1:], form_charge):
+                idx = np.argwhere(np.diff(np.sign(
+                    charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == first, 'pop_charge'].values -
+                    charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pop_charge'].values))).flatten()
+                pred_pKa = charge_dist_df.loc[charge_dist_df.loc[:, 'formal_charge'] == second, 'pH'].values[idx]
+                # Formal Charge Assignment
+                # This is based on the end transition state
+                if first == 3 and second == 2:
+                    formal_charge_val = 2
+                elif first == 2 and second == 1:
+                    formal_charge_val = 1
+                elif first == 1 and second == 0:
+                    formal_charge_val = 0
+                elif first == 0 and second == -1:
+                    formal_charge_val = -1
+                elif first == -1 and second == -2:
+                    formal_charge_val = -2
+                elif first == -2 and second == -3:
+                    formal_charge_val = -3
+                for exp_pKa in exp_pKas:
+                    abs_error = np.abs(pred_pKa-exp_pKa)
+                    temp_df3 = pd.DataFrame({'Submission': submission.file_name,'Method Name': submission.method_name,'Method Type':submission.category,'Molecule ID':names.split('_')[0], 'Formal Charge':formal_charge_val, 'Predicted pKa': pred_pKa,'Experimental pKa':exp_pKa,'Absolute Error':abs_error})
+                    temp_df2 = pd.concat([temp_df2, temp_df3],ignore_index=True)
+            if temp_df2.empty:
+                for exp_pKa in exp_pKas:
+                    if 14 - exp_pKa > abs(0 - exp_pKa):
+                        pred_pKa = 14
+                    else:
+                        pred_pKa = 0
+                    abs_error = np.abs(pred_pKa - exp_pKa)
+                    temp_df4 = pd.DataFrame({'Submission': submission.file_name, 'Method Name': submission.method_name,
+                                            'Method Type': submission.category, 'Molecule ID': names.split('_')[0],
+                                            'Formal Charge': formal_charge_val, 'Predicted pKa': [pred_pKa],
+                                            'Experimental pKa': exp_pKa, 'Absolute Error': abs_error})
+                    temp_df2 = pd.concat([temp_df2, temp_df4], ignore_index=True)
+            pKa_dt_temp = pd.concat([pKa_dt_temp, temp_df2],ignore_index=True)
+        pKa_dt = pd.concat([pKa_dt, pKa_dt_temp],ignore_index=True)
 
-# Write dataframe to csv file
-# Located in the same folder as the titration curves
-pKa_dt.to_csv("./titration_curve_plots"+"/"+"macro_pKas_data.csv")
+    # Write dataframe to csv file
+    # Located in the same folder as the titration curves
+    pKa_dt.to_csv("/Users/aakankschitnandkeolyar/Desktop/SAMPL8/physical_properties/pKa/macrostate_analysis/titration_curve_plots"+"/"+"macro_pKas_data.csv")

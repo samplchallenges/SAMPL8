@@ -137,7 +137,7 @@ def getdataset(submission_collection,experimental_data,output_directory):
                     temp_df = pd.DataFrame({"pH":pH_microstates,
                                             "pop_charge":n_frac,
                                             "formal_charge":microstates})
-                    charge_dist_df = charge_dist_df.append({"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges},ignore_index = True)
+                    charge_dist_df = pd.concat([charge_dist_df, pd.DataFrame([{"pH":pH,"pop_charge":pop_charge(pH,charges,mol_details),"formal_charge":charges}])], ignore_index=True)
             # Experimental Macro pKas
             exp_pKas = experimental_data.loc[experimental_data.index==names.split('_')[0],'pKa mean'].values
             # Macrostate Calculation and Absolute Error Computation
@@ -214,7 +214,12 @@ def getpopulartransitions(data, experimental_data):
     return popular_transitions
 
 
-def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory):
+def getpopulartransitionsdata(popular_transitions, data, experimental_data, output_directory, file_name):
+        """
+        This function is used to get the data for the popular transition states for each submission.
+        It takes in the popular transitions, the data, the experimental data, the output directory, and the file name.
+        It returns the pKa data for the popular transition states.
+        """
         pKa_dt_pop_transition_states = pd.DataFrame(columns=['Submission','Method Name','Method Type','Molecule ID','Formal Charge','Predicted pKa','Experimental pKa','Absolute Error'])
         for submission in data.loc[:,'Submission'].unique():
             submission_data = data.loc[data.loc[:,'Submission']==submission,] #Slice off data for that particular submission
@@ -222,46 +227,34 @@ def getpopulartransitionsdata(popular_transitions, data, experimental_data, outp
                 if idx in popular_transitions.loc[:,"Molecule ID"].tolist():
                     popular_transitions_mol = popular_transitions.loc[(popular_transitions.loc[:,'Experimental pKa']==row['pKa mean']) & (popular_transitions.loc[:,"Molecule ID"]==idx),]
                     if row['pKa mean'] in submission_data.loc[:,"Experimental pKa"].tolist() and idx in submission_data.loc[:,"Molecule ID"].tolist():
-                        df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),]
-                        # df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
-                        if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist():
+                        df_temp1 = submission_data.loc[(submission_data.loc[:,'Experimental pKa']==row['pKa mean']) & (submission_data.loc[:,"Molecule ID"]==idx),] # Slide off data for the same pKa and molecule
+                        if popular_transitions_mol.loc[:,"Formal Charge"].values.item() in df_temp1.loc[:,'Formal Charge'].tolist(): # Only those molecules in a submission with matching formal charge will be used for analysis and computing statistics
                             df_temp2 = df_temp1.loc[df_temp1.loc[:,'Formal Charge']==popular_transitions_mol.loc[:,"Formal Charge"].values.item(),]
-                        else:
-                            df_temp1 = df_temp1.reset_index()
-                            df_temp1 = df_temp1.drop(['index'],axis=1)
-                            df_temp2 = df_temp1.loc[0,].to_frame().T
-                            df_temp2.loc[:,'Formal Charge'] = popular_transitions_mol.loc[:,"Formal Charge"].values.item()
-                            if abs(df_temp2.loc[:,'Experimental pKa'].values-14) > abs(df_temp2.loc[:,'Experimental pKa'].values-0):
-                                df_temp2.loc[:,'Predicted pKa'] = 14
-                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-14)
-                            else:
-                                df_temp2.loc[:,'Predicted pKa']=0
-                                df_temp2.loc[:,'Absolute Error'] = abs(df_temp2.loc[:,'Experimental pKa']-0)
-
-                        pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
-
+                            pKa_dt_pop_transition_states = pd.concat([pKa_dt_pop_transition_states,df_temp2],ignore_index=True)
 
 
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
-        pKa_dt_pop_transition_states.to_csv(output_directory+"popular_transitions_pKa_data.csv")
-        plt.figure(figsize=(15,10))
+        pKa_dt_pop_transition_states.to_csv(output_directory+file_name)
+        plt.figure(figsize=(17,5))
         with sns.axes_style("darkgrid"):
             sns.barplot(x='Method Name',y='Absolute Error',hue="Method Type",palette="Set1",data=pKa_dt_pop_transition_states,dodge=False)
-            plt.xlabel("Method", fontsize=14)
-            plt.ylabel("Absolute Error", fontsize=14)
-            plt.title("Absolute Error based on method",fontsize=16)
+            plt.xlabel("Method", fontsize=18)
+            plt.ylabel("Absolute Error", fontsize=18)
+            plt.title("Absolute error based on method",fontsize=18)
             plt.gcf().subplots_adjust(bottom=0.25)
-            plt.xticks(rotation=90)
+            plt.yticks(fontsize=12)
+            plt.xticks(rotation=60, fontsize=18)
         plt.savefig(output_directory+"abs_error_bymethod_plot"+".pdf", bbox_inches="tight")
 
-        plt.figure(figsize=(15,10))
+        plt.figure(figsize=(17,5))
         sns.barplot(x='Molecule ID',y='Absolute Error',data=pKa_dt_pop_transition_states,dodge=False)
-        plt.xlabel("Method", fontsize=14)
-        plt.ylabel("Absolute Error", fontsize=14)
-        plt.title("Absolute Error for each Molecule",fontsize=16)
+        plt.xlabel("Method", fontsize=18)
+        plt.ylabel("Absolute Error", fontsize=18)
+        plt.title("Absolute error for each molecule",fontsize=18)
         plt.gcf().subplots_adjust(bottom=0.25)
-        plt.xticks(rotation=90)
+        plt.yticks(fontsize=12)
+        plt.xticks(rotation=60, fontsize=18)
         plt.savefig(output_directory+"abs_error_bymol_plot"+".pdf", bbox_inches="tight")
         return pKa_dt_pop_transition_states
 
@@ -335,7 +328,7 @@ def getpKaErrorstats(data,output_directory):
         error = mol_dt.loc[:,'Predicted pKa'].astype(float)-mol_dt.loc[:,'Experimental pKa'].astype(float)
         me = error.mean()
         mae = np.array(mol_dt.loc[:,"Absolute Error"]).mean()
-        rmse = np.sqrt(error**2).mean()
+        rmse = np.sqrt(np.mean(error**2))
         df_temp = pd.DataFrame({"Molecule ID": mol_names,"Mean Error":[me],"Mean Absolute Error":[mae],"Root Mean Squared Error":[rmse]})
         perform_stats_mols = pd.concat([perform_stats_mols,df_temp],ignore_index=True)
         
@@ -348,7 +341,7 @@ def getpKaErrorstats(data,output_directory):
     sns.barplot(x="Molecule ID",y="Root Mean Squared Error",data=perform_stats_mols)
     plt.xlabel("Molecule ID",fontsize=14)
     plt.ylabel("RMSE",fontsize=14)
-    plt.title("RMSE across all Molecules",fontsize=16)
+    plt.title("RMSE across all molecules",fontsize=16)
     plt.xticks(rotation=90)
     plt.subplots_adjust(bottom=0.15)
     plt.savefig(output_directory+"rmse_plot"+".pdf", bbox_inches="tight")
@@ -357,7 +350,7 @@ def getpKaErrorstats(data,output_directory):
     sns.barplot(x="Molecule ID",y="Mean Error",data=perform_stats_mols)
     plt.xlabel("Molecule ID",fontsize=14)
     plt.ylabel("Mean Error",fontsize=14)
-    plt.title("Mean Error across all Molecules",fontsize=16)
+    plt.title("Mean error across all molecules",fontsize=16)
     plt.xticks(rotation=90)
     plt.subplots_adjust(bottom=0.15)
     plt.savefig(output_directory+"mean_error_plot"+".pdf", bbox_inches="tight")
@@ -366,7 +359,7 @@ def getpKaErrorstats(data,output_directory):
     sns.barplot(x="Molecule ID",y="Mean Absolute Error",data=perform_stats_mols)
     plt.xlabel("Molecule ID",fontsize=14)
     plt.ylabel("Mean Absolute Error",fontsize=14)
-    plt.title("Mean Absolute Error across all Molecules",fontsize=16)
+    plt.title("Mean absolute error across all molecules",fontsize=16)
     plt.xticks(rotation=90)
     plt.subplots_adjust(bottom=0.15)
     plt.savefig(output_directory+"mean_abs_error_plot"+".pdf", bbox_inches="tight")
