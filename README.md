@@ -34,7 +34,7 @@ This challenge is concluded; analysis results are still forthcoming for the phys
 
 ### Releases
 - **Release 0.1** ([DOI 10.5281/zenodo.4029560](http://dx.doi.org/10.5281/zenodo.4029560), Sept. 14, 2020): Release version of the info that was here prior to the closing of the [CB8 "drugs of abuse" challenge](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) from Isaacs.
-- **Release 1.0** ([DOI 10.5281/zenodo.7535073](https://dx.doi.org/10.5281/zenodo.753073), Jan. 13, 2022): Release of host-guest submissions, GDCC challenge, GSK physical properties challenge, including:
+- **Release 1.0** ([DOI 10.5281/zenodo.7535037](https://dx.doi.org/10.5281/zenodo.753073), Jan. 13, 2022): Release of host-guest submissions, GDCC challenge, GSK physical properties challenge, including:
   - Add SAMPL8 CB8 submissions, user map, utilities, functions, and analysis scripts; add/update README files at all directories in SAMPL8 repo.(9/25/20)
   - Add experimental measurements and link for CB8 experimental publication. (9/25/20)
   - Updates submission files (give unique method names and edit ext) (10/1/20)
